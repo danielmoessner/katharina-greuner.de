@@ -1,0 +1,13 @@
+{
+  "eslint.validate": ["next", "javascript", "typescript", "jsx", "tsx"],
+  "eslint.packageManager": "npm",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "tailwindCSS.emmetCompletions": true
+}
