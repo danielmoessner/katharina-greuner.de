@@ -2,7 +2,7 @@ import { CMS } from "netlify-cms-core";
 import dynamic from "next/dynamic";
 import config from "../cms/config";
 import React from "react";
-import { de } from "netlify-cms-locales";
+// import { de } from "netlify-cms-locales";
 import AnimalComponent from "../components/Animal";
 import AnimalCard from "../components/AnimalCard";
 import Container from "../components/Container";
