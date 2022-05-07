@@ -52,7 +52,11 @@ const Component = dynamic(
           document.querySelector("style");
         const iframe: HTMLIFrameElement | undefined =
           document.querySelector("#preview-pane");
+        const link: HTMLLinkElement | undefined = document.querySelector(
+          "link[rel='stylesheet']"
+        );
         if (iframe && style) iframe.contentDocument.head.after(style);
+        if (iframe && link) iframe.contentDocument.head.after(link);
       }, 1000);
 
       cms.registerPreviewTemplate("animal", AnimalPreview);
