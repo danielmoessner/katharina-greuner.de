@@ -4,18 +4,16 @@ import Animate from "./Animate";
 import { Animal } from "../types/animal";
 
 interface Props {
-  preview?: boolean;
   body: string;
   animal: Animal;
-  image?: React.ReactNode;
 }
 
-function Component({ animal, body, preview = false, image = null }: Props) {
+function Component({ animal, body }: Props) {
   return (
     <div>
       <div className="mb-6">
         <Animate>
-          <Hero image={preview ? image : animal.image} alt={animal.title} />
+          <Hero image={animal.image} alt={animal.title} />
         </Animate>
       </div>
       <div className="w-full max-w-xl mx-auto mb-3">
@@ -31,17 +29,13 @@ function Component({ animal, body, preview = false, image = null }: Props) {
         </Animate>
       </div>
       <div className="w-full max-w-xl mx-auto mb-40">
-        {!preview ? (
-          <Animate delay={3}>
-            <article
-              className="prose-sm sm:prose lg:prose-xl"
-              // eslint-disable-next-line react/no-danger
-              dangerouslySetInnerHTML={{ __html: body }}
-            />
-          </Animate>
-        ) : (
-          <article className="prose-sm sm:prose lg:prose-xl">{body}</article>
-        )}
+        <Animate delay={3}>
+          <article
+            className="prose-sm sm:prose lg:prose-xl"
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: body }}
+          />
+        </Animate>
       </div>
     </div>
   );

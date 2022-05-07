@@ -5,7 +5,7 @@ import header from "../symbols/header";
 import { CmsCollectionFile } from "netlify-cms-core";
 
 const styleguide: CmsCollectionFile = {
-  file: "content/page/styleguide.yml",
+  file: "content/page/styleguide.md",
   label: "Styleguide",
   name: "styleguide",
   fields: [collection("page"), slug("styleguide"), meta, header],

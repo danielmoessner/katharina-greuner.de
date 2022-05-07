@@ -1,3 +1,4 @@
+---
 collection: page
 slug: styleguide
 meta:
@@ -8,3 +9,4 @@ header:
   title: Styleguide
   text: Der Styleguide sorgt dafür, dass die Webseite einen einheitlichen Stil hat
     und als Komplettpaket ordentlich aussieht.
+---

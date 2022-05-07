@@ -1,54 +1,38 @@
 import { CMS } from "netlify-cms-core";
 import dynamic from "next/dynamic";
-import { useEffect } from "react";
 import config from "../cms/config";
-// import { de } from "netlify-cms-locales";
 import AnimalComponent from "../components/Animal";
 import AnimalCard from "../components/AnimalCard";
 import Container from "../components/Container";
 import { Animal } from "../types/animal";
+import AdminPreview from "../components/AdminPreview";
+import md from "markdown-it";
+import Head from "next/head";
 
 // previews
-const AnimalPreview = ({ entry, widgetFor }) => {
+const AnimalPreview = ({ entry }) => {
   const animalData: Animal = {
-    slug: "-",
-    image: null,
+    slug: entry.getIn(["data", "slug"]),
+    image: entry.getIn(["data", "image"]),
     title: entry.getIn(["data", "title"]),
     category: entry.getIn(["data", "category"]),
     excerpt: entry.getIn(["data", "excerpt"]),
   };
 
-  useEffect(() => {
-    const style: HTMLStyleElement | undefined = document.querySelector("style");
-    const iframe: HTMLIFrameElement | undefined =
-      document.querySelector("#preview-pane");
-    const link: HTMLLinkElement | undefined = document.querySelector(
-      "link[rel='stylesheet']"
-    );
-    console.log(style);
-    console.log(iframe);
-    console.log(link);
-    if (iframe && style && style.innerHTML)
-      iframe.contentDocument.head.appendChild(style.cloneNode(true));
-    if (iframe && link)
-      iframe.contentDocument.head.appendChild(link.cloneNode(true));
-  });
+  const html = md().render(entry.getIn(["data", "body"]));
 
   return (
-    <Container layout="md">
-      <div className="pt-5 pb-32">
-        <AnimalComponent
-          preview
-          animal={animalData}
-          image={widgetFor("image")}
-          body={widgetFor("body")}
-        />
-        <hr className="my-10 bg-gray-600" />
-        <div className="max-w-xs">
-          <AnimalCard preview animal={animalData} image={widgetFor("image")} />
+    <AdminPreview>
+      <Container layout="md">
+        <div className="pt-5 pb-32">
+          <AnimalComponent animal={animalData} body={html} />
+          <hr className="my-10 bg-gray-600" />
+          <div className="max-w-xs">
+            <AnimalCard animal={animalData} />
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </AdminPreview>
   );
 };
 
@@ -61,32 +45,21 @@ const Component = dynamic(
     // @ts-ignore
     return import("netlify-cms-app").then((cms: CMS) => {
       cms.init({ config });
-
-      // fix styles
-      // setTimeout(() => {
-      // cms.registerLocale("de", de);
-      // const style: HTMLStyleElement | undefined =
-      //   document.querySelector("style");
-      // const iframe: HTMLIFrameElement | undefined =
-      //   document.querySelector("#preview-pane");
-      // const link: HTMLLinkElement | undefined = document.querySelector(
-      //   "link[rel='stylesheet']"
-      // );
-      // console.log(style);
-      // console.log(iframe);
-      // console.log(link);
-      // if (iframe && style) iframe.contentDocument.head.appendChild(style);
-      // if (iframe && link) iframe.contentDocument.head.appendChild(link);
-      // }, 1000);
-
       cms.registerPreviewTemplate("animal", AnimalPreview);
     });
   },
-  { ssr: false, loading: () => <p>Loading...</p> }
+  { ssr: false, loading: () => <p>Einen Moment...</p> }
 );
 
 const Page: React.FC = () => {
-  return <Component />;
+  return (
+    <>
+      <Head>
+        <link rel="icon" type="image/svg" href="/favicon.svg" />
+      </Head>
+      <Component />
+    </>
+  );
 };
 
 export default Page;

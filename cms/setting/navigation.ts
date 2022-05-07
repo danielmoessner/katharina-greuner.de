@@ -1,5 +1,10 @@
 import slug from "../symbols/slug";
 import collection from "../symbols/collection";
+import {
+  CmsCollectionFile,
+  CmsFieldBase,
+  CmsFieldObject,
+} from "netlify-cms-core";
 
 const linkFields = [
   {
@@ -15,7 +20,7 @@ const linkFields = [
   },
 ];
 
-const link = {
+const link: CmsFieldBase & CmsFieldObject = {
   label: "Normales Item",
   name: "link",
   widget: "object",
@@ -23,7 +28,7 @@ const link = {
   collapsed: false,
 };
 
-const links = {
+const links: CmsFieldBase & CmsFieldObject = {
   label: "Dropdown Item",
   name: "links",
   widget: "object",
@@ -43,11 +48,10 @@ const links = {
   ],
 };
 
-export default {
-  file: "content/setting/navigation.yml",
+const navigation: CmsCollectionFile = {
+  file: "content/setting/navigation.json",
   label: "Navigation",
   name: "navigation",
-  preview: false,
   fields: [
     collection("setting"),
     slug("navigation"),
@@ -65,3 +69,5 @@ export default {
     },
   ],
 };
+
+export default navigation;

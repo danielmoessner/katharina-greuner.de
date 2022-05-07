@@ -5,23 +5,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Container from "./Container";
 import NavigationDropdown from "./NavigationDropdown";
 import NavigationLink from "./NavigationLink";
-import { attributes } from "../content/setting/navigation.md";
-
-interface Navigation {
-  title: string;
-  links: {
-    text: string;
-    url: string;
-    type: "link" | "links";
-    links: {
-      text: string;
-      url: string;
-    }[];
-  }[];
-}
+import data from "../content/setting/navigation.json";
 
 function Component() {
-  const navigation = attributes as unknown as Navigation;
+  const navigation = data;
 
   return (
     <nav>

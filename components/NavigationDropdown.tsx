@@ -11,7 +11,7 @@ function classNames(...classes) {
 interface Props {
   link: {
     text: string;
-    links: {
+    links?: {
       text: string;
       url: string;
     }[];

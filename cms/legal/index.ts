@@ -1,6 +1,7 @@
+import { CmsCollection } from "netlify-cms-core";
 import collection from "../symbols/collection";
 
-export default {
+const legal: CmsCollection = {
   name: "legal",
   label: "Rechtliches",
   label_singular: "Rechtliches",
@@ -18,3 +19,5 @@ export default {
     { label: "Inhalt", name: "body", widget: "markdown" },
   ],
 };
+
+export default legal;

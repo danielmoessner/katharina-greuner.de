@@ -22,14 +22,12 @@ const config: CmsConfig = {
   // See https://www.netlifycms.org/docs/configuration-options/#site-url
   site_url: "https://gatsby-netlifycms.tortuga-webdesign.de",
   // See https://www.netlifycms.org/docs/configuration-options/#media-folder
-  media_folder: "/content/media",
+  media_folder: "/public/media",
   // See https://www.netlifycms.org/docs/configuration-options/#public-folder
   public_folder: "/media",
   // See https://www.netlifycms.org/docs/beta-features/#manual-initialization
   load_config_file: false,
   // See https://www.netlifycms.org/docs/collection-types/
-  // eslint-disable-next-line
-  // @ts-ignore
   collections: [page, animal, category, setting, legal],
 };
 

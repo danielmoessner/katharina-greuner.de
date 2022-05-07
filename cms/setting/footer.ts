@@ -1,5 +1,10 @@
 import slug from "../symbols/slug";
 import collection from "../symbols/collection";
+import {
+  CmsCollectionFile,
+  CmsFieldBase,
+  CmsFieldObject,
+} from "netlify-cms-core";
 
 const linkFields = [
   {
@@ -15,7 +20,7 @@ const linkFields = [
   },
 ];
 
-const link = {
+const link: CmsFieldBase & CmsFieldObject = {
   label: "Interner Link",
   name: "link",
   widget: "object",
@@ -23,7 +28,7 @@ const link = {
   collapsed: false,
 };
 
-const text = {
+const text: CmsFieldBase & CmsFieldObject = {
   label: "Text",
   name: "text",
   widget: "object",
@@ -44,7 +49,7 @@ const externalLinkFields = [
   },
 ];
 
-const externalLink = {
+const externalLink: CmsFieldBase & CmsFieldObject = {
   label: "Externer Link",
   name: "externalLink",
   widget: "object",
@@ -52,11 +57,10 @@ const externalLink = {
   collapsed: false,
 };
 
-export default {
+const footer: CmsCollectionFile = {
   file: "content/setting/footer.json",
   label: "Footer",
   name: "footer",
-  preview: false,
   fields: [
     collection("setting"),
     slug("footer"),
@@ -75,8 +79,15 @@ export default {
           widget: "string",
           default: "col-span-6 md:col-span-3",
         },
-        { label: "Inhalt", name: "content", widget: "list", types: [link, externalLink, text] },
+        {
+          label: "Inhalt",
+          name: "content",
+          widget: "list",
+          types: [link, externalLink, text],
+        },
       ],
     },
   ],
 };
+
+export default footer;

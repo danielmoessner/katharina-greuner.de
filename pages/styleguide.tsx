@@ -6,7 +6,7 @@ import Button from "../components/Button";
 import DynamicForm from "../components/DynamicForm";
 import Header from "../components/Header";
 import Container from "../components/Container";
-import { attributes } from "../content/page/home.md";
+import { attributes } from "../content/page/styleguide.md";
 
 function Page() {
   const page = attributes;

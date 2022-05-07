@@ -1,8 +1,9 @@
+import { CmsCollection } from "netlify-cms-core";
 import footer from "./footer";
 import global from "./global";
 import navigation from "./navigation";
 
-export default {
+const setting: CmsCollection = {
   name: "setting",
   label: "Einstellungen",
   label_singular: "Einstellung",
@@ -12,3 +13,5 @@ export default {
   },
   files: [global, navigation, footer],
 };
+
+export default setting;

@@ -1,6 +1,7 @@
+import { CmsCollection } from "netlify-cms-core";
 import collection from "../symbols/collection";
 
-export default {
+const animal: CmsCollection = {
   name: "animal",
   label: "Wildtiere",
   label_singular: "Wildtier",
@@ -28,3 +29,5 @@ export default {
     },
   ],
 };
+
+export default animal;

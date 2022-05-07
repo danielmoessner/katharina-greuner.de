@@ -1,15 +1,21 @@
 import slug from "../symbols/slug";
 import collection from "../symbols/collection";
+import { CmsCollectionFile } from "netlify-cms-core";
 
-export default {
+const global: CmsCollectionFile = {
   file: "content/setting/global.json",
   label: "Global",
   name: "global",
-  preview: false,
   fields: [
     collection("setting"),
     slug("global"),
     { label: "Favicon", name: "favicon", widget: "image" },
-    { label: "Tortuga Webdesign Logo", name: "tortugaWebdesignLogo", widget: "text" },
+    {
+      label: "Tortuga Webdesign Logo",
+      name: "tortugaWebdesignLogo",
+      widget: "text",
+    },
   ],
 };
+
+export default global;
