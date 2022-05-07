@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import { attributes } from "../content/page/home.md";
 import { getAllMarkdown } from "../lib/getMarkdown";
 import { Animal } from "../types/animal";
+import Head from "next/head";
 
 interface Props {
   animals: Animal[];
@@ -17,6 +18,12 @@ function Page({ animals }: Props) {
 
   return (
     <Layout>
+      <Head>
+        <script
+          defer
+          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+        ></script>
+      </Head>
       <Seo meta={page.meta} />
       <Header header={page.header} />
       <section>
