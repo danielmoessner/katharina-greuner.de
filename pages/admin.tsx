@@ -55,8 +55,12 @@ const Component = dynamic(
         const link: HTMLLinkElement | undefined = document.querySelector(
           "link[rel='stylesheet']"
         );
-        if (iframe && style) iframe.contentDocument.head.after(style);
-        if (iframe && link) iframe.contentDocument.head.after(link);
+        console.log(style);
+        console.log(iframe);
+        console.log(link);
+
+        if (iframe && style) iframe.contentDocument.head.appendChild(style);
+        if (iframe && link) iframe.contentDocument.head.appendChild(link);
       }, 1000);
 
       cms.registerPreviewTemplate("animal", AnimalPreview);
