@@ -1,7 +1,7 @@
 import { CMS } from "netlify-cms-core";
 import dynamic from "next/dynamic";
+import { useEffect } from "react";
 import config from "../cms/config";
-import React from "react";
 // import { de } from "netlify-cms-locales";
 import AnimalComponent from "../components/Animal";
 import AnimalCard from "../components/AnimalCard";
@@ -17,6 +17,23 @@ const AnimalPreview = ({ entry, widgetFor }) => {
     category: entry.getIn(["data", "category"]),
     excerpt: entry.getIn(["data", "excerpt"]),
   };
+
+  useEffect(() => {
+    const style: HTMLStyleElement | undefined = document.querySelector("style");
+    const iframe: HTMLIFrameElement | undefined =
+      document.querySelector("#preview-pane");
+    const link: HTMLLinkElement | undefined = document.querySelector(
+      "link[rel='stylesheet']"
+    );
+    console.log(style);
+    console.log(iframe);
+    console.log(link);
+    if (iframe && style && style.innerHTML)
+      iframe.contentDocument.head.appendChild(style.cloneNode(true));
+    if (iframe && link)
+      iframe.contentDocument.head.appendChild(link.cloneNode(true));
+  });
+
   return (
     <Container layout="md">
       <div className="pt-5 pb-32">
@@ -46,22 +63,21 @@ const Component = dynamic(
       cms.init({ config });
 
       // fix styles
-      setTimeout(() => {
-        // cms.registerLocale("de", de);
-        const style: HTMLStyleElement | undefined =
-          document.querySelector("style");
-        const iframe: HTMLIFrameElement | undefined =
-          document.querySelector("#preview-pane");
-        const link: HTMLLinkElement | undefined = document.querySelector(
-          "link[rel='stylesheet']"
-        );
-        console.log(style);
-        console.log(iframe);
-        console.log(link);
-
-        if (iframe && style) iframe.contentDocument.head.appendChild(style);
-        if (iframe && link) iframe.contentDocument.head.appendChild(link);
-      }, 1000);
+      // setTimeout(() => {
+      // cms.registerLocale("de", de);
+      // const style: HTMLStyleElement | undefined =
+      //   document.querySelector("style");
+      // const iframe: HTMLIFrameElement | undefined =
+      //   document.querySelector("#preview-pane");
+      // const link: HTMLLinkElement | undefined = document.querySelector(
+      //   "link[rel='stylesheet']"
+      // );
+      // console.log(style);
+      // console.log(iframe);
+      // console.log(link);
+      // if (iframe && style) iframe.contentDocument.head.appendChild(style);
+      // if (iframe && link) iframe.contentDocument.head.appendChild(link);
+      // }, 1000);
 
       cms.registerPreviewTemplate("animal", AnimalPreview);
     });

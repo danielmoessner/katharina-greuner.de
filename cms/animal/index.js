@@ -23,8 +23,8 @@ export default {
       name: "category",
       widget: "relation",
       collection: "category",
-      searchFields: ["title"],
-      valueField: "title",
+      search_fields: ["title"],
+      value_field: "title",
     },
   ],
 };

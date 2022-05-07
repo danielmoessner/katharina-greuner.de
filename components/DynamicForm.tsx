@@ -84,7 +84,7 @@ function Component({
                     className="transform translate-x-3 translate-y-2 sr-only"
                     type="checkbox"
                     checked={enabled}
-                    // onChange={() => ({})}
+                    onChange={() => ({})}
                     required
                     tabIndex={-1}
                   />
