@@ -28,6 +28,8 @@ const config: CmsConfig = {
   // See https://www.netlifycms.org/docs/beta-features/#manual-initialization
   load_config_file: false,
   // See https://www.netlifycms.org/docs/collection-types/
+  // eslint-disable-next-line
+  // @ts-ignore
   collections: [page, animal, category, setting, legal],
 };
 
