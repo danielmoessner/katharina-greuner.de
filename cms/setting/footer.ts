@@ -1,5 +1,3 @@
-import slug from "../symbols/slug";
-import collection from "../symbols/collection";
 import {
   CmsCollectionFile,
   CmsFieldBase,
@@ -62,8 +60,6 @@ const footer: CmsCollectionFile = {
   label: "Footer",
   name: "footer",
   fields: [
-    collection("setting"),
-    slug("footer"),
     { label: "Copyright", name: "copyright", widget: "string" },
     { label: "Text", name: "text", widget: "text" },
     {

@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "./Hero";
 import Animate from "./Animate";
-import { Animal } from "../types/animal";
+import { Animal } from "contentlayer/generated";
 
 interface Props {
   body: string;

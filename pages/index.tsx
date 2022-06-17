@@ -4,26 +4,20 @@ import Seo from "../components/Seo";
 import Animate from "../components/Animate";
 import Container from "../components/Container";
 import Header from "../components/Header";
-import { attributes } from "../content/page/home.md";
-import { getAllMarkdown } from "../lib/getMarkdown";
-import { Animal } from "../types/animal";
-import Head from "next/head";
+import Script from "next/script";
+import { allAnimals, Animal } from "contentlayer/generated";
+import home from "../content/page/home.json";
 
 interface Props {
   animals: Animal[];
 }
 
 function Page({ animals }: Props) {
-  const page = attributes;
+  const page = home;
 
   return (
     <Layout>
-      <Head>
-        <script
-          defer
-          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-        ></script>
-      </Head>
+      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <Seo meta={page.meta} />
       <Header header={page.header} />
       <section>
@@ -46,11 +40,9 @@ function Page({ animals }: Props) {
 }
 
 export async function getStaticProps() {
-  const animalsList = getAllMarkdown<Animal>("animal");
-
   return {
     props: {
-      animals: animalsList,
+      animals: allAnimals,
     },
   };
 }

@@ -1,6 +1,5 @@
 ---
-template: animal
-collection: animal
+
 title: Feldhase
 slug: feldhase
 image: /media/rabbit.jpg

@@ -4,22 +4,25 @@ import config from "../cms/config";
 import AnimalComponent from "../components/Animal";
 import AnimalCard from "../components/AnimalCard";
 import Container from "../components/Container";
-import { Animal } from "../types/animal";
+import { Animal } from "contentlayer/generated";
 import AdminPreview from "../components/AdminPreview";
 import md from "markdown-it";
 import Head from "next/head";
 
 // previews
 const AnimalPreview = ({ entry }) => {
+  // eslint-disable-next-line
+  // @ts-ignore
   const animalData: Animal = {
     slug: entry.getIn(["data", "slug"]),
-    image: entry.getIn(["data", "image"]),
+    image: entry.getIn(["data", "image"]) || "/favicon.svg",
     title: entry.getIn(["data", "title"]),
     category: entry.getIn(["data", "category"]),
     excerpt: entry.getIn(["data", "excerpt"]),
   };
 
-  const html = md().render(entry.getIn(["data", "body"]));
+  const body = entry.getIn(["data", "body"]);
+  const html = body ? md().render(body) : "";
 
   return (
     <AdminPreview>

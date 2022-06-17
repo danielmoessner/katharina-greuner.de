@@ -1,5 +1,3 @@
-import slug from "../symbols/slug";
-import collection from "../symbols/collection";
 import { CmsCollectionFile } from "netlify-cms-core";
 
 const global: CmsCollectionFile = {
@@ -7,8 +5,6 @@ const global: CmsCollectionFile = {
   label: "Global",
   name: "global",
   fields: [
-    collection("setting"),
-    slug("global"),
     { label: "Favicon", name: "favicon", widget: "image" },
     {
       label: "Tortuga Webdesign Logo",

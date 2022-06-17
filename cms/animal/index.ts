@@ -1,5 +1,4 @@
 import { CmsCollection } from "netlify-cms-core";
-import collection from "../symbols/collection";
 
 const animal: CmsCollection = {
   name: "animal",
@@ -13,7 +12,6 @@ const animal: CmsCollection = {
   create: true,
   preview_path: "wildtiere/{{fields.slug}}",
   fields: [
-    collection("animal"),
     { label: "Titel", name: "title", widget: "string" },
     { label: "Slug", name: "slug", widget: "string" },
     { label: "Bild", name: "image", widget: "image" },

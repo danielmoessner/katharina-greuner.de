@@ -3,16 +3,14 @@ import Layout from "../../components/Layout";
 import Seo from "../../components/Seo";
 import Header from "../../components/Header";
 import Container from "../../components/Container";
-import { findMarkdown, getAllMarkdown } from "../../lib/getMarkdown";
-import { Legal } from "../../types/legal";
-import { Markdown } from "../../types/shared";
+import { allLegals, Legal } from "contentlayer/generated";
 
 interface Props {
-  page: Markdown<Legal>;
+  page: Legal;
 }
 
 function Page({ page }: Props) {
-  const legal = page.frontmatter;
+  const legal = page;
 
   const meta = {
     title: legal.title,
@@ -33,7 +31,7 @@ function Page({ page }: Props) {
           <article
             className="prose"
             // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: page.html }}
+            dangerouslySetInnerHTML={{ __html: page.body.html }}
           />
         </Container>
       </section>
@@ -46,7 +44,7 @@ export default Page;
 export async function getStaticProps({ params }) {
   const { slug } = params;
 
-  const page = findMarkdown<Legal>(slug, "legal");
+  const page = allLegals.find((i) => i.slug === slug);
   return {
     props: {
       page,
@@ -55,7 +53,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const items = getAllMarkdown<Legal>("legal");
+  const items = allLegals;
 
   return {
     paths: items.map((i) => {

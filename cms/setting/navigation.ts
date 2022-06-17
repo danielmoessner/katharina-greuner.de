@@ -1,5 +1,3 @@
-import slug from "../symbols/slug";
-import collection from "../symbols/collection";
 import {
   CmsCollectionFile,
   CmsFieldBase,
@@ -53,8 +51,6 @@ const navigation: CmsCollectionFile = {
   label: "Navigation",
   name: "navigation",
   fields: [
-    collection("setting"),
-    slug("navigation"),
     {
       label: "Titel",
       name: "title",

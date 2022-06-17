@@ -1,5 +1,5 @@
 ---
-collection: animal
+
 title: Wolf
 slug: wolf
 image: /media/wolf.jpg

@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Datenschutz",
+    "slug": "datenschutz",
+    "body": {
+      "raw": "privacy",
+      "html": "<p>privacy</p>"
+    },
+    "_id": "legal/datenschutz.md",
+    "_raw": {
+      "sourceFilePath": "legal/datenschutz.md",
+      "sourceFileName": "datenschutz.md",
+      "sourceFileDir": "legal",
+      "contentType": "markdown",
+      "flattenedPath": "legal/datenschutz"
+    },
+    "type": "Legal"
+  },
+  {
+    "title": "Impressum",
+    "slug": "impressum",
+    "body": {
+      "raw": "jhkjhkjhjkhk",
+      "html": "<p>jhkjhkjhjkhk</p>"
+    },
+    "_id": "legal/impressum.md",
+    "_raw": {
+      "sourceFilePath": "legal/impressum.md",
+      "sourceFileName": "impressum.md",
+      "sourceFileDir": "legal",
+      "contentType": "markdown",
+      "flattenedPath": "legal/impressum"
+    },
+    "type": "Legal"
+  }
+]

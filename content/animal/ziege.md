@@ -1,5 +1,5 @@
 ---
-collection: animal
+
 title: Ziege
 slug: ziege
 image: /media/muhammed-zafer-yahsi-pj58s1hdmzo-unsplash.jpg

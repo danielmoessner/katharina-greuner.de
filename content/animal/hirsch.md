@@ -1,5 +1,5 @@
 ---
-collection: animal
+
 title: Hirsch
 slug: hirsch
 image: /media/deer.jpg

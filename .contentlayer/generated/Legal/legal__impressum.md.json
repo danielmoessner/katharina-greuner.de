@@ -1,0 +1,17 @@
+{
+  "title": "Impressum",
+  "slug": "impressum",
+  "body": {
+    "raw": "jhkjhkjhjkhk",
+    "html": "<p>jhkjhkjhjkhk</p>"
+  },
+  "_id": "legal/impressum.md",
+  "_raw": {
+    "sourceFilePath": "legal/impressum.md",
+    "sourceFileName": "impressum.md",
+    "sourceFileDir": "legal",
+    "contentType": "markdown",
+    "flattenedPath": "legal/impressum"
+  },
+  "type": "Legal"
+}

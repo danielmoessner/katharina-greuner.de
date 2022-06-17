@@ -1,5 +1,5 @@
 ---
-collection: animal
+
 title: Bergente
 slug: bergente
 image: /media/ravi-singh-rn3dqzdrhdk-unsplash.jpg

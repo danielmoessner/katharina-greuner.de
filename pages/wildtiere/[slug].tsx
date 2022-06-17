@@ -3,16 +3,14 @@ import Layout from "../../components/Layout";
 import AnimalComponent from "../../components/Animal";
 import Container from "../../components/Container";
 import Seo from "../../components/Seo";
-import { findMarkdown, getAllMarkdown } from "../../lib/getMarkdown";
-import { Animal } from "../../types/animal";
-import { Markdown } from "../../types/shared";
+import { allAnimals, Animal } from "contentlayer/generated";
 
 interface Props {
-  page: Markdown<Animal>;
+  page: Animal;
 }
 
 function Page({ page }: Props) {
-  const animal = page.frontmatter;
+  const animal = page;
 
   const meta = {
     title: animal.title,
@@ -25,7 +23,7 @@ function Page({ page }: Props) {
       <Seo meta={meta} />
       <section className="pt-5">
         <Container layout="sm">
-          <AnimalComponent animal={animal} body={page.html} />
+          <AnimalComponent animal={animal} body={animal.body.html} />
         </Container>
       </section>
     </Layout>
@@ -37,7 +35,7 @@ export default Page;
 export async function getStaticProps({ params }) {
   const { slug } = params;
 
-  const page = findMarkdown<Animal>(slug, "animal");
+  const page = allAnimals.find((i) => i.slug === slug);
 
   return {
     props: {
@@ -47,7 +45,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const items = getAllMarkdown<Animal>("animal");
+  const items = allAnimals;
 
   return {
     paths: items.map((i) => {
