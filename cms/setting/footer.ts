@@ -61,7 +61,6 @@ const footer: CmsCollectionFile = {
   name: "footer",
   fields: [
     { label: "Copyright", name: "copyright", widget: "string" },
-    { label: "Text", name: "text", widget: "text" },
     {
       label: "Spalten",
       name: "columns",

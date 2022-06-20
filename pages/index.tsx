@@ -9,12 +9,14 @@ import { allAnimals, Animal } from "contentlayer/generated";
 import home from "../content/page/home.json";
 import { getPlaiceholder } from "plaiceholder";
 import { BlurImage } from "types/shared";
+import SectionHomeAbout from "../components/SectionHomeAbout";
+import SectionHomeTravel from "../components/SectionHomeTravel";
 
 interface Props {
   animals: (Animal & BlurImage)[];
 }
 
-function Page({ animals }: Props) {
+function Page() {
   const page = home;
 
   return (
@@ -22,21 +24,8 @@ function Page({ animals }: Props) {
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <Seo meta={page.meta} />
       <Header header={page.header} />
-      <section>
-        <Container layout="sm">
-          <div className="pt-8 pb-20 sm:pt-4 lg:pt-6">
-            <div className="">
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:gap-6">
-                {animals.map((animal, index) => (
-                  <Animate key={animal.slug} delay={index % 3}>
-                    <AnimalCard animal={animal} />
-                  </Animate>
-                ))}
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
+      <SectionHomeAbout about={page.about} />
+      <SectionHomeTravel travel={page.travel} />
     </Layout>
   );
 }

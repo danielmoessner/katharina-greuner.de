@@ -6,6 +6,7 @@ import Container from "./Container";
 import NavigationDropdown from "./NavigationDropdown";
 import NavigationLink from "./NavigationLink";
 import data from "../content/setting/navigation.json";
+import Logo from "../components/Logo";
 
 function Component() {
   const navigation = data;
@@ -13,20 +14,16 @@ function Component() {
   return (
     <nav>
       <Container layout="sm">
-        <div className="border-b">
+        <div className="max-w-lg py-5 mx-auto">
+          <Logo />
+        </div>
+      </Container>
+      <div className="border-y">
+        <Container layout="sm">
           <Popover className="relative bg-white">
             {({ open }) => (
               <>
-                <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
-                  <div className="flex justify-start lg:w-0 lg:flex-1">
-                    <Link href="/">
-                      <a>
-                        <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-700 transition duration-150 ease-in-out hover:text-gray-800">
-                          {navigation.title}
-                        </h1>
-                      </a>
-                    </Link>
-                  </div>
+                <div className="flex items-center justify-between md:justify-center">
                   <div className="md:hidden">
                     <Popover.Button className="bg-white border-2 border-gray-100 rounded-md px-2 py-1.5 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
                       <span className="sr-only">Menü öffnen</span>
@@ -101,8 +98,8 @@ function Component() {
               </>
             )}
           </Popover>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </nav>
   );
 }

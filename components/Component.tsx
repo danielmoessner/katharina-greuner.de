@@ -1,8 +1,11 @@
+import Container from "./Container";
+import Section from "./Section";
+
 function Component() {
   return (
-    <div>
-      <div>component</div>
-    </div>
+    <Section>
+      <Container layout="sm">component</Container>
+    </Section>
   );
 }
 

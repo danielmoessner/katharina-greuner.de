@@ -21,7 +21,7 @@
         },
         "type": "Animal"
       },
-      "documentHash": "1655461474086",
+      "documentHash": "1655725651007",
       "hasWarnings": false,
       "documentTypeName": "Animal"
     },
@@ -46,7 +46,7 @@
         },
         "type": "Animal"
       },
-      "documentHash": "1655461474086",
+      "documentHash": "1655725651007",
       "hasWarnings": false,
       "documentTypeName": "Animal"
     },
@@ -71,7 +71,7 @@
         },
         "type": "Animal"
       },
-      "documentHash": "1655461475709",
+      "documentHash": "1655725651008",
       "hasWarnings": false,
       "documentTypeName": "Animal"
     },
@@ -96,7 +96,7 @@
         },
         "type": "Animal"
       },
-      "documentHash": "1655487980295",
+      "documentHash": "1655725651008",
       "hasWarnings": false,
       "documentTypeName": "Animal"
     },
@@ -121,7 +121,7 @@
         },
         "type": "Animal"
       },
-      "documentHash": "1655461474086",
+      "documentHash": "1655725651008",
       "hasWarnings": false,
       "documentTypeName": "Animal"
     },
@@ -146,9 +146,43 @@
         },
         "type": "Animal"
       },
-      "documentHash": "1655461474086",
+      "documentHash": "1655725651008",
       "hasWarnings": false,
       "documentTypeName": "Animal"
+    },
+    "category/säugetiere.json": {
+      "document": {
+        "title": "Säugetiere",
+        "_id": "category/säugetiere.json",
+        "_raw": {
+          "sourceFilePath": "category/säugetiere.json",
+          "sourceFileName": "säugetiere.json",
+          "sourceFileDir": "category",
+          "contentType": "data",
+          "flattenedPath": "category/säugetiere"
+        },
+        "type": "Category"
+      },
+      "documentHash": "1655725651008",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
+    },
+    "category/vögel.json": {
+      "document": {
+        "title": "Vögel",
+        "_id": "category/vögel.json",
+        "_raw": {
+          "sourceFilePath": "category/vögel.json",
+          "sourceFileName": "vögel.json",
+          "sourceFileDir": "category",
+          "contentType": "data",
+          "flattenedPath": "category/vögel"
+        },
+        "type": "Category"
+      },
+      "documentHash": "1655725651008",
+      "hasWarnings": false,
+      "documentTypeName": "Category"
     },
     "legal/datenschutz.md": {
       "document": {
@@ -168,7 +202,7 @@
         },
         "type": "Legal"
       },
-      "documentHash": "1655461741843",
+      "documentHash": "1655725651008",
       "hasWarnings": false,
       "documentTypeName": "Legal"
     },
@@ -190,43 +224,9 @@
         },
         "type": "Legal"
       },
-      "documentHash": "1655461738405",
+      "documentHash": "1655725651008",
       "hasWarnings": false,
       "documentTypeName": "Legal"
-    },
-    "category/säugetiere.json": {
-      "document": {
-        "title": "Säugetiere",
-        "_id": "category/säugetiere.json",
-        "_raw": {
-          "sourceFilePath": "category/säugetiere.json",
-          "sourceFileName": "säugetiere.json",
-          "sourceFileDir": "category",
-          "contentType": "data",
-          "flattenedPath": "category/säugetiere"
-        },
-        "type": "Category"
-      },
-      "documentHash": "1655462345374",
-      "hasWarnings": false,
-      "documentTypeName": "Category"
-    },
-    "category/vögel.json": {
-      "document": {
-        "title": "Vögel",
-        "_id": "category/vögel.json",
-        "_raw": {
-          "sourceFilePath": "category/vögel.json",
-          "sourceFileName": "vögel.json",
-          "sourceFileDir": "category",
-          "contentType": "data",
-          "flattenedPath": "category/vögel"
-        },
-        "type": "Category"
-      },
-      "documentHash": "1655462341612",
-      "hasWarnings": false,
-      "documentTypeName": "Category"
     }
   }
 }
