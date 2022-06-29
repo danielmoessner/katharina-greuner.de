@@ -15,8 +15,6 @@ function Component({
   size,
   // color
   color,
-  primaryColor,
-  secondaryColor,
   // ring
   ring,
   ringOffset,
@@ -45,14 +43,18 @@ function Component({
 
   let bColor = "";
   if (secondary) {
-    bColor = color || secondaryColor;
+    bColor =
+      color ||
+      "text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-gray-500";
   } else {
-    bColor = color || primaryColor;
+    bColor =
+      color ||
+      "text-kg-brown bg-transparent uppercase tracking-wide box-border hover:bg-kg-yellow/10 hover:ring-1 hover:ring-kg-yellow focus:ring-offset-1";
   }
 
   const bClassName =
     className ||
-    `inline-flex items-center border-2 border-transparent font-medium rounded-md shadow-sm ${ring} ${ringOffset} ${size} ${bColor}`;
+    `transition inline-flex items-center border-3 border-kg-yellow font-medium shadow-sm ${ring} ${ringOffset} ${size} ${bColor}`;
 
   return (
     <div>
@@ -80,15 +82,12 @@ Component.defaultProps = {
   // style
   secondary: false,
   // size
-  size: "px-4 py-2 text-sm",
+  size: "px-8 py-2 text-sm",
   // color
   color: null,
-  primaryColor: "text-white bg-gray-600 hover:bg-gray-700 focus:ring-gray-500",
-  secondaryColor:
-    "text-gray-700 bg-gray-100 hover:bg-gray-200 focus:ring-gray-500",
   // ring
-  ring: "focus:outline-none focus:ring-2 focus:ring-offset-2",
-  ringOffset: "ring-offset-pink-500",
+  ring: "focus:outline-none",
+  ringOffset: "",
   // className
   className: null,
 };
@@ -107,8 +106,6 @@ Component.propTypes = {
   size: PropTypes.string,
   // color
   color: PropTypes.string,
-  primaryColor: PropTypes.string,
-  secondaryColor: PropTypes.string,
   // ring
   ring: PropTypes.string,
   ringOffset: PropTypes.string,

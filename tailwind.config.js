@@ -20,6 +20,9 @@ module.exports = {
       fontFamily: {
         sans: ["Lato", ...defaultTheme.fontFamily.sans],
       },
+      borderWidth: {
+        3: "3px",
+      },
       colors: {
         kg: {
           yellow: "#fdc300",

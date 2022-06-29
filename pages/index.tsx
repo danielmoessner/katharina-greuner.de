@@ -23,7 +23,7 @@ function Page() {
     <Layout>
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <Seo meta={page.meta} />
-      <Header header={page.header} />
+      <Header header={page.header} image="/img/kala_home_ausschnitt.jpeg" />
       <SectionHomeAbout about={page.about} />
       <SectionHomeTravel travel={page.travel} />
     </Layout>

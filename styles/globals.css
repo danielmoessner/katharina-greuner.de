@@ -13,4 +13,12 @@ select {
     background-size: 1.5em 1.5em;
     print-color-adjust: exact;
     padding-right: 2.5rem;
-    }
+}
+
+html {
+    @apply text-kg-brown;
+}
+
+a {
+    @apply text-kg-green;
+}
