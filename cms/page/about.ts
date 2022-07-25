@@ -1,6 +1,7 @@
 import meta from "../symbols/meta";
 import { CmsCollectionFile } from "netlify-cms-core";
 import internalLink from "cms/symbols/internalLink";
+import header from "cms/symbols/header";
 
 const about: CmsCollectionFile = {
   file: "content/page/about.json",
@@ -8,14 +9,7 @@ const about: CmsCollectionFile = {
   name: "about",
   fields: [
     meta,
-    {
-      label: "Header",
-      name: "header",
-      widget: "object",
-      fields: [
-        { label: "Titel", name: "title", widget: "text", required: false },
-      ],
-    },
+    header,
     {
       label: "Über mich",
       name: "about",

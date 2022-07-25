@@ -5,8 +5,8 @@ const header: CmsField = {
   name: "header",
   widget: "object",
   fields: [
-    { label: "Titel", name: "title", widget: "string" },
-    { label: "Text", name: "text", widget: "text" },
+    { label: "Titel", name: "title", widget: "string", required: false },
+    { label: "Bild", name: "image", widget: "image" },
   ],
 };
 

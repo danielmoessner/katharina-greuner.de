@@ -3,22 +3,20 @@ import Layout from "../../components/Layout";
 import Seo from "../../components/Seo";
 import Header from "../../components/Header";
 import Container from "../../components/Container";
-import { allLegals, Legal } from "contentlayer/generated";
+import { renderContent } from "lib/renderContent";
+import { getAllMarkdown } from "lib/getContent";
 
-interface Props {
-  page: Legal;
-}
-
-function Page({ page }: Props) {
-  const legal = page;
+function Page({ legalData }) {
+  const page = legalData;
+  console.log(page);
 
   const meta = {
-    title: legal.title,
+    title: page.title,
     description: "",
   };
 
   const header = {
-    title: legal.title,
+    title: page.title,
     text: "",
   };
 
@@ -31,7 +29,7 @@ function Page({ page }: Props) {
           <article
             className="prose"
             // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: page.body.html }}
+            dangerouslySetInnerHTML={{ __html: page.markdown.html }}
           />
         </Container>
       </section>
@@ -42,18 +40,21 @@ function Page({ page }: Props) {
 export default Page;
 
 export async function getStaticProps({ params }) {
-  const { slug } = params;
+  const legalData1 = getAllMarkdown("legal");
+  const legalData2 = legalData1.find((i) => i.slug === params.slug);
+  const legalData = await renderContent(legalData2);
+  // const footerData = await renderContent(footerSource[locale]);
 
-  const page = allLegals.find((i) => i.slug === slug);
   return {
     props: {
-      page,
+      legalData,
+      // footerData,
     }, // will be passed to the page component as props
   };
 }
 
 export async function getStaticPaths() {
-  const items = allLegals;
+  const items = getAllMarkdown("legal");
 
   return {
     paths: items.map((i) => {
