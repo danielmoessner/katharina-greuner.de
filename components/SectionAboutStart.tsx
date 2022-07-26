@@ -3,18 +3,9 @@ import Section from "./Section";
 import Heading from "./Heading";
 import ImageBorder from "./ImageBorder";
 import MultiLine from "./Multiline";
+import Image from "next/image";
 
-interface Props {
-  start: {
-    title: string;
-    text: string;
-    image: string;
-    titlePrinciples: string;
-    textPrinciples: string;
-  };
-}
-
-function Component({ start }: Props) {
+function Component({ start }) {
   return (
     <Section className="pt-12 pb-20">
       <Container layout="sm">
@@ -28,7 +19,7 @@ function Component({ start }: Props) {
           <MultiLine text={start.text} className="text-sm" />
           <div>
             <ImageBorder>
-              <img src={start.image} alt={start.title} />
+              <Image {...start.image} alt={start.title} />
             </ImageBorder>
           </div>
         </div>

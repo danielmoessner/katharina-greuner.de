@@ -8,18 +8,10 @@ import { useRouter } from "next/router";
 function Component({ link }) {
   const router = useRouter();
 
-  // console.log();
-
   const activeClass =
     router.pathname == link.url || router.pathname + "/" == link.url
       ? "border-kg-yellow"
       : " border-transparent";
-
-  if (link.url.includes("ueber-mich")) {
-    console.log(router.pathname);
-    console.log(link.url);
-    console.log(activeClass);
-  }
 
   return (
     <>

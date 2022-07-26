@@ -3,20 +3,9 @@ import Container from "./Container";
 import Section from "./Section";
 import ImageBorder from "./ImageBorder";
 import Heading from "./Heading";
+import Image from "next/image";
 
-interface Props {
-  blocks: {
-    title: string;
-    image: string;
-    text: string;
-    link?: {
-      text: string;
-      url: string;
-    };
-  }[];
-}
-
-function Component({ blocks }: Props) {
+function Component({ blocks }) {
   return (
     <Section className="py-16">
       <Container layout="sm">
@@ -29,17 +18,7 @@ function Component({ blocks }: Props) {
                 }`}
               >
                 <ImageBorder>
-                  {/* <div className="relative w-full h-full"> */}
-                  <img
-                    src={block.image}
-                    alt={block.title}
-                    // layout="fill"
-                    // objectFit="cover"
-                    // objectPosition="center"
-                    // width={800}
-                    // height={800}
-                  />
-                  {/* </div> */}
+                  <Image {...block.image} alt={block.title} />
                 </ImageBorder>
               </div>
               <div className="row-start-1">

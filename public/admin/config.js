@@ -190,6 +190,114 @@ var about = {
 };
 var about_default = about;
 
+// cms/symbols/title.ts
+var title = {
+  label: "Titel",
+  name: "title",
+  widget: "string",
+  i18n: true
+};
+var title_default = title;
+
+// cms/symbols/text.ts
+var text = {
+  label: "Text",
+  name: "text",
+  widget: "text",
+  i18n: true
+};
+var text_default = text;
+
+// cms/symbols/image.ts
+var image = {
+  label: "Bild",
+  name: "image",
+  widget: "image",
+  i18n: true
+};
+var image_default = image;
+
+// cms/symbols/link.ts
+var internalLinkFields = [
+  {
+    label: "Text",
+    name: "text",
+    i18n: true,
+    widget: "string"
+  },
+  {
+    label: "url",
+    name: "url",
+    i18n: true,
+    widget: "string",
+    hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt"
+  }
+];
+
+// cms/symbols/cta.ts
+var cta = {
+  label: "CTA",
+  name: "cta",
+  i18n: true,
+  widget: "object",
+  fields: internalLinkFields
+};
+var cta_default = cta;
+
+// cms/symbols/markdown.ts
+var markdown = {
+  label: "Markdown",
+  name: "markdown",
+  i18n: true,
+  widget: "markdown"
+};
+var markdown_default = markdown;
+
+// cms/page/kala.ts
+var kala = {
+  file: "content/page/kala.json",
+  label: "Kala Heilarbeit",
+  name: "kala",
+  fields: [
+    meta_default,
+    header_default,
+    {
+      label: "Start Oben",
+      name: "start",
+      widget: "object",
+      fields: [
+        title_default,
+        image_default,
+        text_default,
+        { label: "Text", name: "text2", widget: "text" },
+        cta_default,
+        { label: "Bild", name: "image2", widget: "image" }
+      ]
+    },
+    {
+      label: "Blume",
+      name: "flower",
+      widget: "object",
+      fields: [
+        {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          field: internalLink_default(true)
+        },
+        markdown_default
+      ]
+    },
+    {
+      label: "Fragen",
+      name: "questions",
+      widget: "object",
+      fields: [text_default, cta_default, image_default]
+    }
+  ]
+};
+var kala_default = kala;
+
 // cms/page/index.ts
 var config = {
   name: "pages",
@@ -199,7 +307,7 @@ var config = {
   editor: {
     preview: false
   },
-  files: [home_default, about_default, styleguide_default]
+  files: [home_default, about_default, kala_default, styleguide_default]
 };
 var page_default = config;
 
@@ -270,7 +378,7 @@ var link = {
   fields: linkFields2,
   collapsed: false
 };
-var text = {
+var text2 = {
   label: "Text",
   name: "text",
   widget: "object",
@@ -319,7 +427,7 @@ var footer = {
           label: "Inhalt",
           name: "content",
           widget: "list",
-          types: [link, externalLink, text]
+          types: [link, externalLink, text2]
         }
       ]
     }

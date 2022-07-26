@@ -2,6 +2,7 @@ import { CmsCollection } from "netlify-cms-core";
 import home from "./home";
 import styleguide from "./styleguide";
 import about from "./about";
+import kala from "./kala";
 
 const config: CmsCollection = {
   name: "pages",
@@ -11,7 +12,7 @@ const config: CmsCollection = {
   editor: {
     preview: false,
   },
-  files: [home, about, styleguide],
+  files: [home, about, kala, styleguide],
 };
 
 export default config;

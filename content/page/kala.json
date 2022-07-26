@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Kala Heilarbeit",
+    "description": "Kala Heilarbeit verbindet Heilweisen für den Körper, die Seele und das Energiefeld zu einer ausgewogenen Einheit und holt dich genau dort ab, wo Du gerade stehst. In 30 Jahren therapeutischer Praxis konnte ich damit viele Menschen unterstützen, ihren persönlichen Weg der Heilung zu gehen."
+  },
+  "header": {
+    "image": "/media/kala_heilarbeit_banner_ausschnitt.jpg"
+  },
+  "start": {
+    "title": "Kala Heilarbeit",
+    "text": "Kala Heilarbeit verbindet Heilweisen für den Körper, die Seele und das Energiefeld zu einer ausgewogenen Einheit und holt dich genau dort ab, wo Du gerade stehst. In 30 Jahren therapeutischer Praxis konnte ich damit viele Menschen unterstützen, ihren persönlichen Weg der Heilung zu gehen.",
+    "text2": "Die Stärke von Kala Heilarbeit besteht darin, dass sie die Einzigartigkeit eines jeden Klient:in in den Mittelpunkt stellt. Die Heilarbeit wird aus körpertherapeutischen, psychologischen, energetisch-schamanischen Heilweisen quasi „maßgeschneidert“.  Dadurch entsteht ein kreativer Dialog mit Deinen Selbstheilungskräften, der Dich wieder mit Deinen Ressourcen verbindet.",
+    "cta": {
+      "text": "Anfragen & Termine",
+      "url": "#"
+    },
+    "image": "/media/kala_heilarbeit_katharina.jpg",
+    "image2": "/media/kala_heilarbeit_1.jpg"
+  },
+  "flower": {
+    "markdown": "Erfahre mehr über die Heilmethoden von Kala Heilarbeit, indem Du auf die Blütenblätter klickst.",
+    "links": [
+      {
+        "link": {
+          "text": "Craniosacralarbeit",
+          "url": "#"
+        }
+      },
+      {
+        "link": {
+          "text": "Ganzheitliche Psychotherapie",
+          "url": "#"
+        }
+      },
+      {
+        "link": {
+          "text": "Aufstellung / Coaching",
+          "url": "#"
+        }
+      },
+      {
+        "link": {
+          "text": "Shiatsu",
+          "url": "#"
+        }
+      },
+      {
+        "link": {
+          "text": "Naturheilkunde",
+          "url": "#"
+        }
+      },
+      {
+        "link": {
+          "text": "Energieessenzen",
+          "url": "#"
+        }
+      },
+      {
+        "link": {
+          "text": "Energetische & schamanische Heilweisen",
+          "url": "#"
+        }
+      }
+    ]
+  },
+  "questions": {
+    "text": "Hast Du Fragen zur Kala Heilarbeit?  Ich bin gerne für Dich da.",
+    "cta": {
+      "text": "So erreichst du mich",
+      "url": "#"
+    },
+    "image": "/media/kala_heilarbeit_kontakt.jpg"
+  }
+}

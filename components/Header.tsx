@@ -1,12 +1,10 @@
 import Image from "next/image";
 
 function Component({ header }) {
-  console.log(header);
-
   return (
     <header className="relative">
       <div className="leading-[0]">
-        <Image {...header.image} alt={header.title} />
+        <Image {...header.image} alt={header.title || "Header Bild"} />
       </div>
       {header?.title && (
         <div className="absolute max-w-sm top-[30%] left-[60%]">

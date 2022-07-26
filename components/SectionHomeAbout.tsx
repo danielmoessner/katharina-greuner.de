@@ -11,14 +11,12 @@ interface Props {
 function Component({ about }: Props) {
   return (
     <Section className="relative py-2">
-      <div className="z-0 leading-[0]">
-        <Image
-          layout="fill"
-          objectFit="cover"
-          src="/img/blumen_hintergrund_soft_tuerkis.jpeg"
-          alt="Hintergrundbild"
-        />
-      </div>
+      <Image
+        layout="fill"
+        objectFit="cover"
+        src="/img/blumen_hintergrund_soft_tuerkis.jpeg"
+        alt="Hintergrundbild"
+      />
       <Container layout="sm">
         <div className="relative grid grid-cols-12 gap-6">
           <div className="col-span-12 sm:col-span-4">

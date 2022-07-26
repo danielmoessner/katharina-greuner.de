@@ -8,7 +8,6 @@ import { getAllMarkdown } from "lib/getContent";
 
 function Page({ legalData }) {
   const page = legalData;
-  console.log(page);
 
   const meta = {
     title: page.title,

@@ -14,6 +14,8 @@ function Component({
   placeholder,
   children,
   value,
+  register,
+  error,
 }) {
   const Tag = element;
 
@@ -24,6 +26,7 @@ function Component({
         {label}
         <div className="mt-1">
           <Tag
+            {...register(name, { required: required })}
             type={type}
             name={name}
             id={name}
@@ -31,12 +34,17 @@ function Component({
             required={required}
             autoComplete={autoComplete}
             placeholder={placeholder}
-            className="block w-full px-4 py-3 text-base border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500"
+            className="block w-full px-4 py-1.5 text-base border-2 border-gray-300 appearance-none focus:outline-none focus:border-bsm-ocean"
             // eslint-disable-next-line
             {...attrs}
           >
             {children}
           </Tag>
+          {error && (
+            <span className="block mt-1 font-bold text-red-600">
+              Dieses Feld ist benötigt.
+            </span>
+          )}
         </div>
       </label>
     </div>
