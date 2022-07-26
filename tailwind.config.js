@@ -32,6 +32,18 @@ module.exports = {
           purple: "#8b1878",
         },
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.kg.brown"),
+            "--tw-prose-headings": theme("colors.kg.brown"),
+            "line-height": "1.5",
+            strong: {
+              color: "inherit",
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [require("@tailwindcss/typography")],

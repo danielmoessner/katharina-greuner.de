@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ChildrenData from "../types/ChildrenData";
 
-function Component({ element, size, color, children, classes }) {
+function Heading({ element, size, color, children, classes }) {
   const Tag = element;
 
   let allClasses = classes;
@@ -17,14 +17,14 @@ function Component({ element, size, color, children, classes }) {
   return <Tag className={allClasses}>{children}</Tag>;
 }
 
-Component.defaultProps = {
+Heading.defaultProps = {
   element: "h2",
   size: "h2",
   color: "text-kg-brown",
   classes: "",
 };
 
-Component.propTypes = {
+Heading.propTypes = {
   element: PropTypes.string,
   size: PropTypes.oneOf(["h1", "h2", "h3"]),
   color: PropTypes.string,
@@ -32,4 +32,4 @@ Component.propTypes = {
   children: ChildrenData.isRequired,
 };
 
-export default Component;
+export default Heading;

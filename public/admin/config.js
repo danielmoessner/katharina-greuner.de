@@ -298,6 +298,31 @@ var kala = {
 };
 var kala_default = kala;
 
+// cms/page/heal.ts
+var heal = {
+  file: "content/page/heal.json",
+  label: "Heilweisen",
+  name: "heal",
+  fields: [
+    meta_default,
+    {
+      label: "Heilweisen",
+      name: "heal",
+      widget: "object",
+      fields: [
+        title_default,
+        {
+          label: "Items",
+          name: "items",
+          widget: "list",
+          fields: [image_default, title_default, markdown_default, cta_default]
+        }
+      ]
+    }
+  ]
+};
+var heal_default = heal;
+
 // cms/page/index.ts
 var config = {
   name: "pages",
@@ -307,7 +332,7 @@ var config = {
   editor: {
     preview: false
   },
-  files: [home_default, about_default, kala_default, styleguide_default]
+  files: [home_default, about_default, kala_default, heal_default, styleguide_default]
 };
 var page_default = config;
 
