@@ -323,6 +323,197 @@ var heal = {
 };
 var heal_default = heal;
 
+// cms/symbols/string.ts
+var string = {
+  label: "Text",
+  name: "string",
+  widget: "string",
+  i18n: true
+};
+var string_default = string;
+
+// cms/symbols/questionsSection.ts
+var questionsSection = {
+  label: "Fragen",
+  name: "questions",
+  widget: "object",
+  fields: [text_default, cta_default, image_default]
+};
+var questionsSection_default = questionsSection;
+
+// cms/page/schooling.ts
+var schooling = {
+  file: "content/page/schooling.json",
+  label: "Ausbildung",
+  name: "schooling",
+  fields: [
+    meta_default,
+    header_default,
+    {
+      label: "Start Oben",
+      name: "start",
+      widget: "object",
+      fields: [
+        title_default,
+        image_default,
+        markdown_default,
+        { label: "Markdown", name: "markdown2", widget: "markdown" },
+        { label: "Bild", name: "image2", widget: "image" }
+      ]
+    },
+    {
+      label: "\xDCbersicht",
+      name: "overview",
+      widget: "object",
+      fields: [
+        title_default,
+        {
+          label: "Schritt",
+          name: "step",
+          widget: "list",
+          fields: [image_default, title_default, string_default]
+        }
+      ]
+    },
+    {
+      label: "Ausbildung",
+      name: "schooling",
+      widget: "object",
+      fields: [
+        title_default,
+        {
+          label: "Seminar",
+          name: "seminar",
+          widget: "list",
+          fields: [
+            image_default,
+            title_default,
+            string_default,
+            markdown_default,
+            { label: "Termin", name: "date", widget: "string" },
+            { label: "Kosten", name: "costs", widget: "string" },
+            { label: "Ort", name: "location", widget: "string" },
+            { label: "Beschreibung", name: "markdown2", widget: "markdown" }
+          ]
+        },
+        cta_default
+      ]
+    },
+    questionsSection_default
+  ]
+};
+var schooling_default = schooling;
+
+// cms/page/contact.ts
+var contact = {
+  file: "content/page/contact.json",
+  label: "Kontakt",
+  name: "contact",
+  fields: [
+    meta_default,
+    {
+      label: "Kontakt",
+      name: "contact",
+      widget: "object",
+      fields: [
+        title_default,
+        image_default,
+        markdown_default,
+        {
+          label: "Formular",
+          name: "form",
+          widget: "list",
+          fields: [
+            { label: "Label", name: "label", widget: "string" },
+            { label: "Name", name: "name", widget: "string" },
+            { label: "Ben\xF6tigt", name: "required", widget: "boolean" }
+          ]
+        },
+        { label: "Button", name: "button", widget: "string" }
+      ]
+    },
+    {
+      label: "Anfahrt",
+      name: "directions",
+      widget: "object",
+      fields: [title_default, { label: "Maps", name: "maps", widget: "string" }]
+    },
+    {
+      label: "Information",
+      name: "information",
+      widget: "list",
+      fields: [title_default, markdown_default]
+    },
+    {
+      label: "Newsletter",
+      name: "newsletter",
+      widget: "object",
+      fields: [
+        title_default,
+        {
+          label: "Formular",
+          name: "form",
+          widget: "list",
+          fields: [
+            { label: "Label", name: "label", widget: "string" },
+            { label: "Name", name: "name", widget: "string" },
+            { label: "Ben\xF6tigt", name: "required", widget: "boolean" }
+          ]
+        },
+        { label: "Button", name: "button", widget: "string" },
+        text_default
+      ]
+    }
+  ]
+};
+var contact_default = contact;
+
+// cms/page/nepal.ts
+var nepal = {
+  file: "content/page/nepal.json",
+  label: "Nepal Projekt",
+  name: "nepal",
+  fields: [
+    meta_default,
+    header_default,
+    {
+      label: "Start Oben",
+      name: "start",
+      widget: "object",
+      fields: [
+        title_default,
+        image_default,
+        markdown_default,
+        { label: "Markdown", name: "markdown2", widget: "markdown" },
+        { label: "Bild", name: "image2", widget: "image" }
+      ]
+    },
+    {
+      label: "Beschreibung",
+      name: "description",
+      widget: "object",
+      fields: [title_default, markdown_default]
+    },
+    {
+      label: "Aktivit\xE4ten",
+      name: "activities",
+      widget: "object",
+      fields: [
+        title_default,
+        text_default,
+        {
+          label: "Links",
+          name: "links",
+          widget: "list",
+          field: internalLink_default(true)
+        },
+        cta_default
+      ]
+    }
+  ]
+};
+var nepal_default = nepal;
+
 // cms/page/index.ts
 var config = {
   name: "pages",
@@ -332,7 +523,7 @@ var config = {
   editor: {
     preview: false
   },
-  files: [home_default, about_default, kala_default, heal_default, styleguide_default]
+  files: [home_default, about_default, kala_default, heal_default, schooling_default, contact_default, nepal_default, styleguide_default]
 };
 var page_default = config;
 
@@ -569,12 +760,12 @@ var config2 = {
   backend: {
     name: "git-gateway",
     branch: "main",
-    repo: "danielmoessner/nextjs.tortuga-webdesign.de"
+    repo: "danielmoessner/katharina-greuner.de"
   },
   local_backend: true,
   locale: "de",
-  display_url: "https://nextjs.tortuga-webdesign.de",
-  site_url: "https://nextjs.tortuga-webdesign.de",
+  display_url: "https://katharina-greuner.de",
+  site_url: "https://katharina-greuner.de",
   media_folder: "/public/media",
   public_folder: "/media",
   load_config_file: false,

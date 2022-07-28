@@ -4,6 +4,9 @@ import styleguide from "./styleguide";
 import about from "./about";
 import kala from "./kala";
 import heal from "./heal";
+import schooling from "./schooling";
+import contact from "./contact";
+import nepal from "./nepal";
 
 const config: CmsCollection = {
   name: "pages",
@@ -13,7 +16,7 @@ const config: CmsCollection = {
   editor: {
     preview: false,
   },
-  files: [home, about, kala, heal, styleguide],
+  files: [home, about, kala, heal, schooling, contact, nepal, styleguide],
 };
 
 export default config;
