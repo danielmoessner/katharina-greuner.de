@@ -6,7 +6,7 @@ import legal from "./legal/index";
 import { CmsConfig } from "netlify-cms-core";
 
 const config: CmsConfig = {
-  publish_mode: "editorial_workflow",
+  publish_mode: "simple",
   // See https://www.netlifycms.org/docs/configuration-options/#backend
   backend: {
     name: "git-gateway",

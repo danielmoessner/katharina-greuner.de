@@ -756,7 +756,7 @@ var legal_default = legal;
 
 // cms/config.ts
 var config2 = {
-  publish_mode: "editorial_workflow",
+  publish_mode: "simple",
   backend: {
     name: "git-gateway",
     branch: "main",
