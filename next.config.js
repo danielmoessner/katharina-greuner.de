@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ["de"],
-    defaultLocale: "de",
-  },
+  // i18n: {
+  //   locales: ["de"],
+  //   defaultLocale: "de",
+  // },
   reactStrictMode: true,
 };
 

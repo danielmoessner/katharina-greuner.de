@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  ignorePatterns: ["public/admin/config.js"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -12,6 +13,5 @@ module.exports = {
   ],
   rules: {
     "prettier/prettier": "error",
-    "@next/next/no-img-element": "off",
   },
 };

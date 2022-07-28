@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "a",
+    "description": "a"
+  },
+  "header": {
+    "image": "/media/elch.jpg"
+  },
+  "start": {
+    "title": "a",
+    "image": "/media/elch.jpg",
+    "markdown": "a",
+    "markdown2": "k",
+    "image2": "/media/elch.jpg"
+  },
+  "overview": {
+    "title": "k"
+  },
+  "schooling": {
+    "title": "k",
+    "cta": {
+      "text": "k",
+      "url": "k"
+    }
+  },
+  "questions": {
+    "text": "k",
+    "cta": {
+      "text": "k",
+      "url": "k"
+    },
+    "image": "/media/elch.jpg"
+  }
+}
