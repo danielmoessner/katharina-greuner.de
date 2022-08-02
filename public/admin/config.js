@@ -381,6 +381,9 @@ var schooling = {
       widget: "object",
       fields: [
         title_default,
+        { label: "Termin", name: "date", widget: "string" },
+        { label: "Kosten", name: "costs", widget: "string" },
+        { label: "Ort", name: "location", widget: "string" },
         {
           label: "Seminar",
           name: "seminar",

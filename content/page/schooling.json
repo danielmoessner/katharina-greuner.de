@@ -21,7 +21,22 @@
     "cta": {
       "text": "k",
       "url": "k"
-    }
+    },
+    "seminar": [
+      {
+        "image": "/media/kala_heilarbeit_logo_1.png",
+        "title": "1. Einführungs-Seminar",
+        "string": "Die Wurzeln von Kala Heilarbeit",
+        "markdown": "An diesem Wochenende lernen die Teilnehmer das Grundkonzept von Kala-Heilarbeit kennen und anwenden.\n\nIm Seminar werden die Ebenen von Körper, Seele und energetischem Feld praxisrelevant miteinander verbunden und die Teilnehmer erwerben Basiskenntnisse in Theorie und Praxis, um negative Muster herauszufinden und Blockaden der Lebensenergie aufzulösen.\\\n\\\n\\\n*Die Themen werden in den folgenden Modulen ergänzt und vertieft, so dass die Teilnehmer eine Befähigung zu tiefgreifender und umfassender Heilungsarbeit erwerben können.*",
+        "markdown2": "todo",
+        "date": "16. - 18.09.2022 (3 Tage)",
+        "costs": "300 € zzgl. Unterkunft & Verpflegung",
+        "location": "Heilpraxis Neufahrn"
+      }
+    ],
+    "date": "Termin:",
+    "costs": "Kosten:",
+    "location": "Seminarort:"
   },
   "questions": {
     "text": "k",
