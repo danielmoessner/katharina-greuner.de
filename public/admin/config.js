@@ -194,8 +194,7 @@ var about_default = about;
 var title = {
   label: "Titel",
   name: "title",
-  widget: "string",
-  i18n: true
+  widget: "string"
 };
 var title_default = title;
 
@@ -517,6 +516,25 @@ var nepal = {
 };
 var nepal_default = nepal;
 
+// cms/page/yoga.ts
+var yoga = {
+  file: "content/page/yoga.json",
+  label: "Yoga",
+  name: "yoga",
+  fields: [
+    meta_default,
+    header_default,
+    {
+      label: "Start",
+      name: "start",
+      widget: "object",
+      fields: [title_default, { label: "Titel", name: "title2", widget: "string" }]
+    },
+    { label: "Kurse", name: "course", widget: "object", fields: [] }
+  ]
+};
+var yoga_default = yoga;
+
 // cms/page/index.ts
 var config = {
   name: "pages",
@@ -526,7 +544,7 @@ var config = {
   editor: {
     preview: false
   },
-  files: [home_default, about_default, kala_default, heal_default, schooling_default, contact_default, nepal_default, styleguide_default]
+  files: [home_default, about_default, kala_default, heal_default, schooling_default, yoga_default, contact_default, nepal_default, styleguide_default]
 };
 var page_default = config;
 
