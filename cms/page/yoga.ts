@@ -23,12 +23,11 @@ const yoga: CmsCollectionFile = {
     },
     {
       label: "Kurse",
-      name: "course",
+      name: "course2",
       widget: "object",
       fields: [title, { label: "Titel", name: "title2", widget: "string" }],
     },
-    { label: "Kurse", name: "course", widget: "object", fields: [] },
-    { label: "Kurse", name: "course", widget: "object", fields: [] },
+    { label: "Kurse", name: "course", widget: "object", fields: [title] },
     //[fields: [title, { label: "Titel", name: "title2", widget: "string" }],
   ],
 };
