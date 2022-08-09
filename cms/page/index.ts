@@ -9,6 +9,7 @@ import contact from "./contact";
 import nepal from "./nepal";
 import yoga from "./yoga";
 import seminar from "./seminar";
+import seminars from "./seminars";
 
 const config: CmsCollection = {
   name: "pages",
@@ -24,6 +25,7 @@ const config: CmsCollection = {
     kala,
     heal,
     schooling,
+    seminars,
     seminar,
     yoga,
     contact,

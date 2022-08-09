@@ -562,6 +562,58 @@ var seminar = {
 };
 var seminar_default = seminar;
 
+// cms/symbols/alt.ts
+var alt = {
+  label: "Beschreibung des Bildes",
+  name: "alt",
+  widget: "string"
+};
+var alt_default = alt;
+
+// cms/symbols/description.ts
+var description = {
+  label: "Beschreibung",
+  name: "description",
+  widget: "text"
+};
+var description_default = description;
+
+// cms/page/seminars.ts
+var seminars = {
+  file: "content/page/seminars.json",
+  label: "Heilsame Seminare",
+  name: "seminars",
+  fields: [
+    meta_default,
+    header_default,
+    {
+      label: "Inhalt",
+      name: "content",
+      widget: "object",
+      fields: [
+        title_default,
+        markdown_default,
+        cta_default,
+        image_default,
+        alt_default,
+        {
+          label: "Seminare",
+          name: "seminars",
+          widget: "list",
+          fields: [
+            image_default,
+            title_default,
+            description_default,
+            { label: "Fett", name: "bold", widget: "text" },
+            cta_default
+          ]
+        }
+      ]
+    }
+  ]
+};
+var seminars_default = seminars;
+
 // cms/page/index.ts
 var config = {
   name: "pages",
@@ -577,6 +629,7 @@ var config = {
     kala_default,
     heal_default,
     schooling_default,
+    seminars_default,
     seminar_default,
     yoga_default,
     contact_default,
@@ -782,22 +835,6 @@ var legal = {
   ]
 };
 var legal_default = legal;
-
-// cms/symbols/alt.ts
-var alt = {
-  label: "Beschreibung des Bildes",
-  name: "alt",
-  widget: "string"
-};
-var alt_default = alt;
-
-// cms/symbols/description.ts
-var description = {
-  label: "Beschreibung",
-  name: "description",
-  widget: "text"
-};
-var description_default = description;
 
 // cms/symbols/slug.ts
 var slug = {
