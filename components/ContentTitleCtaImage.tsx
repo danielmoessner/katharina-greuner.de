@@ -3,7 +3,7 @@ import Heading from "./Heading";
 import Button from "./Button";
 import Image from "next/image";
 
-function Component({ title, image, alt, cta }) {
+function ContentTitleCtaImage({ title, image, alt, cta }) {
   return (
     <div className="grid gap-x-12 gap-y-10 md:grid-cols-2">
       <div>
@@ -23,4 +23,4 @@ function Component({ title, image, alt, cta }) {
   );
 }
 
-export default Component;
+export default ContentTitleCtaImage;

@@ -1,10 +1,10 @@
 import { CmsField } from "netlify-cms-core";
 
-const slug = (slug): CmsField => ({
+const slug: CmsField = {
   label: "Slug",
   name: "slug",
-  widget: "hidden",
-  default: slug,
-});
+  widget: "string",
+  hint: 'Bitte nur Kleinbuchstaben, Zahlen und Bindestriche verwenden. Der Slug beschreibt die URL dieses Objektes. Ein Beispielwert ist "mein-toller-artikel".',
+};
 
 export default slug;

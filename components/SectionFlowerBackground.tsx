@@ -2,7 +2,7 @@ import Image from "next/image";
 import Container from "./Container";
 import Section from "./Section";
 
-function Component({ children }) {
+function SectionFlowerBackground({ children }) {
   return (
     <Section className="relative py-2">
       <Image
@@ -18,4 +18,4 @@ function Component({ children }) {
   );
 }
 
-export default Component;
+export default SectionFlowerBackground;

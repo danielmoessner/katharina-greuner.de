@@ -3,7 +3,7 @@ import Multiline from "./Multiline";
 import Button from "./Button";
 import Image from "next/image";
 
-function Component({ text, image, alt, cta }) {
+function ContentTextCtaImage({ text, image, alt, cta }) {
   return (
     <div className="grid gap-x-12 gap-y-4 md:grid-cols-2">
       <div>
@@ -21,4 +21,4 @@ function Component({ text, image, alt, cta }) {
   );
 }
 
-export default Component;
+export default ContentTextCtaImage;

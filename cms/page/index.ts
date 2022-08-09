@@ -8,6 +8,7 @@ import schooling from "./schooling";
 import contact from "./contact";
 import nepal from "./nepal";
 import yoga from "./yoga";
+import seminar from "./seminar";
 
 const config: CmsCollection = {
   name: "pages",
@@ -17,7 +18,18 @@ const config: CmsCollection = {
   editor: {
     preview: false,
   },
-  files: [home, about, kala, heal, schooling, yoga, contact, nepal, styleguide],
+  files: [
+    home,
+    about,
+    kala,
+    heal,
+    schooling,
+    seminar,
+    yoga,
+    contact,
+    nepal,
+    styleguide,
+  ],
 };
 
 export default config;

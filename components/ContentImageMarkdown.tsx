@@ -2,7 +2,7 @@ import ImageBorder from "./ImageBorder";
 import Image from "next/image";
 import Prose from "./Prose";
 
-function Component({ html, image, alt }) {
+function ContentImageMarkdown({ html, image, alt }) {
   return (
     <div className="grid gap-x-12 gap-y-4 md:grid-cols-2">
       <div>
@@ -15,4 +15,4 @@ function Component({ html, image, alt }) {
   );
 }
 
-export default Component;
+export default ContentImageMarkdown;

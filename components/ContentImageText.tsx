@@ -2,7 +2,7 @@ import ImageBorder from "./ImageBorder";
 import Multiline from "./Multiline";
 import Image from "next/image";
 
-function Component({ text, image, alt }) {
+function ContentImageText({ text, image, alt }) {
   return (
     <div className="grid gap-x-12 gap-y-4 md:grid-cols-2">
       <div>
@@ -15,4 +15,4 @@ function Component({ text, image, alt }) {
   );
 }
 
-export default Component;
+export default ContentImageText;

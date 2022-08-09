@@ -1,9 +1,9 @@
 import page from "./page/index";
-import animal from "./animal/index";
 import category from "./category/index";
 import setting from "./setting/index";
 import legal from "./legal/index";
 import { CmsConfig } from "netlify-cms-core";
+import seminar from "./seminar";
 
 const config: CmsConfig = {
   publish_mode: "simple",
@@ -28,7 +28,7 @@ const config: CmsConfig = {
   // See https://www.netlifycms.org/docs/beta-features/#manual-initialization
   load_config_file: false,
   // See https://www.netlifycms.org/docs/collection-types/
-  collections: [page, animal, category, setting, legal],
+  collections: [page, seminar, category, setting, legal],
 };
 
 export default config;

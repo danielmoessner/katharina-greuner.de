@@ -1,0 +1,35 @@
+{
+  "sections": [
+    {
+      "type": "textimage",
+      "markdown": "### Meditativer Seelentanz, um inneres Wachstum, Freude und Herzenswünsche zu verwirklichen\n\nWir erwecken in diesem Seminar das ursprüngliche Fließen Deiner Herzensenergie wieder zu neuem Leben. Damit Du Dich mit Deinem innersten Wesen verbinden und Deinem Potential Ausdruck verleihen kannst. Spielerisches Lenken Deiner Energie ermöglicht Dir die berührende Erfahrung Deiner Einzigartigkeit und unglaublichen Möglichkeiten. Unser Herz will sich ausdrücken, will alte Wunden und Blockaden heilen und ganz sein. Du nimmst in diesem Seminar feinfühlig Kontakt auf zu den tiefsten Schichten Deiner Seele, denn dort ist Dein innerer Schatz der Selbstheilungskraft verborgen.",
+      "image": "/media/katharina_tanzendes_herz.jpg",
+      "alt": "Katharina vor einem Baum"
+    },
+    {
+      "type": "text",
+      "markdown": "Wir schöpfen in diesem Seminar aus überlieferter uralter Frauenspiritualität von innerem Wachstum und Körperweisheit und bringen sie ganz konkret in unser tägliches Leben. Deshalb erzähle ich zum Beginn einen überlieferten weiblichen Mythos von Schöpfung und Transformation, der uns unsere spirituelle Schöpferkraft wieder nahe bringt. \n\nAnschließend begeben wir uns auf eine geführte Schamanische Seelenreise, die Dich zu den Quellen Deiner Herzenskraft führt. Du erfährst, welche Energien in Dir sich jetzt verwirklichen wollen und welche Heilungsschritte vor Dir liegen. \n\nAls Einstimmung in den Schamanischen Seelentanz führe ich Dich durch archetypische Körperhaltungen. Sie werden seit vielen Jahrhunderten praktiziert, um uns mit den Quellen unserer Kraft zu verbinden und blockierte und verlorene Anteile wieder zu integrieren. Einige Haltungen kennst Du vielleicht bereits aus Wise Woman Yoga, denn auch diese Tradition besitzt schamanische Wurzeln. \n\nDie archetypischen Haltungen schenken Dir die Impulse für die fließenden meditativen Bewegungen des Schamanischen Seelentanzes. Diese heilsame Bewegung entsteht ganz aus Dir selbst, aus Deinem inneren Zentrum. Du lernst, wie Du nach innen lauschen und ohne bewusste Absicht der Bewegung folgen kannst, die sich aus Deiner Herzenskraft entfaltet."
+    },
+    {
+      "type": "imagetext",
+      "markdown": "In einem Prozess von Entschleunigung und Erdung findest Du in Deinen ganz persönlichen Rhythmus und tauchst tief in Deine transformierende Schöpferkraft ein. Mit allen Sinnen erspürst Du das Fließen deiner weisen und kreativen Herzensenergie und erkennst, auf welchen Wegen Du sie in Deinem Leben verwirklichen kannst. \n\nIn einem gemeinsamen schamanischen Abschlussritual verabschieden wir unsere alten einschränkenden Muster und Glaubenssätze und schaffen einen neuen heilsamen Raum, in dem sich unsere Freude und unsere Herzenswünsche manifestieren können. \n\nDann kann Dein Herz tanzen und Du bist ganz in Deiner Kraft.",
+      "image": "/media/tanzendes_herz_klangschale.jpg",
+      "alt": "Katharina mit einer Schüssel in der Hand"
+    }
+  ],
+  "date": {
+    "pretitle": "Daten",
+    "title": "Tanzendes Herz",
+    "date": "Samstag, 02.07.2022, 9.00–18.30 Uhr",
+    "costs": "110 €",
+    "location": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn",
+    "cta": {
+      "text": "Anfrage & Buchung",
+      "url": "#"
+    }
+  },
+  "slug": "tanzendes-herz",
+  "title": "Tanzendes Herz",
+  "image": "/media/tanzendes_herz_banner_ausschnitt.jpg",
+  "description": "todo"
+}

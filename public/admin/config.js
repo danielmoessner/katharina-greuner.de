@@ -248,7 +248,8 @@ var markdown = {
   label: "Markdown",
   name: "markdown",
   i18n: true,
-  widget: "markdown"
+  widget: "markdown",
+  hint: "Bitte nur \xDCberschriften vom Typ h3 verwenden."
 };
 var markdown_default = markdown;
 
@@ -530,10 +531,36 @@ var yoga = {
       widget: "object",
       fields: [title_default, { label: "Titel", name: "title2", widget: "string" }]
     },
-    { label: "Kurse", name: "course", widget: "object", fields: [] }
+    {
+      label: "Kurse",
+      name: "course2",
+      widget: "object",
+      fields: [title_default, { label: "Titel", name: "title2", widget: "string" }]
+    },
+    { label: "Kurse", name: "course", widget: "object", fields: [title_default] }
   ]
 };
 var yoga_default = yoga;
+
+// cms/page/seminar.ts
+var seminar = {
+  file: "content/page/seminar.json",
+  label: "Seminar",
+  name: "seminar",
+  fields: [
+    {
+      label: "Termin",
+      name: "description",
+      widget: "object",
+      fields: [
+        { label: "Wann", name: "date", widget: "string" },
+        { label: "Kosten", name: "costs", widget: "string" },
+        { label: "Ort", name: "location", widget: "string" }
+      ]
+    }
+  ]
+};
+var seminar_default = seminar;
 
 // cms/page/index.ts
 var config = {
@@ -544,39 +571,20 @@ var config = {
   editor: {
     preview: false
   },
-  files: [home_default, about_default, kala_default, heal_default, schooling_default, yoga_default, contact_default, nepal_default, styleguide_default]
-};
-var page_default = config;
-
-// cms/animal/index.ts
-var animal = {
-  name: "animal",
-  label: "Wildtiere",
-  label_singular: "Wildtier",
-  editor: {
-    preview: false
-  },
-  folder: "content/animal",
-  slug: "{{fields.slug}}",
-  create: true,
-  preview_path: "wildtiere/{{fields.slug}}",
-  fields: [
-    { label: "Titel", name: "title", widget: "string" },
-    { label: "Slug", name: "slug", widget: "string" },
-    { label: "Bild", name: "image", widget: "image" },
-    { label: "Auszug", name: "excerpt", widget: "text" },
-    { label: "Inhalt", name: "body", widget: "markdown" },
-    {
-      label: "Kategorie",
-      name: "category",
-      widget: "relation",
-      collection: "category",
-      search_fields: ["title"],
-      value_field: "title"
-    }
+  files: [
+    home_default,
+    about_default,
+    kala_default,
+    heal_default,
+    schooling_default,
+    seminar_default,
+    yoga_default,
+    contact_default,
+    nepal_default,
+    styleguide_default
   ]
 };
-var animal_default = animal;
+var page_default = config;
 
 // cms/category/index.ts
 var category = {
@@ -775,6 +783,90 @@ var legal = {
 };
 var legal_default = legal;
 
+// cms/symbols/alt.ts
+var alt = {
+  label: "Beschreibung des Bildes",
+  name: "alt",
+  widget: "string"
+};
+var alt_default = alt;
+
+// cms/symbols/description.ts
+var description = {
+  label: "Beschreibung",
+  name: "description",
+  widget: "text"
+};
+var description_default = description;
+
+// cms/symbols/slug.ts
+var slug = {
+  label: "Slug",
+  name: "slug",
+  widget: "string",
+  hint: 'Bitte nur Kleinbuchstaben, Zahlen und Bindestriche verwenden. Der Slug beschreibt die URL dieses Objektes. Ein Beispielwert ist "mein-toller-artikel".'
+};
+var slug_default = slug;
+
+// cms/seminar/index.ts
+var seminar2 = {
+  name: "seminar",
+  label: "Seminare",
+  label_singular: "Seminar",
+  extension: "json",
+  editor: {
+    preview: false
+  },
+  folder: "content/seminar",
+  slug: "{{slug}}",
+  create: true,
+  fields: [
+    title_default,
+    slug_default,
+    description_default,
+    image_default,
+    {
+      label: "Sektionen",
+      name: "sections",
+      widget: "list",
+      types: [
+        {
+          label: "TextBild",
+          name: "textimage",
+          widget: "object",
+          fields: [markdown_default, image_default, alt_default]
+        },
+        {
+          label: "Text",
+          name: "text",
+          widget: "object",
+          fields: [markdown_default]
+        },
+        {
+          label: "BildText",
+          name: "imagetext",
+          widget: "object",
+          fields: [image_default, alt_default, markdown_default]
+        }
+      ]
+    },
+    {
+      label: "Termin",
+      name: "date",
+      widget: "object",
+      fields: [
+        { label: "Vortitel", name: "pretitle", widget: "string" },
+        title_default,
+        { label: "Termin", name: "date", widget: "string" },
+        { label: "Kosten", name: "costs", widget: "string" },
+        { label: "Ort", name: "location", widget: "string" },
+        cta_default
+      ]
+    }
+  ]
+};
+var seminar_default2 = seminar2;
+
 // cms/config.ts
 var config2 = {
   publish_mode: "simple",
@@ -790,7 +882,7 @@ var config2 = {
   media_folder: "/public/media",
   public_folder: "/media",
   load_config_file: false,
-  collections: [page_default, animal_default, category_default, setting_default, legal_default]
+  collections: [page_default, seminar_default2, category_default, setting_default, legal_default]
 };
 var config_default = config2;
 export {
