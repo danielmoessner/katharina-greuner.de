@@ -19,16 +19,28 @@ const yoga: CmsCollectionFile = {
       label: "Start",
       name: "start",
       widget: "object",
-      fields: [title, { label: "Titel", name: "title2", widget: "string" }],
+      fields: [
+       title, { label: "Titel", name: "title2", widget: "string" }
+      image, text],
     },
     {
       label: "Kurse",
-      name: "course2",
+      name: "course",
       widget: "object",
       fields: [title, { label: "Titel", name: "title2", widget: "string" }],
     },
-    { label: "Kurse", name: "course", widget: "object", fields: [title] },
+    { label: "Kurse", name: "course", widget: "object", fields: [] },
+    { label: "Kurse", name: "course", widget: "object", fields: [] },
     //[fields: [title, { label: "Titel", name: "title2", widget: "string" }],
+    {
+      label: "Blöcke",
+      name: "blocks",
+      widget: "list",
+      fields: [title, text, image
+
+      ]
+
+   }  
   ],
 };
 
