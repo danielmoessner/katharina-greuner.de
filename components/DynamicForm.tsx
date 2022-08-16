@@ -14,10 +14,11 @@ const convertedFormEntries = (formData: FormData) =>
 
 function Component({
   fields,
-  dataProtectionText,
+  dataProtectionText = "Ich stimme zu, dass meine Daten zum Bearbeiten dieser Anfrage vorrübergehend gespeichert werden.",
   name,
   successText,
   successHeading,
+  submitText = "Absenden",
 }) {
   const [formSent, setFormSent] = useState(false);
 
@@ -65,7 +66,7 @@ function Component({
           onSubmit={handleSubmit(onSubmit)}
           data-netlify="true"
           noValidate
-          className={` grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8`}
+          className={`grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8`}
         >
           <input type="hidden" name="form-name" value={name} />
 
@@ -87,8 +88,8 @@ function Component({
                         checked={value}
                         onChange={onChange}
                         className={`${
-                          value ? "bg-bsm-ocean" : "bg-gray-200"
-                        } relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bsm-ocean`}
+                          value ? "bg-kg-yellow" : "bg-kg-brown/40"
+                        } relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-kg-yellow`}
                       >
                         <span
                           aria-hidden="true"
@@ -101,9 +102,10 @@ function Component({
                   />
                 </div>
                 <div className="ml-3">
-                  <Switch.Label className="text-base text-gray-500">
-                    {dataProtectionText}
-                  </Switch.Label>
+                  <Switch.Label
+                    className="text-base prose text-kg-brown"
+                    dangerouslySetInnerHTML={{ __html: dataProtectionText }}
+                  ></Switch.Label>
                 </div>
               </div>
             </Switch.Group>
@@ -116,7 +118,7 @@ function Component({
 
           <div className="sm:col-span-2">
             <Button element="button" type="submit" ringOffset="white">
-              Absenden
+              {submitText}
             </Button>
           </div>
         </form>
@@ -127,8 +129,6 @@ function Component({
 
 Component.defaultProps = {
   name: "standardformular",
-  dataProtectionText:
-    "Ich stimme zu, dass meine Daten zum Bearbeiten dieser Anfrage vorrübergehend gespeichert werden.",
   successHeading: "Vielen Dank",
   successText:
     "Vielen Dank für deine Anfrage wir werden uns schnellstmöglich bei dir melden.",

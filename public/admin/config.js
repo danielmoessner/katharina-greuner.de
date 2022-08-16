@@ -429,7 +429,29 @@ var contact = {
           fields: [
             { label: "Label", name: "label", widget: "string" },
             { label: "Name", name: "name", widget: "string" },
-            { label: "Ben\xF6tigt", name: "required", widget: "boolean" }
+            {
+              label: "Ben\xF6tigt",
+              name: "required",
+              widget: "boolean",
+              required: false
+            },
+            {
+              label: "Typ",
+              name: "type",
+              widget: "select",
+              options: ["text", "email", "tel", "number"]
+            },
+            {
+              label: "Element",
+              name: "element",
+              widget: "select",
+              options: ["input", "textarea"]
+            },
+            {
+              label: "Class",
+              name: "className",
+              widget: "string"
+            }
           ]
         },
         { label: "Button", name: "button", widget: "string" }
@@ -460,7 +482,12 @@ var contact = {
           fields: [
             { label: "Label", name: "label", widget: "string" },
             { label: "Name", name: "name", widget: "string" },
-            { label: "Ben\xF6tigt", name: "required", widget: "boolean" }
+            {
+              label: "Ben\xF6tigt",
+              name: "required",
+              widget: "boolean",
+              required: false
+            }
           ]
         },
         { label: "Button", name: "button", widget: "string" },

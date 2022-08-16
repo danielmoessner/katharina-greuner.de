@@ -22,7 +22,7 @@ function Component({
   return (
     <div className={className}>
       {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-      <label htmlFor={name} className="block text-sm font-medium text-gray-700">
+      <label htmlFor={name} className="block text-sm font-medium text-kg-brown">
         {label}
         <div className="mt-1">
           <Tag
@@ -32,9 +32,10 @@ function Component({
             id={name}
             defaultValue={value}
             required={required}
+            rows="4"
             autoComplete={autoComplete}
             placeholder={placeholder}
-            className="block w-full px-4 py-1.5 text-base border-2 border-gray-300 appearance-none focus:outline-none focus:border-bsm-ocean"
+            className="block w-full px-4 py-1.5 text-base border-2 border-kg-brown/40 appearance-none focus:outline-none focus:border-kg-yellow"
             // eslint-disable-next-line
             {...attrs}
           >
@@ -60,7 +61,6 @@ Component.defaultProps = {
   required: true,
   value: "",
   children: null,
-
   placeholder: "",
 };
 

@@ -26,7 +26,29 @@ const contact: CmsCollectionFile = {
           fields: [
             { label: "Label", name: "label", widget: "string" },
             { label: "Name", name: "name", widget: "string" },
-            { label: "Benötigt", name: "required", widget: "boolean" },
+            {
+              label: "Benötigt",
+              name: "required",
+              widget: "boolean",
+              required: false,
+            },
+            {
+              label: "Typ",
+              name: "type",
+              widget: "select",
+              options: ["text", "email", "tel", "number"],
+            },
+            {
+              label: "Element",
+              name: "element",
+              widget: "select",
+              options: ["input", "textarea"],
+            },
+            {
+              label: "Class",
+              name: "className",
+              widget: "string",
+            },
           ],
         },
         { label: "Button", name: "button", widget: "string" },
@@ -57,7 +79,12 @@ const contact: CmsCollectionFile = {
           fields: [
             { label: "Label", name: "label", widget: "string" },
             { label: "Name", name: "name", widget: "string" },
-            { label: "Benötigt", name: "required", widget: "boolean" },
+            {
+              label: "Benötigt",
+              name: "required",
+              widget: "boolean",
+              required: false,
+            },
           ],
         },
         { label: "Button", name: "button", widget: "string" },

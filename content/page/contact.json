@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Kontakt",
+    "description": "todo"
+  },
+  "contact": {
+    "title": "So erreichst du mich",
+    "image": "/media/kala_kontakt.jpg",
+    "button": "Senden",
+    "markdown": "TELEFON \n\n0176 82 63 71 09\n\\\n\\\nE-MAIL \n\nkala@kala-heilarbeit.de \n\\\n\\\nPRAXIS \n\nAn der Lohe 32 \\\n85375 Neufahrn \n\n*Bitte fahr nicht direkt bis zum Haus, weil meist keine Parkplätze vorhanden sind. Am Gfild und im Lohweg findest Du ausreichend Parkmöglichkeiten.*",
+    "form": [
+      {
+        "label": "Dein Name (Pflichtfeld)",
+        "name": "name",
+        "required": true,
+        "type": "text",
+        "element": "input",
+        "className": "sm:col-span-2"
+      },
+      {
+        "label": "Deine E-Mail-Adresse (Pflichtfeld)",
+        "required": true,
+        "name": "email",
+        "type": "email",
+        "element": "input",
+        "className": "sm:col-span-2"
+      },
+      {
+        "label": "Betreff",
+        "name": "betreff",
+        "required": true,
+        "type": "text",
+        "element": "input",
+        "className": "sm:col-span-2"
+      },
+      {
+        "label": "Deine Nachricht",
+        "name": "nachricht",
+        "required": true,
+        "type": "text",
+        "element": "textarea",
+        "className": "sm:col-span-2"
+      }
+    ]
+  },
+  "directions": {
+    "title": "So kommst Du zu mir",
+    "maps": "Klicke auf die blauen Marker für Parkmöglichkeiten und meine Praxis!"
+  },
+  "newsletter": {
+    "title": "Melde Dich hier zum Newsletter an",
+    "form": [
+      {
+        "label": "Vorname",
+        "name": "name",
+        "required": true
+      },
+      {
+        "label": "E-Mail",
+        "name": "email",
+        "required": true
+      }
+    ],
+    "button": "Jetzt anmelden",
+    "text": "Abmeldung vom Newsletter jederzeit mit nur einem Klick möglich. Infos zum Versand des Newsletters findest Du in der Datenschutzerklärung."
+  },
+  "information": [
+    {
+      "title": "Honorar",
+      "markdown": "### Mein Honorar für Kala Heilarbeit, Ganzheitliche Psychotherapie, Rituale etc.\n\nVORGESPRÄCH 15-20 Minuten kostenfrei \\\nHEILSITZUNG 95,00 € \\\nPERSÖNLICHE ENERGIE-ESSENZ 45,00 € \\\nEINZELSTUNDE YOGA ODER HEILENDE BEWEGUNG 75,00 € \\\nRITUALE nach Vereinbarung\n\nDie Rechnung für therapeutische Sitzungen bei mir können bei Heilpraktiker-Zusatzversicherungen oder bei Privatkassen eingereicht werden.\n\n### Deine Vorteile als Selbstzahler:in\n\n* Kurzfristige und flexible Terminvergabe\n* Du kannst aus meinem breiten Angebot die Behandlungsmethoden frei wählen und wir finden gemeinsam den effektivsten Weg für Dich\n* Du musst keine Anträge bei Krankenkassen oder Versicherungen stellen – wir können sofort mit der Zusammenarbeit beginnen\n* Die Stundenzahl der Therapie ist an keinerlei Vorgaben gebunden, Du entscheidest, wie viele Stunden Du nehmen möchtest\n* Absolute Vertraulichkeit – weder Deine Krankenkasse noch Deine Versicherung erfahren etwas von Deinem Anliegen\n\n### Soziales Honorar\n\nEs ist mir ein Anliegen, meine Heilarbeit jedem anzubieten, der dies möchte. Solltest Du in einer finanziellen Notlage sein, bitte sprich mich an."
+    },
+    {
+      "title": "Teilnahmebedingungen Gruppenangebote",
+      "markdown": "Die Kurse und Seminare werden von mir kompetent und sorgfältig vorbereitet und durchgeführt. Alle Erfahrungen innerhalb des Kurses liegen in der eigenen Verantwortung der Teilnehmer:in. Eine Haftung wird nicht übernommen.\n\n### Zahlung\n\nDie angegebene Kurs- oder Seminargebühr Gebühr ist als Überweisung oder bar vor Kursbeginn zu entrichten. Die Kontonummer sende ich Ihnen zu.\n\n### Rücktritt\n\nBis 3 Wochen vor Kursbeginn ist ein kostenloser Rücktritt möglich. Erfolgt der Rücktritt bis eine Woche vor Beginn, sind 50 % der Gebühren fällig, bei einem späteren Termin 75 % und bei 1-2 Tagen vor Kursbeginn muss der gesamte Kursbeitrag gezahlt werden, sofern kein anderer Teilnehmer als Ersatz benannt werden kann. \n\nEs besteht kein Anspruch, versäumte Kursstunden erstattet zu bekommen. Diese können jedoch – sofern freie Plätze vorhanden sind – nach Absprache im laufenden Kurs in einer anderen Gruppe nachgeholt werden."
+    },
+    {
+      "title": "Teilnahmebedingungen Einzeltermine",
+      "markdown": "### Terminvereinbarungen\n\nDa ich eine Terminpraxis führe, ist der ausgemachte Termin nur für Sie reserviert. Ein vereinbarter Termin ist deshalb verbindlich. Sollte es Ihnen nicht möglich sein, einen Termin wahrzunehmen, ist eine kostenfreie Absage bis 24 Stunden vorher möglich. Bitte haben Sie Verständnis, wenn ich bei einer späteren Absage des Termins mein volles Honorar in Rechnung stelle.\n\n### Schweigepflicht\n\nDie Schweigepflicht ist grundlegend für mein Berufsethos. Nur auf dieser Basis kann ein Vertrauensverhältnis zwischen mir und meinen KlientInnen entstehen. Zudem bin ich als Psychologin und Heilpraktikerin gesetzlich zur Schweigepflicht verpflichtet."
+    }
+  ]
+}
