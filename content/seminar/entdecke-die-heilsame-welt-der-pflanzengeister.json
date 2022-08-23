@@ -1,0 +1,31 @@
+{
+  "title": "Entdecke die heilsame Welt der Pflanzengeister",
+  "slug": "entdecke-die-heilsame-welt-der-pflanzengeister",
+  "description": "todo",
+  "image": "/media/kala_pflanzengeister_banner_ausschnitt.jpg",
+  "sections": [
+    {
+      "type": "textimage",
+      "markdown": "### Kommunikation mit Pflanzengeistern und Herstellung einer heilsamen Energieessenz\n\nIn allen Pflanzen wohnen machtvolle und geistige Kräfte, die den Kontakt zu uns Menschen suchen, um zu helfen und zu heilen. In diesem Seminar lernen wir, ihre Botschaften an uns besser zu verstehen. Sie können uns helfen, Fragen zu unserem persönlichen Lebensweg zu beantworten, unser Herz berühren und Energien zur Heilung schenken, wenn wir sie darum bitten.\n\nWir beginnen den Tag damit, dass wir uns auf die feinstoffliche Welt der Pflanzengeister einstimmen und erfahren, auf welche Weise wir mit ihnen kommunizieren können.\n\nDie Fähigkeit dafür besitzen wir alle, wir haben es nur verlernt, sie anzuwenden. Das Wichtigste, was wir benötigen, ist ein offenes Herz und die Bereitschaft, respektvoll zu lauschen. In schamanischen Kulturen gelten Pflanzen als wichtige Vermittler zu höheren geistigen Ebenen und auch in unserer Kultur war dies früher so.",
+      "image": "/media/kala_pflanzengeister_1.jpg",
+      "alt": "Blaue Blumen"
+    },
+    {
+      "type": "imagetext",
+      "image": "/media/kala_pflanzengeister_2.jpg",
+      "alt": "Rote Blumen",
+      "markdown": "Pflanzen können für uns zu Lehrerinnen, Freundinnen und Helferinnen werden und eröffnen uns einen Zugang zu einer unerschöpflichen Quelle der Weisheit in der Natur. Um direkt mit den Pflanzengeistern zu kommunizieren suchen wir sie an einem Kraftplatz in der Natur auf. Dort erspüren wir, welcher Pflanzengeist uns anspricht und treten mit ihm in einen sensitiven Dialog. Wir lernen, die empfangenen Botschaften zu deuten und von unserer Fantasie zu unterscheiden.\n\nEin Ritual als Dank an die Pflanzengeister und zur Ganzwerdung rundet diesen Tag ab.\n\nMehr erfährst Du in meinen Blogbeiträgen „Pflanzengeister“."
+    }
+  ],
+  "date": {
+    "pretitle": "Daten",
+    "title": "Entdecke die heilsame Welt der Pflanzengeister",
+    "date": "Samstag, 14.05.2022, 9.00–18.30 Uhr",
+    "costs": "110 €",
+    "location": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn",
+    "cta": {
+      "text": "Anfrage & Buchung",
+      "url": "#"
+    }
+  }
+}
