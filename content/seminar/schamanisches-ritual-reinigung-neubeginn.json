@@ -11,7 +11,21 @@
     "pretitle": "Daten"
   },
   "title": "Schamanisches Ritual Reinigung & Neubeginn",
-  "slug": "#",
+  "slug": "schamanisches-ritual-reinigung-und-neubeginn",
   "image": "/media/kala_schamanisches_ritual_banner_ausschnitt.jpg",
-  "description": "todo"
+  "description": "todo",
+  "sections": [
+    {
+      "type": "textimage",
+      "markdown": "Ein Tag, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung\n\nDer Weg zu Deinem innersten Selbst und zur Verwirklichung Deiner Lebensziele ist oft durch alte einschränkende Glaubensmuster versperrt. Du lernst in diesem Seminar, wie Du Dich von diesen Blockaden lösen und frei werden kannst für neue, kreative und heilsame Lösungen. Dafür begibst Du Dich auf eine andere Bewusstseinsebene und erkundest auf dem einzigartigen und wertvollen Weg der Schamanischen Reise Deine innere Welt.",
+      "image": "/media/schmetterling.jpg",
+      "alt": "Schmetterling sitzt auf Katharinas Hand"
+    },
+    {
+      "type": "imagetext",
+      "image": "/media/schamanisches_ritual.jpg",
+      "alt": "Katharina spielt Flöte",
+      "markdown": "Du benötigst keinerlei Vorkenntnisse, nur die Bereitschaft, Dich auf neue Sichtweisen und ein neues Verständnis für Deine Themen und ihre Ursachen einzulassen. Auf bodenständige Weise lernst Du, die Botschaften aus der geistigen Welt zu verstehen und auf die wichtige Themen Deines persönlichen Lebens zu übertragen."
+    }
+  ]
 }
