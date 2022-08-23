@@ -24,6 +24,56 @@
           "text": "Erfahre mehr",
           "url": "#"
         }
+      },
+      {
+        "image": "/media/tanzendes_herz.jpg",
+        "title": "Tanzendes Herz",
+        "description": "Meditativer schamanischer Seelentanz um inneres Wachstum, Freude und Herzenswünsche zu verwirklichen.",
+        "bold": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+        "cta": {
+          "text": "Erfahre mehr",
+          "url": "#"
+        }
+      },
+      {
+        "image": "/media/yoga.jpg",
+        "title": "Wise Woman Yoga Samstagsseminar",
+        "description": "Ein Samstag, um ganz zu Dir zu kommen, Dein Herz zu öffnen und Deine Wurzeln zu stärken.",
+        "bold": "Samstag, 25.06.2022",
+        "cta": {
+          "text": "Erfahre mehr",
+          "url": "#"
+        }
+      },
+      {
+        "image": "/media/weisheit_der_natur.jpg",
+        "title": "Aus der Weisheit der Natur",
+        "description": "In einen heilsamen Dialog mit den Naturkräften und Elementarwesen schöpfst Du Weisheit und Vertrauen für Deinen Weg.",
+        "bold": "Termin: Herbst 2022",
+        "cta": {
+          "text": "Erfahre mehr",
+          "url": "#"
+        }
+      },
+      {
+        "image": "/media/seelenweberinnen.jpg",
+        "title": "Kreis der Seelenweberinnen",
+        "description": "Erwecke die uralte Weisheit Deiner Seele wieder zu neuem Leben.",
+        "bold": "1x monatlich Donnerstag online \n19.00–21.30 Uhr",
+        "cta": {
+          "text": "Erfahre mehr",
+          "url": "#"
+        }
+      },
+      {
+        "image": "/media/schamanisches_ritual.jpg",
+        "title": "Schamanisches Ritual Reinigung & Neubeginn",
+        "description": "Ein Tag, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung.",
+        "bold": "Termin: Herbst 2022",
+        "cta": {
+          "text": "Erfahre mehr",
+          "url": "#"
+        }
       }
     ],
     "title": "Heilsame Seminare"
