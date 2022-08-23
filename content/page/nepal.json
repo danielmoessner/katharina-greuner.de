@@ -20,42 +20,42 @@
       {
         "link": {
           "text": "Jahresrückblick 2020",
-          "url": "/todo/"
+          "url": "#"
         }
       },
       {
         "link": {
           "text": "Jahresrückblick 2019",
-          "url": "/todo/"
+          "url": "#"
         }
       },
       {
         "link": {
           "text": "Jahresrückblick 2018",
-          "url": "/todo/"
+          "url": "#"
         }
       },
       {
         "link": {
           "text": "Jahresrückblick 2017",
-          "url": "/todo/"
+          "url": "#"
         }
       },
       {
         "link": {
           "text": "Jahresrückblick 2016",
-          "url": "/todo/"
+          "url": "#"
         }
       },
       {
         "link": {
           "text": "Jahresrückblick 2015",
-          "url": "/todo/"
+          "url": "#"
         }
       }
     ],
     "cta": {
-      "text": "ALLE BLOG-BEITRÄGE ZUM PROJEKT",
+      "text": "Alle Blog-Beiträge zum Projekt",
       "url": "/blogbeiträge/"
     }
   },
