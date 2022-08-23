@@ -1,0 +1,66 @@
+{
+  "header": {
+    "image": "/media/kala_soziales_engagement_banner_ausschnitt.jpg"
+  },
+  "start": {
+    "title": "Together Nepal",
+    "image": "/media/together_nepal_1.jpg",
+    "markdown": "**TOGETHER Nepal** ist eine private und ehrenamtliche Initiative von Katharina Greuner aus Neufahrn. Die Hilfsaktionen vor Ort werden durch Spenden finanziert. Ich bin sehr dankbar, wenn Du unser Engagement durch eine Spende unterstützt, damit wir unsere Arbeit weiter langfristig fortsetzen können.\n\nDie Not der Menschen im Nepal hat mich auf meinen Reisen tief berührt. Als Psychologin, Heilpraktikerin und Yogalehrerin richtete sich mein Blick nicht allein auf die ökonomischen Verhältnisse, unter denen die Menschen dort leben müssen, sondern auch auf ihre seelische und psychische Situation.\n\nGemeinsam mit Pradibna Pokharel, der sich vor Ort mit enormem Engagement für die Verbesserung der Lebensbedingungen im Dorf Changu einsetzt, gründeten wir den „**TOGETHER Nepal Fund for Women and Children**\".",
+    "markdown2": "Der Schwerpunkt unserer gemeinsamen Arbeit ist es, Projekte zur Selbsthilfe ins Leben zu rufen. Dazu gehört auch, dass ich einmal im Jahr im Ort traumatisierte Menschen körper- und psychotherapeutische behandle.\n\nEs gibt inzwischen viele großherzige Menschen, die diese Arbeit durch ihre Spende unterstützen. Die Spendengelder werden ohne jegliche Abzüge zu 100% für das Projekt verwendet. Kontogebühren, Porto etc. bezahle ich privat.\n\nWenn Du Dich auch beteiligen willst, bitte überweise auf folgende Kontonummer (DKB Bank, Katharina Greuner): **DE07 1203 0000 1050 7836 44**\n\nSelbstverständlich gebe ich Dir gerne persönlich mehr Auskünfte über\\\nunsere Projektarbeit.",
+    "image2": "/media/together_nepal_2.jpg"
+  },
+  "description": {
+    "title": "Projektbeschreibung",
+    "markdown": "Meine erste Reise in den Nepal hat mich tief im Herzen berührt: Atemberaubende Landschaften gepaart mit einer reichen Kultur und gleichzeitig so viele Menschen, die in bitterster Armut leben! Auf ihren Lippen tragen die meisten ein Lächeln, doch im Herzen sind sie oft verzweifelt und hoffnungslos.\n\nDiese Eindrücke haben mich nicht mehr losgelassen und während weiterer Reisen entstand die Idee für das Projekt „TOGETHER Nepal“.\n\nNach dem schrecklichen Erdbeben im Herbst 2015 hatte ich Spenden gesammelt und flog damit wieder in den Nepal. Dort traf ich den Journalisten Rolf Schmelzer und Pradibna Pokharel aus dem Dorf Changu nahe Kathmandu und es entstanden die ersten Schulpatenschaften. Mit einem Teil des Geldes unterstützten wir den Wiederaufbau eines zerstörten Hauses für eine Großfamilie. Dank der Unterstützung von Pradibna Pokharel gelang es mir auch, mein wichtigstes Anliegen in die Tat umzusetzen: Menschen, die durch das Erdbeben oder ihre allgemeine Lebenssituation traumatisiert waren, therapeutisch zu behandeln.\n\nSeitdem bin ich mindestens einmal im Jahr vor Ort. Dort besuche ich unsere Patenfamilien, arbeite therapeutisch und plane mit Pradibna unsere weiteren Aktivitäten.\n\nInzwischen helfen hier in Deutschland viele Menschen mit ihren Spenden mit, dass unser Projekt lebendig und erfolgreich bleibt.\n\n**Unsere wichtigsten Aktivitäten in Stichpunkten:**\n\n• Schulpatenschaft für 30 Kinder\\\n• Therapeutische Behandlung traumatisierter Menschen einmal jährlich durch Katharina Greuner, Ausbildung einer einheimischen Behandlerin\\\n• „TOGETHER Nepal Fund for Women and Children“\\\n• Ausbildung und Vermittlung von Jobs für Frauen\\\n• Unterstützung bedürftiger Familien mit Geld für Lebensmittel, Kleidung etc. oder beim Hausbau\\\n• Anschaffung von Lernmaterialien, PC und Büchern für eine Bibiliothek, Lohnzahlung für einen Schüler, der alles beaufsichtigt und in Ordnung hält\\\n• medizinische Behandlung und juristische Unterstützung im Bedarfsfall\\\n• regelmäßige „Health Camps“ zur Gesundheitsvorsorge und Hygieneerziehung\\\n• Aktivitäten und Ausflüge für die Kinder"
+  },
+  "activities": {
+    "title": "Bisherige Aktivitäten",
+    "text": "Wenn Du mehr über unser Projekt erfahren möchtest, findest Du Berichte und Jahresrückblicke in meinem Blog.",
+    "links": [
+      {
+        "link": {
+          "text": "Jahresrückblick 2020",
+          "url": "/todo/"
+        }
+      },
+      {
+        "link": {
+          "text": "Jahresrückblick 2019",
+          "url": "/todo/"
+        }
+      },
+      {
+        "link": {
+          "text": "Jahresrückblick 2018",
+          "url": "/todo/"
+        }
+      },
+      {
+        "link": {
+          "text": "Jahresrückblick 2017",
+          "url": "/todo/"
+        }
+      },
+      {
+        "link": {
+          "text": "Jahresrückblick 2016",
+          "url": "/todo/"
+        }
+      },
+      {
+        "link": {
+          "text": "Jahresrückblick 2015",
+          "url": "/todo/"
+        }
+      }
+    ],
+    "cta": {
+      "text": "ALLE BLOG-BEITRÄGE ZUM PROJEKT",
+      "url": "/blogbeiträge/"
+    }
+  },
+  "meta": {
+    "title": "Together Nepal",
+    "description": "To Do"
+  }
+}
