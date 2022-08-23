@@ -23,22 +23,22 @@
       },
       {
         "image": "/media/kala_heilarbeit_bluete_2.png",
-        "title": "2. AUSBILDUNGSSEMINAR",
+        "title": "2. Ausbildungsseminar",
         "string": "Körper-Integration"
       },
       {
         "image": "/media/kala_heilarbeit_bluete_3.png",
-        "title": "3. AUSBILDUNGSSEMINAR",
+        "title": "3. Ausbildungsseminar",
         "string": "Seelen-Integration"
       },
       {
         "image": "/media/kala_heilarbeit_bluete_4.png",
-        "title": "4. AUSBILDUNGSSEMINAR",
+        "title": "4. Ausbildungsseminar",
         "string": "Energetische Integration"
       },
       {
         "image": "/media/kala_heilarbeit_bluete_5.png",
-        "title": "5. AUSBILDUNGSSEMINAR",
+        "title": "5. Ausbildungsseminar",
         "string": "Erdung, Spiritualität & inneres Wachstum"
       }
     ]
@@ -46,8 +46,8 @@
   "schooling": {
     "title": "Das erwartet Dich in der Ausbildung Kala Heilarbeit:",
     "cta": {
-      "text": "ANFRAGEN & ANMELDUNG",
-      "url": "k"
+      "text": "Anfragen & Anmeldung",
+      "url": "#"
     },
     "seminar": [
       {
@@ -108,8 +108,8 @@
   "questions": {
     "text": "Hast Du Fragen zur Kala Heilarbeit? Ich bin gerne für Dich da.",
     "cta": {
-      "text": "ICH FREUE MICH AUF DICH",
-      "url": "k"
+      "text": "Ich freue mich auf dich",
+      "url": "#"
     },
     "image": "/media/elch.jpg"
   }
