@@ -544,31 +544,6 @@ var nepal = {
 };
 var nepal_default = nepal;
 
-// cms/page/yoga.ts
-var yoga = {
-  file: "content/page/yoga.json",
-  label: "Yoga",
-  name: "yoga",
-  fields: [
-    meta_default,
-    header_default,
-    {
-      label: "Start",
-      name: "start",
-      widget: "object",
-      fields: [title_default, { label: "Titel", name: "title2", widget: "string" }]
-    },
-    {
-      label: "Kurse",
-      name: "course2",
-      widget: "object",
-      fields: [title_default, { label: "Titel", name: "title2", widget: "string" }]
-    },
-    { label: "Kurse", name: "course", widget: "object", fields: [title_default] }
-  ]
-};
-var yoga_default = yoga;
-
 // cms/page/seminar.ts
 var seminar = {
   file: "content/page/seminar.json",
@@ -658,7 +633,6 @@ var config = {
     schooling_default,
     seminars_default,
     seminar_default,
-    yoga_default,
     contact_default,
     nepal_default,
     styleguide_default

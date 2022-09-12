@@ -27,7 +27,6 @@ const config: CmsCollection = {
     schooling,
     seminars,
     seminar,
-    yoga,
     contact,
     nepal,
     styleguide,
