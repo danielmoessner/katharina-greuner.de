@@ -4,6 +4,8 @@ import description from "cms/symbols/description";
 import image from "cms/symbols/image";
 import markdown from "cms/symbols/markdown";
 import slug from "cms/symbols/slug";
+import string from "cms/symbols/string";
+import text from "cms/symbols/text";
 import title from "cms/symbols/title";
 import { CmsCollection } from "netlify-cms-core";
 
@@ -46,6 +48,12 @@ const seminar: CmsCollection = {
           widget: "object",
           fields: [image, alt, markdown],
         },
+        {
+          label: "Kundenstimme",
+          name: "review",
+          widget: "object",
+          fields: [image, text, string],
+        },
       ],
     },
     {
@@ -55,9 +63,15 @@ const seminar: CmsCollection = {
       fields: [
         { label: "Vortitel", name: "pretitle", widget: "string" },
         title,
-        { label: "Termin", name: "date", widget: "string" },
-        { label: "Kosten", name: "costs", widget: "string" },
-        { label: "Ort", name: "location", widget: "string" },
+        {
+          label: "Daten",
+          name: "data",
+          widget: "list",
+          fields: [
+            { label: "Schlüssel", name: "key", widget: "string" },
+            { label: "Wert", name: "value", widget: "text" },
+          ],
+        },
         cta,
       ],
     },

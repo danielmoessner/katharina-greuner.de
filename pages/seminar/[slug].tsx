@@ -13,9 +13,9 @@ import ContentMarkdown from "components/ContentMarkdown";
 import SectionFlowerBackground from "components/SectionFlowerBackground";
 import Button from "components/Button";
 
-function Page({ seminarData, pageData }) {
+function Page({ seminarData }) {
   const seminar = seminarData;
-  const page = pageData;
+  // const page = pageData;
 
   const meta = {
     title: seminar.title,
@@ -72,20 +72,12 @@ function Page({ seminarData, pageData }) {
           <div className="mt-10">
             <table className="mx-auto">
               <tbody>
-                <tr>
-                  <td className="px-2 font-bold">{page.description.date}</td>
-                  <td className="px-2">{seminar.date.date}</td>
-                </tr>
-                <tr>
-                  <td className="px-2 font-bold">{page.description.costs}</td>
-                  <td className="px-2">{seminar.date.costs}</td>
-                </tr>
-                <tr>
-                  <td className="px-2 font-bold">
-                    {page.description.location}
-                  </td>
-                  <td className="px-2">{seminar.date.location}</td>
-                </tr>
+                {seminar.date.data.map((item) => (
+                  <tr key={item.key}>
+                    <td className="px-2 font-bold">{item.key}:</td>
+                    <td className="px-2">{item.value}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

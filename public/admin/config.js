@@ -885,6 +885,12 @@ var seminar2 = {
           name: "imagetext",
           widget: "object",
           fields: [image_default, alt_default, markdown_default]
+        },
+        {
+          label: "Kundenstimme",
+          name: "review",
+          widget: "object",
+          fields: [image_default, text_default, string_default]
         }
       ]
     },
@@ -895,9 +901,15 @@ var seminar2 = {
       fields: [
         { label: "Vortitel", name: "pretitle", widget: "string" },
         title_default,
-        { label: "Termin", name: "date", widget: "string" },
-        { label: "Kosten", name: "costs", widget: "string" },
-        { label: "Ort", name: "location", widget: "string" },
+        {
+          label: "Daten",
+          name: "data",
+          widget: "list",
+          fields: [
+            { label: "Schl\xFCssel", name: "key", widget: "string" },
+            { label: "Wert", name: "value", widget: "text" }
+          ]
+        },
         cta_default
       ]
     }

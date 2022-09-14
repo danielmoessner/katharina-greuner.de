@@ -47,6 +47,25 @@ function Page({ pageData }) {
               {page.overview.title}
             </Heading>
           </div>
+          <div className="mt-10">
+            <div className="flex flex-wrap lg:flex-nowrap">
+              {page.overview.step.map((item) => (
+                <div key={item.title} className="mb-8 lg:w-1/5">
+                  <div className="flex items-center justify-center">
+                    <div className="w-20">
+                      <Image {...item.image} alt={item.title} />
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <h3 className="w-48 mx-auto font-bold tracking-wide uppercase">
+                      {item.title}
+                    </h3>
+                    <p>{item.string}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </SectionFlowerBackground>
       <Section>

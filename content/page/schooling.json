@@ -17,28 +17,28 @@
     "title": "Seminar-Übersicht der Ausbildung Kala Heilarbeit:",
     "step": [
       {
-        "title": "1. Einführungsseminar",
+        "title": "1. Einführungs-seminar",
         "string": "Die Wurzeln von Kala Heilarbeit",
         "image": "/media/kala_heilarbeit_bluete_1.png"
       },
       {
         "image": "/media/kala_heilarbeit_bluete_2.png",
-        "title": "2. Ausbildungsseminar",
+        "title": "2. Ausbildungs-seminar",
         "string": "Körper-Integration"
       },
       {
         "image": "/media/kala_heilarbeit_bluete_3.png",
-        "title": "3. Ausbildungsseminar",
+        "title": "3. Ausbildungs-seminar",
         "string": "Seelen-Integration"
       },
       {
         "image": "/media/kala_heilarbeit_bluete_4.png",
-        "title": "4. Ausbildungsseminar",
+        "title": "4. Ausbildungs-seminar",
         "string": "Energetische Integration"
       },
       {
         "image": "/media/kala_heilarbeit_bluete_5.png",
-        "title": "5. Ausbildungsseminar",
+        "title": "5. Ausbildungs-seminar",
         "string": "Erdung, Spiritualität & inneres Wachstum"
       }
     ]
