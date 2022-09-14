@@ -7,7 +7,7 @@ import heal from "./heal";
 import schooling from "./schooling";
 import contact from "./contact";
 import nepal from "./nepal";
-import yoga from "./yoga";
+// import yoga from "./yoga";
 import seminar from "./seminar";
 import seminars from "./seminars";
 

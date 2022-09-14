@@ -20,8 +20,11 @@ const yoga: CmsCollectionFile = {
       name: "start",
       widget: "object",
       fields: [
-       title, { label: "Titel", name: "title2", widget: "string" }
-      image, text],
+        title,
+        { label: "Titel", name: "title2", widget: "string" },
+        image,
+        text,
+      ],
     },
     {
       label: "Kurse",
@@ -36,11 +39,8 @@ const yoga: CmsCollectionFile = {
       label: "Blöcke",
       name: "blocks",
       widget: "list",
-      fields: [title, text, image
-
-      ]
-
-   }  
+      fields: [title, text, image],
+    },
   ],
 };
 
