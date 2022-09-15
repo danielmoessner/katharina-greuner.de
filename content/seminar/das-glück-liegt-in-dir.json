@@ -1,0 +1,50 @@
+{
+  "title": "Das Glück liegt in Dir",
+  "slug": "das-glück-liegt-in-dir",
+  "description": "todo",
+  "image": "/media/spirituelle_reisen_banner_ausschnitt.jpg",
+  "sections": [
+    {
+      "type": "imagetext",
+      "image": "/media/teneriffa_meer.jpg",
+      "alt": "Katharina erklärt anderer Person etwas",
+      "markdown": "### Intensivseminar auf Teneriffa\n\nIch lade Euch zu einem lebendigen Zusammensein voller Intensität und Freude ein! Ihr werdet in der Tiefe Eurer Seele Eurer ursprünglichen Natürlichkeit und Kraft begegnen und sie wieder befreien.\n\nErde, Wasser, Feuer, Luft – an kaum einem Ort auf der Erde kann man die heilsame Kraft der Elemente auf so intensive Art wahrnehmen wie auf Teneriffa. An Kraftorten voller Ursprünglichkeit und Vitalität begegnen wir unserem wahren inneren Wesen, unseren Träumen und einzigartigen Potentialen. Wir lernen dort, wie wir aus unserer inneren Quelle alle Weisheit, Kraft und Inspiration schöpfen können, die wir benötigen.\n\nEine umfassende Arbeit zur Selbstannahme löst einschränkende innere Muster und Blockaden und ermutigt Euch zur Realisierung Eures wahren Wesens."
+    },
+    {
+      "type": "textimage",
+      "markdown": "### Was erwartet euch?\n\n• eine intensive Auszeit für Dich, um ganz bei Dir anzukommen\\\n• jeden Tag eine aufbauende und regenerierende Yogapraxis\\\n• die heilsame Verbindung mit der Kraft der Elemente\\\n• Seelendialog, um innere Hindernisse aufzulösen und das Glück in Dein Leben einzuladen\\\n• Ausflüge zu wunderbaren Orten, um aufzutanken und alte Lasten loszulassen\\\n• Ritual für Reinigung und Neubeginn\\\n• und natürlich viel Spaß, viel Miteinander, viele inspirierende Gespräche\\\n• kurz gesagt: Glücksgefühle :-))",
+      "image": "/media/teneriffa_pinien.jpg",
+      "alt": "Person steht zwischen Pflanzen"
+    },
+    {
+      "type": "imagetext",
+      "image": "/media/teneriffa_meditation.jpg",
+      "alt": "Meditationskreis",
+      "markdown": "Wir haben in der Finca einen Seminarraum zur Verfügung, außerdem wird das Seminar viel im Freien stattfinden und uns mit der heilenden Kraft der Elemente verbinden.\n\n### Impressionen aus Teneriffa:\n\n**Hier geht es zu interessanten Artikeln auf meinem Blog:**\n\n\\>> Das Erbe von Teneriffas Ureinwohnern\\\n>> Durch Seelendialog zu neuer Ganzheit finden"
+    },
+    {
+      "type": "review",
+      "image": "/media/brunhilde.jpg",
+      "text": "Ich höre immer noch das Meer. Sehe die Delphine springen und spüre die Feuererde unter meien Füßen. Gerade jetzt in der Zeit des Daseins hier zu Hause genieße ich meine Erinnerungen und Erfahrungen, die ich mit Katharina, Laura, der Gruppe und der Insel machen durfte.\n\nDanke an alles und jeden, mit dem ich mich verbinden durfte.",
+      "string": "Brunhilde"
+    },
+    {
+      "type": "text",
+      "markdown": "### Mehrere Ausflüge sind geplant, abgestimmt auf die Erfahrungen des Seminars:\n\nAuf kleinen Wanderungen erkunden wir die Umgebung und lernen exotische Pflanzen kennen, von denen sich einige auch zum Räuchern eignen.\n\nWir besuchen mehrere felsige Buchten, wo die unbändige Energie des Atlantik unser Inneres befreit und erfrischt. An diesen Plätzen ist es unmittelbar spürbar, dass das Leben im Meer begann. Dort fällt es leicht, alte Muster zu verabschieden und sich wieder mit reiner frischer Lebenskraft zu füllen.\n\nDer ehemalige Vulkan Teide ist das Wahrzeichen der Insel. Von fast überall kann man seinen 3771 m aufragenden Vulkankegel sehen. Den Ureinwohnern der Inseln war er heilig und sie verehrten ihn als Sitz der Götter. Heute ist es leicht, mit der Seilbahn auf den Gipfel zu fahren, es gibt Imbissbuden und viele lärmende Menschen…\n\nWir werden den Berg respektieren und auf einer Wanderung über Lavafelder die besondere Energie dieses Ortes in uns aufnehmen, der Erde, Feuer und Wind miteinander verbindet. Die Stille in dieser kargen und faszinierenden Landschaft hat eine tiefe transformierende Wirkung. Schweigend lassen wir die Stille in uns ankommen und spüren wie sie sich mit unserer inneren Quelle vereint und Einheit und Frieden entstehen lässt.\n\nDie zauberhafte Kleinstadt Icod de los Vinos lädt mit seinen verwinkelten Gassen und kleinen Häuschen zum Bummeln (und Shoppen) ein. Doch dieser kleine Ort ist viel mehr als das: Bereits für die Ureinwohner der Inselgruppe, die Guanchen, hatte er große Bedeutung, lange bevor die Spanier die Inselgruppe eroberten. Dort steht der älteste Drachenbaum der Insel, dessen Alter auf über 2000 Jahre geschätzt wird. Die Guanchen hielten unter seinem Stamm ihre Ratsversammlungen ab und nutzen den roten Saft aus der Rinde zum Heilen und für Rituale.\n\nAuf Teneriffa wird gern und oft gefeiert. Am letzten Abend haben wir die Gelegenheit am traditionellen Weinfest teilzunehmen. Die Inselbewohner dekorieren liebevoll und farbenprächtig ihren Ort und erscheinen in festlichen Trachten, es wird getanzt und gesungen und wir können noch einmal tief in die Lebendigkeit und Freude eintauchen, die auf den Kanaren herrscht.\n\nIch freue mich sehr, wenn Ihr diesen Weg der Transformation mit uns gemeinsam gehen wollt.\n\nGerne stehe ich Euch für weitere Fragen zur Verfügung."
+    }
+  ],
+  "date": {
+    "pretitle": "Reisedaten",
+    "title": "Intensiv-Seminar auf Teneriffa",
+    "data": [
+      {
+        "value": "todo",
+        "key": "todo"
+      }
+    ],
+    "cta": {
+      "url": "todo",
+      "text": "todo"
+    }
+  }
+}
