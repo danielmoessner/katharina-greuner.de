@@ -38,8 +38,20 @@
     "title": "Intensiv-Seminar auf Teneriffa",
     "data": [
       {
-        "value": "todo",
-        "key": "todo"
+        "value": "12.–19.11.2022, Samstag 17 Uhr bis Samstag 10 Uhr",
+        "key": "Wann"
+      },
+      {
+        "key": "Kosten",
+        "value": "630 € zzgl. Flug, Unterkunft, Verpflegung"
+      },
+      {
+        "key": "Teilnehmer",
+        "value": "max. 12 Teilnehmer"
+      },
+      {
+        "key": "Seminarort",
+        "value": "Finca el Quinto, 38416 Los Realejos, Santa Cruz de Tenerife, Spanien"
       }
     ],
     "cta": {
