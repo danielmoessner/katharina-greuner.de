@@ -4,7 +4,20 @@
       "text": "Anfrage & Buchung",
       "url": "#"
     },
-    "data": [],
+    "data": [
+      {
+        "key": "Wann",
+        "value": "Herbst 2022"
+      },
+      {
+        "key": "Kosten",
+        "value": "110 €"
+      },
+      {
+        "key": "Seminarort",
+        "value": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn"
+      }
+    ],
     "location": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn",
     "costs": "110 €",
     "date": "Herbst 2022",
