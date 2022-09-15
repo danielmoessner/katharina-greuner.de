@@ -43,8 +43,8 @@
       }
     ],
     "cta": {
-      "url": "todo",
-      "text": "todo"
+      "url": "#",
+      "text": "Anfrage & Buchung"
     }
   }
 }
