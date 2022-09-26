@@ -1,0 +1,54 @@
+{
+  "title": "Wo die Seele wohnt: Spitiruelle Reise in den Himalaya",
+  "slug": "wo-die-seele-wohnt",
+  "description": "todo",
+  "image": "/media/spirituelle_reisen_banner_ausschnitt.jpg",
+  "sections": [
+    {
+      "type": "imagetext",
+      "image": "/media/nepal_800x547.jpg",
+      "alt": "Berge",
+      "markdown": "### Eine kraftvolle Reise in die Tiefe der Seele\n\nWer einmal das Leuchten der Berge im Sonnenuntergang auf den Höhen des Himalaya gesehen hat, die glasklare Luft geatmet und in einem der zahlreichen Klöster meditiert hat, den zieht es immer wieder dorthin zurück.\n\nAuf unserer 16-tägigen Reise nach Ladakh, das ehemalige West-Tibet, tauchen wir ein in eine reiche Kultur und Spiritualität und nehmen uns Zeit, auf äußere und innere Entdeckungsreise zu gehen. Wir werden an kraftvollen Orten meditieren, Yoga und Qi Gong praktizieren und uns mit unserer inneren Quelle verbinden.\n\nDie Reise beginnt in der Hauptstadt Leh, wo uns Tsewang in ihrem wunderschön gelegenen Guesthouse mit der typischen Herzlichkeit und Gastfreundschaft der Ladakhis empfangen wird. Dann begeben uns auf eine Fahrt durch die grandiose Landschaft des Himalaya."
+    },
+    {
+      "type": "textimage",
+      "markdown": "Wir besuchen Klöster, die ganz in der Tradition des alten Tibet stehen und einen lebendigen Buddhismus praktizieren, der eng verwoben ist mit noch älteren schamanischen Religionen.\n\nWir treffen mit Mönchen und Nonnen zusammen und können an den Zeremonien teilnehmen. Das älteste Kloster Ladakhs, Alchi mit seinen überwältigenden Malereien und Skulpturen empfinde ich als einen der intensivsten Orte, die ich bisher besucht habe. Ebenso Wanla, das kaum von Touristen besucht wird, weshalb wir dort auch nicht im Guesthouse, sondern bei Einheimischen übernachten. Eine gute Gelegenheit, hautnah die Lebensweise kennen zu lernen.\n\nWir haben diesmal das große Glück, als Ausländer an dem Klosterfest im abgelegenen Ort Shashukhul teilnehmen zu dürfen. Die eindrucksvollen Maskentänze und Rituale werden ausgeführt, um Gottheiten und Lehrer des Buddhismus zu ehren und alle Anwesenden von negativen Einflüssen zu befreien.",
+      "image": "/media/nepal_kloster.jpg",
+      "alt": "Menschen spielen Blasinstrument"
+    },
+    {
+      "type": "imagetext",
+      "image": "/media/nepal.jpg",
+      "alt": "Menschen in traditionellen Gewändern",
+      "markdown": "Ein besonderer Höhepunkt ist die Reise zum Tso Moriri-See. Im glasklaren Wasser spiegeln sich die umliegenden Sechstausender. Es ist ein Pilgerort, kraftgeladen mit einer intensiven Stille und Klarheit, der den inneren Horizont weit werden lässt. Dort begegnen wir den Nomaden, die immer noch mit ihrer Herden im Hochland unterwegs sind.Außergewöhnlich wird ebenso die Begegnung mit dem Orakel von Saboo sein. Wir haben uns vor zwei Jahren kennen gelernt und ich war beeindruckt von seiner Kraft und Bodenständigkeit. Die Schamanenkraft wird in seiner Familie seit Generationen weiter gegeben. Er lädt uns ein, an einem Ritual teilzuhaben und befragt auf Wunsch für uns die Geister.\n\nEs wird eine sehr persönliche Reise sein, mit Raum für das Ungewöhnliche.\n\nBei Interesse gebe ich Euch gern detaillierte Informationen.\n\n### Impressionen aus dem Himalaya:\n\n**Hier geht es zu interessanten Artikeln auf meinem Blog:**\n\n\\>> Die Mönche von Thiksey\\\n>> xxx (folgt)"
+    },
+    {
+      "type": "review",
+      "image": "/media/nepal_referenz.jpg",
+      "text": "Liebe Katharina, die Reise nach Ladakh war für mich ein großes Abenteuer. Es war ein Eintauchen in eine fremde Welt, die mich berührt hat. Vor allem die Freundlichkeit der Menschen dort hat mich sehr beeindruckt.\n\nWir haben alte Klöster, kleine Dörfer, Nomadenlager und großartige Landschaften besucht und so sehr viel vom Leben in diesem Land kennengelernt.\n\nDu hast uns achtsam und einfühlsam auf dieser Reise geleitet und begleitet.\n\nIch bin dankbar, dass ich diese Reise machen konnte, meine eigenen Grenzen überschritten und im wahrsten Sinne des Wortes meinen Horizont erweitert habe...",
+      "string": "Renate"
+    }
+  ],
+  "date": {
+    "pretitle": "Reisedaten",
+    "title": "Spirituelle Reise in den Himalaya",
+    "data": [
+      {
+        "key": "Wann",
+        "value": "Juli 2023"
+      },
+      {
+        "key": "Kosten",
+        "value": "1875 € excl. Flug (bei der Flugbuchung bin ich gern behilflich) incl. alle Transfers, Ü/F, Eintritte, Permits, Guide"
+      },
+      {
+        "key": "Gruppengröße",
+        "value": "min. 6, max. 8 Personen"
+      }
+    ],
+    "cta": {
+      "text": "Anfrage&Buchung",
+      "url": "#"
+    }
+  }
+}

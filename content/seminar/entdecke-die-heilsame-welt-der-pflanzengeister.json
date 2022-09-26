@@ -23,7 +23,20 @@
     "date": "Samstag, 14.05.2022, 9.00–18.30 Uhr",
     "costs": "110 €",
     "location": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn",
-    "data": [],
+    "data": [
+      {
+        "key": "Wann",
+        "value": "Samstag, 14.05.2022, 9.00–18.30 Uhr"
+      },
+      {
+        "key": "Kosten",
+        "value": "110 €"
+      },
+      {
+        "key": "Seminarort",
+        "value": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn"
+      }
+    ],
     "cta": {
       "text": "Anfrage & Buchung",
       "url": "#"
