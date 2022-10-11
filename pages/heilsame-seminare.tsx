@@ -8,6 +8,7 @@ import pageSource from "content/page/seminars.json";
 import Heading from "components/Heading";
 import ContentMarkdownCtaImage from "components/ContentMarkdownCtaImage";
 import SeminarCard from "components/SeminarCard";
+import ContentEvents from "components/ContentEvents";
 
 function Page({ pageData }) {
   const page = pageData;
@@ -30,6 +31,17 @@ function Page({ pageData }) {
               image={page.content.image}
               alt={page.content.alt}
             />
+          </div>
+        </Container>
+      </section>
+      <section>
+        <Container layout="sm">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {page.content.seminar.map((date, index) => (
+              <div key={index}>
+                <ContentEvents date={date} />
+              </div>
+            ))}
           </div>
         </Container>
       </section>

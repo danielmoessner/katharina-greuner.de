@@ -9,6 +9,7 @@ import pageSource from "content/page/seminar.json";
 import Heading from "components/Heading";
 import ContentImageMarkdown from "components/ContentImageMarkdown";
 import ContentMarkdownImage from "components/ContentMarkdownImage";
+import ContentEvents from "components/ContentEvents";
 import ContentMarkdown from "components/ContentMarkdown";
 import SectionFlowerBackground from "components/SectionFlowerBackground";
 import Button from "components/Button";
@@ -56,6 +57,9 @@ function Page({ seminarData }) {
                     image={section.image}
                     alt={section.alt}
                   />
+                )}
+                {section.type === "date" && (
+                  <ContentEvents date={section.content.CmsFieldDateTime} />
                 )}
               </div>
             ))}

@@ -912,6 +912,16 @@ var seminar2 = {
         },
         cta_default
       ]
+    },
+    {
+      label: "Termin ausw\xE4hlen",
+      name: "start",
+      widget: "datetime",
+      default: "",
+      date_format: "DD.MM.YYYY",
+      time_format: "HH:mm",
+      format: "LLL",
+      picker_utc: false
     }
   ]
 };

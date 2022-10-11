@@ -75,6 +75,16 @@ const seminar: CmsCollection = {
         cta,
       ],
     },
+    {
+      label: "Termin auswählen",
+      name: "start",
+      widget: "datetime",
+      default: "",
+      date_format: "DD.MM.YYYY",
+      time_format: "HH:mm",
+      format: "LLL",
+      picker_utc: false,
+    },
   ],
 };
 
