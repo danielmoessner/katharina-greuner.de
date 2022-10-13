@@ -58,8 +58,9 @@ function Page({ seminarData }) {
                     alt={section.alt}
                   />
                 )}
-                {section.type === "date" && (
-                  <ContentEvents date={section.content.CmsFieldDateTime} />
+                {/* event ? */}
+                {section.type === "list" && (
+                  <ContentEvents list={section.content} />
                 )}
               </div>
             ))}

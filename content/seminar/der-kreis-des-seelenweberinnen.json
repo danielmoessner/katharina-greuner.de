@@ -1,0 +1,46 @@
+{
+  "start": "October 12, 2022 7:06 PM",
+  "title": "Der Kreis der Seelenweberinnen",
+  "slug": "seelenweberinnen",
+  "date": {
+    "data": [],
+    "pretitle": "todo",
+    "title": "todo",
+    "cta": {
+      "text": "todo",
+      "url": "#"
+    }
+  },
+  "description": "Wir sind ein Kreis von Frauen, welche die uralte Weisheit ihrer Seelen wieder zum Leben erwecken. Gemeinsam erschaffen wir ein heilsames Gewebe voll Kraft und Schönheit. Darin finden wir Halt, auch wenn die Zeiten einmal schwierig werden. ",
+  "image": "/media/seelenweberinnen.jpg",
+  "sections": [
+    {
+      "type": "textimage",
+      "markdown": "J﻿ahreskreis der Seelenweberinnen 2022",
+      "image": "/media/hueterin_deiner_kraft.png",
+      "alt": "hüterin deiner Kraft schriftzug"
+    },
+    {
+      "type": "imagetext",
+      "markdown": "Unsere Kraft ist kostbar. Im Kreis der Seelenweberinnen besinnen wir uns darauf, wer wir wirklich sind - und wie wir unsere ureigene weibliche Spiritualität im Alltag praktisch leben können. Wie unzählige Frauen vor uns gemeinsam um das Feuer saßen, bilden auch wir einen Kreis der urweiblichen Stärke und Spiritualität.\n\nJede von uns Seelenweberinnen darf sein, wie sie ist: unperfekt, kreativ, verwundbar, weise und einmalig. Wir lassen zu, was da ist, ohne Wertung und Besserwissen. Mit offenem Herzen, Freude und Mitgefühl schöpfen wir aus der Weisheit der alten Göttinnen und Heilerinnen. Das macht uns gemeinsam stark und verbindet uns wieder mit unseren Wurzeln.\n\nÜber die Themen vorangegangener Treffen der Seelenweberinnen findest du Beiträge in meinem Blog.",
+      "image": "/media/seelenweberinnen_1.jpeg",
+      "alt": "Steinstatue mit Natur im Hintergrund"
+    },
+    {
+      "type": "textimage",
+      "markdown": "### T﻿ermine online 2022 | 1.Halbjahr\n\nFEBRUAR:    24.02.2022   19.00-21.30 Uhr\n\nMÄRZ:          17.03.2022    19.00-21.30 Uhr\n\nA﻿usgleich, wenn du Alle 6 Termine buchst: 195,00€\n\nA﻿usgleich, wenn du alle Termine einzeln buchst: jeweils 37,00€",
+      "image": "/media/kirschen_herz.jpeg",
+      "alt": "kirschen in form eines Herzen"
+    },
+    {
+      "type": "text",
+      "markdown": "### W﻿oraus besteht unser Gewebe ?\n\nW﻿ir Seelen-Weberinnen heilen unsere Wurzeln und schöpfen aus unserer ureigenen - weiblichen - Spiritualität.\n\nD﻿ie Reise zu uns selbst ist ein Weg voller Freude und Stärke und alles darf sein. Wir schöpfen aus magischen Traditionen, die ich auf meinen vielen Reisen kennenlernen durfte. Sie zeigen uns, wie wir den Schatz in uns selbst zum Strahlen bringen und alten Seelenballast verabschieden.\n\nUnsere Seelenreisen führen uns auf den Spuren unserer Ahninnen zu unseren geistigen Helfern. Archaische Göttinnen, Natur- und Pflanzengeister werden zu unseren Begleitern und schenken uns Mut und Inspiration für unseren Weg der Selbstverwirklichung. In Resonanz mit den universellen Rhythmen des Lebens und der Natur schwingen wir uns in unseren eigenen, einmaligen Seelenrhytmus ein."
+    },
+    {
+      "type": "imagetext",
+      "image": "/media/seelenweberinnen_2.jpeg",
+      "markdown": "* W﻿eibliche Mythologie und Mystik - deine spirituellen Wurzeln stärken und die Göttin in dir wachrufen\n* K﻿reativität - wir inspirieren uns gegenseitig und erschaffen Kraftgegenstände\n* P﻿flanzenweisheit - Dialog mit den Pflanzengeistern, Anregung für persönliche Essenzen\n* M﻿editation - die Stille in dir birgt die größte Stärke\n* K﻿ala -  Heilende Bewegung -  sich bewegen lassen von der Kraft der Selbstentfaltung\n* S﻿chamanische Energiearbeit - Seelenreisen in die Anderswelt um die geistige Kraft in deinen Alltag zu integrieren",
+      "alt": "Hände "
+    }
+  ]
+}

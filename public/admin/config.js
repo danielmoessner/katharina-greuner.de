@@ -895,6 +895,47 @@ var seminar2 = {
       ]
     },
     {
+      label: "Events",
+      name: "event",
+      widget: "list",
+      fields: [
+        image_default,
+        title_default,
+        slug_default,
+        description_default,
+        {
+          label: "TextBild",
+          name: "textimage",
+          widget: "object",
+          fields: [markdown_default, image_default]
+        },
+        {
+          label: "BildText",
+          name: "imagetext",
+          widget: "object",
+          fields: [image_default, markdown_default]
+        },
+        {
+          label: "TextBild",
+          name: "textimage",
+          widget: "object",
+          fields: [markdown_default, image_default]
+        },
+        {
+          label: "Text",
+          name: "text",
+          widget: "object",
+          fields: [markdown_default]
+        },
+        {
+          label: "BildText",
+          name: "imagetext",
+          widget: "object",
+          fields: [image_default, markdown_default]
+        }
+      ]
+    },
+    {
       label: "Termin",
       name: "date",
       widget: "object",
@@ -912,16 +953,6 @@ var seminar2 = {
         },
         cta_default
       ]
-    },
-    {
-      label: "Termin ausw\xE4hlen",
-      name: "start",
-      widget: "datetime",
-      default: "",
-      date_format: "DD.MM.YYYY",
-      time_format: "HH:mm",
-      format: "LLL",
-      picker_utc: false
     }
   ]
 };
