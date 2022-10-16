@@ -72,7 +72,21 @@ function Page({ seminarData }) {
           )}
           {section.type === "events" && (
             <div>
-              <div>test</div>
+              <div>{section.title}</div>
+              <div>
+                {section.events.map((event) => (
+                  <div key={event.month}>
+                    <div>{event.month}</div>
+                    <div>{event.date}</div>
+                    <div>{event.time}</div>
+                  </div>
+                ))}
+              </div>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: section.markdown.html,
+                }}
+              ></div>
             </div>
           )}
         </>
