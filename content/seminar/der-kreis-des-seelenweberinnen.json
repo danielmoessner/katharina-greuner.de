@@ -15,10 +15,8 @@
   "image": "/media/seelenweberinnen.jpg",
   "sections": [
     {
-      "type": "textimage",
-      "markdown": "J﻿ahreskreis der Seelenweberinnen 2022",
-      "image": "/media/hueterin_deiner_kraft.png",
-      "alt": "hüterin deiner Kraft schriftzug"
+      "type": "text",
+      "markdown": "Wir sind ein Kreis von Frauen, welche die uralte Weisheit ihrer Seelen wieder zum Leben erwecken. Gemeinsam erschaffen wir ein heilsames Gewebe voll Kraft und Schönheit. Darin finden wir Halt, auch wenn die Zeiten einmal schwierig werden."
     },
     {
       "type": "imagetext",
@@ -27,10 +25,22 @@
       "alt": "Steinstatue mit Natur im Hintergrund"
     },
     {
-      "type": "textimage",
-      "markdown": "### T﻿ermine online 2022 | 1.Halbjahr\n\nFEBRUAR:    24.02.2022   19.00-21.30 Uhr\n\nMÄRZ:          17.03.2022    19.00-21.30 Uhr\n\nA﻿usgleich, wenn du Alle 6 Termine buchst: 195,00€\n\nA﻿usgleich, wenn du alle Termine einzeln buchst: jeweils 37,00€",
-      "image": "/media/kirschen_herz.jpeg",
-      "alt": "kirschen in form eines Herzen"
+      "type": "events",
+      "markdown": "A﻿usgleich, wenn du Alle 6 Termine buchst: **195,00€**\n\nA﻿usgleich, wenn du alle Termine einzeln buchst: **jeweils 37,00€**",
+      "title": "T﻿ermine online 2022 | 1.Halbjahr",
+      "events": [
+        {
+          "date": "2022-10-16T15:57:41.023Z",
+          "month": "FEBRUAR:",
+          "time": "19:00 - 21:30"
+        },
+        {
+          "date": "2022-10-16T15:58:02.144Z",
+          "month": "MÄRZ:",
+          "time": "19.00-21.30 Uhr"
+        }
+      ],
+      "image": "/media/kirschen_herz.jpeg"
     },
     {
       "type": "text",
@@ -41,6 +51,12 @@
       "image": "/media/seelenweberinnen_2.jpeg",
       "markdown": "* W﻿eibliche Mythologie und Mystik - deine spirituellen Wurzeln stärken und die Göttin in dir wachrufen\n* K﻿reativität - wir inspirieren uns gegenseitig und erschaffen Kraftgegenstände\n* P﻿flanzenweisheit - Dialog mit den Pflanzengeistern, Anregung für persönliche Essenzen\n* M﻿editation - die Stille in dir birgt die größte Stärke\n* K﻿ala -  Heilende Bewegung -  sich bewegen lassen von der Kraft der Selbstentfaltung\n* S﻿chamanische Energiearbeit - Seelenreisen in die Anderswelt um die geistige Kraft in deinen Alltag zu integrieren",
       "alt": "Hände "
+    },
+    {
+      "type": "textimage",
+      "markdown": "J﻿ahreskreis der Seelenweberinnen 2022",
+      "image": "/media/hueterin_deiner_kraft.png",
+      "alt": "hüterin deiner Kraft schriftzug"
     }
   ]
 }

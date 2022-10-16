@@ -891,47 +891,30 @@ var seminar2 = {
           name: "review",
           widget: "object",
           fields: [image_default, text_default, string_default]
-        }
-      ]
-    },
-    {
-      label: "Events",
-      name: "event",
-      widget: "list",
-      fields: [
-        image_default,
-        title_default,
-        slug_default,
-        description_default,
-        {
-          label: "TextBild",
-          name: "textimage",
-          widget: "object",
-          fields: [markdown_default, image_default]
         },
         {
-          label: "BildText",
-          name: "imagetext",
+          label: "Events",
+          name: "events",
           widget: "object",
-          fields: [image_default, markdown_default]
-        },
-        {
-          label: "TextBild",
-          name: "textimage",
-          widget: "object",
-          fields: [markdown_default, image_default]
-        },
-        {
-          label: "Text",
-          name: "text",
-          widget: "object",
-          fields: [markdown_default]
-        },
-        {
-          label: "BildText",
-          name: "imagetext",
-          widget: "object",
-          fields: [image_default, markdown_default]
+          fields: [
+            title_default,
+            {
+              label: "Events",
+              name: "events",
+              widget: "list",
+              fields: [
+                { label: "Monat", name: "month", widget: "string" },
+                {
+                  label: "Datum",
+                  name: "date",
+                  widget: "date"
+                },
+                { label: "Zeit", name: "time", widget: "string" }
+              ]
+            },
+            markdown_default,
+            image_default
+          ]
         }
       ]
     },
