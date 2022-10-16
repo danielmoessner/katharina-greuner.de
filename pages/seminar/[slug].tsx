@@ -13,6 +13,7 @@ import ContentEvents from "components/ContentEvents";
 import ContentMarkdown from "components/ContentMarkdown";
 import SectionFlowerBackground from "components/SectionFlowerBackground";
 import Button from "components/Button";
+import { event } from "lib/analytics";
 
 function Page({ seminarData }) {
   const seminar = seminarData;
@@ -31,42 +32,50 @@ function Page({ seminarData }) {
     <Layout>
       <Seo meta={meta} />
       <Header header={header} />
-      <section className="pt-12 pb-20">
-        <Container layout="sm">
-          <div className="flex justify-center">
-            <Heading element="h1" size="h1">
-              {seminar.title}
-            </Heading>
-          </div>
-          <div className="mt-16 space-y-10">
-            {seminar.sections.map((section, index) => (
-              <div key={index}>
-                {section.type === "textimage" && (
-                  <ContentMarkdownImage
-                    html={section.markdown.html}
-                    image={section.image}
-                    alt={section.alt}
-                  />
-                )}
-                {section.type === "text" && (
-                  <ContentMarkdown html={section.markdown.html} />
-                )}
-                {section.type === "imagetext" && (
-                  <ContentImageMarkdown
-                    html={section.markdown.html}
-                    image={section.image}
-                    alt={section.alt}
-                  />
-                )}
-                {/* event ? */}
-                {section.type === "list" && (
-                  <ContentEvents list={section.content} />
-                )}
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
+      {seminar.sections.map((section, index) =>{(
+          if (section.type != "events")  (
+            <section key={index} className="pt-12 pb-20">
+              <Container layout="sm">
+                <div className="flex justify-center">
+                  <Heading element="h1" size="h1">
+                    {seminar.title}
+                  </Heading>
+                </div>
+                <div className="mt-16 space-y-10">
+                  <div>
+                    {section.type === "textimage" && (
+                      <ContentMarkdownImage
+                        html={section.markdown.html}
+                        image={section.image}
+                        alt={section.alt}
+                      />
+                    )}
+                    {section.type === "text" && (
+                      <ContentMarkdown html={section.markdown.html} />
+                    )}
+                    {section.type === "imagetext" && (
+                      <ContentImageMarkdown
+                        html={section.markdown.html}
+                        image={section.image}
+                        alt={section.alt}
+                      />
+                    )}
+                    {/* event ? */}
+                    {section.type === "list" && (
+                      <ContentEvents list={section.content} />
+                    )}
+                  </div>
+                </div>
+              </Container>
+            </section>
+          )
+          section.type == "events" && (
+            <div> 
+              test
+            </div>
+          )
+      )})
+    
       <SectionFlowerBackground>
         <div className="py-20">
           <div className="flex justify-center">
