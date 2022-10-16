@@ -32,9 +32,9 @@ function Page({ seminarData }) {
     <Layout>
       <Seo meta={meta} />
       <Header header={header} />
-      {seminar.sections.map((section, index) => {
-        {
-          section.type != "events" && (
+      {seminar.sections.map((section, index) => (
+        <>
+          {section.type != "events" && (
             <section key={index} className="pt-12 pb-20">
               <Container layout="sm">
                 <div className="flex justify-center">
@@ -69,16 +69,14 @@ function Page({ seminarData }) {
                 </div>
               </Container>
             </section>
-          );
-        }
-        {
-          section.type === "events" && (
+          )}
+          {section.type === "events" && (
             <div>
               <div>test</div>
             </div>
-          );
-        }
-      })}
+          )}
+        </>
+      ))}
 
       <SectionFlowerBackground>
         <div className="py-20">
