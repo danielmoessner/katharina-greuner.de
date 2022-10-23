@@ -11,12 +11,18 @@
       "url": "#"
     }
   },
-  "description": "Wir sind ein Kreis von Frauen, welche die uralte Weisheit ihrer Seelen wieder zum Leben erwecken. Gemeinsam erschaffen wir ein heilsames Gewebe voll Kraft und Schönheit. Darin finden wir Halt, auch wenn die Zeiten einmal schwierig werden. ",
-  "image": "/media/seelenweberinnen.jpg",
+  "description": "seelenweberinnen seite",
+  "image": "/media/seelenweberinnen_big.jpeg",
   "sections": [
     {
       "type": "text",
       "markdown": "Wir sind ein Kreis von Frauen, welche die uralte Weisheit ihrer Seelen wieder zum Leben erwecken. Gemeinsam erschaffen wir ein heilsames Gewebe voll Kraft und Schönheit. Darin finden wir Halt, auch wenn die Zeiten einmal schwierig werden."
+    },
+    {
+      "type": "flowertitle",
+      "image": "/media/hueterin_deiner_kraft.png",
+      "title": "Jahreskreis der Seelenweberinnen 2022",
+      "markdown": "### Jahreskreis der Seelenweberinnen 2022"
     },
     {
       "type": "imagetext",
@@ -51,12 +57,6 @@
       "image": "/media/seelenweberinnen_2.jpeg",
       "markdown": "* W﻿eibliche Mythologie und Mystik - deine spirituellen Wurzeln stärken und die Göttin in dir wachrufen\n* K﻿reativität - wir inspirieren uns gegenseitig und erschaffen Kraftgegenstände\n* P﻿flanzenweisheit - Dialog mit den Pflanzengeistern, Anregung für persönliche Essenzen\n* M﻿editation - die Stille in dir birgt die größte Stärke\n* K﻿ala -  Heilende Bewegung -  sich bewegen lassen von der Kraft der Selbstentfaltung\n* S﻿chamanische Energiearbeit - Seelenreisen in die Anderswelt um die geistige Kraft in deinen Alltag zu integrieren",
       "alt": "Hände "
-    },
-    {
-      "type": "textimage",
-      "markdown": "J﻿ahreskreis der Seelenweberinnen 2022",
-      "image": "/media/hueterin_deiner_kraft.png",
-      "alt": "hüterin deiner Kraft schriftzug"
     }
   ]
 }

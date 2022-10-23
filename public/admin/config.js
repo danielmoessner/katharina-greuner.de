@@ -915,6 +915,12 @@ var seminar2 = {
             markdown_default,
             image_default
           ]
+        },
+        {
+          label: "Flowertitle",
+          name: "flowertitle",
+          widget: "object",
+          fields: [title_default, markdown_default, image_default]
         }
       ]
     },

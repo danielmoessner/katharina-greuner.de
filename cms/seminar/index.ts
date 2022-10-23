@@ -3,6 +3,7 @@ import cta from "cms/symbols/cta";
 import description from "cms/symbols/description";
 import image from "cms/symbols/image";
 import markdown from "cms/symbols/markdown";
+import meta from "cms/symbols/meta";
 import slug from "cms/symbols/slug";
 import string from "cms/symbols/string";
 import text from "cms/symbols/text";
@@ -77,6 +78,12 @@ const seminar: CmsCollection = {
             markdown,
             image,
           ],
+        },
+        {
+          label: "Flowertitle",
+          name: "flowertitle",
+          widget: "object",
+          fields: [title, markdown, image],
         },
       ],
     },
