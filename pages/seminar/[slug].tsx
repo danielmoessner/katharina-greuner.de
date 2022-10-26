@@ -15,6 +15,7 @@ import SectionFlowerBackground from "components/SectionFlowerBackground";
 import Button from "components/Button";
 import { event } from "lib/analytics";
 import ImageRounded from "components/ImageRounded";
+import Image from "next/image";
 
 function Page({ seminarData }) {
   const seminar = seminarData;
@@ -33,42 +34,56 @@ function Page({ seminarData }) {
     <Layout>
       <Seo meta={meta} />
       <Header header={header} />
+      <section className="pt-16">
+        <Container layout="sm">
+          <div className="flex justify-center">
+            <Heading element="h1" size="h1">
+              {seminar.title}
+            </Heading>
+          </div>
+        </Container>
+      </section>
       {seminar.sections.map((section, index) => (
         <>
-          {section.type != "events" && (
+          {section.type === "imagetext" && (
             <div key={index} className="pt-12 pb-20">
               <Container layout="sm">
-                <div className="flex justify-center">
-                  <Heading element="h1" size="h1">
-                    {seminar.title}
-                  </Heading>
-                </div>
-                <div className="mt-16 space-y-10">
-                  <div>
-                    {/* Steinskulptur  */}
-                    {section.type === "textimage" && (
-                      <ContentMarkdownImage
-                        html={section.markdown.html}
-                        image={section.image}
-                        alt={section.alt}
-                      />
-                    )}
-                  </div>
-                  <div className="text-center">
-                    {/* woraus besteh unser gewebe ? */}
-                    {section.type === "text" && (
-                      <ContentMarkdown html={section.markdown.html} />
-                    )}
-                  </div>
+                <div className="">
                   <div>
                     {/* Hände  */}
-                    {section.type === "imagetext" && (
-                      <ContentImageMarkdown
-                        html={section.markdown.html}
-                        image={section.image}
-                        alt={section.alt}
-                      />
-                    )}
+                    <ContentImageMarkdown
+                      html={section.markdown.html}
+                      image={section.image}
+                      alt={section.alt}
+                    />
+                  </div>
+                </div>
+              </Container>
+            </div>
+          )}
+          {section.type === "text" && (
+            <div key={index} className="pt-12 pb-20">
+              <Container layout="sm">
+                <div className="">
+                  <div className="">
+                    {/* woraus besteh unser gewebe ? */}
+                    <ContentMarkdown html={section.markdown.html} />
+                  </div>
+                </div>
+              </Container>
+            </div>
+          )}
+          {section.type === "textimage" && (
+            <div key={index} className="pt-12 pb-20">
+              <Container layout="sm">
+                <div className="">
+                  <div>
+                    {/* Steinskulptur  */}
+                    <ContentMarkdownImage
+                      html={section.markdown.html}
+                      image={section.image}
+                      alt={section.alt}
+                    />
                   </div>
                 </div>
               </Container>
@@ -76,10 +91,10 @@ function Page({ seminarData }) {
           )}
 
           {/* Termine */}
-          <div className="">
-            <SectionFlowerBackground>
-              <div className="grid justify-center my-10 ">
-                {section.type === "events" && (
+          {section.type === "events" && (
+            <div className="">
+              <SectionFlowerBackground>
+                <div className="grid justify-center my-10 ">
                   <div className="flex flex-col gap-y-4">
                     <Heading element="h2" size="h2">
                       <div className="grid justify-center ">
@@ -116,14 +131,15 @@ function Page({ seminarData }) {
                       </div>
                     </div>
                   </div>
-                )}
-              </div>
-            </SectionFlowerBackground>
-          </div>
+                </div>
+              </SectionFlowerBackground>
+            </div>
+          )}
 
           {/* flowertitle */}
-          <SectionFlowerBackground>
-            {section.type === "flowertitle" && (
+
+          {section.type === "flowertitle" && (
+            <SectionFlowerBackground>
               <div className="grid justify-center grid-cols-2 py-10 gap-y-1 ">
                 <div className="justify-center col-span-2">
                   <Heading element="h2" size="h2">
@@ -131,15 +147,11 @@ function Page({ seminarData }) {
                   </Heading>
                 </div>
                 <div className="flex min-w-full ">
-                  <ContentImageMarkdown
-                    html={section.text}
-                    image={section.image}
-                    alt={undefined}
-                  />
+                  <Image {...section.image} alt={section.title} />
                 </div>
               </div>
-            )}
-          </SectionFlowerBackground>
+            </SectionFlowerBackground>
+          )}
         </>
       ))}
 
