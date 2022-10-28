@@ -891,6 +891,36 @@ var seminar2 = {
           name: "review",
           widget: "object",
           fields: [image_default, text_default, string_default]
+        },
+        {
+          label: "Events",
+          name: "events",
+          widget: "object",
+          fields: [
+            title_default,
+            {
+              label: "Events",
+              name: "events",
+              widget: "list",
+              fields: [
+                { label: "Monat", name: "month", widget: "string" },
+                {
+                  label: "Datum",
+                  name: "date",
+                  widget: "date"
+                },
+                { label: "Zeit", name: "time", widget: "string" }
+              ]
+            },
+            markdown_default,
+            image_default
+          ]
+        },
+        {
+          label: "Flowertitle",
+          name: "flowertitle",
+          widget: "object",
+          fields: [title_default, markdown_default, image_default]
         }
       ]
     },

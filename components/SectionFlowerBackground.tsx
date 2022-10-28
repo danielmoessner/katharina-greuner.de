@@ -4,7 +4,7 @@ import Section from "./Section";
 
 function SectionFlowerBackground({ children }) {
   return (
-    <Section className="relative py-2">
+    <Section className="relative py-2 ">
       <Image
         layout="fill"
         objectFit="cover"

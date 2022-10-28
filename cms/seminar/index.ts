@@ -3,6 +3,7 @@ import cta from "cms/symbols/cta";
 import description from "cms/symbols/description";
 import image from "cms/symbols/image";
 import markdown from "cms/symbols/markdown";
+import meta from "cms/symbols/meta";
 import slug from "cms/symbols/slug";
 import string from "cms/symbols/string";
 import text from "cms/symbols/text";
@@ -53,6 +54,36 @@ const seminar: CmsCollection = {
           name: "review",
           widget: "object",
           fields: [image, text, string],
+        },
+        {
+          label: "Events",
+          name: "events",
+          widget: "object",
+          fields: [
+            title,
+            {
+              label: "Events",
+              name: "events",
+              widget: "list",
+              fields: [
+                { label: "Monat", name: "month", widget: "string" },
+                {
+                  label: "Datum",
+                  name: "date",
+                  widget: "date",
+                },
+                { label: "Zeit", name: "time", widget: "string" },
+              ],
+            },
+            markdown,
+            image,
+          ],
+        },
+        {
+          label: "Flowertitle",
+          name: "flowertitle",
+          widget: "object",
+          fields: [title, markdown, image],
         },
       ],
     },
