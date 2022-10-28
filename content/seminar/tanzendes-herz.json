@@ -15,8 +15,32 @@
       "markdown": "In einem Prozess von Entschleunigung und Erdung findest Du in Deinen ganz persönlichen Rhythmus und tauchst tief in Deine transformierende Schöpferkraft ein. Mit allen Sinnen erspürst Du das Fließen deiner weisen und kreativen Herzensenergie und erkennst, auf welchen Wegen Du sie in Deinem Leben verwirklichen kannst. \n\nIn einem gemeinsamen schamanischen Abschlussritual verabschieden wir unsere alten einschränkenden Muster und Glaubenssätze und schaffen einen neuen heilsamen Raum, in dem sich unsere Freude und unsere Herzenswünsche manifestieren können. \n\nDann kann Dein Herz tanzen und Du bist ganz in Deiner Kraft.",
       "image": "/media/tanzendes_herz_klangschale.jpg",
       "alt": "Katharina mit einer Schüssel in der Hand"
+    },
+    {
+      "type": "date",
+      "pretitle": "Daten",
+      "title": "Tanzendes Herz",
+      "data": [
+        {
+          "key": "Wann",
+          "value": "Samstag, 02.07.2022, 9.00–18.30 Uhr"
+        },
+        {
+          "key": "Kosten",
+          "value": "110 €"
+        },
+        {
+          "key": "Seminarort",
+          "value": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn"
+        }
+      ],
+      "cta": {
+        "url": "#",
+        "text": "Anfrage & Buchung"
+      }
     }
   ],
+  
   "date": {
     "pretitle": "Daten",
     "title": "Tanzendes Herz",
