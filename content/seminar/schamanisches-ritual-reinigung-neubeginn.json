@@ -40,6 +40,29 @@
       "image": "/media/schamanisches_ritual.jpg",
       "alt": "Katharina spielt Flöte",
       "markdown": "Du benötigst keinerlei Vorkenntnisse, nur die Bereitschaft, Dich auf neue Sichtweisen und ein neues Verständnis für Deine Themen und ihre Ursachen einzulassen. Auf bodenständige Weise lernst Du, die Botschaften aus der geistigen Welt zu verstehen und auf die wichtige Themen Deines persönlichen Lebens zu übertragen."
+    },
+    {
+      "type": "date",
+      "pretitle": "Daten",
+      "title": "schamanisches-ritual",
+      "cta": {
+        "text": "Anfrage & Buchung",
+        "url": "#"
+      },
+      "data": [
+        {
+          "key": "Wann",
+          "value": "Herbst 2022"
+        },
+        {
+          "key": "Kosten",
+          "value": "110 €"
+        },
+        {
+          "key": "Seminarort",
+          "value": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn"
+        }
+      ]
     }
   ]
 }

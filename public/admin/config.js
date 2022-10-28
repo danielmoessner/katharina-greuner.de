@@ -921,26 +921,26 @@ var seminar2 = {
           name: "flowertitle",
           widget: "object",
           fields: [title_default, markdown_default, image_default]
-        }
-      ]
-    },
-    {
-      label: "Termin",
-      name: "date",
-      widget: "object",
-      fields: [
-        { label: "Vortitel", name: "pretitle", widget: "string" },
-        title_default,
-        {
-          label: "Daten",
-          name: "data",
-          widget: "list",
-          fields: [
-            { label: "Schl\xFCssel", name: "key", widget: "string" },
-            { label: "Wert", name: "value", widget: "text" }
-          ]
         },
-        cta_default
+        {
+          label: "Termin",
+          name: "date",
+          widget: "object",
+          fields: [
+            { label: "Vortitel", name: "pretitle", widget: "string" },
+            title_default,
+            {
+              label: "Daten",
+              name: "data",
+              widget: "list",
+              fields: [
+                { label: "Schl\xFCssel", name: "key", widget: "string" },
+                { label: "Wert", name: "value", widget: "text" }
+              ]
+            },
+            cta_default
+          ]
+        }
       ]
     }
   ]

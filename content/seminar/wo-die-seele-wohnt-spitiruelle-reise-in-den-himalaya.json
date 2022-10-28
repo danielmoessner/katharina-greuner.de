@@ -27,6 +27,29 @@
       "image": "/media/nepal_referenz.jpg",
       "text": "Liebe Katharina, die Reise nach Ladakh war für mich ein großes Abenteuer. Es war ein Eintauchen in eine fremde Welt, die mich berührt hat. Vor allem die Freundlichkeit der Menschen dort hat mich sehr beeindruckt.\n\nWir haben alte Klöster, kleine Dörfer, Nomadenlager und großartige Landschaften besucht und so sehr viel vom Leben in diesem Land kennengelernt.\n\nDu hast uns achtsam und einfühlsam auf dieser Reise geleitet und begleitet.\n\nIch bin dankbar, dass ich diese Reise machen konnte, meine eigenen Grenzen überschritten und im wahrsten Sinne des Wortes meinen Horizont erweitert habe...",
       "string": "Renate"
+    },
+    {
+      "type": "date",
+      "pretitle": "Reisedaten",
+      "title": "Spirituelle Reise in den Himalaya",
+      "data": [
+        {
+          "key": "Wann",
+          "value": "Juli 2023"
+        },
+        {
+          "key": "Kosten",
+          "value": "1875€"
+        },
+        {
+          "key": "Gruppengröße",
+          "value": "min. 6, max. 8 Personen"
+        }
+      ],
+      "cta": {
+        "text": "Anfrage & Buchung",
+        "url": "#"
+      }
     }
   ],
   "date": {
