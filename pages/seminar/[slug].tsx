@@ -45,12 +45,12 @@ function Page({ seminarData }) {
       </section>
       {seminar.sections.map((section, index) => (
         <>
+          {/* Hände  */}
           {section.type === "imagetext" && (
             <div key={index} className="pt-12 pb-20">
               <Container layout="sm">
                 <div className="">
                   <div>
-                    {/* Hände  */}
                     <ContentImageMarkdown
                       html={section.markdown.html}
                       image={section.image}
@@ -61,24 +61,24 @@ function Page({ seminarData }) {
               </Container>
             </div>
           )}
+          {/* woraus besteh unser gewebe ? */}
           {section.type === "text" && (
             <div key={index} className="pt-12 pb-20">
               <Container layout="sm">
                 <div className="">
                   <div className="">
-                    {/* woraus besteh unser gewebe ? */}
                     <ContentMarkdown html={section.markdown.html} />
                   </div>
                 </div>
               </Container>
             </div>
           )}
+          {/* Steinskulptur  */}
           {section.type === "textimage" && (
             <div key={index} className="pt-12 pb-20">
               <Container layout="sm">
                 <div className="">
                   <div>
-                    {/* Steinskulptur  */}
                     <ContentMarkdownImage
                       html={section.markdown.html}
                       image={section.image}
@@ -89,7 +89,6 @@ function Page({ seminarData }) {
               </Container>
             </div>
           )}
-
           {/* Termine */}
           {section.type === "events" && (
             <div className="">
@@ -137,48 +136,52 @@ function Page({ seminarData }) {
           )}
 
           {/* flowertitle */}
-
           {section.type === "flowertitle" && (
             <SectionFlowerBackground>
-              <div className="grid justify-center grid-cols-2 py-10 gap-y-1 ">
-                <div className="justify-center col-span-2">
-                  <Heading element="h2" size="h2">
-                    <div className="flex justify-center"> {section.title}</div>
+              <div className="flex flex-col py-10 gap-y-1 ">
+                <div className="">
+                  {/*resize size of header and Image  */}
+                  <Heading element="h2" size="h1">
+                    <div className=""> {section.title}</div>
                   </Heading>
                 </div>
-                <div className="flex min-w-full ">
+                <div className="">
                   <Image {...section.image} alt={section.title} />
+                </div>
+              </div>
+            </SectionFlowerBackground>
+          )}
+          {/* Termin */}
+          {section.type === "date" && (
+            <SectionFlowerBackground>
+              <div className="py-20">
+                <div className="flex justify-center">
+                  <Heading element="h2" size="h2">
+                    <b>{seminar.date.pretitle}</b> | {seminar.date.title}
+                  </Heading>
+                </div>
+                <div className="mt-10">
+                  <table className="mx-auto">
+                    <tbody>
+                      {seminar.date.data.map((item) => (
+                        <tr key={item.key}>
+                          <td className="px-2 font-bold">{item.key}:</td>
+                          <td className="px-2">{item.value}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div className="flex justify-center mt-8">
+                  <Button href={seminar.date.cta.url}>
+                    {seminar.date.cta.text}
+                  </Button>
                 </div>
               </div>
             </SectionFlowerBackground>
           )}
         </>
       ))}
-
-      <SectionFlowerBackground>
-        <div className="py-20">
-          <div className="flex justify-center">
-            <Heading element="h2" size="h2">
-              <b>{seminar.date.pretitle}</b> | {seminar.date.title}
-            </Heading>
-          </div>
-          <div className="mt-10">
-            <table className="mx-auto">
-              <tbody>
-                {seminar.date.data.map((item) => (
-                  <tr key={item.key}>
-                    <td className="px-2 font-bold">{item.key}:</td>
-                    <td className="px-2">{item.value}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="flex justify-center mt-8">
-            <Button href={seminar.date.cta.url}>{seminar.date.cta.text}</Button>
-          </div>
-        </div>
-      </SectionFlowerBackground>
     </Layout>
   );
 }
