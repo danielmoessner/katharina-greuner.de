@@ -12,7 +12,7 @@
     }
   },
   "description": "seelenweberinnen seite",
-  "image": "/media/seelenweberinnen_big.jpeg",
+  "image": "/media/seelenweberinnen_banner_ausschnitt.jpg",
   "sections": [
     {
       "type": "text",
@@ -49,14 +49,16 @@
       "image": "/media/kirschen_herz.jpeg"
     },
     {
-      "type": "text",
-      "markdown": "### W﻿oraus besteht unser Gewebe ?\n\nW﻿ir Seelen-Weberinnen heilen unsere Wurzeln und schöpfen aus unserer ureigenen - weiblichen - Spiritualität.\n\nD﻿ie Reise zu uns selbst ist ein Weg voller Freude und Stärke und alles darf sein. Wir schöpfen aus magischen Traditionen, die ich auf meinen vielen Reisen kennenlernen durfte. Sie zeigen uns, wie wir den Schatz in uns selbst zum Strahlen bringen und alten Seelenballast verabschieden.\n\nUnsere Seelenreisen führen uns auf den Spuren unserer Ahninnen zu unseren geistigen Helfern. Archaische Göttinnen, Natur- und Pflanzengeister werden zu unseren Begleitern und schenken uns Mut und Inspiration für unseren Weg der Selbstverwirklichung. In Resonanz mit den universellen Rhythmen des Lebens und der Natur schwingen wir uns in unseren eigenen, einmaligen Seelenrhytmus ein."
-    },
-    {
-      "type": "imagetext",
+      "type": "titletextimagetextbutton",
+      "title": "W﻿oraus besteht unser Gewebe ?",
+      "text": "W﻿ir Seelen-Weberinnen heilen unsere Wurzeln und schöpfen aus unserer ureigenen - weiblichen - Spiritualität.\n\nD﻿ie Reise zu uns selbst ist ein Weg voller Freude und Stärke und alles darf sein. Wir schöpfen aus magischen Traditionen, die ich auf meinen vielen Reisen kennenlernen durfte. Sie zeigen uns, wie wir den Schatz in uns selbst zum Strahlen bringen und alten Seelenballast verabschieden.\n\nUnsere Seelenreisen führen uns auf den Spuren unserer Ahninnen zu unseren geistigen Helfern. Archaische Göttinnen, Natur- und Pflanzengeister werden zu unseren Begleitern und schenken uns Mut und Inspiration für unseren Weg der Selbstverwirklichung. In Resonanz mit den universellen Rhythmen des Lebens und der Natur schwingen wir uns in unseren eigenen, einmaligen Seelenrhytmus ein.",
       "image": "/media/seelenweberinnen_2.jpeg",
+      "alt": "Hände zusammen",
       "markdown": "* W﻿eibliche Mythologie und Mystik - deine spirituellen Wurzeln stärken und die Göttin in dir wachrufen\n* K﻿reativität - wir inspirieren uns gegenseitig und erschaffen Kraftgegenstände\n* P﻿flanzenweisheit - Dialog mit den Pflanzengeistern, Anregung für persönliche Essenzen\n* M﻿editation - die Stille in dir birgt die größte Stärke\n* K﻿ala -  Heilende Bewegung -  sich bewegen lassen von der Kraft der Selbstentfaltung\n* S﻿chamanische Energiearbeit - Seelenreisen in die Anderswelt um die geistige Kraft in deinen Alltag zu integrieren",
-      "alt": "Hände "
+      "cta": {
+        "text": "Jetzt Teilnahme anfragen",
+        "url": "/kontakt"
+      }
     }
   ]
 }

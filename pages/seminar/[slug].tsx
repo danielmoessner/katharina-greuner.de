@@ -9,17 +9,16 @@ import pageSource from "content/page/seminar.json";
 import Heading from "components/Heading";
 import ContentImageMarkdown from "components/ContentImageMarkdown";
 import ContentMarkdownImage from "components/ContentMarkdownImage";
-import ContentEvents from "components/ContentEvents";
 import ContentMarkdown from "components/ContentMarkdown";
 import SectionFlowerBackground from "components/SectionFlowerBackground";
 import Button from "components/Button";
-import { event } from "lib/analytics";
 import ImageRounded from "components/ImageRounded";
 import Image from "next/image";
+import { formatDate } from "../../lib/date";
+import ContentText from "components/ContentText";
 
 function Page({ seminarData }) {
   const seminar = seminarData;
-  // const page = pageData;
 
   const meta = {
     title: seminar.title,
@@ -44,10 +43,9 @@ function Page({ seminarData }) {
         </Container>
       </section>
       {seminar.sections.map((section, index) => (
-        <>
-          {/* Hände  */}
+        <React.Fragment key={index}>
           {section.type === "imagetext" && (
-            <div key={index} className="pt-12 pb-20">
+            <div className="pt-12 pb-20">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -61,9 +59,9 @@ function Page({ seminarData }) {
               </Container>
             </div>
           )}
-          {/* woraus besteh unser gewebe ? */}
+
           {section.type === "text" && (
-            <div key={index} className="pt-12 pb-20">
+            <div className="pt-12 pb-20">
               <Container layout="sm">
                 <div className="">
                   <div className="">
@@ -73,9 +71,9 @@ function Page({ seminarData }) {
               </Container>
             </div>
           )}
-          {/* Steinskulptur  */}
+
           {section.type === "textimage" && (
-            <div key={index} className="pt-12 pb-20">
+            <div className="pt-12 pb-20">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -89,68 +87,65 @@ function Page({ seminarData }) {
               </Container>
             </div>
           )}
-          {/* Termine */}
+
           {section.type === "events" && (
-            <div className="">
-              <SectionFlowerBackground>
-                <div className="grid justify-center my-10 ">
-                  <div className="flex flex-col gap-y-4">
-                    <Heading element="h2" size="h2">
-                      <div className="grid justify-center ">
-                        {section.title}
-                      </div>
-                    </Heading>
+            <SectionFlowerBackground>
+              <div className="grid justify-center my-10 ">
+                <div className="flex flex-col gap-y-4">
+                  <Heading element="h2" size="h2">
+                    <div className="grid justify-center ">{section.title}</div>
+                  </Heading>
 
-                    <div className="grid grid-cols-2 place-items-center gap-x-4">
-                      {/* termindate */}
-                      <div className="">
-                        <div className="flex flex-col gap-y-4 ">
-                          {section.events.map((event) => (
-                            <div className="flex flex-row " key={event.month}>
-                              <div>{event.month}</div>
-                              <div>{event.date}</div>
-                              <div>{event.time}</div>
-                            </div>
-                          ))}
-                        </div>
-                        <div
-                          className="flex flex-col mt-5 gap-y-1"
-                          dangerouslySetInnerHTML={{
-                            __html: section.markdown.html,
-                          }}
-                        ></div>
+                  <div className="grid grid-cols-2 place-items-center gap-x-4">
+                    <div className="">
+                      <div className="flex flex-col gap-y-4 ">
+                        <table>
+                          <tbody>
+                            {section.events.map((event, index) => (
+                              <tr key={index}>
+                                <td className="">{event.month}</td>
+                                <td className="">{formatDate(event.date)}</td>
+                                <td>{event.time}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
+                      <div
+                        className="flex flex-col mt-5 gap-y-1"
+                        dangerouslySetInnerHTML={{
+                          __html: section.markdown.html,
+                        }}
+                      ></div>
+                    </div>
 
-                      {/* kirschen */}
-                      <div className="w-1/2">
-                        <ImageRounded
-                          image={section.image}
-                          alt={section.alt}
-                        ></ImageRounded>
-                      </div>
+                    <div className="w-1/2">
+                      <ImageRounded
+                        image={section.image}
+                        alt={section.alt}
+                      ></ImageRounded>
                     </div>
                   </div>
                 </div>
-              </SectionFlowerBackground>
-            </div>
+              </div>
+            </SectionFlowerBackground>
           )}
-          {/* flowertitle */}
+
           {section.type === "flowertitle" && (
             <SectionFlowerBackground>
               <div className="flex flex-col py-10 gap-y-1 ">
                 <div className="">
-                  {/*resize size of header and Image  */}
-                  <Heading element="h2" size="h1">
-                    <div className=""> {section.title}</div>
-                  </Heading>
+                  <h2 className="text-4xl font-thin text-center">
+                    {section.title}
+                  </h2>
                 </div>
-                <div className="">
+                <div className="max-w-xs mx-auto mt-2">
                   <Image {...section.image} alt={section.title} />
                 </div>
               </div>
             </SectionFlowerBackground>
           )}
-          {/* Termin */}
+
           {section.type === "date" && (
             <SectionFlowerBackground>
               <div className="py-20">
@@ -179,7 +174,36 @@ function Page({ seminarData }) {
               </div>
             </SectionFlowerBackground>
           )}
-        </>
+
+          {section.type === "titletextimagetextbutton" && (
+            <section className="pt-12 pb-20">
+              <Container layout="sm">
+                <div className="">
+                  <div>
+                    <div className="flex justify-center">
+                      <Heading element="h2" size="h2">
+                        {section.title}
+                      </Heading>
+                    </div>
+                    <div className="mt-8">
+                      <ContentText text={section.text} />
+                    </div>
+                    <div className="mt-8">
+                      <ContentImageMarkdown
+                        html={section.markdown.html}
+                        image={section.image}
+                        alt={section.alt}
+                      />
+                    </div>
+                    <div className="flex justify-center mt-10">
+                      <Button to={section.cta.href}>{section.cta.text}</Button>
+                    </div>
+                  </div>
+                </div>
+              </Container>
+            </section>
+          )}
+        </React.Fragment>
       ))}
     </Layout>
   );
