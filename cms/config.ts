@@ -1,4 +1,5 @@
 import page from "./page/index";
+import article from "./article/index";
 import category from "./category/index";
 import setting from "./setting/index";
 import legal from "./legal/index";
@@ -28,7 +29,7 @@ const config: CmsConfig = {
   // See https://www.netlifycms.org/docs/beta-features/#manual-initialization
   load_config_file: false,
   // See https://www.netlifycms.org/docs/collection-types/
-  collections: [page, seminar, category, setting, legal],
+  collections: [page, seminar, category, setting, legal, article],
 };
 
 export default config;

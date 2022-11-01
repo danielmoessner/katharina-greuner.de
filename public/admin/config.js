@@ -640,6 +640,42 @@ var config = {
 };
 var page_default = config;
 
+// cms/symbols/slug.ts
+var slug = {
+  label: "Slug",
+  name: "slug",
+  widget: "string",
+  hint: 'Bitte nur Kleinbuchstaben, Zahlen und Bindestriche verwenden. Der Slug beschreibt die URL dieses Objektes. Ein Beispielwert ist "mein-toller-artikel".'
+};
+var slug_default = slug;
+
+// cms/article/index.ts
+var article = {
+  name: "article",
+  label: "Artikel",
+  label_singular: "Artikel",
+  extension: "json",
+  editor: {
+    preview: false
+  },
+  folder: "content/article",
+  slug: "{{slug}}",
+  create: true,
+  fields: [
+    title_default,
+    slug_default,
+    image_default,
+    markdown_default,
+    {
+      label: "comments",
+      name: "comments",
+      widget: "list",
+      fields: [title_default]
+    }
+  ]
+};
+var article_default = article;
+
 // cms/category/index.ts
 var category = {
   name: "category",
@@ -837,15 +873,6 @@ var legal = {
 };
 var legal_default = legal;
 
-// cms/symbols/slug.ts
-var slug = {
-  label: "Slug",
-  name: "slug",
-  widget: "string",
-  hint: 'Bitte nur Kleinbuchstaben, Zahlen und Bindestriche verwenden. Der Slug beschreibt die URL dieses Objektes. Ein Beispielwert ist "mein-toller-artikel".'
-};
-var slug_default = slug;
-
 // cms/seminar/index.ts
 var seminar2 = {
   name: "seminar",
@@ -962,7 +989,7 @@ var config2 = {
   media_folder: "/public/media",
   public_folder: "/media",
   load_config_file: false,
-  collections: [page_default, seminar_default2, category_default, setting_default, legal_default]
+  collections: [page_default, seminar_default2, category_default, setting_default, legal_default, article_default]
 };
 var config_default = config2;
 export {

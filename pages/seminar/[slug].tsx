@@ -134,7 +134,6 @@ function Page({ seminarData }) {
               </SectionFlowerBackground>
             </div>
           )}
-
           {/* flowertitle */}
           {section.type === "flowertitle" && (
             <SectionFlowerBackground>
