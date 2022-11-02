@@ -104,6 +104,25 @@ const seminar: CmsCollection = {
             cta,
           ],
         },
+        {
+          label: "yogaclass",
+          name: "date",
+          widget: "object",
+          fields: [
+            { label: "Vortitel", name: "pretitle", widget: "string" },
+            title,
+            {
+              label: "Daten",
+              name: "data",
+              widget: "list",
+              fields: [
+                { label: "Schlüssel", name: "key", widget: "string" },
+                { label: "Wert", name: "value", widget: "text" },
+              ],
+            },
+            cta,
+          ],
+        },
       ],
     },
   ],

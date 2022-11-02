@@ -7,9 +7,9 @@ import SectionFlowerBackground from "components/SectionFlowerBackground";
 import SectionStart from "components/SectionStart";
 import ContentImageText from "components/ContentImageText";
 import ContentTextCtaImage from "components/ContentTextCtaImage";
-import Prose from "components/Prose";
 import SectionContent from "components/SectionContent";
 import ContentMarkdown from "components/ContentMarkdown";
+import NavigationLink from "components/NavigationLink";
 
 function Page({ pageData }) {
   const page = pageData;
@@ -20,22 +20,30 @@ function Page({ pageData }) {
       <Header header={page.header} />
 
       <SectionStart start={page.start}>
-        <ContentImageText text={undefined} image={undefined} alt={undefined} />
-        <ContentTextCtaImage
-          text={undefined}
-          image={undefined}
-          alt={undefined}
-          cta={undefined}
-        />
+        {/* <ContentImageText
+          text={page.start.markdown}
+          image={page.start.image}
+          alt={page.start.text}
+        /> */}
+        {/* <ContentTextCtaImage
+          text={page.start.markdown2}
+          image={page.start.image2}
+          alt={page.start.text}
+          cta={page.start.cta}
+        /> */}
       </SectionStart>
-
+      {/* 
       <SectionFlowerBackground>
-        <ContentMarkdown html={undefined} />
+        <ContentMarkdown html={page.description.markdown} />
       </SectionFlowerBackground>
 
       <SectionContent>
-        <ContentImageText text={undefined} image={undefined} alt={undefined} />
-      </SectionContent>
+        <ContentImageText
+          text={page.activities.text}
+          image={page.activities.image}
+          alt={page.activities.text}
+        />
+      </SectionContent> */}
     </Layout>
   );
 }

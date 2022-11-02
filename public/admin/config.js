@@ -967,6 +967,25 @@ var seminar2 = {
             },
             cta_default
           ]
+        },
+        {
+          label: "yogaclass",
+          name: "date",
+          widget: "object",
+          fields: [
+            { label: "Vortitel", name: "pretitle", widget: "string" },
+            title_default,
+            {
+              label: "Daten",
+              name: "data",
+              widget: "list",
+              fields: [
+                { label: "Schl\xFCssel", name: "key", widget: "string" },
+                { label: "Wert", name: "value", widget: "text" }
+              ]
+            },
+            cta_default
+          ]
         }
       ]
     }

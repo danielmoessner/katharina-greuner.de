@@ -179,6 +179,35 @@ function Page({ seminarData }) {
               </div>
             </SectionFlowerBackground>
           )}
+          {/* yoga class */}
+          {section.type === "yogaclass" && (
+            <SectionFlowerBackground>
+              <div className="py-20">
+                <div className="flex justify-center">
+                  <Heading element="h2" size="h2">
+                    <b>{seminar.date.pretitle}</b> | {seminar.date.title}
+                  </Heading>
+                </div>
+                <div className="mt-10">
+                  <table className="mx-auto">
+                    <tbody>
+                      {seminar.date.data.map((item) => (
+                        <tr key={item.key}>
+                          <td className="px-2 font-bold">{item.key}:</td>
+                          <td className="px-2">{item.value}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div className="flex justify-center mt-8">
+                  <Button href={seminar.date.cta.url}>
+                    {seminar.date.cta.text}
+                  </Button>
+                </div>
+              </div>
+            </SectionFlowerBackground>
+          )}
         </>
       ))}
     </Layout>
