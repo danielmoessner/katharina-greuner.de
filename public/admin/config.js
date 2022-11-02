@@ -987,6 +987,8 @@ var seminar2 = {
             },
             cta_default
           ]
+        },
+        {
           label: "TitleTextBildTextButton",
           name: "titletextimagetextbutton",
           widget: "object",
