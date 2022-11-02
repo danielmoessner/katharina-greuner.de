@@ -105,15 +105,15 @@ const seminar: CmsCollection = {
           ],
         },
         {
-          label: "yogaclass",
-          name: "date",
+          label: "Yoga Termin",
+          name: "yogadate",
           widget: "object",
           fields: [
             { label: "Vortitel", name: "pretitle", widget: "string" },
             title,
             {
               label: "Daten",
-              name: "data",
+              name: "yogadata",
               widget: "list",
               fields: [
                 { label: "Schlüssel", name: "key", widget: "string" },

@@ -969,15 +969,15 @@ var seminar2 = {
           ]
         },
         {
-          label: "yogaclass",
-          name: "date",
+          label: "Yoga Termin",
+          name: "yogadate",
           widget: "object",
           fields: [
             { label: "Vortitel", name: "pretitle", widget: "string" },
             title_default,
             {
               label: "Daten",
-              name: "data",
+              name: "yogadata",
               widget: "list",
               fields: [
                 { label: "Schl\xFCssel", name: "key", widget: "string" },
