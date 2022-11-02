@@ -247,7 +247,6 @@ var cta_default = cta;
 var markdown = {
   label: "Markdown",
   name: "markdown",
-  i18n: true,
   widget: "markdown",
   hint: "Bitte nur \xDCberschriften vom Typ h3 verwenden."
 };
@@ -934,7 +933,9 @@ var seminar2 = {
                 {
                   label: "Datum",
                   name: "date",
-                  widget: "date"
+                  widget: "datetime",
+                  date_format: "DD.MM.YYYY",
+                  time_format: false
                 },
                 { label: "Zeit", name: "time", widget: "string" }
               ]
@@ -986,6 +987,10 @@ var seminar2 = {
             },
             cta_default
           ]
+          label: "TitleTextBildTextButton",
+          name: "titletextimagetextbutton",
+          widget: "object",
+          fields: [title_default, text_default, image_default, alt_default, markdown_default, cta_default]
         }
       ]
     }
