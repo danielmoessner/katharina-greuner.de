@@ -6,11 +6,13 @@ import { renderContent } from "lib/renderContent";
 import SectionFlowerBackground from "components/SectionFlowerBackground";
 import SectionStart from "components/SectionStart";
 import ContentImageText from "components/ContentImageText";
-import ContentTextCtaImage from "components/ContentTextCtaImage";
 import SectionContent from "components/SectionContent";
-import ContentMarkdown from "components/ContentMarkdown";
-import NavigationLink from "components/NavigationLink";
 import ContentMarkdownImage from "components/ContentMarkdownImage";
+import ContentImageMarkdown from "components/ContentImageMarkdown";
+import ContentMarkdown from "components/ContentMarkdown";
+import Link from "next/link";
+import Heading from "components/Heading";
+import Button from "components/Button";
 
 function Page({ pageData }) {
   const page = pageData;
@@ -32,9 +34,10 @@ function Page({ pageData }) {
           alt={page.start.text}
         />
       </SectionStart>
-      {/* 
+
       <SectionFlowerBackground>
-        <ContentMarkdown html={page.description.markdown} />
+        <Heading>{page.description.title}</Heading>
+        <ContentMarkdown html={page.description.markdown.html} />
       </SectionFlowerBackground>
 
       <SectionContent>
@@ -43,7 +46,11 @@ function Page({ pageData }) {
           image={page.activities.image}
           alt={page.activities.text}
         />
-      </SectionContent> */}
+        {/* missing links */}
+
+        {/* button content missing */}
+        <Button></Button>
+      </SectionContent>
     </Layout>
   );
 }
