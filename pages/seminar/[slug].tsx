@@ -175,7 +175,7 @@ function Page({ seminarData }) {
             </SectionFlowerBackground>
           )}
           {/* yoga class */}
-          {section.type === "yogaclass" && (
+          {section.type === "yogadate" && (
             <SectionFlowerBackground>
               <div className="py-20">
                 <div className="flex justify-center">
