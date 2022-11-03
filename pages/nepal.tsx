@@ -10,6 +10,7 @@ import ContentTextCtaImage from "components/ContentTextCtaImage";
 import SectionContent from "components/SectionContent";
 import ContentMarkdown from "components/ContentMarkdown";
 import NavigationLink from "components/NavigationLink";
+import ContentMarkdownImage from "components/ContentMarkdownImage";
 
 function Page({ pageData }) {
   const page = pageData;
@@ -20,17 +21,16 @@ function Page({ pageData }) {
       <Header header={page.header} />
 
       <SectionStart start={page.start}>
-        {/* <ContentImageText
-          text={page.start.markdown}
+        <ContentImageText
+          text={page.start.markdown.html}
           image={page.start.image}
           alt={page.start.text}
-        /> */}
-        {/* <ContentTextCtaImage
-          text={page.start.markdown2}
+        />
+        <ContentMarkdownImage
+          html={page.start.markdown2.html}
           image={page.start.image2}
           alt={page.start.text}
-          cta={page.start.cta}
-        /> */}
+        />
       </SectionStart>
       {/* 
       <SectionFlowerBackground>
