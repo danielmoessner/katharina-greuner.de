@@ -8,8 +8,9 @@ import pageSource from "content/page/seminars.json";
 import Heading from "components/Heading";
 import ContentMarkdownCtaImage from "components/ContentMarkdownCtaImage";
 import SeminarCard from "components/SeminarCard";
+import { getAllJson } from "lib/getContent";
 
-function Page({ pageData }) {
+function Page({ pageData, seminars }) {
   const page = pageData;
 
   return (
@@ -44,6 +45,15 @@ function Page({ pageData }) {
           </div>
         </Container>
       </section>
+      <section className="pt-6 pb-20">
+        <Container layout="sm">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {seminars.map((seminar, index) => (
+              <div key={index}>{seminar.title}</div>
+            ))}
+          </div>
+        </Container>
+      </section>
     </Layout>
   );
 }
@@ -54,10 +64,12 @@ export async function getStaticProps() {
   // const footerData = await renderContent(footerSource[locale]);
 
   const pageData = await renderContent(pageSource);
+  const seminars = getAllJson("seminar");
 
   return {
     props: {
       pageData,
+      seminars,
       // footerData,
     }, // will be passed to the seminar component as props
   };
