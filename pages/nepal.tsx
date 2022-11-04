@@ -41,6 +41,7 @@ function Page({ pageData }) {
       </SectionFlowerBackground>
 
       <SectionContent>
+        <Heading>{page.activities.title}</Heading>
         <ContentImageText
           text={page.activities.text}
           image={page.activities.image}
@@ -49,7 +50,7 @@ function Page({ pageData }) {
         {/* missing links */}
 
         {/* button content missing */}
-        <Button></Button>
+        <Button>Alle Blog-Beiträge zum Projekt</Button>
       </SectionContent>
     </Layout>
   );
