@@ -14,17 +14,11 @@
       "markdown": "Praktizierst Du z.B. die Heldinnen-Haltung, wirst Du ganz konkret wahrnehmen, wie tief Deine Wurzeln in die Erde reichen oder wie leicht es Dir fällt, Deinen Herzraum zu öffnen. Nimmst Du allein äußere Korrekturen an der Haltung vor, dann sieht diese am Ende vielleicht schöner aus, willst Du aber die Chance ergreifen, Deinen Körper, Deine Psyche und Seele von innen her zu transformieren, musst Du anders vorgehen.\n\nBeginnst Du mit liebevoller, feinfühliger Achtsamkeit in die Haltung hinein zu spüren, wirst Du herausfinden, wie es dir besser gelingt, z.B. Dich sicherer zu verwurzeln oder Dein Herz zu öffnen. Die Ursachen dafür können in körperlichen Verspannungen liegen, im Stress auf der Arbeit oder alten seelischen Mustern. Indem sie Dir in der Haltung allmählich bewusst werden, kannst Du beginnen, liebevoll mit Dir selbst Schritt für Schritt Veränderungen herbei zu führen. Bewusstes Atmen, feinfühlige Korrekturen der Bewegung und eine meditative geistige Haltung führen Dich zu Dir selbst und deinem vollen Potential."
     },
     {
-      "type": "textimage",
-      "markdown": "T﻿herapeutisches Yoga \n\nTherapeutisches Yoga ermöglicht Dir einen ganzheitlichen Heilungsweg, an dem Du selbst aktiv mitwirkst. Du kannst damit sowohl körperliche Beschwerden lindern (z.B. Rücken oder Gelenkbeschwerden, das Auflösen von Verspannungen oder Kopfschmerzen) als auch Dein psychisches Befinden verbessern (z.B. Stress, Schlafstörungen oder Energiemangel).\n\nFür diese Stunden stimme ich mich ganz individuell auf Dein Anliegen ein.\n\nVor jeder Stunde besprechen wir, was Du Dir ganz persönlich von der heutigen Praxis wünschst.\n\nWir setzen genau da an, wo Du es am meisten brauchst, um Deine Mitte zu finden und Dein persönliches Ziel zu erreichen. Ich unterstütze Dich mit heilsamen Berührungen und helfe Dir so, innere und äußere Blockaden zu lösen.\n\nAm Ende der Stunde erhältst Du eine Mitschrift der Übungen, mit der Du selbstständig zu Haus weiter praktizieren kannst. Auf Wunsch kann ich Dir auch einige Übungssequenzen auf Video aufnehmen, damit Du es als\n\nAnleitung weiter nutzen kannst.",
-      "image": "/media/kala_yoga_2.jpg",
-      "alt": "therapeutische übung"
-    },
-    {
       "type": "yogadate",
       "title": "Kurse",
       "cta": {
         "text": "Zum Yogakurs Anmelden",
-        "url": "#"
+        "url": "/seminare/yoga/"
       },
       "yogadata": [
         {
@@ -36,7 +30,14 @@
           "value": "12x Montag 19.30-21.00 Uhr\n12x Dienstag 10.00-11.30 Uhr  20.00-21.30"
         }
       ],
-      "pretitle": "Kurse"
+      "pretitle": "Kurse",
+      "text": "Die Kurse finden in kleinen Gruppen statt. In einer Atmosphäre der gegenseitigen Akzeptanz kann jede:r Teilnehmer:in ihr eigenes Potential entdecken und entfalten."
+    },
+    {
+      "type": "textimage",
+      "markdown": "T﻿herapeutisches Yoga \n\nTherapeutisches Yoga ermöglicht Dir einen ganzheitlichen Heilungsweg, an dem Du selbst aktiv mitwirkst. Du kannst damit sowohl körperliche Beschwerden lindern (z.B. Rücken oder Gelenkbeschwerden, das Auflösen von Verspannungen oder Kopfschmerzen) als auch Dein psychisches Befinden verbessern (z.B. Stress, Schlafstörungen oder Energiemangel).\n\nFür diese Stunden stimme ich mich ganz individuell auf Dein Anliegen ein.\n\nVor jeder Stunde besprechen wir, was Du Dir ganz persönlich von der heutigen Praxis wünschst.\n\nWir setzen genau da an, wo Du es am meisten brauchst, um Deine Mitte zu finden und Dein persönliches Ziel zu erreichen. Ich unterstütze Dich mit heilsamen Berührungen und helfe Dir so, innere und äußere Blockaden zu lösen.\n\nAm Ende der Stunde erhältst Du eine Mitschrift der Übungen, mit der Du selbstständig zu Haus weiter praktizieren kannst. Auf Wunsch kann ich Dir auch einige Übungssequenzen auf Video aufnehmen, damit Du es als\n\nAnleitung weiter nutzen kannst.",
+      "image": "/media/kala_yoga_2.jpg",
+      "alt": "therapeutische übung"
     },
     {
       "type": "imagetext",

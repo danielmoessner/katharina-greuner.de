@@ -25,7 +25,17 @@ const article: CmsCollection = {
       label: "comments",
       name: "comments",
       widget: "list",
-      fields: [title],
+      fields: [
+        { label: "Autor", name: "autor", widget: "string" },
+        {
+          label: "Datum",
+          name: "date",
+          widget: "datetime",
+          time_format: "HH:mm",
+          date_format: "DD.MM.YYYY",
+        },
+        { label: "Text", name: "text", widget: "text" },
+      ],
     },
   ],
 };

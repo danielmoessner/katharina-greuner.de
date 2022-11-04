@@ -13,6 +13,9 @@ import ContentMarkdown from "components/ContentMarkdown";
 import Link from "next/link";
 import Heading from "components/Heading";
 import Button from "components/Button";
+import ImageBorder from "components/ImageBorder";
+import Multiline from "components/Multiline";
+import Image from "next/image";
 
 function Page({ pageData }) {
   const page = pageData;
@@ -42,15 +45,31 @@ function Page({ pageData }) {
 
       <SectionContent>
         <Heading>{page.activities.title}</Heading>
-        <ContentImageText
-          text={page.activities.text}
-          image={page.activities.image}
-          alt={page.activities.text}
-        />
-        {/* missing links */}
-
-        {/* button content missing */}
-        <Button>Alle Blog-Beiträge zum Projekt</Button>
+        <div className="grid gap-x-12 gap-y-4 md:grid-cols-2">
+          <div>
+            {/* missing links */}
+            <p>
+              Wenn Du mehr über unser Projekt erfahren möchtest, findest Du
+              Berichte und Jahresrückblicke in meinem Blog.
+            </p>
+            <div>
+              {page.activities.links.map((item) => (
+                <Link key={item.text} href={item.url}>
+                  <a>{item.text}</a>
+                </Link>
+              ))}
+            </div>
+            {/* button content missing */}
+            <Button href={page.activities.cta.url}>
+              {page.activities.cta.text}
+            </Button>
+          </div>
+          <div>
+            <ImageBorder>
+              <Image {...page.activities.image} alt={page.activities.alt} />
+            </ImageBorder>
+          </div>
+        </div>
       </SectionContent>
     </Layout>
   );

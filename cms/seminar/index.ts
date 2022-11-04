@@ -110,8 +110,8 @@ const seminar: CmsCollection = {
           name: "yogadate",
           widget: "object",
           fields: [
-            { label: "Vortitel", name: "pretitle", widget: "string" },
             title,
+            text,
             {
               label: "Daten",
               name: "yogadata",

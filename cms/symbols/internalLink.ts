@@ -1,6 +1,6 @@
 import { CmsFieldBase, CmsFieldObject } from "netlify-cms-core";
 
-const linkFields = (required) => [
+export const linkFields = (required) => [
   {
     label: "Text",
     name: "text",

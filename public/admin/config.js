@@ -534,9 +534,10 @@ var nepal = {
           label: "Links",
           name: "links",
           widget: "list",
-          field: internalLink_default(true)
+          fields: linkFields(true)
         },
-        cta_default
+        cta_default,
+        image_default
       ]
     }
   ]
@@ -669,7 +670,17 @@ var article = {
       label: "comments",
       name: "comments",
       widget: "list",
-      fields: [title_default]
+      fields: [
+        { label: "Autor", name: "autor", widget: "string" },
+        {
+          label: "Datum",
+          name: "date",
+          widget: "datetime",
+          time_format: "HH:mm",
+          date_format: "DD.MM.YYYY"
+        },
+        { label: "Text", name: "text", widget: "text" }
+      ]
     }
   ]
 };
@@ -974,8 +985,8 @@ var seminar2 = {
           name: "yogadate",
           widget: "object",
           fields: [
-            { label: "Vortitel", name: "pretitle", widget: "string" },
             title_default,
+            text_default,
             {
               label: "Daten",
               name: "yogadata",

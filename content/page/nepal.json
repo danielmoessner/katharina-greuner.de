@@ -18,46 +18,46 @@
     "text": "Wenn Du mehr über unser Projekt erfahren möchtest, findest Du Berichte und Jahresrückblicke in meinem Blog.",
     "links": [
       {
-        "link": {
+      
           "text": "Jahresrückblick 2020",
           "url": "#"
-        }
       },
       {
-        "link": {
+      
           "text": "Jahresrückblick 2019",
           "url": "#"
-        }
+      
       },
       {
-        "link": {
+      
           "text": "Jahresrückblick 2018",
           "url": "#"
-        }
+      
       },
       {
-        "link": {
+
           "text": "Jahresrückblick 2017",
           "url": "#"
-        }
+        
       },
       {
-        "link": {
+     
           "text": "Jahresrückblick 2016",
           "url": "#"
-        }
+      
       },
       {
-        "link": {
+      
           "text": "Jahresrückblick 2015",
           "url": "#"
-        }
+        
       }
     ],
     "cta": {
       "text": "Alle Blog-Beiträge zum Projekt",
       "url": "/blogbeiträge/"
-    }
+    },
+    "image": "/media/nepal_soziales_engagement_kind.jpg"
   },
   "meta": {
     "title": "Together Nepal",

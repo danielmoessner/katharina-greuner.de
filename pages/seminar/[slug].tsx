@@ -180,9 +180,10 @@ function Page({ seminarData }) {
               <div className="py-20">
                 <div className="flex justify-center">
                   <Heading element="h2" size="h2">
-                    <b>{section.pretitle}</b> | {section.title}
+                    {section.title}
                   </Heading>
                 </div>
+                <div> {section.text}</div>
                 <div className="mt-10">
                   <table className="mx-auto">
                     <tbody>
@@ -196,9 +197,7 @@ function Page({ seminarData }) {
                   </table>
                 </div>
                 <div className="flex justify-center mt-8">
-                  <Button href={section.yogadata.cta}>
-                    {section.yogadata.cta}
-                  </Button>
+                  <Button href={section.cta.url}>{section.cta.text}</Button>
                 </div>
               </div>
             </SectionFlowerBackground>

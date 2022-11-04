@@ -1,6 +1,6 @@
 import meta from "../symbols/meta";
 import { CmsCollectionFile } from "netlify-cms-core";
-import internalLink from "cms/symbols/internalLink";
+import internalLink, { linkFields } from "cms/symbols/internalLink";
 import header from "cms/symbols/header";
 import title from "cms/symbols/title";
 import text from "cms/symbols/text";
@@ -44,9 +44,10 @@ const nepal: CmsCollectionFile = {
           label: "Links",
           name: "links",
           widget: "list",
-          field: internalLink(true),
+          fields: linkFields(true),
         },
         cta,
+        image,
       ],
     },
   ],
