@@ -7,7 +7,7 @@
       "type": "imagetext",
       "image": "/media/kala_yoga_1.jpg",
       "alt": "betende hand",
-      "markdown": "T﻿ransformation durch Bewegung\n\nWise Woman Yoga lässt uns die Weisheit unseres Körpers und unserer Seele erfahren. Kraftvolle und sanfte Haltungen verbinden sich miteinander und mit liebevoller Achtsamkeit für unseren Körper und unseren Atem wachsen wir über unsere Grenzen hinaus. Wir erlangen neue Lebendigkeit, Gesundheit, Selbsterkenntnis und inneres Gleichgewicht.\n\nIch schöpfe meine Inspirationen für den Yogaweg aus dem ursprünglichen Yoga, dessen Wurzeln über 5000 Jahre weit zurückreichen. Damals begannen weise Frauen und Männer mit dem bewussten Praktizieren von Körperhaltungen, achtsamem Atem und Meditation, um Gesundheit und geistige Harmonie zu erlangen.\n\nDie Haltungen im Yoga - die Asana - verstehe ich als eine Parabel für unser Leben. Sie bilden in ihrer Gesamtheit alle Archetypen unseres Lebens und unserer Seele ab und fuhren uns zu unserer ganz personlichen Ganzheit.\n\nDas Ziel in Wise Woman Yoga besteht nicht darin, eine bestimmte Haltung zu „können\" und schon gar nicht, sie perfekt zu „können\". Transformierend wirkt die direkte Erfahrung, die wir in einer Haltung machen."
+      "markdown": "Wise Woman Yoga lässt uns die Weisheit unseres Körpers und unserer Seele erfahren. Kraftvolle und sanfte Haltungen verbinden sich miteinander und mit liebevoller Achtsamkeit für unseren Körper und unseren Atem wachsen wir über unsere Grenzen hinaus. Wir erlangen neue Lebendigkeit, Gesundheit, Selbsterkenntnis und inneres Gleichgewicht.\n\nIch schöpfe meine Inspirationen für den Yogaweg aus dem ursprünglichen Yoga, dessen Wurzeln über 5000 Jahre weit zurückreichen. Damals begannen weise Frauen und Männer mit dem bewussten Praktizieren von Körperhaltungen, achtsamem Atem und Meditation, um Gesundheit und geistige Harmonie zu erlangen.\n\nDie Haltungen im Yoga - die Asana - verstehe ich als eine Parabel für unser Leben. Sie bilden in ihrer Gesamtheit alle Archetypen unseres Lebens und unserer Seele ab und fuhren uns zu unserer ganz personlichen Ganzheit.\\\nDas Ziel in Wise Woman Yoga besteht nicht darin, eine bestimmte Haltung zu „können\" und schon gar nicht, sie perfekt zu „können\". Transformierend wirkt die direkte Erfahrung, die wir in einer Haltung machen."
     },
     {
       "type": "text",
@@ -27,24 +27,31 @@
         },
         {
           "key": "YOGAKURSE PRÄSENZ IN NEUFAHRN",
-          "value": "12x Montag 19.30-21.00 Uhr\n12x Dienstag 10.00-11.30 Uhr  20.00-21.30"
+          "value": "12x Montag 19.30-21.00 Uhr\n12x Dienstag 10.00-11.30 Uhr und 20.00-21.30 Uhr"
         }
       ],
       "pretitle": "Kurse",
       "text": "Die Kurse finden in kleinen Gruppen statt. In einer Atmosphäre der gegenseitigen Akzeptanz kann jede:r Teilnehmer:in ihr eigenes Potential entdecken und entfalten."
     },
     {
-      "type": "textimage",
-      "markdown": "T﻿herapeutisches Yoga \n\nTherapeutisches Yoga ermöglicht Dir einen ganzheitlichen Heilungsweg, an dem Du selbst aktiv mitwirkst. Du kannst damit sowohl körperliche Beschwerden lindern (z.B. Rücken oder Gelenkbeschwerden, das Auflösen von Verspannungen oder Kopfschmerzen) als auch Dein psychisches Befinden verbessern (z.B. Stress, Schlafstörungen oder Energiemangel).\n\nFür diese Stunden stimme ich mich ganz individuell auf Dein Anliegen ein.\n\nVor jeder Stunde besprechen wir, was Du Dir ganz persönlich von der heutigen Praxis wünschst.\n\nWir setzen genau da an, wo Du es am meisten brauchst, um Deine Mitte zu finden und Dein persönliches Ziel zu erreichen. Ich unterstütze Dich mit heilsamen Berührungen und helfe Dir so, innere und äußere Blockaden zu lösen.\n\nAm Ende der Stunde erhältst Du eine Mitschrift der Übungen, mit der Du selbstständig zu Haus weiter praktizieren kannst. Auf Wunsch kann ich Dir auch einige Übungssequenzen auf Video aufnehmen, damit Du es als\n\nAnleitung weiter nutzen kannst.",
+      "type": "titletextimage",
+      "markdown": "Therapeutisches Yoga ermöglicht Dir einen ganzheitlichen Heilungsweg, an dem Du selbst aktiv mitwirkst. Du kannst damit sowohl körperliche Beschwerden lindern (z.B. Rücken oder Gelenkbeschwerden, das Auflösen von Verspannungen oder Kopfschmerzen) als auch Dein psychisches Befinden verbessern (z.B. Stress, Schlafstörungen oder Energiemangel).\n\nFür diese Stunden stimme ich mich ganz individuell auf Dein Anliegen ein.\n\nVor jeder Stunde besprechen wir, was Du Dir ganz persönlich von der heutigen Praxis wünschst.\n\nWir setzen genau da an, wo Du es am meisten brauchst, um Deine Mitte zu finden und Dein persönliches Ziel zu erreichen. Ich unterstütze Dich mit heilsamen Berührungen und helfe Dir so, innere und äußere Blockaden zu lösen.\n\nAm Ende der Stunde erhältst Du eine Mitschrift der Übungen, mit der Du selbstständig zu Haus weiter praktizieren kannst. Auf Wunsch kann ich Dir auch einige Übungssequenzen auf Video aufnehmen, damit Du es als Anleitung weiter nutzen kannst.",
+      "title": "T﻿herapeutisches Yoga",
       "image": "/media/kala_yoga_2.jpg",
-      "alt": "therapeutische übung"
+      "alt": "Therapeutische Übung"
     },
     {
-      "type": "imagetext",
+      "type": "titleimagetextcta",
       "image": "/media/kala_yoga_3.jpg",
-      "alt": "Yoga pose berg",
-      "markdown": "Es ist noch nicht so lange her, dass ich mit dem Online-Yoga begonnen habe und ich bin begeistert von den Möglichkeiten: Die Stunden sind so intensiv und lebendig wie die Präsenz-Kurse und wer einfach lieber in den eigenen vier Wänden übt, kann von jedem Ort aus daran teilnehmen.\n\nIn unserer Gruppe ist ein reger Austausch entstanden, wir nehmen uns Zeit für Rückfragen und Korrekturen und auch dafür, miteinander zu lachen!\n\nWir sind zwar nicht am gleichen Ort, aber wir befnden uns im selben Raum\n\n\\- wir erschaffen diesen Raum durch unsere Präsenz.\n\nUnd noch etwas Gutes hat das Online-Yoga: Wer möchte, erhält im Anschluss an die Stunde den Videomitschnitt der Übungen und kann so alle Übungen zu Hause wiederholen und vertiefen, so oft er möchte."
+      "alt": "Yoga Pose Berg",
+      "text": "Es ist noch nicht so lange her, dass ich mit dem Online-Yoga begonnen habe und ich bin begeistert von den Möglichkeiten: Die Stunden sind so intensiv und lebendig wie die Präsenz-Kurse und wer einfach lieber in den eigenen vier Wänden übt, kann von jedem Ort aus daran teilnehmen.\n\nIn unserer Gruppe ist ein reger Austausch entstanden, wir nehmen uns Zeit für Rückfragen und Korrekturen und auch dafür, miteinander zu lachen!\n\nWir sind zwar nicht am gleichen Ort, aber wir befnden uns im selben Raum\n\n\\- wir erschaffen diesen Raum durch unsere Präsenz.\n\nUnd noch etwas Gutes hat das Online-Yoga: Wer möchte, erhält im Anschluss an die Stunde den Videomitschnitt der Übungen und kann so alle Übungen zu Hause wiederholen und vertiefen, so oft er möchte.",
+      "title": "Online Yoga - überall möglich",
+      "cta": {
+        "text": "Anfragen & Termine",
+        "url": "/kontakt"
+      },
+      "markdown": "Es ist noch nicht so lange her, dass ich mit dem Online-Yoga begonnen habe und ich bin begeistert von den Möglichkeiten: Die Stunden sind so intensiv und lebendig wie die Präsenz-Kurse und wer einfach lieber in den eigenen vier Wänden übt, kann von jedem Ort aus daran teilnehmen.\n\nIn unserer Gruppe ist ein reger Austausch entstanden, wir nehmen uns Zeit für Rückfragen und Korrekturen und auch dafür, miteinander zu lachen!\n\nWir sind zwar nicht am gleichen Ort, aber wir befinden uns im selben Raum - wir erschaffen diesen Raum durch unsere Präsenz.\n\nUnd noch etwas Gutes hat das Online-Yoga: Wer möchte, erhält im Anschluss an die Stunde den Videomitschnitt der Übungen und kann so alle Übungen zu Hause wiederholen und vertiefen, so oft er möchte."
     }
   ],
-  "image": "/media/kala_yoga.jpg"
+  "image": "/media/kala_yoga_banner_ausschnitt.jpg"
 }

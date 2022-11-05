@@ -16,6 +16,7 @@ import ImageRounded from "components/ImageRounded";
 import Image from "next/image";
 import { formatDate } from "../../lib/date";
 import ContentText from "components/ContentText";
+import ContentImageMarkdownCta from "components/ContentImageMarkdownCta";
 
 function Page({ seminarData }) {
   const seminar = seminarData;
@@ -183,14 +184,18 @@ function Page({ seminarData }) {
                     {section.title}
                   </Heading>
                 </div>
-                <div> {section.text}</div>
+                <p className="mt-4 "> {section.text}</p>
                 <div className="mt-10">
                   <table className="mx-auto">
                     <tbody>
                       {section.yogadata.map((item) => (
                         <tr key={item.key}>
-                          <td className="px-2 font-bold">{item.key}:</td>
-                          <td className="px-2">{item.value}</td>
+                          <td className="px-2 font-bold tracking-wide align-top">
+                            {item.key}:
+                          </td>
+                          <td className="px-2 whitespace-pre-line">
+                            {item.value}
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -225,6 +230,53 @@ function Page({ seminarData }) {
                     </div>
                     <div className="flex justify-center mt-10">
                       <Button to={section.cta.href}>{section.cta.text}</Button>
+                    </div>
+                  </div>
+                </div>
+              </Container>
+            </section>
+          )}
+
+          {section.type === "titletextimage" && (
+            <section className="pt-12 pb-20">
+              <Container layout="sm">
+                <div className="">
+                  <div>
+                    <div className="flex justify-center">
+                      <Heading element="h2" size="h2">
+                        {section.title}
+                      </Heading>
+                    </div>
+                    <div className="mt-8">
+                      <ContentMarkdownImage
+                        html={section.markdown.html}
+                        image={section.image}
+                        alt={section.alt}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </Container>
+            </section>
+          )}
+
+          {section.type === "titleimagetextcta" && (
+            <section className="pt-12 pb-20">
+              <Container layout="sm">
+                <div className="">
+                  <div>
+                    <div className="flex justify-center">
+                      <Heading element="h2" size="h2">
+                        {section.title}
+                      </Heading>
+                    </div>
+                    <div className="mt-8">
+                      <ContentImageMarkdownCta
+                        html={section.markdown.html}
+                        image={section.image}
+                        alt={section.alt}
+                        cta={section.cta}
+                      />
                     </div>
                   </div>
                 </div>

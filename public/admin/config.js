@@ -906,7 +906,7 @@ var seminar2 = {
       widget: "list",
       types: [
         {
-          label: "TextBild",
+          label: "Text Bild",
           name: "textimage",
           widget: "object",
           fields: [markdown_default, image_default, alt_default]
@@ -918,7 +918,7 @@ var seminar2 = {
           fields: [markdown_default]
         },
         {
-          label: "BildText",
+          label: "Bild Text",
           name: "imagetext",
           widget: "object",
           fields: [image_default, alt_default, markdown_default]
@@ -956,7 +956,7 @@ var seminar2 = {
           ]
         },
         {
-          label: "Flowertitle",
+          label: "Titel Text Bild Blume",
           name: "flowertitle",
           widget: "object",
           fields: [title_default, markdown_default, image_default]
@@ -1000,10 +1000,22 @@ var seminar2 = {
           ]
         },
         {
-          label: "TitleTextBildTextButton",
+          label: "Titel Text Bild Text Button",
           name: "titletextimagetextbutton",
           widget: "object",
           fields: [title_default, text_default, image_default, alt_default, markdown_default, cta_default]
+        },
+        {
+          label: "Titel Text Bild",
+          name: "titletextimage",
+          widget: "object",
+          fields: [title_default, markdown_default, image_default, alt_default]
+        },
+        {
+          label: "Titel Bild Text Button",
+          name: "titleimagetextcta",
+          widget: "object",
+          fields: [title_default, image_default, alt_default, markdown_default, cta_default]
         }
       ]
     }

@@ -31,7 +31,7 @@ const seminar: CmsCollection = {
       widget: "list",
       types: [
         {
-          label: "TextBild",
+          label: "Text Bild",
           name: "textimage",
           widget: "object",
           fields: [markdown, image, alt],
@@ -43,7 +43,7 @@ const seminar: CmsCollection = {
           fields: [markdown],
         },
         {
-          label: "BildText",
+          label: "Bild Text",
           name: "imagetext",
           widget: "object",
           fields: [image, alt, markdown],
@@ -81,7 +81,7 @@ const seminar: CmsCollection = {
           ],
         },
         {
-          label: "Flowertitle",
+          label: "Titel Text Bild Blume",
           name: "flowertitle",
           widget: "object",
           fields: [title, markdown, image],
@@ -124,12 +124,23 @@ const seminar: CmsCollection = {
             cta,
           ],
         },
-
         {
-          label: "TitleTextBildTextButton",
+          label: "Titel Text Bild Text Button",
           name: "titletextimagetextbutton",
           widget: "object",
           fields: [title, text, image, alt, markdown, cta],
+        },
+        {
+          label: "Titel Text Bild",
+          name: "titletextimage",
+          widget: "object",
+          fields: [title, markdown, image, alt],
+        },
+        {
+          label: "Titel Bild Text Button",
+          name: "titleimagetextcta",
+          widget: "object",
+          fields: [title, image, alt, markdown, cta],
         },
       ],
     },
