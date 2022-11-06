@@ -9,6 +9,11 @@ import Heading from "components/Heading";
 import ContentMarkdownCtaImage from "components/ContentMarkdownCtaImage";
 import SeminarCard from "components/SeminarCard";
 import { getAllJson } from "lib/getContent";
+import seminar from "cms/page/seminar";
+import ImageBorder from "components/ImageBorder";
+import Link from "next/link";
+import ImageRounded from "components/ImageRounded";
+import Button from "components/Button";
 
 function Page({ pageData, seminars }) {
   const page = pageData;
@@ -45,11 +50,20 @@ function Page({ pageData, seminars }) {
           </div>
         </Container>
       </section>
+      {/* seminar cards */}
       <section className="pt-6 pb-20">
         <Container layout="sm">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {seminars.map((seminar, index) => (
-              <div key={index}>{seminar.title}</div>
+            {seminars.map((seminar) => (
+              <>
+                <div key={seminar} className="">
+                  <div key={seminar}>{seminar.image}</div>
+                  <div key={seminar}>{seminar.boldtext}</div>
+                  <div key={seminar}>{seminar.shortdescription}</div>
+                  <div key={seminar}> {seminar.bold}</div>
+                  <Button href={seminar.url}>{seminar.text}</Button>
+                </div>
+              </>
             ))}
           </div>
         </Container>

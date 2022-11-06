@@ -1,18 +1,7 @@
 {
+  "shortdescription": "Erwecke die uralte Weisheit Deiner Seele wieder zu neuem Leben.",
   "start": "October 12, 2022 7:06 PM",
-  "title": "Der Kreis der Seelenweberinnen",
   "slug": "seelenweberinnen",
-  "date": {
-    "data": [],
-    "pretitle": "todo",
-    "title": "todo",
-    "cta": {
-      "text": "todo",
-      "url": "#"
-    }
-  },
-  "description": "seelenweberinnen seite",
-  "image": "/media/seelenweberinnen_banner_ausschnitt.jpg",
   "sections": [
     {
       "type": "text",
@@ -60,5 +49,18 @@
         "url": "/kontakt"
       }
     }
-  ]
+  ],
+  "date": {
+    "data": [],
+    "pretitle": "todo",
+    "title": "todo",
+    "cta": {
+      "text": "todo",
+      "url": "#"
+    }
+  },
+  "boldtext": "Kreis der Seelenweberinnen",
+  "title": "Der Kreis der Seelenweberinnen",
+  "image": "/media/seelenweberinnen_banner_ausschnitt.jpg",
+  "description": "seelenweberinnen seite"
 }

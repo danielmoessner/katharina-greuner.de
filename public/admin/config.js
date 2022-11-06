@@ -899,6 +899,12 @@ var seminar2 = {
     title_default,
     slug_default,
     description_default,
+    { label: "Fetter Text", name: "boldtext", widget: "text" },
+    {
+      label: "Kurzbeschreibung",
+      name: "shortdescription",
+      widget: "text"
+    },
     image_default,
     {
       label: "Sektionen",

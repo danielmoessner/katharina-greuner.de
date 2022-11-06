@@ -24,6 +24,12 @@ const seminar: CmsCollection = {
     title,
     slug,
     description,
+    { label: "Fetter Text", name: "boldtext", widget: "text" },
+    {
+      label: "Kurzbeschreibung",
+      name: "shortdescription",
+      widget: "text",
+    },
     image,
     {
       label: "Sektionen",
