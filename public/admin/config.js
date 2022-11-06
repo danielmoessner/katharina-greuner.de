@@ -616,6 +616,36 @@ var seminars = {
 };
 var seminars_default = seminars;
 
+// cms/page/psychotherapie.ts
+var therapie = {
+  file: "content/page/psychotherapie.json",
+  label: "Psychotherapie",
+  name: "therapie",
+  fields: [
+    meta_default,
+    header_default,
+    {
+      label: "Start Oben",
+      name: "start",
+      widget: "object",
+      fields: [
+        title_default,
+        markdown_default,
+        image_default,
+        { label: "Markdown", name: "markdown2", widget: "markdown" }
+      ]
+    },
+    {
+      label: "Verfahren",
+      name: "procedures",
+      widget: "object",
+      fields: [image_default, markdown_default]
+    },
+    cta_default
+  ]
+};
+var psychotherapie_default = therapie;
+
 // cms/page/index.ts
 var config = {
   name: "pages",
@@ -635,7 +665,8 @@ var config = {
     seminar_default,
     contact_default,
     nepal_default,
-    styleguide_default
+    styleguide_default,
+    psychotherapie_default
   ]
 };
 var page_default = config;

@@ -10,6 +10,7 @@ import nepal from "./nepal";
 // import yoga from "./yoga";
 import seminar from "./seminar";
 import seminars from "./seminars";
+import therapie from "./psychotherapie";
 
 const config: CmsCollection = {
   name: "pages",
@@ -30,6 +31,7 @@ const config: CmsCollection = {
     contact,
     nepal,
     styleguide,
+    therapie,
   ],
 };
 
