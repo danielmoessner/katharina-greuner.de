@@ -9,7 +9,7 @@ function Component({ link }) {
   const router = useRouter();
 
   const activeClass =
-    router.pathname == link.url || router.pathname + "/" == link.url
+    router.asPath == link.url || router.asPath + "/" == link.url
       ? "border-kg-yellow"
       : " border-transparent";
 
