@@ -38,17 +38,15 @@ function Page({ pageData }) {
       </SectionStart>
 
       <SectionContent>
-        <div className="grid grid-cols-2 place-content-center gap-x-12 gap-y-4">
-          <div className="justify-center">
-            <ContentImageMarkdown
-              html={page.procedures.markdown.html}
-              image={page.procedures.image}
-              alt={page.procedures.text}
-            />
-          </div>
-          <div className="flex self-stretch mt-6 ">
-            <Button href={page.cta.url}>{page.cta.text}</Button>
-          </div>
+        <div className="">
+          <ContentImageMarkdown
+            html={page.procedures.markdown.html}
+            image={page.procedures.image}
+            alt={page.procedures.text}
+          />
+        </div>
+        <div className="flex justify-center mt-6 ">
+          <Button href={page.cta.url}>{page.cta.text}</Button>
         </div>
       </SectionContent>
     </Layout>
