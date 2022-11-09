@@ -2,19 +2,15 @@ import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import Header from "../components/Header";
 import { renderContent } from "lib/renderContent";
-import { therapie } from "../content/page/therapie.json";
-import SectionFlowerBackground from "components/SectionFlowerBackground";
 import SectionStart from "components/SectionStart";
-import ContentImageText from "components/ContentImageText";
 import SectionContent from "components/SectionContent";
 import ContentMarkdownImage from "components/ContentMarkdownImage";
+import psychotherapie from "content/page/psychotherapie.json";
 import ContentMarkdown from "components/ContentMarkdown";
-import Link from "next/link";
 import Heading from "components/Heading";
 import Button from "components/Button";
 import ImageBorder from "components/ImageBorder";
 import Image from "next/image";
-import psychotherapie from "cms/page/psychotherapie";
 import ContentImageMarkdown from "components/ContentImageMarkdown";
 
 function Page({ pageData }) {
@@ -45,7 +41,7 @@ function Page({ pageData }) {
         <div className="grid grid-cols-2 place-content-center gap-x-12 gap-y-4">
           <div className="justify-center">
             <ContentImageMarkdown
-              html={page.procedures.markdown}
+              html={page.procedures.markdown.html}
               image={page.procedures.image}
               alt={page.procedures.text}
             />

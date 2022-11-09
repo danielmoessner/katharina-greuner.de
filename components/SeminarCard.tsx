@@ -25,11 +25,11 @@ function SeminarCard({ seminar }: Props) {
       <p className="mt-3">{seminar.description}</p>
       <p className="mt-1 font-bold tracking-wide">{seminar.bold}</p>
       <div className="mt-2">
-        <Link href={seminar.cta.url}>
+        {/* <Link href={seminar.cta.url}>
           <a href="">
             {">"} {seminar.cta.text}
           </a>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
