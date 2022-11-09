@@ -17,7 +17,11 @@ function Page({ pageData }) {
       <SectionStart start={page.heal}>
         <div className="mt-20 space-y-20">
           {page.heal.items.map((i) => (
-            <div key={i.title} className="grid grid-cols-12 gap-x-8 gap-y-4">
+            <div
+              key={i.title}
+              id={i.slug}
+              className="grid grid-cols-12 gap-x-8 gap-y-4"
+            >
               <div className="col-span-8 sm:col-span-6 md:col-span-4">
                 <ImageRounded image={i.image} alt={i.title} />
               </div>

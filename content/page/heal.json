@@ -13,7 +13,8 @@
         "cta": {
           "text": "> Erfahre mehr darüber auf meinem Block",
           "url": "#"
-        }
+        },
+        "slug": "craniosakralarbeit-und-der-atem-des-lebens"
       },
       {
         "image": "/media/energetische_schamanische_heilweisen.jpg",
@@ -22,7 +23,8 @@
         "cta": {
           "text": "> Erfahre mehr darüber auf meinem Block",
           "url": "#"
-        }
+        },
+        "slug": "energetische-und-schamanische-heilweisen"
       },
       {
         "title": "Aufstellungen und Coaching ",
@@ -31,7 +33,8 @@
           "text": "> Erfahre mehr darüber auf meinem Blog",
           "url": "#"
         },
-        "image": "/media/aufstellung_coaching.jpg"
+        "image": "/media/aufstellung_coaching.jpg",
+        "slug": "aufstellungen-und-coaching"
       },
       {
         "title": "Naturheilkunde",
@@ -40,7 +43,8 @@
           "text": "> Erfahre mehr darüber auf meinem Blog",
           "url": "#"
         },
-        "image": "/media/naturheilkunde.jpg"
+        "image": "/media/naturheilkunde.jpg",
+        "slug": "naturheilkunde"
       },
       {
         "image": "/media/shiatsu.jpg",
@@ -49,7 +53,8 @@
         "cta": {
           "text": "> Erfahre mehr darüber auf meinem Blog",
           "url": "#"
-        }
+        },
+        "slug": "shiatsu"
       },
       {
         "image": "/media/energieessenzen.jpg",
@@ -58,7 +63,8 @@
         "cta": {
           "text": "> Erfahre mehr darüber auf meinem Blog",
           "url": "#"
-        }
+        },
+        "slug": "energie-essenzen"
       }
     ]
   }

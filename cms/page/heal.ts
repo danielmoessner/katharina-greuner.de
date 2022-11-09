@@ -4,6 +4,7 @@ import title from "cms/symbols/title";
 import image from "cms/symbols/image";
 import cta from "cms/symbols/cta";
 import markdown from "cms/symbols/markdown";
+import slug from "cms/symbols/slug";
 
 const heal: CmsCollectionFile = {
   file: "content/page/heal.json",
@@ -21,7 +22,7 @@ const heal: CmsCollectionFile = {
           label: "Items",
           name: "items",
           widget: "list",
-          fields: [image, title, markdown, cta],
+          fields: [image, slug, title, markdown, cta],
         },
       ],
     },

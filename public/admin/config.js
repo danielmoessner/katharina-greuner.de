@@ -297,6 +297,15 @@ var kala = {
 };
 var kala_default = kala;
 
+// cms/symbols/slug.ts
+var slug = {
+  label: "Slug",
+  name: "slug",
+  widget: "string",
+  hint: 'Bitte nur Kleinbuchstaben, Zahlen und Bindestriche verwenden. Der Slug beschreibt die URL dieses Objektes. Ein Beispielwert ist "mein-toller-artikel".'
+};
+var slug_default = slug;
+
 // cms/page/heal.ts
 var heal = {
   file: "content/page/heal.json",
@@ -314,7 +323,7 @@ var heal = {
           label: "Items",
           name: "items",
           widget: "list",
-          fields: [image_default, title_default, markdown_default, cta_default]
+          fields: [image_default, slug_default, title_default, markdown_default, cta_default]
         }
       ]
     }
@@ -670,15 +679,6 @@ var config = {
   ]
 };
 var page_default = config;
-
-// cms/symbols/slug.ts
-var slug = {
-  label: "Slug",
-  name: "slug",
-  widget: "string",
-  hint: 'Bitte nur Kleinbuchstaben, Zahlen und Bindestriche verwenden. Der Slug beschreibt die URL dieses Objektes. Ein Beispielwert ist "mein-toller-artikel".'
-};
-var slug_default = slug;
 
 // cms/article/index.ts
 var article = {
