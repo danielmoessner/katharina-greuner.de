@@ -1,6 +1,5 @@
 import meta from "../symbols/meta";
 import { CmsCollectionFile } from "netlify-cms-core";
-import internalLink from "cms/symbols/internalLink";
 import header from "cms/symbols/header";
 import title from "cms/symbols/title";
 import text from "cms/symbols/text";
@@ -37,7 +36,12 @@ const kala: CmsCollectionFile = {
           label: "Links",
           name: "links",
           widget: "list",
-          field: internalLink(true),
+          field: {
+            label: "url",
+            name: "url",
+            widget: "string",
+            hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt",
+          },
         },
         markdown,
       ],

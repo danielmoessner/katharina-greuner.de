@@ -8,10 +8,11 @@ import { useRouter } from "next/router";
 function Component({ link }) {
   const router = useRouter();
 
-  const activeClass =
-    router.asPath == link.url || router.asPath + "/" == link.url
-      ? "border-kg-yellow"
-      : " border-transparent";
+  // const activeClass =
+  //   router.asPath == link.url || router.asPath + "/" == link.url
+  //     ? "border-kg-yellow"
+  //     : "border-transparent";
+  const activeClass = "todo";
 
   return (
     <>

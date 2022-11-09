@@ -221,13 +221,11 @@ var internalLinkFields = [
   {
     label: "Text",
     name: "text",
-    i18n: true,
     widget: "string"
   },
   {
     label: "url",
     name: "url",
-    i18n: true,
     widget: "string",
     hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt"
   }
@@ -282,7 +280,12 @@ var kala = {
           label: "Links",
           name: "links",
           widget: "list",
-          field: internalLink_default(true)
+          field: {
+            label: "url",
+            name: "url",
+            widget: "string",
+            hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt"
+          }
         },
         markdown_default
       ]
