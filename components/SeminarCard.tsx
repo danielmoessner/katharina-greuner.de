@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ImageRendered } from "types/shared";
+import Button from "./Button";
 
 interface Seminar {
   title: string;
@@ -30,6 +30,7 @@ function SeminarCard({ seminar }: Props) {
             {">"} {seminar.cta.text}
           </a>
         </Link> */}
+        <Button href={seminar.cta}>{seminar.text}</Button>
       </div>
     </div>
   );

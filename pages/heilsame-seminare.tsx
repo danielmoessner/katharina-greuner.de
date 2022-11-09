@@ -42,28 +42,10 @@ function Page({ pageData, seminars }) {
       <section className="pt-6 pb-20">
         <Container layout="sm">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {seminars.map((seminar, index) => (
-              <div key={index}>
+            {seminars.map((seminar) => (
+              <div key={seminar}>
                 <SeminarCard seminar={seminar} />
               </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-      {/* seminar cards */}
-      <section className="pt-6 pb-20">
-        <Container layout="sm">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {seminars.map((seminar) => (
-              <>
-                <div key={seminar} className="">
-                  <div key={seminar}>{seminar.image}</div>
-                  <div key={seminar}>{seminar.boldtext}</div>
-                  <div key={seminar}>{seminar.shortdescription}</div>
-                  <div key={seminar}> {seminar.bold}</div>
-                  <Button href={seminar.url}>{seminar.text}</Button>
-                </div>
-              </>
             ))}
           </div>
         </Container>
