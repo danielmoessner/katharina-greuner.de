@@ -30,7 +30,7 @@ function SeminarCard({ seminar }: Props) {
             {">"} {seminar.cta.text}
           </a>
         </Link> */}
-        <Button href={seminar.cta}>{seminar.text}</Button>
+        {/* <Button href={seminar.slug}>{seminar.text}</Button> */}
       </div>
     </div>
   );

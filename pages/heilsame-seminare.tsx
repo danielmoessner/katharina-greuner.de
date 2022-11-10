@@ -60,7 +60,7 @@ export async function getStaticProps() {
   // const footerData = await renderContent(footerSource[locale]);
 
   const pageData = await renderContent(pageSource);
-  const seminars = getAllJson("seminar");
+  const seminars = await renderContent(getAllJson("seminar"));
 
   return {
     props: {
