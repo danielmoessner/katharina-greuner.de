@@ -29,13 +29,11 @@ export const internalLinkFields: CmsField[] = [
   {
     label: "Text",
     name: "text",
-    i18n: true,
     widget: "string",
   },
   {
     label: "url",
     name: "url",
-    i18n: true,
     widget: "string",
     hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt",
   },

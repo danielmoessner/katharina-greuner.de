@@ -20,7 +20,7 @@ function Page({ pageData }) {
             <div
               key={i.title}
               id={i.slug}
-              className="grid grid-cols-12 gap-x-8 gap-y-4"
+              className="grid grid-cols-12 gap-x-8 gap-y-4 scroll-mt-10"
             >
               <div className="col-span-8 sm:col-span-6 md:col-span-4">
                 <ImageRounded image={i.image} alt={i.title} />
