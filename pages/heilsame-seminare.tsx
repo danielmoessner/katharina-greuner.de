@@ -43,9 +43,11 @@ function Page({ pageData, seminars }) {
         <Container layout="sm">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {seminars.map((seminar) => (
-              <div key={seminar}>
-                <SeminarCard seminar={seminar} />
-              </div>
+              <>
+                <div key={seminar}>
+                  <SeminarCard seminar={seminar} />
+                </div>
+              </>
             ))}
           </div>
         </Container>
