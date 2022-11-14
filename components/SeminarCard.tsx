@@ -31,10 +31,9 @@ function SeminarCard({ seminar }: Props) {
       <h2 className="mt-2 text-3xl">{seminar.title}</h2>
       <p className="mt-3">{seminar.description}</p>
       <p className="mt-1 font-bold tracking-wide">{seminar.bold}</p>
+      {/* url verlinkung ? */}
       <div className="mt-2">
-        <Button href={seminar.linkedbutton.cta.url}>
-          {seminar.linkedbutton.cta.text}
-        </Button>
+        <Button href="seminare/yoga"></Button>
       </div>
     </div>
   );
