@@ -11,6 +11,13 @@ interface Seminar {
     text: string;
     url: string;
   };
+  slug: string;
+  linkedbutton: {
+    cta: {
+      text: string;
+      url: string;
+    };
+  };
 }
 
 interface Props {
@@ -25,7 +32,9 @@ function SeminarCard({ seminar }: Props) {
       <p className="mt-3">{seminar.description}</p>
       <p className="mt-1 font-bold tracking-wide">{seminar.bold}</p>
       <div className="mt-2">
-        <Button href={seminar.slug}>Erfahre mehr</Button>
+        <Button href={seminar.linkedbutton.cta.url}>
+          {seminar.linkedbutton.cta.text}
+        </Button>
       </div>
     </div>
   );

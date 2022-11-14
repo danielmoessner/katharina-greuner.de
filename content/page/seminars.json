@@ -23,6 +23,12 @@
         "cta": {
           "text": "Erfahre mehr",
           "url": "#"
+        },
+        "linkedbutton": {
+          "cta": {
+            "text": "Erfahre mehr",
+            "url": "seminar#das-glück-liegt-in-dir"
+          }
         }
       },
       {
@@ -33,6 +39,12 @@
         "cta": {
           "text": "Erfahre mehr",
           "url": "#"
+        },
+        "linkedbutton": {
+          "cta": {
+            "text": "Erfahre mehr",
+            "url": "seminar#tanzendes-herz"
+          }
         }
       },
       {
@@ -43,6 +55,12 @@
         "cta": {
           "text": "Erfahre mehr",
           "url": "#"
+        },
+        "linkedbutton": {
+          "cta": {
+            "text": "Erfahre mehr",
+            "url": "seminar#yoga"
+          }
         }
       },
       {
@@ -53,6 +71,12 @@
         "cta": {
           "text": "Erfahre mehr",
           "url": "#"
+        },
+        "linkedbutton": {
+          "cta": {
+            "text": "Erfahre mehr",
+            "url": "seminar#weisheit-der-natur"
+          }
         }
       },
       {
@@ -63,6 +87,12 @@
         "cta": {
           "text": "Erfahre mehr",
           "url": "#"
+        },
+        "linkedbutton": {
+          "cta": {
+            "text": "Erfahre mehr",
+            "url": "seminar#seelenweberinnen"
+          }
         }
       },
       {
@@ -73,6 +103,12 @@
         "cta": {
           "text": "Erfahre mehr",
           "url": "#"
+        },
+        "linkedbutton": {
+          "cta": {
+            "text": "Erfahre mehr",
+            "url": "seminar#schamanisches-ritual-reinigung-und-neubeginn"
+          }
         }
       }
     ],

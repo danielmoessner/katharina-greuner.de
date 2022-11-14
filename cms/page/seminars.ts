@@ -35,6 +35,12 @@ const seminars: CmsCollectionFile = {
             description,
             { label: "Fett", name: "bold", widget: "text" },
             cta,
+            {
+              label: "Link Button",
+              name: "linkedbutton",
+              widget: "object",
+              fields: [cta],
+            },
           ],
         },
       ],

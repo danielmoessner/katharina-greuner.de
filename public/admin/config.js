@@ -619,7 +619,13 @@ var seminars = {
             title_default,
             description_default,
             { label: "Fett", name: "bold", widget: "text" },
-            cta_default
+            cta_default,
+            {
+              label: "Link Button",
+              name: "linkedbutton",
+              widget: "object",
+              fields: [cta_default]
+            }
           ]
         }
       ]
