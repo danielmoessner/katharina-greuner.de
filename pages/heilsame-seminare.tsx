@@ -44,7 +44,7 @@ function Page({ pageData, seminars }) {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {seminars.map((seminar) => (
               <>
-                <div key={seminar}>
+                <div className="">
                   <SeminarCard seminar={seminar} />
                 </div>
               </>

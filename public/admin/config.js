@@ -23,6 +23,32 @@ var header = {
 };
 var header_default = header;
 
+// cms/symbols/text.ts
+var text = {
+  label: "Text",
+  name: "text",
+  widget: "text",
+  i18n: true
+};
+var text_default = text;
+
+// cms/symbols/title.ts
+var title = {
+  label: "Titel",
+  name: "title",
+  widget: "string"
+};
+var title_default = title;
+
+// cms/symbols/image.ts
+var image = {
+  label: "Bild",
+  name: "image",
+  widget: "image",
+  i18n: true
+};
+var image_default = image;
+
 // cms/page/home.ts
 var home = {
   file: "content/page/home.json",
@@ -44,6 +70,28 @@ var home = {
       fields: [
         { label: "Titel", name: "title", widget: "string" },
         { label: "Text", name: "text", widget: "text" },
+        { label: "Button", name: "button", widget: "string" }
+      ]
+    },
+    {
+      label: "Startseite Termine",
+      name: "currentevents",
+      widget: "object",
+      fields: [
+        { label: "Titel", name: "title", widget: "string" },
+        { label: "Text", name: "text", widget: "text" },
+        { label: "Datum", name: "date", widget: "string" },
+        { label: "Button", name: "button", widget: "string" }
+      ]
+    },
+    {
+      label: "Angebots\xFCbersicht",
+      name: "offeroverview",
+      widget: "object",
+      fields: [
+        image_default,
+        title_default,
+        text_default,
         { label: "Button", name: "button", widget: "string" }
       ]
     }
@@ -189,32 +237,6 @@ var about = {
   ]
 };
 var about_default = about;
-
-// cms/symbols/title.ts
-var title = {
-  label: "Titel",
-  name: "title",
-  widget: "string"
-};
-var title_default = title;
-
-// cms/symbols/text.ts
-var text = {
-  label: "Text",
-  name: "text",
-  widget: "text",
-  i18n: true
-};
-var text_default = text;
-
-// cms/symbols/image.ts
-var image = {
-  label: "Bild",
-  name: "image",
-  widget: "image",
-  i18n: true
-};
-var image_default = image;
 
 // cms/symbols/link.ts
 var internalLinkFields = [
@@ -619,12 +641,34 @@ var seminars = {
             title_default,
             description_default,
             { label: "Fett", name: "bold", widget: "text" },
+            {
+              label: "Termine",
+              name: "boldevent",
+              widget: "object",
+              fields: [
+                { label: "Monat", name: "month", widget: "string" },
+                {
+                  label: "Jahr",
+                  name: "year",
+                  widget: "string"
+                },
+                { label: "Zeit", name: "time", widget: "string" }
+              ]
+            },
             cta_default,
             {
-              label: "Link Button",
-              name: "linkedbutton",
-              widget: "object",
-              fields: [cta_default]
+              label: "Erfahre mehr",
+              name: "moreinfo",
+              widget: "list",
+              fields: [
+                text_default,
+                {
+                  label: "Seminar Links",
+                  name: "eventlinks",
+                  widget: "list",
+                  field: { label: "url", name: "url", widget: "string" }
+                }
+              ]
             }
           ]
         }

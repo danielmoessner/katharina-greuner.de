@@ -22,13 +22,29 @@
         "bold": "Termin: 14.-21.11.2022",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "#"
+          "url": "/seminar/das-glück-liegt-in-dir"
         },
-        "linkedbutton": {
-          "cta": {
-            "text": "Erfahre mehr",
-            "url": "seminar#das-glück-liegt-in-dir"
+        "bolddatelist": [
+          {
+            "month": "Mai"
           }
+        ],
+        "moreinfo": [
+          {
+            "markdown": "E﻿rfahre mehr",
+            "links": [
+              "/seminar/das-glück-liegt-in-dir"
+            ],
+            "text": "Erfahre mehr",
+            "eventlinks": [
+              "/seminar/das-glück-liegt-in-dir"
+            ]
+          }
+        ],
+        "boldevent": {
+          "month": "11",
+          "year": "2022",
+          "time": "10:10"
         }
       },
       {
@@ -38,13 +54,21 @@
         "bold": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "#"
+          "url": "/seminar/tanzendes-herz"
         },
-        "linkedbutton": {
-          "cta": {
-            "text": "Erfahre mehr",
-            "url": "seminar#tanzendes-herz"
+        "moreinfo": [
+          {
+            "links": [
+              "/seminar/tanzendes-herz"
+            ],
+            "markdown": "E﻿rfahre mehr",
+            "text": "Samstag, 02.07.2022, 9.00–12.30 Uhr"
           }
+        ],
+        "boldevent": {
+          "month": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "year": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "time": "Samstag, 02.07.2022, 9.00–12.30 Uhr"
         }
       },
       {
@@ -54,13 +78,21 @@
         "bold": "Samstag, 25.06.2022",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "#"
+          "url": "/seminar/yoga"
         },
-        "linkedbutton": {
-          "cta": {
-            "text": "Erfahre mehr",
-            "url": "seminar#yoga"
+        "moreinfo": [
+          {
+            "markdown": "E﻿rfahre mehr",
+            "links": [
+              "/seminar/yoga"
+            ],
+            "text": "testtext"
           }
+        ],
+        "boldevent": {
+          "month": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "year": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "time": "Samstag, 02.07.2022, 9.00–12.30 Uhr"
         }
       },
       {
@@ -70,13 +102,26 @@
         "bold": "Termin: Herbst 2022",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "#"
+          "url": "/seminar/weisheit-der-natur"
         },
-        "linkedbutton": {
-          "cta": {
-            "text": "Erfahre mehr",
-            "url": "seminar#weisheit-der-natur"
+        "moreinfo": [
+          {
+            "markdown": "Erfahre mehr",
+            "links": [
+              "/seminar/weisheit-der-natur"
+            ],
+            "text": "testtext"
           }
+        ],
+        "bolddatelist": [
+          {
+            "month": "Testmonat"
+          }
+        ],
+        "boldevent": {
+          "month": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "year": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "time": "Samstag, 02.07.2022, 9.00–12.30 Uhr"
         }
       },
       {
@@ -86,13 +131,21 @@
         "bold": "1x monatlich Donnerstag online \n19.00–21.30 Uhr",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "#"
+          "url": "/seminar/seelenweberinnen"
         },
-        "linkedbutton": {
-          "cta": {
-            "text": "Erfahre mehr",
-            "url": "seminar#seelenweberinnen"
+        "moreinfo": [
+          {
+            "markdown": "Erfahre mehr",
+            "links": [
+              "/seminar/seelenweberinnen"
+            ],
+            "text": "testtext"
           }
+        ],
+        "boldevent": {
+          "month": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "year": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "time": "Samstag, 02.07.2022, 9.00–12.30 Uhr"
         }
       },
       {
@@ -102,13 +155,21 @@
         "bold": "Termin: Herbst 2022",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "#"
+          "url": "/seminar/schamanisches-ritual-reinigung-und-neubeginn"
         },
-        "linkedbutton": {
-          "cta": {
-            "text": "Erfahre mehr",
-            "url": "seminar#schamanisches-ritual-reinigung-und-neubeginn"
+        "moreinfo": [
+          {
+            "markdown": "Erfahre mehr",
+            "links": [
+              "/seminar/schamanisches-ritual-reinigung-und-neubeginn"
+            ],
+            "text": "testtext"
           }
+        ],
+        "boldevent": {
+          "month": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "year": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
+          "time": "Samstag, 02.07.2022, 9.00–12.30 Uhr"
         }
       }
     ],

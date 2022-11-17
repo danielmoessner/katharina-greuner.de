@@ -5,7 +5,9 @@ import Script from "next/script";
 import home from "../content/page/home.json";
 import SectionHomeAbout from "../components/SectionHomeAbout";
 import SectionHomeTravel from "../components/SectionHomeTravel";
+import SectionHomeEvents from "../components/SectionHomeEvents";
 import { renderContent } from "lib/renderContent";
+import SectionContent from "components/SectionContent";
 
 function Page({ pageData }) {
   const page = pageData;
@@ -15,6 +17,8 @@ function Page({ pageData }) {
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <Seo meta={page.meta} />
       <Header header={page.header} />
+      <SectionHomeEvents currentevents={page.currentevents} />
+      <div>{page.offeroverview} </div>
       <SectionHomeAbout about={page.about} />
       <SectionHomeTravel travel={page.travel} />
     </Layout>
