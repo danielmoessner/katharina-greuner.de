@@ -20,35 +20,13 @@
   "flower": {
     "markdown": "Erfahre mehr über die Heilmethoden von Kala Heilarbeit, indem Du auf die Blütenblätter klickst.",
     "links": [
-      {
-        "url": "/heilweisen#craniosakralarbeit-und-der-atem-des-lebens"
-     
-      },
-      {
-        "url": "/#psychotherapie"
-     
-      },
-      {
-        "url": "/heilweisen#aufstellungen-und-coaching"
-      
-      },
-      {
-    
-        "url": "/heilweisen#shiatsu"
-     
-      },
-      {
-        "url": "/heilweisen#naturheilkunde"
-     
-      },
-      {
-        "url": "/heilweisen#energie-essenzen"
-   
-      },
-      {
-        "url": "/heilweisen#energetische-und-schamanische-heilweisen"
-    
-      }
+      "/heilweisen#craniosakralarbeit-und-der-atem-des-lebens",
+      "/psychotherapie",
+      "/heilweisen#aufstellungen-und-coaching",
+      "/heilweisen#shiatsu",
+      "/heilweisen#naturheilkunde",
+      "/heilweisen#energie-essenzen",
+      "/heilweisen#energetische-und-schamanische-heilweisen"
     ]
   },
   "questions": {

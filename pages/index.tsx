@@ -7,9 +7,8 @@ import SectionHomeAbout from "../components/SectionHomeAbout";
 import SectionHomeTravel from "../components/SectionHomeTravel";
 import SectionHomeEvents from "../components/SectionHomeEvents";
 import { renderContent } from "lib/renderContent";
-import SectionContent from "components/SectionContent";
 
-function Page({ pageData }) {
+function Page({ pageData, seminars }) {
   const page = pageData;
 
   return (
@@ -27,9 +26,10 @@ function Page({ pageData }) {
 
 export async function getStaticProps() {
   const pageData = await renderContent(home);
+  const seminars = [];
 
   return {
-    props: { pageData },
+    props: { pageData, seminars },
   };
 }
 

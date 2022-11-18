@@ -24,6 +24,7 @@ const seminar: CmsCollection = {
     title,
     slug,
     description,
+    { label: "Termin", name: "date", widget: "string" },
     { label: "Fetter Text", name: "boldtext", widget: "text" },
     {
       label: "Kurzbeschreibung",

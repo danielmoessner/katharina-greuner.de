@@ -9,11 +9,6 @@ import Heading from "components/Heading";
 import ContentMarkdownCtaImage from "components/ContentMarkdownCtaImage";
 import SeminarCard from "components/SeminarCard";
 import { getAllJson } from "lib/getContent";
-import seminar from "cms/page/seminar";
-import ImageBorder from "components/ImageBorder";
-import Link from "next/link";
-import ImageRounded from "components/ImageRounded";
-import Button from "components/Button";
 
 function Page({ pageData, seminars }) {
   const page = pageData;
@@ -43,11 +38,14 @@ function Page({ pageData, seminars }) {
         <Container layout="sm">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {seminars.map((seminar) => (
-              <>
+              <React.Fragment key={seminar.title}>
                 <div className="">
-                  <SeminarCard seminar={seminar} />
+                  <SeminarCard
+                    seminar={seminar}
+                    button={page.content.seminarButton}
+                  />
                 </div>
-              </>
+              </React.Fragment>
             ))}
           </div>
         </Container>

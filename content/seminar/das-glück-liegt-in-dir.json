@@ -60,32 +60,7 @@
       }
     }
   ],
-  "date": {
-    "pretitle": "Reisedaten",
-    "title": "Intensiv-Seminar auf Teneriffa",
-    "data": [
-      {
-        "value": "12.–19.11.2022, Samstag 17 Uhr bis Samstag 10 Uhr",
-        "key": "Wann"
-      },
-      {
-        "key": "Kosten",
-        "value": "630 € zzgl. Flug, Unterkunft, Verpflegung"
-      },
-      {
-        "key": "Teilnehmer",
-        "value": "max. 12 Teilnehmer"
-      },
-      {
-        "key": "Seminarort",
-        "value": "Finca el Quinto, 38416 Los Realejos, Santa Cruz de Tenerife, Spanien"
-      }
-    ],
-    "cta": {
-      "url": "#",
-      "text": "Anfrage & Buchung"
-    }
-  },
   "boldtext": "Das Glück liegt in Dir",
-  "shortdescription": "Freue Dich auf eine inspirierende Auszeit an Kraftorten in Teneriffa und komm ganz bei Dir an."
+  "shortdescription": "Freue Dich auf eine inspirierende Auszeit an Kraftorten in Teneriffa und komm ganz bei Dir an.",
+  "date": "14. - 21.11.2022"
 }

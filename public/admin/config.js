@@ -606,14 +606,6 @@ var alt = {
 };
 var alt_default = alt;
 
-// cms/symbols/description.ts
-var description = {
-  label: "Beschreibung",
-  name: "description",
-  widget: "text"
-};
-var description_default = description;
-
 // cms/page/seminars.ts
 var seminars = {
   file: "content/page/seminars.json",
@@ -632,46 +624,7 @@ var seminars = {
         cta_default,
         image_default,
         alt_default,
-        {
-          label: "Seminare",
-          name: "seminars",
-          widget: "list",
-          fields: [
-            image_default,
-            title_default,
-            description_default,
-            { label: "Fett", name: "bold", widget: "text" },
-            {
-              label: "Termine",
-              name: "boldevent",
-              widget: "object",
-              fields: [
-                { label: "Monat", name: "month", widget: "string" },
-                {
-                  label: "Jahr",
-                  name: "year",
-                  widget: "string"
-                },
-                { label: "Zeit", name: "time", widget: "string" }
-              ]
-            },
-            cta_default,
-            {
-              label: "Erfahre mehr",
-              name: "moreinfo",
-              widget: "list",
-              fields: [
-                text_default,
-                {
-                  label: "Seminar Links",
-                  name: "eventlinks",
-                  widget: "list",
-                  field: { label: "url", name: "url", widget: "string" }
-                }
-              ]
-            }
-          ]
-        }
+        { label: "Seminar-Button", name: "seminarButton", widget: "string" }
       ]
     }
   ]
@@ -967,6 +920,14 @@ var legal = {
 };
 var legal_default = legal;
 
+// cms/symbols/description.ts
+var description = {
+  label: "Beschreibung",
+  name: "description",
+  widget: "text"
+};
+var description_default = description;
+
 // cms/seminar/index.ts
 var seminar2 = {
   name: "seminar",
@@ -983,6 +944,7 @@ var seminar2 = {
     title_default,
     slug_default,
     description_default,
+    { label: "Termin", name: "date", widget: "string" },
     { label: "Fetter Text", name: "boldtext", widget: "text" },
     {
       label: "Kurzbeschreibung",

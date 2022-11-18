@@ -40,31 +40,7 @@
       }
     }
   ],
-  "date": {
-    "pretitle": "Daten",
-    "title": "Tanzendes Herz",
-    "date": "Samstag, 02.07.2022, 9.00–18.30 Uhr",
-    "costs": "110 €",
-    "location": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn",
-    "cta": {
-      "text": "Anfrage & Buchung",
-      "url": "#"
-    },
-    "data": [
-      {
-        "key": "Wann",
-        "value": "Samstag, 02.07.2022, 9.00–18.30 Uhr"
-      },
-      {
-        "key": "Kosten",
-        "value": "110 €"
-      },
-      {
-        "key": "Seminarort",
-        "value": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn"
-      }
-    ]
-  },
+  "date": "bitte ausfüllen",
   "slug": "tanzendes-herz",
   "title": "Tanzendes Herz",
   "image": "/media/tanzendes_herz_banner_ausschnitt.jpg",

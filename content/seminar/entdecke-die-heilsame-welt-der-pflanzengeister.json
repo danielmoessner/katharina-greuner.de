@@ -40,31 +40,7 @@
       ]
     }
   ],
-  "date": {
-    "pretitle": "Daten",
-    "title": "Entdecke die heilsame Welt der Pflanzengeister",
-    "date": "Samstag, 14.05.2022, 9.00–18.30 Uhr",
-    "costs": "110 €",
-    "location": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn",
-    "data": [
-      {
-        "key": "Wann",
-        "value": "Samstag, 14.05.2022, 9.00–18.30 Uhr"
-      },
-      {
-        "key": "Kosten",
-        "value": "110 €"
-      },
-      {
-        "key": "Seminarort",
-        "value": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn"
-      }
-    ],
-    "cta": {
-      "text": "Anfrage & Buchung",
-      "url": "#"
-    }
-  },
+  "date": "bitte ausfüllen",
   "boldtext": "Aus der Weisheit der Natur",
   "shortdescription": "In einen heilsamen Dialog mit den Naturkräften und Elementarwesen schöpfst Du Weisheit und Vertrauen für Deinen Weg."
 }
