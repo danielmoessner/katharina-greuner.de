@@ -39,7 +39,13 @@
     },
     {
       "title": "Mein Angebot",
-      "content": [],
+      "content": [
+        {
+          "type": "link",
+          "text": "Kala Heilarbeit",
+          "url": "/kala-heilarbeit"
+        }
+      ],
       "class": "col-span-6 md:col-span-3"
     },
     {

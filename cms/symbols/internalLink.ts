@@ -12,7 +12,7 @@ export const linkFields = (required) => [
     name: "url",
     type: "string",
     required: required,
-    hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf/ oder /kontakt/",
+    hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt",
   },
 ];
 

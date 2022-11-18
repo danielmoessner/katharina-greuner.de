@@ -121,7 +121,7 @@ var linkFields = (required) => [
     name: "url",
     type: "string",
     required,
-    hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf/ oder /kontakt/"
+    hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt"
   }
 ];
 var internalLink = (required = false) => ({
@@ -239,6 +239,21 @@ var about = {
 var about_default = about;
 
 // cms/symbols/link.ts
+var externalLinkFields = [
+  {
+    label: "Text",
+    i18n: true,
+    name: "text",
+    widget: "string"
+  },
+  {
+    label: "url",
+    i18n: true,
+    name: "url",
+    widget: "string",
+    hint: "Die URL sollte nicht auf die selbe Seite zeigen, kann aber alles enthalten. Beispiele: mailto:kontakt@tortuga-webdesign.de oder https://tortuga-webdesign.de/referenzen/"
+  }
+];
 var internalLinkFields = [
   {
     label: "Text",
@@ -740,24 +755,11 @@ var category = {
 var category_default = category;
 
 // cms/setting/footer.ts
-var linkFields2 = [
-  {
-    label: "Text",
-    name: "text",
-    type: "string"
-  },
-  {
-    label: "url",
-    name: "url",
-    type: "string",
-    hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf/ oder /kontakt/"
-  }
-];
 var link = {
   label: "Interner Link",
   name: "link",
   widget: "object",
-  fields: linkFields2,
+  fields: linkFields(true),
   collapsed: false
 };
 var text2 = {
@@ -766,19 +768,6 @@ var text2 = {
   widget: "object",
   fields: [{ label: "Text", name: "text", widget: "text" }]
 };
-var externalLinkFields = [
-  {
-    label: "Text",
-    name: "text",
-    type: "string"
-  },
-  {
-    label: "url",
-    name: "url",
-    type: "string",
-    hint: "Die URL sollte nicht auf die selbe Seite zeigen, kann aber alles enthalten. Beispiele: mailto:kontakt@tortuga-webdesign.de oder https://tortuga-webdesign.de/referenzen/"
-  }
-];
 var externalLink = {
   label: "Externer Link",
   name: "externalLink",
@@ -827,7 +816,7 @@ var global = {
 var global_default = global;
 
 // cms/setting/navigation.ts
-var linkFields3 = [
+var linkFields2 = [
   {
     label: "Text",
     name: "text",
@@ -844,7 +833,7 @@ var link2 = {
   label: "Normales Item",
   name: "link",
   widget: "object",
-  fields: linkFields3,
+  fields: linkFields2,
   collapsed: false
 };
 var links = {
@@ -862,7 +851,7 @@ var links = {
       label: "Links",
       name: "links",
       widget: "list",
-      fields: linkFields3
+      fields: linkFields2
     }
   ]
 };
