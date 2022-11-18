@@ -1,18 +1,14 @@
 import React from "react";
-// import PropTypes from "prop-types";
-// import { Link } from "gatsby";
 import Link from "next/link";
 import { useRouter } from "next/router";
-// import { Transition } from '@headlessui/react';
 
 function Component({ link }) {
   const router = useRouter();
 
-  // const activeClass =
-  //   router.asPath == link.url || router.asPath + "/" == link.url
-  //     ? "border-kg-yellow"
-  //     : "border-transparent";
-  const activeClass = "todo";
+  const activeClass =
+    router.asPath == link.url || router.asPath + "/" == link.url
+      ? "border-kg-yellow"
+      : "border-transparent";
 
   return (
     <>
