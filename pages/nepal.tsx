@@ -5,7 +5,6 @@ import nepal from "../content/page/nepal.json";
 import { renderContent } from "lib/renderContent";
 import SectionFlowerBackground from "components/SectionFlowerBackground";
 import SectionStart from "components/SectionStart";
-import ContentImageText from "components/ContentImageText";
 import SectionContent from "components/SectionContent";
 import ContentMarkdownImage from "components/ContentMarkdownImage";
 import ContentMarkdown from "components/ContentMarkdown";
@@ -14,6 +13,7 @@ import Heading from "components/Heading";
 import Button from "components/Button";
 import ImageBorder from "components/ImageBorder";
 import Image from "next/image";
+import ContentImageMarkdown from "components/ContentImageMarkdown";
 
 function Page({ pageData }) {
   const page = pageData;
@@ -26,8 +26,8 @@ function Page({ pageData }) {
       <SectionStart start={page.start}>
         <div className="grid gap-y-12">
           <div className="grid items-center gap-x-12 ">
-            <ContentImageText
-              text={page.start.markdown.html}
+            <ContentImageMarkdown
+              html={page.start.markdown.html}
               image={page.start.image}
               alt={page.start.text}
             />
@@ -55,8 +55,7 @@ function Page({ pageData }) {
       </SectionFlowerBackground>
 
       <SectionContent>
-        {/* content left */}
-        <div className="grid grid-cols-2 place-content-center gap-x-12 gap-y-4">
+        <div className="grid md:grid-cols-2 place-content-center gap-x-12 gap-y-4">
           <div>
             <Heading>
               <div className=""> {page.activities.title}</div>
@@ -81,7 +80,6 @@ function Page({ pageData }) {
             </div>
           </div>
 
-          {/* image right */}
           <div className="">
             <ImageBorder>
               <Image {...page.activities.image} alt={page.activities.alt} />
