@@ -49,6 +49,46 @@ var image = {
 };
 var image_default = image;
 
+// cms/symbols/link.ts
+var externalLinkFields = [
+  {
+    label: "Text",
+    i18n: true,
+    name: "text",
+    widget: "string"
+  },
+  {
+    label: "url",
+    i18n: true,
+    name: "url",
+    widget: "string",
+    hint: "Die URL sollte nicht auf die selbe Seite zeigen, kann aber alles enthalten. Beispiele: mailto:kontakt@tortuga-webdesign.de oder https://tortuga-webdesign.de/referenzen/"
+  }
+];
+var internalLinkFields = [
+  {
+    label: "Text",
+    name: "text",
+    widget: "string"
+  },
+  {
+    label: "url",
+    name: "url",
+    widget: "string",
+    hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt"
+  }
+];
+
+// cms/symbols/cta.ts
+var cta = {
+  label: "CTA",
+  name: "cta",
+  i18n: true,
+  widget: "object",
+  fields: internalLinkFields
+};
+var cta_default = cta;
+
 // cms/page/home.ts
 var home = {
   file: "content/page/home.json",
@@ -74,17 +114,6 @@ var home = {
       ]
     },
     {
-      label: "Startseite Termine",
-      name: "currentevents",
-      widget: "object",
-      fields: [
-        { label: "Titel", name: "title", widget: "string" },
-        { label: "Text", name: "text", widget: "text" },
-        { label: "Datum", name: "date", widget: "string" },
-        { label: "Button", name: "button", widget: "string" }
-      ]
-    },
-    {
       label: "Angebots\xFCbersicht",
       name: "offeroverview",
       widget: "object",
@@ -92,6 +121,7 @@ var home = {
         image_default,
         title_default,
         text_default,
+        cta_default,
         { label: "Button", name: "button", widget: "string" }
       ]
     }
@@ -237,46 +267,6 @@ var about = {
   ]
 };
 var about_default = about;
-
-// cms/symbols/link.ts
-var externalLinkFields = [
-  {
-    label: "Text",
-    i18n: true,
-    name: "text",
-    widget: "string"
-  },
-  {
-    label: "url",
-    i18n: true,
-    name: "url",
-    widget: "string",
-    hint: "Die URL sollte nicht auf die selbe Seite zeigen, kann aber alles enthalten. Beispiele: mailto:kontakt@tortuga-webdesign.de oder https://tortuga-webdesign.de/referenzen/"
-  }
-];
-var internalLinkFields = [
-  {
-    label: "Text",
-    name: "text",
-    widget: "string"
-  },
-  {
-    label: "url",
-    name: "url",
-    widget: "string",
-    hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt"
-  }
-];
-
-// cms/symbols/cta.ts
-var cta = {
-  label: "CTA",
-  name: "cta",
-  i18n: true,
-  widget: "object",
-  fields: internalLinkFields
-};
-var cta_default = cta;
 
 // cms/symbols/markdown.ts
 var markdown = {

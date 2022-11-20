@@ -7,6 +7,9 @@ import SectionHomeAbout from "../components/SectionHomeAbout";
 import SectionHomeTravel from "../components/SectionHomeTravel";
 import SectionHomeEvents from "../components/SectionHomeEvents";
 import { renderContent } from "lib/renderContent";
+import { getAllJson } from "lib/getContent";
+import React from "react";
+import SeminarCard from "components/SeminarCard";
 
 function Page({ pageData, seminars }) {
   const page = pageData;
@@ -16,7 +19,16 @@ function Page({ pageData, seminars }) {
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <Seo meta={page.meta} />
       <Header header={page.header} />
-      <SectionHomeEvents currentevents={page.currentevents} />
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {seminars.map((seminar) => (
+          <React.Fragment key={seminar.title}>
+            <div className="">
+              <SeminarCard seminar={seminar} button={seminar.button} />
+            </div>
+          </React.Fragment>
+        ))}
+      </div>
+
       <div>{page.offeroverview} </div>
       <SectionHomeAbout about={page.about} />
       <SectionHomeTravel travel={page.travel} />
@@ -26,8 +38,7 @@ function Page({ pageData, seminars }) {
 
 export async function getStaticProps() {
   const pageData = await renderContent(home);
-  const seminars = [];
-
+  const seminars = await renderContent(getAllJson("seminar"));
   return {
     props: { pageData, seminars },
   };
