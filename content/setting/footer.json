@@ -44,13 +44,75 @@
           "type": "link",
           "text": "Kala Heilarbeit",
           "url": "/kala-heilarbeit"
+        },
+        {
+          "type": "link",
+          "text": "Ausbildung",
+          "url": "/ausbildung"
+        },
+        {
+          "type": "link",
+          "text": "Yoga",
+          "url": "/seminar/yoga"
+        },
+        {
+          "type": "link",
+          "text": "Spirituelle Reisen",
+          "url": "/seminar/wo-die-seele-wohnt"
+        },
+        {
+          "type": "link",
+          "text": "Der Kreis der Seelenweberinnen",
+          "url": "/seminar/seelenweberinnen#"
+        },
+        {
+          "type": "link",
+          "text": "Heilsame Seminare",
+          "url": "/heilsame-seminare"
+        },
+        {
+          "type": "link",
+          "text": "Newsletter",
+          "url": "/newsletter"
         }
       ],
       "class": "col-span-6 md:col-span-3"
     },
     {
       "class": "col-span-6 md:col-span-3",
-      "title": "Info"
+      "title": "Info",
+      "content": [
+        {
+          "type": "link",
+          "text": "Über mich",
+          "url": "/ueber-mich"
+        },
+        {
+          "type": "link",
+          "text": "Soziales Engagement",
+          "url": "/soziales-engagement"
+        },
+        {
+          "type": "link",
+          "text": "Blog",
+          "url": "/blog"
+        },
+        {
+          "type": "link",
+          "text": "Impressum",
+          "url": "/impressum"
+        },
+        {
+          "type": "link",
+          "text": "Datenschutzerklärung",
+          "url": "/datenschutzerklärung"
+        },
+        {
+          "type": "link",
+          "text": "Kontakt",
+          "url": "/kontakt"
+        }
+      ]
     }
   ]
 }
