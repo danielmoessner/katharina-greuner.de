@@ -26,21 +26,23 @@ function Page({ pageData, seminars }) {
           <Container layout="sm">
             <div> Aktuelle Reisen </div>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {seminars.map((seminar) => (
-                <React.Fragment key={seminar.title}>
-                  <div className="">
-                    <CurrentEvents seminar={seminar} button={seminar.button} />
-                  </div>
-                </React.Fragment>
-              ))}
+              {seminars
+                .filter((i) => i.showOnHome)
+                .map((seminar) => (
+                  <React.Fragment key={seminar.title}>
+                    <div className="">
+                      <CurrentEvents
+                        seminar={seminar}
+                        button={seminar.button}
+                      />
+                    </div>
+                  </React.Fragment>
+                ))}
             </div>
           </Container>
         </section>
       </SectionFlowerBackground>
-      <SectionHomeContent
-        offeroverview={page.offeroverview}
-        button={page.seminar}
-      />
+      <SectionHomeContent offeroverview={page.offeroverview} />
       <SectionHomeAbout about={page.about} />
       <SectionHomeTravel travel={page.travel} />
     </Layout>

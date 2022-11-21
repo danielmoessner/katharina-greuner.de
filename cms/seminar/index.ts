@@ -24,6 +24,12 @@ const seminar: CmsCollection = {
     title,
     slug,
     description,
+    {
+      label: "auf der startseite anzeigen ?",
+      name: "showOnHome",
+      widget: "boolean",
+      required: false,
+    },
     { label: "Termin", name: "date", widget: "string" },
     { label: "Fetter Text", name: "boldtext", widget: "text" },
     {

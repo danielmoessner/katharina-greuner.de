@@ -923,6 +923,12 @@ var seminar2 = {
     title_default,
     slug_default,
     description_default,
+    {
+      label: "auf der startseite anzeigen ?",
+      name: "showOnHome",
+      widget: "boolean",
+      required: false
+    },
     { label: "Termin", name: "date", widget: "string" },
     { label: "Fetter Text", name: "boldtext", widget: "text" },
     {
