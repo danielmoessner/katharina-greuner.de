@@ -29,11 +29,10 @@ const home: CmsCollectionFile = {
         { label: "Button", name: "button", widget: "string" },
       ],
     },
-
     {
       label: "Angebotsübersicht",
       name: "offeroverview",
-      widget: "object",
+      widget: "list",
       fields: [
         image,
         title,

@@ -116,7 +116,7 @@ var home = {
     {
       label: "Angebots\xFCbersicht",
       name: "offeroverview",
-      widget: "object",
+      widget: "list",
       fields: [
         image_default,
         title_default,

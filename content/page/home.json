@@ -16,5 +16,67 @@
     "title": "Spirituelle Reisen",
     "text": "Spirituelle Reisen führen Dich an besondere Orte der Kraft und Transformation. Sie berühren die Seele und Du erlebst einzigartige Momente der Inspiration und der Lebensfreude.",
     "button": "Zu den Spirituellen Reisen"
-  }
+  },
+  "offeroverview": [
+    {
+      "image": "/media/supervision.jpg",
+      "title": "Supervision",
+      "text": "supervision mit Herz und Augenmals. um neue Perspektiven zu gestalten. Für Therapeut:innen, Yoga-Lehrer:innen und alle Interessierten.",
+      "cta": {
+        "text": "> Erstgespräch vereinbaren",
+        "url": "#"
+      },
+      "button": "Erstgespräch vereinbaren"
+    },
+    {
+      "image": "/media/kala_heilarbeit.jpg",
+      "title": "Kala Heilarbeit",
+      "text": "Kala Heilarbeit ermöglicht tiefgreifende\nHeilungsprozesse, weil sie zu den Wurzeln von Krankheiten oder Krisen vordringt. Bewährte Behandlungsweisen für den Körper, das Energiefeld und die Seele ergänzen sich ganzheitlich.",
+      "cta": {
+        "text": "> Mehr über Kala Heilarbeit",
+        "url": "#"
+      },
+      "button": "Mehr über Kala Heilarbeit"
+    },
+    {
+      "image": "/media/ganzheitliche_psychotherapie.jpg",
+      "title": "Ganzheitliche Psychotherapie",
+      "text": "Ganzheitlich und unvoreingenommen finden wir gemeinsam heraus, was Du brauchst, damit Du Deine innere Lebenskraft und Lebensfreude wieder entfalten kannst.",
+      "cta": {
+        "text": "> Mehr Informationen",
+        "url": "#"
+      },
+      "button": "> Mehr Informationen"
+    },
+    {
+      "image": "/media/wise_woman_yoga.jpg",
+      "title": "Wise Woman Yoga",
+      "text": "Weibliche Weisheit verbindet sich mit der Tradition des Yoga und bringt Dich wieder in\nDeine ureigene Kran",
+      "cta": {
+        "text": "> Finde Dein Yoga-Angebot",
+        "url": "#"
+      },
+      "button": "Finde Dein Yoga-Angebot"
+    },
+    {
+      "image": "/media/seelenweberinnen.jpg",
+      "title": "Kreis der Seelenweberinnen",
+      "text": "Wir Seelenweberinnen erwecken die uralte\nWeisheit unserer Seelen wieder zu neuem Leben.\nGemeinsam erschatten wir ein heilsames Gewene\nvoller Schonheit und Kraft. Sei eine von uns!",
+      "cta": {
+        "text": "> Komm in den Kreis der Seelenweberinnen",
+        "url": "#"
+      },
+      "button": "Komm in den Kreis der Seelenweberinnen"
+    },
+    {
+      "image": "/media/ausbildung.jpg",
+      "title": "Ausbildung",
+      "text": "Werde Heiler:in für Dich und andere!",
+      "cta": {
+        "text": "> Erfahre mehr",
+        "url": "#"
+      },
+      "button": "> Erfahre mehr"
+    }
+  ]
 }
