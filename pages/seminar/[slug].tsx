@@ -152,13 +152,13 @@ function Page({ seminarData }) {
               <div className="py-20">
                 <div className="flex justify-center">
                   <Heading element="h2" size="h2">
-                    <b>{seminar.date.pretitle}</b> | {seminar.date.title}
+                    <b>{section.pretitle}</b> | {section.title}
                   </Heading>
                 </div>
                 <div className="mt-10">
                   <table className="mx-auto">
                     <tbody>
-                      {seminar.date.data.map((item) => (
+                      {section.data.map((item) => (
                         <tr key={item.key}>
                           <td className="px-2 font-bold">{item.key}:</td>
                           <td className="px-2">{item.value}</td>
@@ -168,9 +168,7 @@ function Page({ seminarData }) {
                   </table>
                 </div>
                 <div className="flex justify-center mt-8">
-                  <Button href={seminar.date.cta.url}>
-                    {seminar.date.cta.text}
-                  </Button>
+                  <Button href={section.cta.url}>{section.cta.text}</Button>
                 </div>
               </div>
             </SectionFlowerBackground>
