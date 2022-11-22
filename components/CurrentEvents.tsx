@@ -1,6 +1,5 @@
 import { ImageRendered } from "types/shared";
 import Button from "./Button";
-import Header from "../components/Header";
 
 interface Seminar {
   title: string;
@@ -22,7 +21,7 @@ function CurrentEvents({ seminar, button }: Props) {
       <p className="mt-3">{seminar.description}</p>
       <p className="mt-1 font-bold tracking-wide">{seminar.date}</p>
       <div className="mt-2">
-        <Button className="text-blue" href={seminar.slug}>
+        <Button className="text-blue" href={`seminar/${seminar.slug}`}>
           {button}
         </Button>
       </div>
