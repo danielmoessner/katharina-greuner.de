@@ -1,4 +1,6 @@
 {
+  "shortdescription": "Meditativer schamanischer Seelentanz um inneres Wachstum, Freude und Herzenswünsche zu verwirklichen.",
+  "slug": "tanzendes-herz",
   "sections": [
     {
       "type": "textimage",
@@ -41,10 +43,9 @@
     }
   ],
   "date": "Samstag, 02.07.2022, 9.00-18.30 Uhr",
-  "slug": "tanzendes-herz",
-  "title": "Tanzendes Herz",
-  "image": "/media/tanzendes_herz_banner_ausschnitt.jpg",
-  "description": "Meditativer schamanischer Seelentanz um inneres Wachstum, Freude und Herzenswünsche zu verwirklichen.",
   "boldtext": "Tanzendes Herz",
-  "shortdescription": "Meditativer schamanischer Seelentanz um inneres Wachstum, Freude und Herzenswünsche zu verwirklichen."
+  "title": "Tanzendes Herz",
+  "showOnHome": true,
+  "image": "/media/tanzendes_herz_banner_ausschnitt.jpg",
+  "description": "Meditativer schamanischer Seelentanz um inneres Wachstum, Freude und Herzenswünsche zu verwirklichen."
 }

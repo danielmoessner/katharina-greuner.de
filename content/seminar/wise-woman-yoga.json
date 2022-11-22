@@ -1,7 +1,6 @@
 {
-  "title": "Wise Woman Yoga",
+  "shortdescription": "Ein Samstag, um ganz zu Dir zu kommen, Dein Herz zu öffnen und Deine Wurzeln zu stärken.",
   "slug": "yoga",
-  "description": "Ein Samstag, um ganz zu Dir zu kommen, Dein Herz zu öffnen und Deine Wurzeln zu stärken.",
   "sections": [
     {
       "type": "imagetext",
@@ -54,7 +53,9 @@
     }
   ],
   "date": "19.09.-19.12.2022",
-  "image": "/media/kala_yoga_banner_ausschnitt.jpg",
   "boldtext": "Wise Woman Yoga Samstagsseminar",
-  "shortdescription": "Ein Samstag, um ganz zu Dir zu kommen, Dein Herz zu öffnen und Deine Wurzeln zu stärken."
+  "title": "Wise Woman Yoga",
+  "showOnHome": true,
+  "image": "/media/kala_yoga_banner_ausschnitt.jpg",
+  "description": "Ein Samstag, um ganz zu Dir zu kommen, Dein Herz zu öffnen und Deine Wurzeln zu stärken."
 }

@@ -22,10 +22,12 @@ function Page({ pageData, seminars }) {
       <Seo meta={page.meta} />
       <Header header={page.header} />
       <SectionFlowerBackground>
-        <section className="pt-6 pb-20">
+        <h2 className="flex p-2 text-3xl place-content-center ">
+          Aktuelle Reisen
+        </h2>
+        <section className="flex flex-col pb-4">
           <Container layout="sm">
-            <div> Aktuelle Reisen </div>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-row gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {seminars
                 .filter((i) => i.showOnHome)
                 .map((seminar) => (

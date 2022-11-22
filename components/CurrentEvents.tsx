@@ -1,5 +1,6 @@
 import { ImageRendered } from "types/shared";
 import Button from "./Button";
+import Header from "../components/Header";
 
 interface Seminar {
   title: string;
@@ -16,12 +17,14 @@ interface Props {
 
 function CurrentEvents({ seminar, button }: Props) {
   return (
-    <div className="p-4 border-b-2 h-max bg-kg-green/20">
+    <div className="flex flex-col min-h-full p-4 w-72 gap-x-4 bg-kg-green/20">
       <h2 className="mt-2 text-3xl">{seminar.title}</h2>
       <p className="mt-3">{seminar.description}</p>
       <p className="mt-1 font-bold tracking-wide">{seminar.date}</p>
       <div className="mt-2">
-        <Button href={`seminar/${seminar.slug}`}>{button}</Button>
+        <Button className="text-blue" href={seminar.slug}>
+          {button}
+        </Button>
       </div>
     </div>
   );
