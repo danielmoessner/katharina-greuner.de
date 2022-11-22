@@ -24,7 +24,7 @@ function Component({ offeroverview }: Props) {
   return (
     <Section className="relative py-2">
       <Container layout="sm">
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-3 ">
           {offeroverview.map((item) => (
             <div key={item.title} className="p-4 ">
               <ImageBorder>
