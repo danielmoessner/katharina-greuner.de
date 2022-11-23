@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 import ChildrenData from "../types/ChildrenData";
 
-function Component({
+function Button({
   // element
   element,
   // attrs
@@ -71,7 +71,7 @@ function Component({
   );
 }
 
-Component.defaultProps = {
+Button.defaultProps = {
   // element
   element: "Link",
   // attrs
@@ -92,7 +92,7 @@ Component.defaultProps = {
   className: null,
 };
 
-Component.propTypes = {
+Button.propTypes = {
   // element
   element: PropTypes.oneOf(["a", "button", "Link"]),
   // attrs
@@ -115,4 +115,4 @@ Component.propTypes = {
   children: ChildrenData.isRequired,
 };
 
-export default Component;
+export default Button;

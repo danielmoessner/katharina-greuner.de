@@ -14,6 +14,24 @@ const home: CmsCollectionFile = {
     meta,
     header,
     {
+      label: "Events",
+      name: "events",
+      widget: "object",
+      fields: [{ label: "Button", name: "button", widget: "string" }],
+    },
+    {
+      label: "Angebotsübersicht",
+      name: "offeroverview",
+      widget: "list",
+      fields: [
+        image,
+        title,
+        text,
+        cta,
+        { label: "Button", name: "button", widget: "string" },
+      ],
+    },
+    {
       label: "Über mich",
       name: "about",
       widget: "object",
@@ -26,18 +44,6 @@ const home: CmsCollectionFile = {
       fields: [
         { label: "Titel", name: "title", widget: "string" },
         { label: "Text", name: "text", widget: "text" },
-        { label: "Button", name: "button", widget: "string" },
-      ],
-    },
-    {
-      label: "Angebotsübersicht",
-      name: "offeroverview",
-      widget: "list",
-      fields: [
-        image,
-        title,
-        text,
-        cta,
         { label: "Button", name: "button", widget: "string" },
       ],
     },

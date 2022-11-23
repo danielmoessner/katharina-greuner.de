@@ -98,6 +98,24 @@ var home = {
     meta_default,
     header_default,
     {
+      label: "Events",
+      name: "events",
+      widget: "object",
+      fields: [{ label: "Button", name: "button", widget: "string" }]
+    },
+    {
+      label: "Angebots\xFCbersicht",
+      name: "offeroverview",
+      widget: "list",
+      fields: [
+        image_default,
+        title_default,
+        text_default,
+        cta_default,
+        { label: "Button", name: "button", widget: "string" }
+      ]
+    },
+    {
       label: "\xDCber mich",
       name: "about",
       widget: "object",
@@ -110,18 +128,6 @@ var home = {
       fields: [
         { label: "Titel", name: "title", widget: "string" },
         { label: "Text", name: "text", widget: "text" },
-        { label: "Button", name: "button", widget: "string" }
-      ]
-    },
-    {
-      label: "Angebots\xFCbersicht",
-      name: "offeroverview",
-      widget: "list",
-      fields: [
-        image_default,
-        title_default,
-        text_default,
-        cta_default,
         { label: "Button", name: "button", widget: "string" }
       ]
     }

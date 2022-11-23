@@ -78,5 +78,8 @@
       },
       "button": "> Erfahre mehr"
     }
-  ]
+  ],
+  "events": {
+    "button": "> Erfahre mehr"
+  }
 }
