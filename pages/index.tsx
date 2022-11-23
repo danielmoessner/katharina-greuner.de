@@ -5,7 +5,6 @@ import Script from "next/script";
 import home from "../content/page/home.json";
 import SectionHomeAbout from "../components/SectionHomeAbout";
 import SectionHomeTravel from "../components/SectionHomeTravel";
-import Container from "components/Container";
 import { renderContent } from "lib/renderContent";
 import { getAllJson } from "lib/getContent";
 import React from "react";
