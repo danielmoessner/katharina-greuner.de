@@ -12,6 +12,7 @@ function Component({ blocks }) {
         <div className="grid space-y-16">
           {blocks.map((block, index) => (
             <div key={index} className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              {/* klasse muss angepasst werden sodass die condition nur bei großen großen screensizes greift, sonst funktioniert die mobile view nicht, habe vor der indexierung md: hinzugefügt damit mobile view erstmal gut aussieht  */}
               <div
                 className={` md:row-start-1 md:${
                   index % 2 === 0 ? "col-start-1" : "col-start-2"
