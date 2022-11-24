@@ -4,7 +4,6 @@ import Section from "./Section";
 import ImageBorder from "./ImageBorder";
 import Heading from "./Heading";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 function Component({ blocks }) {
   return (
