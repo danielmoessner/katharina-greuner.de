@@ -14,7 +14,7 @@ function ContentImageMarkdownCta({ html, image, alt, cta }) {
       <div>
         <Prose html={html} />
         <div className="mt-6">
-          <Button to={cta.href}>{cta.text}</Button>
+          <Button href={cta.href}>{cta.text}</Button>
         </div>
       </div>
     </div>

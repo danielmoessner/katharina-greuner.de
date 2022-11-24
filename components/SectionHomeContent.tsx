@@ -12,7 +12,7 @@ interface Offeroverview {
   Button: string;
   cta: {
     text: string;
-    url: string;
+    href: string;
   };
 }
 
@@ -33,7 +33,7 @@ function Component({ offeroverview }: Props) {
               <h3 className="mt-3 text-2xl">{item.title}</h3>
               <p className="mt-2 tracking-wide">{item.text}</p>
               <div className="mt-2">
-                <Button className="text-blue" href={item.cta.url}>
+                <Button className="text-blue" href={item.cta.href}>
                   {item.cta.text}
                 </Button>
               </div>

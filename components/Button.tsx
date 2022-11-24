@@ -75,7 +75,6 @@ Button.defaultProps = {
   // element
   element: "Link",
   // attrs
-  to: "/",
   href: "#",
   type: "submit",
   target: "_self",

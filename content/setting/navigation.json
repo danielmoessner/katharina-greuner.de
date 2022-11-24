@@ -6,42 +6,42 @@
     {
       "type": "link",
       "text": "Home",
-      "url": "/"
+      "href": "/"
     },
     {
       "type": "link",
       "text": "Über mich",
-      "url": "/ueber-mich"
+      "href": "/ueber-mich"
     },
     {
       "type": "link",
       "text": "Kala Heilarbeit",
-      "url": "/kala-heilarbeit"
+      "href": "/kala-heilarbeit"
     },
     {
       "type": "link",
       "text": "Ausbildung",
-      "url": "/ausbildung"
+      "href": "/ausbildung"
     },
     {
       "type": "link",
       "text": "Yoga",
-      "url": "/seminar/yoga"
+      "href": "/seminar/yoga"
     },
     {
       "type": "link",
       "text": "Heilsame Seminare",
-      "url": "/heilsame-seminare"
+      "href": "/heilsame-seminare"
     },
     {
       "type": "link",
       "text": "Blog",
-      "url": "/blog"
+      "href": "/blog"
     },
     {
       "type": "link",
       "text": "Kontakt",
-      "url": "/kontakt"
+      "href": "/kontakt"
     }
   ]
 }

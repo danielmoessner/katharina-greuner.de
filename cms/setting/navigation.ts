@@ -11,8 +11,8 @@ const linkFields = [
     type: "string",
   },
   {
-    label: "url",
-    name: "url",
+    label: "href",
+    name: "href",
     type: "string",
     hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf/ oder /kontakt/",
   },

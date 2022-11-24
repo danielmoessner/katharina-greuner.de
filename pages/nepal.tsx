@@ -67,12 +67,12 @@ function Page({ pageData }) {
               </p>
               <div className="flex flex-col justify-center gap-y-1">
                 {page.activities.links.map((item) => (
-                  <Link key={item.text} href={item.url}>
+                  <Link key={item.text} href={item.href}>
                     <a>{item.text}</a>
                   </Link>
                 ))}
                 <div className="flex self-stretch mt-6 ">
-                  <Button href={page.activities.cta.url}>
+                  <Button href={page.activities.cta.href}>
                     {page.activities.cta.text}
                   </Button>
                 </div>

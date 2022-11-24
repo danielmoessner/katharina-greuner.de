@@ -17,7 +17,7 @@
       "title": "Kurse",
       "cta": {
         "text": "Zum Yogakurs Anmelden",
-        "url": "/kontakt"
+        "href": "/kontakt"
       },
       "yogadata": [
         {
@@ -47,7 +47,7 @@
       "title": "Online Yoga - überall möglich",
       "cta": {
         "text": "Anfragen & Termine",
-        "url": "/kontakt"
+        "href": "/kontakt"
       },
       "markdown": "Es ist noch nicht so lange her, dass ich mit dem Online-Yoga begonnen habe und ich bin begeistert von den Möglichkeiten: Die Stunden sind so intensiv und lebendig wie die Präsenz-Kurse und wer einfach lieber in den eigenen vier Wänden übt, kann von jedem Ort aus daran teilnehmen.\n\nIn unserer Gruppe ist ein reger Austausch entstanden, wir nehmen uns Zeit für Rückfragen und Korrekturen und auch dafür, miteinander zu lachen!\n\nWir sind zwar nicht am gleichen Ort, aber wir befinden uns im selben Raum - wir erschaffen diesen Raum durch unsere Präsenz.\n\nUnd noch etwas Gutes hat das Online-Yoga: Wer möchte, erhält im Anschluss an die Stunde den Videomitschnitt der Übungen und kann so alle Übungen zu Hause wiederholen und vertiefen, so oft er möchte."
     }

@@ -168,7 +168,7 @@ function Page({ seminarData }) {
                   </table>
                 </div>
                 <div className="flex justify-center mt-8">
-                  <Button href={section.cta.url}>{section.cta.text}</Button>
+                  <Button href={section.cta.href}>{section.cta.text}</Button>
                 </div>
               </div>
             </SectionFlowerBackground>
@@ -200,7 +200,7 @@ function Page({ seminarData }) {
                   </table>
                 </div>
                 <div className="flex justify-center mt-8">
-                  <Button href={section.cta.url}>{section.cta.text}</Button>
+                  <Button href={section.cta.href}>{section.cta.text}</Button>
                 </div>
               </div>
             </SectionFlowerBackground>
@@ -227,7 +227,9 @@ function Page({ seminarData }) {
                       />
                     </div>
                     <div className="flex justify-center mt-10">
-                      <Button to={section.cta.href}>{section.cta.text}</Button>
+                      <Button href={section.cta.href}>
+                        {section.cta.text}
+                      </Button>
                     </div>
                   </div>
                 </div>

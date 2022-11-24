@@ -22,7 +22,7 @@
       "title": "Entdecke die heilsame Welt der Pflanzengeister",
       "cta": {
         "text": "Anfrage & Buchung",
-        "url": "/kontakt"
+        "href": "/kontakt"
       },
       "data": [
         {

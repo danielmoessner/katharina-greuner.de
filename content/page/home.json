@@ -18,7 +18,7 @@
     "button": "Zu den Spirituellen Reisen",
     "cta": {
       "text": "Zu den Spirituellen Reisen",
-      "url": "/seminar/wo-die-seele-wohnt"
+      "href": "/seminar/wo-die-seele-wohnt"
     }
   },
   "offeroverview": [
@@ -28,7 +28,7 @@
       "text": "supervision mit Herz und Augenmals. um neue Perspektiven zu gestalten. Für Therapeut:innen, Yoga-Lehrer:innen und alle Interessierten.",
       "cta": {
         "text": "> Erstgespräch vereinbaren",
-        "url": "/supervision"
+        "href": "/supervision"
       },
       "button": "Erstgespräch vereinbaren"
     },
@@ -38,7 +38,7 @@
       "text": "Kala Heilarbeit ermöglicht tiefgreifende\nHeilungsprozesse, weil sie zu den Wurzeln von Krankheiten oder Krisen vordringt. Bewährte Behandlungsweisen für den Körper, das Energiefeld und die Seele ergänzen sich ganzheitlich.",
       "cta": {
         "text": "> Mehr über Kala Heilarbeit",
-        "url": "/kala-heilarbeit"
+        "href": "/kala-heilarbeit"
       },
       "button": "Mehr über Kala Heilarbeit"
     },
@@ -48,7 +48,7 @@
       "text": "Ganzheitlich und unvoreingenommen finden wir gemeinsam heraus, was Du brauchst, damit Du Deine innere Lebenskraft und Lebensfreude wieder entfalten kannst.",
       "cta": {
         "text": "> Mehr Informationen",
-        "url": "/psychotherapie"
+        "href": "/psychotherapie"
       },
       "button": "> Mehr Informationen"
     },
@@ -58,7 +58,7 @@
       "text": "Weibliche Weisheit verbindet sich mit der Tradition des Yoga und bringt Dich wieder in\nDeine ureigene Kran",
       "cta": {
         "text": "> Finde Dein Yoga-Angebot",
-        "url": "/seminar/yoga"
+        "href": "/seminar/yoga"
       },
       "button": "Finde Dein Yoga-Angebot"
     },
@@ -68,7 +68,7 @@
       "text": "Wir Seelenweberinnen erwecken die uralte\nWeisheit unserer Seelen wieder zu neuem Leben.\nGemeinsam erschatten wir ein heilsames Gewene\nvoller Schonheit und Kraft. Sei eine von uns!",
       "cta": {
         "text": "> Komm in den Kreis der Seelenweberinnen",
-        "url": "/seminar/seelenweberinnen"
+        "href": "/seminar/seelenweberinnen"
       },
       "button": "Komm in den Kreis der Seelenweberinnen"
     },
@@ -78,7 +78,7 @@
       "text": "Werde Heiler:in für Dich und andere!",
       "cta": {
         "text": "> Erfahre mehr",
-        "url": "/ausbildung"
+        "href": "/ausbildung"
       },
       "button": "> Erfahre mehr"
     }

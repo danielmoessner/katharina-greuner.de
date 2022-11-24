@@ -11,7 +11,7 @@ interface Props {
     button: string;
     cta: {
       text: string;
-      url: string;
+      href: string;
     };
   };
 }
@@ -26,8 +26,8 @@ function Component({ travel }: Props) {
               <Heading>{travel.title}</Heading>
               <p className="mt-3 text-kg-brown">{travel.text}</p>
             </div>
-            <div className="mt-3 md:mt-0">
-              <Button href={travel.cta.url}>{travel.cta.text}</Button>
+            <div>
+              <Button href={travel.cta.href}>{travel.cta.text}</Button>
             </div>
           </div>
           <div className="col-span-12 md:col-span-6 ">
