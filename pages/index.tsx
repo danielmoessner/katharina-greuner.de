@@ -25,7 +25,7 @@ function Page({ pageData, seminars }) {
           <h2 className="mx-auto text-lg tracking-wide text-center uppercase">
             Aktuelle Reisen
           </h2>
-          <div className="grid gap-5 mt-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 mt-2 sm:grid-cols-2 sm:gap-2 lg:grid-cols-4">
             {seminars
               .filter((i) => i.showOnHome)
               .map((seminar) => (

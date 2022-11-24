@@ -15,7 +15,7 @@ function Component({ start }) {
           </Heading>
         </div>
 
-        <div className="grid grid-cols-2 gap-6 mt-10">
+        <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2">
           <MultiLine text={start.text} className="text-sm" />
           <div>
             <ImageBorder>

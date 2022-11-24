@@ -42,7 +42,7 @@ function Page({ pageData }) {
       </SectionStart>
       <SectionFlowerBackground>
         <div className="py-10">
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <Heading element="h2" size="h2">
               {page.overview.title}
             </Heading>
@@ -50,7 +50,7 @@ function Page({ pageData }) {
           <div className="mt-10">
             <div className="flex flex-wrap lg:flex-nowrap">
               {page.overview.step.map((item) => (
-                <div key={item.title} className="mb-8 lg:w-1/5">
+                <div key={item.title} className="w-full mb-8 lg:w-1/5">
                   <div className="flex items-center justify-center">
                     <div className="w-20">
                       <Image {...item.image} alt={item.title} />

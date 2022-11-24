@@ -4,16 +4,17 @@ import Section from "./Section";
 import ImageBorder from "./ImageBorder";
 import Heading from "./Heading";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 function Component({ blocks }) {
   return (
     <Section className="py-16">
       <Container layout="sm">
-        <div className="flex flex-col space-y-16">
+        <div className="grid space-y-16">
           {blocks.map((block, index) => (
-            <div key={index} className="grid grid-cols-2 gap-6">
+            <div key={index} className="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div
-                className={`row-start-1 ${
+                className={` md:row-start-1 md:${
                   index % 2 === 0 ? "col-start-1" : "col-start-2"
                 }`}
               >

@@ -21,16 +21,16 @@ function Component({ travel }: Props) {
     <Section className="relative py-12">
       <Container layout="sm">
         <div className="relative grid grid-cols-12 gap-6">
-          <div className="flex flex-col justify-between col-span-12 sm:col-span-6">
+          <div className="flex flex-col justify-between col-span-12 md:col-span-6">
             <div>
               <Heading>{travel.title}</Heading>
               <p className="mt-3 text-kg-brown">{travel.text}</p>
             </div>
-            <div>
+            <div className="mt-3 md:mt-0">
               <Button href={travel.cta.url}>{travel.cta.text}</Button>
             </div>
           </div>
-          <div className="col-span-12 sm:col-span-6">
+          <div className="col-span-12 md:col-span-6 ">
             <div className="border-b-2 border-kg-yellow">
               <div className="leading-[0]">
                 <Image
