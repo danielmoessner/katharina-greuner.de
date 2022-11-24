@@ -13,7 +13,7 @@ interface Props {
     text: string;
     links?: {
       text: string;
-      url: string;
+      href: string;
     }[];
   };
 }
