@@ -22,17 +22,17 @@
         {
           "type": "externalLink",
           "text": "kala@katharina-greunder.de",
-          "url": "mailto:kala@katharina-greuner.de"
+          "href": "mailto:kala@katharina-greuner.de"
         },
         {
           "type": "externalLink",
           "text": "Mobil: 0176 - 82 63 71 09",
-          "url": "tel:017682637109"
+          "href": "tel:017682637109"
         },
         {
           "type": "externalLink",
           "text": "Festnetz: 08165 - 93 44 841",
-          "url": "tel:081659344841"
+          "href": "tel:081659344841"
         }
       ],
       "class": "col-span-6 md:col-span-3"
@@ -43,32 +43,32 @@
         {
           "type": "link",
           "text": "Kala Heilarbeit",
-          "url": "/kala-heilarbeit"
+          "href": "/kala-heilarbeit"
         },
         {
           "type": "link",
           "text": "Ausbildung",
-          "url": "/ausbildung"
+          "href": "/ausbildung"
         },
         {
           "type": "link",
           "text": "Yoga",
-          "url": "/seminar/yoga"
+          "href": "/seminar/yoga"
         },
         {
           "type": "link",
           "text": "Spirituelle Reisen",
-          "url": "/seminar/wo-die-seele-wohnt"
+          "href": "/seminar/wo-die-seele-wohnt"
         },
         {
           "type": "link",
           "text": "Der Kreis der Seelenweberinnen",
-          "url": "/seminar/seelenweberinnen#"
+          "href": "/seminar/seelenweberinnen#"
         },
         {
           "type": "link",
           "text": "Heilsame Seminare",
-          "url": "/heilsame-seminare"
+          "href": "/heilsame-seminare"
         }
       ],
       "class": "col-span-6 md:col-span-3"
@@ -80,32 +80,32 @@
         {
           "type": "link",
           "text": "Über mich",
-          "url": "/ueber-mich"
+          "href": "/ueber-mich"
         },
         {
           "type": "link",
           "text": "Soziales Engagement",
-          "url": "/nepal"
+          "href": "/nepal"
         },
         {
           "type": "link",
           "text": "Blog",
-          "url": "/blog"
+          "href": "/blog"
         },
         {
           "type": "link",
           "text": "Impressum",
-          "url": "/rechtliches/impressum"
+          "href": "/rechtliches/impressum"
         },
         {
           "type": "link",
           "text": "Datenschutzerklärung",
-          "url": "/rechtliches/datenschutz"
+          "href": "/rechtliches/datenschutz"
         },
         {
           "type": "link",
           "text": "Kontakt",
-          "url": "/kontakt"
+          "href": "/kontakt"
         }
       ]
     }

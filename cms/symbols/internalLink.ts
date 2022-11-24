@@ -8,8 +8,8 @@ export const linkFields = (required) => [
     required: required,
   },
   {
-    label: "url",
-    name: "url",
+    label: "href",
+    name: "href",
     type: "string",
     required: required,
     hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt",

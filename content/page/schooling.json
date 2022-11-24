@@ -47,7 +47,7 @@
     "title": "Das erwartet Dich in der Ausbildung Kala Heilarbeit:",
     "cta": {
       "text": "Anfragen & Anmeldung",
-      "url": "/kontakt"
+      "href": "/kontakt"
     },
     "seminar": [
       {
@@ -109,7 +109,7 @@
     "text": "Hast Du Fragen zur Kala Heilarbeit? Ich bin gerne für Dich da.",
     "cta": {
       "text": "Ich freue mich auf dich",
-      "url": "/kontakt"
+      "href": "/kontakt"
     },
     "image": "/media/kala_heilarbeit_ausbildung_kontakt.jpeg"
   }

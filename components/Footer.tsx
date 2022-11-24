@@ -31,7 +31,7 @@ function Component() {
                             );
                           if (item.type === "link")
                             element = (
-                              <Link href={item.url}>
+                              <Link href={item.href}>
                                 <a className="text-base text-teal-50 hover:text-white">
                                   {item.text}
                                 </a>
@@ -40,7 +40,7 @@ function Component() {
                           if (item.type === "externalLink")
                             element = (
                               <a
-                                href={item.url}
+                                href={item.href}
                                 target="_blank"
                                 className="text-base text-teal-50 hover:text-white"
                                 rel="noreferrer"

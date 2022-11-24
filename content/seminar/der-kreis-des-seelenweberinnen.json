@@ -46,7 +46,7 @@
       "markdown": "* W﻿eibliche Mythologie und Mystik - deine spirituellen Wurzeln stärken und die Göttin in dir wachrufen\n* K﻿reativität - wir inspirieren uns gegenseitig und erschaffen Kraftgegenstände\n* P﻿flanzenweisheit - Dialog mit den Pflanzengeistern, Anregung für persönliche Essenzen\n* M﻿editation - die Stille in dir birgt die größte Stärke\n* K﻿ala -  Heilende Bewegung -  sich bewegen lassen von der Kraft der Selbstentfaltung\n* S﻿chamanische Energiearbeit - Seelenreisen in die Anderswelt um die geistige Kraft in deinen Alltag zu integrieren",
       "cta": {
         "text": "Jetzt Teilnahme anfragen",
-        "url": "/kontakt"
+        "href": "/kontakt"
       }
     }
   ],

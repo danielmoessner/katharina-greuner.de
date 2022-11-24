@@ -58,9 +58,9 @@ var externalLinkFields = [
     widget: "string"
   },
   {
-    label: "url",
+    label: "href",
     i18n: true,
-    name: "url",
+    name: "href",
     widget: "string",
     hint: "Die URL sollte nicht auf die selbe Seite zeigen, kann aber alles enthalten. Beispiele: mailto:kontakt@tortuga-webdesign.de oder https://tortuga-webdesign.de/referenzen/"
   }
@@ -72,8 +72,8 @@ var internalLinkFields = [
     widget: "string"
   },
   {
-    label: "url",
-    name: "url",
+    label: "href",
+    name: "href",
     widget: "string",
     hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt"
   }
@@ -154,8 +154,8 @@ var linkFields = (required) => [
     required
   },
   {
-    label: "url",
-    name: "url",
+    label: "href",
+    name: "href",
     type: "string",
     required,
     hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt"
@@ -315,8 +315,8 @@ var kala = {
           name: "links",
           widget: "list",
           field: {
-            label: "url",
-            name: "url",
+            label: "href",
+            name: "href",
             widget: "string",
             hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf oder /kontakt"
           }
@@ -820,8 +820,8 @@ var linkFields2 = [
     type: "string"
   },
   {
-    label: "url",
-    name: "url",
+    label: "href",
+    name: "href",
     type: "string",
     hint: "Die URL muss auf die selbe Seite zeigen. Es muss am Anfang und am Ende ein Slash sein. Beispiele: /wildtiere/wolf/ oder /kontakt/"
   }

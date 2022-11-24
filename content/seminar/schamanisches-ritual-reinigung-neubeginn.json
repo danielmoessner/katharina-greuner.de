@@ -23,7 +23,7 @@
       "title": "schamanisches-ritual",
       "cta": {
         "text": "Anfrage & Buchung",
-        "url": "/kontakt"
+        "href": "/kontakt"
       },
       "data": [
         {

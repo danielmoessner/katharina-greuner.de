@@ -48,7 +48,7 @@
       ],
       "cta": {
         "text": "Anfrage & Buchung",
-        "url": "/kontakt"
+        "href": "/kontakt"
       }
     }
   ],

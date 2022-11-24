@@ -39,7 +39,7 @@ function Page({ pageData }) {
             />
           </div>
           <div className="flex justify-center mt-6 ">
-            <Button href={page.cta.url}>{page.cta.text}</Button>
+            <Button href={page.cta.href}>{page.cta.text}</Button>
           </div>
         </div>
       </SectionStart>

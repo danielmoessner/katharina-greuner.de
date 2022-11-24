@@ -20,42 +20,42 @@
       {
       
           "text": "Jahresrückblick 2020",
-          "url": "#"
+          "href": "#"
       },
       {
       
           "text": "Jahresrückblick 2019",
-          "url": "#"
+          "href": "#"
       
       },
       {
       
           "text": "Jahresrückblick 2018",
-          "url": "#"
+          "href": "#"
       
       },
       {
 
           "text": "Jahresrückblick 2017",
-          "url": "#"
+          "href": "#"
         
       },
       {
      
           "text": "Jahresrückblick 2016",
-          "url": "#"
+          "href": "#"
       
       },
       {
       
           "text": "Jahresrückblick 2015",
-          "url": "#"
+          "href": "#"
         
       }
     ],
     "cta": {
       "text": "Alle Blog-Beiträge zum Projekt",
-      "url": "/blogbeiträge/"
+      "href": "/blogbeiträge/"
     },
     "image": "/media/nepal_soziales_engagement_kind.jpg"
   },

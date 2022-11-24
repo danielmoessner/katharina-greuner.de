@@ -27,7 +27,7 @@ function Component({ travel }: Props) {
               <p className="mt-3 text-kg-brown">{travel.text}</p>
             </div>
             <div>
-              <Button href={travel.cta.url}>{travel.cta.text}</Button>
+              <Button href={travel.cta.href}>{travel.cta.text}</Button>
             </div>
           </div>
           <div className="col-span-12 sm:col-span-6">

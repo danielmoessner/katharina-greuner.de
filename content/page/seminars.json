@@ -10,7 +10,7 @@
     "markdown": "### Heilsame Seminare für Dich:\n**lebenspraktisch – authentisch – inspirierend** \n\nMit Hingabe und Leidenschaft habe ich mich mein Leben lang der Heilarbeit gewidmet und spirituelle, schamanische und lebenspraktische Weisheit erforscht und angewandt. Diese Erfahrungen gebe ich nun in meinen Seminaren, Reisen und Ausbildungen weiter - damit sie auch für Dich zu einem Kraftquell auf Deinem Lebensweg werden. \n\nGerne gehe ich direkt auf Deine Anfragen und Anliegen ein und gestalte entsprechende Seminare. Sprich mich an, wenn ein Thema Dich besonders bewegt. \n\nDer persönliche Rahmen meiner Seminare, Reisen und Ausbildungen ist mir sehr wichtig ist, daher finden sie in kleinen Gruppen statt.",
     "cta": {
       "text": "So erreichst du mich",
-      "url": "/kontakt"
+      "href": "/kontakt"
     },
     "image": "/media/heilsame_seminare.jpg",
     "alt": "Katharina vor einem Baum",
@@ -22,7 +22,7 @@
         "bold": "Termin: 14.-21.11.2022",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "/seminar/das-glück-liegt-in-dir"
+          "href": "/seminar/das-glück-liegt-in-dir"
         },
         "bolddatelist": [
           {
@@ -54,7 +54,7 @@
         "bold": "Samstag, 02.07.2022, 9.00–12.30 Uhr",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "/seminar/tanzendes-herz"
+          "href": "/seminar/tanzendes-herz"
         },
         "moreinfo": [
           {
@@ -78,7 +78,7 @@
         "bold": "Samstag, 25.06.2022",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "/seminar/yoga"
+          "href": "/seminar/yoga"
         },
         "moreinfo": [
           {
@@ -102,7 +102,7 @@
         "bold": "Termin: Herbst 2022",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "/seminar/weisheit-der-natur"
+          "href": "/seminar/weisheit-der-natur"
         },
         "moreinfo": [
           {
@@ -131,7 +131,7 @@
         "bold": "1x monatlich Donnerstag online \n19.00–21.30 Uhr",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "/seminar/seelenweberinnen"
+          "href": "/seminar/seelenweberinnen"
         },
         "moreinfo": [
           {
@@ -155,7 +155,7 @@
         "bold": "Termin: Herbst 2022",
         "cta": {
           "text": "Erfahre mehr",
-          "url": "/seminar/schamanisches-ritual-reinigung-und-neubeginn"
+          "href": "/seminar/schamanisches-ritual-reinigung-und-neubeginn"
         },
         "moreinfo": [
           {
