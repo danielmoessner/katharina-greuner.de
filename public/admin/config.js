@@ -126,6 +126,7 @@ var home = {
       name: "travel",
       widget: "object",
       fields: [
+        cta_default,
         { label: "Titel", name: "title", widget: "string" },
         { label: "Text", name: "text", widget: "text" },
         { label: "Button", name: "button", widget: "string" }

@@ -42,6 +42,7 @@ const home: CmsCollectionFile = {
       name: "travel",
       widget: "object",
       fields: [
+        cta,
         { label: "Titel", name: "title", widget: "string" },
         { label: "Text", name: "text", widget: "text" },
         { label: "Button", name: "button", widget: "string" },
