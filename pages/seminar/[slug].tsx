@@ -227,7 +227,7 @@ function Page({ seminarData }) {
                       />
                     </div>
                     <div className="flex justify-center mt-10">
-                      <Button to={section.cta.href}>{section.cta.text}</Button>
+                      <Button href={section.cta.href}>{section.cta.text}</Button>
                     </div>
                   </div>
                 </div>

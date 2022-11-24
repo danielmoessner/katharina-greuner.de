@@ -95,7 +95,7 @@ function Page() {
           <Pre element="h2">Buttons</Pre>
           <div className="mt-8 space-y-8">
             <div className="flex items-baseline justify-between">
-              <Button ringOffset="ring-offset-white" to="/styleguide/">
+              <Button ringOffset="ring-offset-white" href="/styleguide/">
                 Button
               </Button>
               <div>(Primary, Link-Tag)</div>
@@ -103,7 +103,7 @@ function Page() {
             <div className="flex items-baseline justify-between">
               <Button
                 ringOffset="ring-offset-white"
-                to="/styleguide/"
+                href="/styleguide/"
                 secondary
               >
                 Button
@@ -132,7 +132,7 @@ function Page() {
               <div>(Primary, Button-Tag, Colors)</div>
             </div>
             <div className="flex items-baseline justify-between">
-              <Button ringOffset="ring-offset-white" to="/styleguide/">
+              <Button ringOffset="ring-offset-white" href="/styleguide/">
                 Button
               </Button>
               <div>(Primary, Link-Tag, RingOffsetBlack)</div>
@@ -140,7 +140,7 @@ function Page() {
             <div className="flex items-baseline justify-between">
               <Button
                 ringOffset="ring-offset-white"
-                to="/styleguide/"
+                href="/styleguide/"
                 size="px-6 py-3 text-base"
               >
                 Button Big
