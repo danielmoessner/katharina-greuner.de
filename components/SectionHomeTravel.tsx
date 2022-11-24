@@ -11,7 +11,7 @@ interface Props {
     button: string;
     cta: {
       text: string;
-      url: string;
+      href: string;
     };
   };
 }

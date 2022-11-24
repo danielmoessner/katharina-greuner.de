@@ -12,7 +12,7 @@ interface Offeroverview {
   Button: string;
   cta: {
     text: string;
-    url: string;
+    href: string;
   };
 }
 
