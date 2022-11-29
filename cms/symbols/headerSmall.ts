@@ -3,7 +3,7 @@ import { CmsField } from "netlify-cms-core";
 const headerSmall: CmsField = {
   label: "Header",
   name: "header",
-  i18n: true,
+  
   widget: "object",
   fields: [
     { label: "Bild", name: "image", i18n: "translate", widget: "image" },

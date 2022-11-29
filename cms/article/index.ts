@@ -1,8 +1,6 @@
 import slug from "cms/symbols/slug";
 import title from "cms/symbols/title";
 import { CmsCollection } from "netlify-cms-core";
-import image from "cms/symbols/image";
-import alt from "cms/symbols/alt";
 import markdown from "cms/symbols/markdown";
 
 const article: CmsCollection = {
@@ -19,7 +17,12 @@ const article: CmsCollection = {
   fields: [
     title,
     slug,
-    image,
+    {
+      label: "Bild",
+      name: "image",
+      widget: "image",
+      required: false,
+    },
     markdown,
     {
       label: "comments",

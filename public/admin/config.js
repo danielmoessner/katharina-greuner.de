@@ -27,8 +27,7 @@ var header_default = header;
 var text = {
   label: "Text",
   name: "text",
-  widget: "text",
-  i18n: true
+  widget: "text"
 };
 var text_default = text;
 
@@ -44,8 +43,7 @@ var title_default = title;
 var image = {
   label: "Bild",
   name: "image",
-  widget: "image",
-  i18n: true
+  widget: "image"
 };
 var image_default = image;
 
@@ -53,13 +51,11 @@ var image_default = image;
 var externalLinkFields = [
   {
     label: "Text",
-    i18n: true,
     name: "text",
     widget: "string"
   },
   {
     label: "href",
-    i18n: true,
     name: "href",
     widget: "string",
     hint: "Die URL sollte nicht auf die selbe Seite zeigen, kann aber alles enthalten. Beispiele: mailto:kontakt@tortuga-webdesign.de oder https://tortuga-webdesign.de/referenzen/"
@@ -83,7 +79,6 @@ var internalLinkFields = [
 var cta = {
   label: "CTA",
   name: "cta",
-  i18n: true,
   widget: "object",
   fields: internalLinkFields
 };
@@ -363,8 +358,7 @@ var heal_default = heal;
 var string = {
   label: "Text",
   name: "string",
-  widget: "string",
-  i18n: true
+  widget: "string"
 };
 var string_default = string;
 
@@ -682,7 +676,12 @@ var article = {
   fields: [
     title_default,
     slug_default,
-    image_default,
+    {
+      label: "Bild",
+      name: "image",
+      widget: "image",
+      required: false
+    },
     markdown_default,
     {
       label: "comments",
