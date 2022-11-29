@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import NavigationLink from "./NavigationLink";
 
 function classNames(...classes) {

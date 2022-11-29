@@ -15,7 +15,7 @@ import Container from "components/Container";
 import Image from "next/image";
 import Prose from "../components/Prose";
 import { Disclosure } from "@headlessui/react";
-import { PlusIcon } from "@heroicons/react/outline";
+import { PlusIcon } from "@heroicons/react/24/outline";
 
 function Page({ pageData }) {
   const page = pageData;
