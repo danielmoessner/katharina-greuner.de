@@ -136,15 +136,6 @@ var home = {
 };
 var home_default = home;
 
-// cms/page/styleguide.ts
-var styleguide = {
-  file: "content/page/styleguide.json",
-  label: "Styleguide",
-  name: "styleguide",
-  fields: [meta_default, header_default]
-};
-var styleguide_default = styleguide;
-
 // cms/symbols/internalLink.ts
 var linkFields = (required) => [
   {
@@ -590,26 +581,6 @@ var nepal = {
 };
 var nepal_default = nepal;
 
-// cms/page/seminar.ts
-var seminar = {
-  file: "content/page/seminar.json",
-  label: "Seminar",
-  name: "seminar",
-  fields: [
-    {
-      label: "Termin",
-      name: "description",
-      widget: "object",
-      fields: [
-        { label: "Wann", name: "date", widget: "string" },
-        { label: "Kosten", name: "costs", widget: "string" },
-        { label: "Ort", name: "location", widget: "string" }
-      ]
-    }
-  ]
-};
-var seminar_default = seminar;
-
 // cms/symbols/alt.ts
 var alt = {
   label: "Beschreibung des Bildes",
@@ -689,10 +660,8 @@ var config = {
     heal_default,
     schooling_default,
     seminars_default,
-    seminar_default,
     contact_default,
     nepal_default,
-    styleguide_default,
     psychotherapie_default
   ]
 };
@@ -906,16 +875,8 @@ var legal = {
 };
 var legal_default = legal;
 
-// cms/symbols/description.ts
-var description = {
-  label: "Beschreibung",
-  name: "description",
-  widget: "text"
-};
-var description_default = description;
-
 // cms/seminar/index.ts
-var seminar2 = {
+var seminar = {
   name: "seminar",
   label: "Seminare",
   label_singular: "Seminar",
@@ -929,18 +890,25 @@ var seminar2 = {
   fields: [
     title_default,
     slug_default,
-    description_default,
     {
-      label: "auf der startseite anzeigen ?",
+      label: "Auf der Startseite anzeigen?",
       name: "showOnHome",
       widget: "boolean",
       required: false
     },
-    { label: "Termin", name: "date", widget: "string" },
-    { label: "Fetter Text", name: "boldtext", widget: "text" },
     {
-      label: "Kurzbeschreibung",
-      name: "shortdescription",
+      label: "Beschreibung (Erscheint unter Heilsame Seminare)",
+      name: "description",
+      widget: "text"
+    },
+    {
+      label: "Termin (Erscheint unter Heilsame Seminare)",
+      name: "date",
+      widget: "string"
+    },
+    {
+      label: "Kurzbeschreibung (Erscheint auf der Startseite)",
+      name: "shortDescription",
       widget: "text"
     },
     image_default,
@@ -1065,7 +1033,7 @@ var seminar2 = {
     }
   ]
 };
-var seminar_default2 = seminar2;
+var seminar_default = seminar;
 
 // cms/config.ts
 var config2 = {
@@ -1082,7 +1050,7 @@ var config2 = {
   media_folder: "/public/media",
   public_folder: "/media",
   load_config_file: false,
-  collections: [page_default, seminar_default2, category_default, setting_default, legal_default, article_default]
+  collections: [page_default, seminar_default, category_default, setting_default, legal_default, article_default]
 };
 var config_default = config2;
 export {

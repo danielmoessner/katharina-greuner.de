@@ -5,7 +5,6 @@ import Header from "../../components/Header";
 import Container from "../../components/Container";
 import { renderContent } from "lib/renderContent";
 import { getAllJson } from "lib/getContent";
-import pageSource from "content/page/seminar.json";
 import Heading from "components/Heading";
 import ContentImageMarkdown from "components/ContentImageMarkdown";
 import ContentMarkdownImage from "components/ContentMarkdownImage";
@@ -173,7 +172,7 @@ function Page({ seminarData }) {
               </div>
             </SectionFlowerBackground>
           )}
-          {/* yoga class */}
+
           {section.type === "yogadate" && (
             <SectionFlowerBackground>
               <div className="py-20">
@@ -296,15 +295,14 @@ export async function getStaticProps({ params }) {
   const seminarData2 = seminarData1.find((i) => i.slug === params.slug);
   const seminarData = await renderContent(seminarData2);
   // const footerData = await renderContent(footerSource[locale]);
-
-  const pageData = await renderContent(pageSource);
+  // const pageData = await renderContent(pageSource);
 
   return {
     props: {
       seminarData,
-      pageData,
+      // pageData,
       // footerData,
-    }, // will be passed to the seminar component as props
+    },
   };
 }
 
@@ -319,6 +317,6 @@ export async function getStaticPaths() {
         },
       };
     }),
-    fallback: false, // false or 'blocking'
+    fallback: false,
   };
 }

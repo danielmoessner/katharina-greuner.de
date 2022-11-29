@@ -1,6 +1,5 @@
 import alt from "cms/symbols/alt";
 import cta from "cms/symbols/cta";
-import description from "cms/symbols/description";
 import image from "cms/symbols/image";
 import markdown from "cms/symbols/markdown";
 import slug from "cms/symbols/slug";
@@ -23,18 +22,25 @@ const seminar: CmsCollection = {
   fields: [
     title,
     slug,
-    description,
     {
-      label: "auf der startseite anzeigen ?",
+      label: "Auf der Startseite anzeigen?",
       name: "showOnHome",
       widget: "boolean",
       required: false,
     },
-    { label: "Termin", name: "date", widget: "string" },
-    { label: "Fetter Text", name: "boldtext", widget: "text" },
     {
-      label: "Kurzbeschreibung",
-      name: "shortdescription",
+      label: "Beschreibung (Erscheint unter Heilsame Seminare)",
+      name: "description",
+      widget: "text",
+    },
+    {
+      label: "Termin (Erscheint unter Heilsame Seminare)",
+      name: "date",
+      widget: "string",
+    },
+    {
+      label: "Kurzbeschreibung (Erscheint auf der Startseite)",
+      name: "shortDescription",
       widget: "text",
     },
     image,

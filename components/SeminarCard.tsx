@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ImageRendered } from "types/shared";
-import Button from "./Button";
+import Link from "next/link";
 
 interface Seminar {
   title: string;
@@ -17,13 +17,15 @@ interface Props {
 
 function SeminarCard({ seminar, button }: Props) {
   return (
-    <div className="p-4 border-b-2 h-max bg-kg-green/20 border-kg-yellow">
-      <Image {...seminar.image} alt={seminar.title} />
-      <h2 className="mt-2 text-3xl">{seminar.title}</h2>
-      <p className="mt-3">{seminar.description}</p>
-      <p className="mt-1 font-bold tracking-wide">{seminar.date}</p>
+    <div className="flex flex-col justify-between h-full p-4 border-b-2 bg-kg-green/20 border-kg-yellow">
+      <div>
+        <Image {...seminar.image} alt={seminar.title} />
+        <h2 className="mt-2 text-3xl">{seminar.title}</h2>
+        <p className="mt-3">{seminar.description}</p>
+        <p className="mt-1 font-bold tracking-wide">{seminar.date}</p>
+      </div>
       <div className="mt-2">
-        <Button href={`seminar/${seminar.slug}`}>{button}</Button>
+        <Link href={`seminar/${seminar.slug}`}>{button}</Link>
       </div>
     </div>
   );

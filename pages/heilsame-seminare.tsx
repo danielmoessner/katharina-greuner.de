@@ -39,12 +39,10 @@ function Page({ pageData, seminars }) {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {seminars.map((seminar) => (
               <React.Fragment key={seminar.title}>
-                <div className="">
-                  <SeminarCard
-                    seminar={seminar}
-                    button={page.content.seminarButton}
-                  />
-                </div>
+                <SeminarCard
+                  seminar={seminar}
+                  button={page.content.seminarButton}
+                />
               </React.Fragment>
             ))}
           </div>
