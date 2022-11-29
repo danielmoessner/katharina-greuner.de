@@ -891,8 +891,20 @@ var seminar = {
     title_default,
     slug_default,
     {
+      label: "Sortierung",
+      name: "order",
+      widget: "number",
+      required: true
+    },
+    {
       label: "Auf der Startseite anzeigen?",
       name: "showOnHome",
+      widget: "boolean",
+      required: false
+    },
+    {
+      label: "Auf der Seminarseite anzeigen?",
+      name: "showOnSeminars",
       widget: "boolean",
       required: false
     },

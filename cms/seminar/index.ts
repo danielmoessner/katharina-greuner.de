@@ -23,8 +23,20 @@ const seminar: CmsCollection = {
     title,
     slug,
     {
+      label: "Sortierung",
+      name: "order",
+      widget: "number",
+      required: true,
+    },
+    {
       label: "Auf der Startseite anzeigen?",
       name: "showOnHome",
+      widget: "boolean",
+      required: false,
+    },
+    {
+      label: "Auf der Seminarseite anzeigen?",
+      name: "showOnSeminars",
       widget: "boolean",
       required: false,
     },
