@@ -922,7 +922,11 @@ var seminar = {
       name: "shortDescription",
       widget: "text"
     },
-    image_default,
+    {
+      label: "Neues Bild",
+      name: "newPicture",
+      widget: "image"
+    },
     image_default,
     {
       label: "Sektionen",

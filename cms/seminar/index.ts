@@ -55,7 +55,11 @@ const seminar: CmsCollection = {
       name: "shortDescription",
       widget: "text",
     },
-    image,
+    {
+      label: "Neues Bild",
+      name: "newPicture",
+      widget: "image",
+    },
     image,
     {
       label: "Sektionen",

@@ -65,5 +65,6 @@
   "showOnHome": true,
   "image": "/media/spirituelle_reisen_banner_ausschnitt.jpg",
   "description": "Freue Dich auf eine inspirierende Auszeit an Kraftorten in Teneriffa und komm ganz bei Dir an.",
-  "showOnSeminars": true
+  "showOnSeminars": true,
+  "newPicture": "/media/das_glueck_liegt_in_dir.jpg"
 }

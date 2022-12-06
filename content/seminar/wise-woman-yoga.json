@@ -59,5 +59,6 @@
   "showOnHome": true,
   "image": "/media/kala_yoga_banner_ausschnitt.jpg",
   "description": "Ein Samstag, um ganz zu Dir zu kommen, Dein Herz zu öffnen und Deine Wurzeln zu stärken.",
-  "showOnSeminars": true
+  "showOnSeminars": true,
+  "newPicture": "/media/wise_woman_yoga.jpg"
 }
