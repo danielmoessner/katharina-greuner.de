@@ -9,6 +9,7 @@ import Heading from "components/Heading";
 import ContentMarkdownCtaImage from "components/ContentMarkdownCtaImage";
 import SeminarCard from "components/SeminarCard";
 import { getAllJson } from "lib/getContent";
+import sortBy from "lodash/sortBy";
 
 function Page({ pageData, seminars }) {
   const page = pageData;
@@ -37,7 +38,7 @@ function Page({ pageData, seminars }) {
       <section className="pt-6 pb-20">
         <Container layout="sm">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {seminars.map((seminar) => (
+            {sortBy(seminars, "order").map((seminar) => (
               <React.Fragment key={seminar.title}>
                 <SeminarCard
                   seminar={seminar}
