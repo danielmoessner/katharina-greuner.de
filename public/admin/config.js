@@ -923,6 +923,7 @@ var seminar = {
       widget: "text"
     },
     image_default,
+    image_default,
     {
       label: "Sektionen",
       name: "sections",

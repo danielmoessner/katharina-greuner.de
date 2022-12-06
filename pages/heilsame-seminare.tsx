@@ -13,7 +13,6 @@ import sortBy from "lodash/sortBy";
 
 function Page({ pageData, seminars }) {
   const page = pageData;
-
   return (
     <Layout>
       <Seo meta={page.meta} />
@@ -38,14 +37,18 @@ function Page({ pageData, seminars }) {
       <section className="pt-6 pb-20">
         <Container layout="sm">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {sortBy(seminars, "order").map((seminar) => (
-              <React.Fragment key={seminar.title}>
-                <SeminarCard
-                  seminar={seminar}
-                  button={page.content.seminarButton}
-                />
-              </React.Fragment>
-            ))}
+            {sortBy(seminars, "order").map((seminar) => {
+              if (seminars.showOnSeminars === true) {
+                return (
+                  <React.Fragment key={seminar.title}>
+                    <SeminarCard
+                      seminar={seminar}
+                      button={page.content.seminarButton}
+                    />
+                  </React.Fragment>
+                );
+              }
+            })}
           </div>
         </Container>
       </section>
