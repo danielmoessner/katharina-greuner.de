@@ -924,7 +924,7 @@ var seminar = {
     },
     {
       label: "Neues Bild",
-      name: "newPicture",
+      name: "newImage",
       widget: "image"
     },
     image_default,
