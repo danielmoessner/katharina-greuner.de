@@ -1,8 +1,6 @@
 {
-  "title": "Wo die Seele wohnt: Spirituelle Reise in den Himalaya",
+  "shortDescription": "Atemberaubende Landschaften und die tiefe Spiritualität tibetischer Kultur machen diese Reise unvergesslich.",
   "slug": "wo-die-seele-wohnt",
-  "description": "Atemberaubende Landschaften und die tiefe Spiritualität tibetischer Kultur machen diese Reise unvergesslich.",
-  "image": "/media/spirituelle_reisen_banner_ausschnitt.jpg",
   "sections": [
     {
       "type": "imagetext",
@@ -52,7 +50,11 @@
       }
     }
   ],
+  "order": 5,
   "date": "Juli 2023",
   "boldtext": "Wo die Seele wohnt: Spirituelle Reise in den Himalaya",
-  "shortDescription": "Atemberaubende Landschaften und die tiefe Spiritualität tibetischer Kultur machen diese Reise unvergesslich."
+  "title": "Wo die Seele wohnt: Spirituelle Reise in den Himalaya",
+  "image": "/media/spirituelle_reisen_banner_ausschnitt.jpg",
+  "description": "Atemberaubende Landschaften und die tiefe Spiritualität tibetischer Kultur machen diese Reise unvergesslich.",
+  "showOnSeminars": true
 }

@@ -50,10 +50,12 @@
       }
     }
   ],
+  "order": 0,
   "date": "1x monatlich Donnerstags Online, 19.00 - 21.30 Uhr",
   "boldtext": "Kreis der Seelenweberinnen",
   "title": "Der Kreis der Seelenweberinnen",
   "showOnHome": true,
   "image": "/media/seelenweberinnen_banner_ausschnitt.jpg",
-  "description": "Erwecke die uralte Weisheit Deiner Seele wieder zu neuem Leben."
+  "description": "Erwecke die uralte Weisheit Deiner Seele wieder zu neuem Leben.",
+  "showOnSeminars": true
 }

@@ -1,8 +1,6 @@
 {
-  "title": "Entdecke die heilsame Welt der Pflanzengeister",
+  "shortDescription": "In einen heilsamen Dialog mit den Naturkräften und Elementarwesen schöpfst Du Weisheit und Vertrauen für Deinen Weg.",
   "slug": "entdecke-die-heilsame-welt-der-pflanzengeister",
-  "description": "In einen heilsamen Dialog mit den Naturkräften und Elementarwesen schöpfst Du Weisheit und Vertrauen für Deinen Weg.",
-  "image": "/media/kala_pflanzengeister_banner_ausschnitt.jpg",
   "sections": [
     {
       "type": "textimage",
@@ -40,7 +38,10 @@
       ]
     }
   ],
+  "order": 6,
   "date": "Samstag, 14.05.2022, 9.00-18.00 Uhr",
   "boldtext": "Aus der Weisheit der Natur",
-  "shortDescription": "In einen heilsamen Dialog mit den Naturkräften und Elementarwesen schöpfst Du Weisheit und Vertrauen für Deinen Weg."
+  "title": "Entdecke die heilsame Welt der Pflanzengeister",
+  "image": "/media/kala_pflanzengeister_banner_ausschnitt.jpg",
+  "description": "In einen heilsamen Dialog mit den Naturkräften und Elementarwesen schöpfst Du Weisheit und Vertrauen für Deinen Weg."
 }

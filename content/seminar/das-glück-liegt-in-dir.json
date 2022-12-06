@@ -58,10 +58,12 @@
       }
     }
   ],
+  "order": 3,
   "date": "14. - 21.11.2022",
   "boldtext": "Das Glück liegt in Dir",
   "title": "Das Glück liegt in Dir",
   "showOnHome": true,
   "image": "/media/spirituelle_reisen_banner_ausschnitt.jpg",
-  "description": "Freue Dich auf eine inspirierende Auszeit an Kraftorten in Teneriffa und komm ganz bei Dir an."
+  "description": "Freue Dich auf eine inspirierende Auszeit an Kraftorten in Teneriffa und komm ganz bei Dir an.",
+  "showOnSeminars": true
 }

@@ -1,9 +1,6 @@
 {
-  "date": "Herbst 2022",
-  "title": "Schamanisches Ritual Reinigung & Neubeginn",
+  "shortDescription": "Ein Tag, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung.",
   "slug": "schamanisches-ritual-reinigung-und-neubeginn",
-  "image": "/media/kala_schamanisches_ritual_banner_ausschnitt.jpg",
-  "description": "Ein Tag, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung.",
   "sections": [
     {
       "type": "textimage",
@@ -41,6 +38,11 @@
       ]
     }
   ],
+  "order": 2,
+  "date": "Herbst 2022",
   "boldtext": "Schamanisches Ritual Reinigung & Neubeginn",
-  "shortDescription": "Ein Tag, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung."
+  "title": "Schamanisches Ritual Reinigung & Neubeginn",
+  "image": "/media/kala_schamanisches_ritual_banner_ausschnitt.jpg",
+  "description": "Ein Tag, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung.",
+  "showOnSeminars": true
 }
