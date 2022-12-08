@@ -74,10 +74,10 @@
   "order": 1,
   "date": "19.09.-19.12.2022",
   "boldtext": "Wise Woman Yoga Samstagsseminar",
-  "title": "Wise Woman Yoga Retreat -  sei ganz du selbst!",
+  "title": "Wise Woman Yoga - Sei ganz Du selbst",
   "showOnHome": true,
   "image": "/media/kala_yoga_banner_ausschnitt.jpg",
+  "newImage": "/media/yoga_liste.jpg",
   "description": "Ein Samstag, um ganz zu Dir zu kommen, Dein Herz zu öffnen und Deine Wurzeln zu stärken.",
-  "showOnSeminars": true,
-  "newPicture": "/media/wise_woman_yoga.jpg"
+  "showOnSeminars": true
 }

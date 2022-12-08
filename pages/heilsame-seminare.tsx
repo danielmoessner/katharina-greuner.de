@@ -38,7 +38,7 @@ function Page({ pageData, seminars }) {
         <Container layout="sm">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {sortBy(seminars, "order").map((seminar) => {
-              if (seminars.showOnSeminars === true) {
+              if (seminar.showOnSeminars === true) {
                 return (
                   <React.Fragment key={seminar.title}>
                     <SeminarCard
