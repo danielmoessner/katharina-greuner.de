@@ -4,7 +4,10 @@
     "description": "Kala Heilarbeit verbindet Heilweisen für den Körper, die Seele und das Energiefeld zu einer ausgewogenen Einheit und holt dich genau dort ab, wo Du gerade stehst. In 30 Jahren therapeutischer Praxis konnte ich damit viele Menschen unterstützen, ihren persönlichen Weg der Heilung zu gehen."
   },
   "header": {
-    "image": "/media/kala_heilarbeit_banner_ausschnitt.jpg"
+    "image": "/media/kala_heilarbeit_banner_ausschnitt.jpg",
+    "color": "text-white",
+    "title": "Heilung beginnt an den Wurzeln",
+    "position": "left-[0%] right-[0%] bottom-[10%]"
   },
   "start": {
     "title": "Kala Heilarbeit",

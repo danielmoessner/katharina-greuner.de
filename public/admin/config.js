@@ -679,6 +679,13 @@ var article = {
     title_default,
     slug_default,
     {
+      label: "Datum",
+      name: "date",
+      widget: "datetime",
+      date_format: "DD.MM.YYYY",
+      time_format: false
+    },
+    {
       label: "Bild",
       name: "image",
       widget: "image",
@@ -695,8 +702,8 @@ var article = {
           label: "Datum",
           name: "date",
           widget: "datetime",
-          time_format: "HH:mm",
-          date_format: "DD.MM.YYYY"
+          date_format: "DD.MM.YYYY",
+          time_format: false
         },
         { label: "Text", name: "text", widget: "text" }
       ]
