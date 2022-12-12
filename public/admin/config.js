@@ -1061,8 +1061,8 @@ var seminar = {
           fields: [title_default, markdown_default]
         },
         {
-          label: "Banner",
-          name: "banner",
+          label: "Banner Pretitle",
+          name: "prebanner",
           widget: "object",
           fields: [
             title_default,

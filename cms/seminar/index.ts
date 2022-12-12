@@ -185,8 +185,8 @@ const seminar: CmsCollection = {
           fields: [title, markdown],
         },
         {
-          label: "Banner",
-          name: "banner",
+          label: "Banner Pretitle",
+          name: "prebanner",
           widget: "object",
           fields: [
             title,
