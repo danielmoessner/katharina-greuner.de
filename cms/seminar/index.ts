@@ -178,6 +178,18 @@ const seminar: CmsCollection = {
           widget: "object",
           fields: [title, image, alt, markdown, cta],
         },
+        {
+          label: "Banner",
+          name: "banner",
+          widget: "object",
+          fields: [title, markdown, cta],
+        },
+        {
+          label: "Yoga Termine Übersicht ",
+          name: "yogadateoverview",
+          widget: "object",
+          fields: [title, markdown, text, cta],
+        },
       ],
     },
   ],

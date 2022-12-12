@@ -1044,6 +1044,18 @@ var seminar = {
           name: "titleimagetextcta",
           widget: "object",
           fields: [title_default, image_default, alt_default, markdown_default, cta_default]
+        },
+        {
+          label: "Banner",
+          name: "banner",
+          widget: "object",
+          fields: [title_default, markdown_default, cta_default]
+        },
+        {
+          label: "Yoga Termine \xDCbersicht ",
+          name: "yogadateoverview",
+          widget: "object",
+          fields: [title_default, markdown_default, text_default, cta_default]
         }
       ]
     }
