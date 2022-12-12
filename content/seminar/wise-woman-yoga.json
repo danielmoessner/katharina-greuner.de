@@ -3,8 +3,9 @@
   "slug": "yoga",
   "sections": [
     {
-      "type": "text",
-      "markdown": "E﻿in Online-Programm über 6 Monate\n\n2﻿0.09.2022-21.02.2023\n\nD﻿ie Termine für den aktuellen Kurs findest du unten."
+      "type": "banner",
+      "markdown": "D﻿ie Termine für den aktuellen Kurs findest du unten.",
+      "title": "E﻿in Online-Programm über 6 Monate  2﻿0.09.2022-21.02.2023"
     },
     {
       "type": "imagetext",
@@ -19,8 +20,10 @@
       "alt": "Anleitung bei Yogaübung"
     },
     {
-      "type": "text",
-      "markdown": "W﻿as wird anders ?\n\nW﻿ise Women Yoga Retreat und selbstbestimmte Manifestation\n\nW﻿ir treffen uns für einen Zeitraum von 6 Monaten 1x im Monat online an einem Dienstagabend für 2 bis 2,5 Stunden online zum Wise Women Yoga Retreat.\n\nI﻿nnerhalb dieses Zeitraumes findet 2x ein 1-stündiger Supervisionskreis zur Vertiefung Deiner Erfahrungen statt.\n\nD﻿ie Dermine für den aktuellen Kurs findest Du untenT"
+      "type": "prebanner",
+      "title": "W﻿as wird anders?",
+      "pretitle": "W﻿ise Women Yoga Retreat und selbstbestimmte Manifestation",
+      "markdown": "W﻿ir treffen uns für einen Zeitraum von 6 Monaten 1x im Monat online an einem Dienstagabend für 2 bis 2,5 Stunden online zum Wise Women Yoga Retreat.\n\nI﻿nnerhalb dieses Zeitraumes findet 2x ein 1-stündiger Supervisionskreis zur Vertiefung Deiner Erfahrungen statt.\n\nD﻿ie Dermine für den aktuellen Kurs findest Du unten."
     },
     {
       "type": "imagetext",
@@ -35,8 +38,10 @@
       "alt": "Gespräch "
     },
     {
-      "type": "text",
-      "markdown": "\n\nDas Thema unseres ersten Zyklus heißt:\n\nEntwickle Vertrauen - lass dich neu auf das Leben ein!\n\n* ﻿﻿Finde dein inneres Gleichgewicht - transformiere Schmerz und alte Verletzungen\n* ﻿﻿Lass dich tragen vom Atem - und bringe Dein Prana zum Fließen\n* ﻿﻿Im Fließen der Bewegungen erkennst du deinen eigenen Rhythmus\n* ﻿﻿Umgehen mit widrigen äußeren Umständen und in der Balance bleiben\n* ﻿﻿Wie du deinen eigenen Wert erkennst und ihn lebst\n* ﻿﻿Bringe Balance und Fülle in alle Lebensbereiche\n* ﻿﻿Erkenne emotionalen Ballast erkennen und lass ihn los"
+      "type": "prebanner",
+      "title": "Das Thema unseres ersten Zyklus heißt:",
+      "pretitle": "Entwickle Vertrauen - lass dich neu auf das Leben ein!",
+      "markdown": "\n\n* ﻿﻿Finde dein inneres Gleichgewicht - transformiere Schmerz und alte Verletzungen\n* ﻿﻿Lass dich tragen vom Atem - und bringe Dein Prana zum Fließen\n* ﻿﻿Im Fließen der Bewegungen erkennst du deinen eigenen Rhythmus\n* ﻿﻿Umgehen mit widrigen äußeren Umständen und in der Balance bleiben\n* ﻿﻿Wie du deinen eigenen Wert erkennst und ihn lebst\n* ﻿﻿Bringe Balance und Fülle in alle Lebensbereiche\n* ﻿﻿Erkenne emotionalen Ballast erkennen und lass ihn los"
     },
     {
       "type": "imagetext",
@@ -69,6 +74,16 @@
       ],
       "pretitle": "Kurse",
       "text": "Die Kurse finden in kleinen Gruppen statt. In einer Atmosphäre der gegenseitigen Akzeptanz kann jede:r Teilnehmer:in ihr eigenes Potential entdecken und entfalten."
+    },
+    {
+      "type": "yogadateoverview",
+      "title": "Online-Termine 2022/23",
+      "markdown": "6 Monate Wise Women Yoga Retreat 1x monatlich Dienstag von 19:00-21:30\n\nTermine: 20.09.2022 | 18.10.2022 | 22.11.2022 | 13.12.2022 | 17.01.2023 | 21.02.2023\n\nSupervision 2x je 60 min.\n\nTermine: 25.10.2022 | 20.12.2022\n\nOptional: Wise Women Yoga Tag in Präsenz\n\nTermin: 28.02.2023",
+      "text": "Kosten für den Kurs mit allen Terminen, Videos und Workbook und Begleitung: insgesamt 460 €\nOptional ein zusätzlicher Wise Women Yoga Tag\" in Präsenz am 28.01.2023: Kosten 110 €",
+      "cta": {
+        "text": "ZU WISE WOMAN YOGA ANMELDEN",
+        "href": "/kontakt"
+      }
     }
   ],
   "order": 1,
