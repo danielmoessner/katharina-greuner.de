@@ -4,7 +4,10 @@
     "description": "Die Ausbildung richtet sich an herzensoffene Menschen, die Kala Heilarbeit entweder nur für sich selbst oder als Therapeuten für die Behandlung anderer erlernen wollen."
   },
   "header": {
-    "image": "/media/kala_heilarbeit_ausbildung_banner_ausschnitt.jpeg"
+    "image": "/media/kala_heilarbeit_ausbildung_banner_ausschnitt.jpeg",
+    "title": "Werde Heiler:in für Dich und andere!",
+    "position": "left-[0%] right-[0%] bottom-[10%]",
+    "color": "text-white"
   },
   "start": {
     "title": "Lerne heilen! Ausbildung Kala Heilarbeit für Selbstheilung und Therapie",

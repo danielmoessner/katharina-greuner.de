@@ -1,13 +1,15 @@
 {
   "meta": {
-    "description": "todo",
+    "description": "Als Psychologin, Heilpraktikerin und Yogalehrerin begleite ich Dich durch einen achtsamen Dialog mit Deinem Körper und Deiner Seele, damit Du zu den Quellen Deiner inneren Kraft gelangen und Deinen ganz persönlichen Weg der Heilung gehen kannst.",
     "title": "Katharina Greuner",
     "image": "/media/kala_home_ausschnitt.jpg"
   },
   "header": {
-    "title": "Das tiefste Geheimnis der Heilung liegt in Dir selbst. Ich reiche Dir meine Hand, damit Du Deinen persönlichen Weg zur Ganzheit gehen kannst.",
+    "title": "Ich reiche Dir meine Hand \nfür den Weg zu Deiner Heilung",
     "text": "Von wann bis wann gehen die Jagdzeiten? In welchem Gebiet sind welche Tiere? Diese Informationen und mehr findest Du hier.",
-    "image": "/media/kala_home_ausschnitt.jpg"
+    "image": "/media/kala_home_ausschnitt.jpg",
+    "position": "top-[20%] sm:top-[35%] md:top-[40%] left-[60%] md:left-[62%]",
+    "color": "text-kg-green"
   },
   "about": {
     "text": "Als Psychologin, Heilpraktikerin und Yogalehrerin begleite ich Dich durch einen achtsamen Dialog mit Deinem Körper und Deiner Seele, damit Du zu den Quellen Deiner inneren Kraft gelangen und Deinen ganz persönlichen Weg der Heilung gehen kannst.\n\nLangjährige Erfahrung und Kompetenz, Offenheit für Neues und aus dem Herzen kommendes Engagement sind die Basis meiner Arbeit. Ich freue mich, wenn ich Dich bei der Verwirklichung Deines Potentials und Deiner Lebensvorstellungen unterstützen kann.\n\nHerzlichst, \n"

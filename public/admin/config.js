@@ -17,7 +17,9 @@ var header = {
   name: "header",
   widget: "object",
   fields: [
-    { label: "Titel", name: "title", widget: "string", required: false },
+    { label: "Titel", name: "title", widget: "text", required: false },
+    { label: "Position", name: "position", widget: "string", required: false },
+    { label: "Farbe", name: "color", widget: "string", required: false },
     { label: "Bild", name: "image", widget: "image" }
   ]
 };
@@ -677,6 +679,13 @@ var article = {
     title_default,
     slug_default,
     {
+      label: "Datum",
+      name: "date",
+      widget: "datetime",
+      date_format: "DD.MM.YYYY",
+      time_format: false
+    },
+    {
       label: "Bild",
       name: "image",
       widget: "image",
@@ -693,8 +702,8 @@ var article = {
           label: "Datum",
           name: "date",
           widget: "datetime",
-          time_format: "HH:mm",
-          date_format: "DD.MM.YYYY"
+          date_format: "DD.MM.YYYY",
+          time_format: false
         },
         { label: "Text", name: "text", widget: "text" }
       ]
