@@ -260,63 +260,70 @@ function Page({ seminarData }) {
           )}
 
           {section.type === "banner" && (
-            <section className="pt-12 pb-20">
-              <Container layout="sm">
-                <div className="">
-                  <div>
-                    <div className="flex justify-center">
-                      <Heading element="h2" size="h2">
-                        {section.title}
-                      </Heading>
-                    </div>
-                    <div className="mt-8">
-                      <ContentMarkdown html={section.markdown.html} />
+            <SectionFlowerBackground>
+              <section className="pt-12 pb-20">
+                <Container layout="sm">
+                  <div className="">
+                    <div>
+                      <div className="flex justify-center">
+                        <Heading element="h2" size="h2">
+                          {section.title}
+                        </Heading>
+                      </div>
+                      <div className="mt-8">
+                        <ContentMarkdown html={section.markdown.html} />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Container>
-            </section>
+                </Container>
+              </section>
+            </SectionFlowerBackground>
           )}
+
           {section.type === "prebanner" && (
-            <section className="pt-12 pb-20">
-              <Container layout="sm">
-                <div className="">
-                  <div>
-                    <div className="flex justify-center">
-                      <Heading element="h2" size="h2">
-                        {section.title}
-                      </Heading>
-                    </div>
-                    <div className="mt-8">
-                      <ContentMarkdown html={section.markdown.html} />
+            <SectionFlowerBackground>
+              <section className="pt-12 pb-20">
+                <Container layout="sm">
+                  <div className="">
+                    <div>
+                      <div className="flex justify-center">
+                        <Heading element="h2" size="h2">
+                          {section.title}
+                        </Heading>
+                      </div>
+                      <div className="mt-8">
+                        <ContentMarkdown html={section.markdown.html} />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Container>
-            </section>
+                </Container>
+              </section>
+            </SectionFlowerBackground>
           )}
           {section.type === "yogadateoverview" && (
-            <section className="pt-12 pb-20">
-              <Container layout="sm">
-                <div className="">
-                  <div>
-                    <div className="flex justify-center">
-                      <Heading element="h2" size="h2">
-                        {section.title}
-                      </Heading>
-                    </div>
-                    <div className="mt-8">
-                      <ContentImageMarkdownCta
-                        html={section.markdown.html}
-                        image={section.image}
-                        alt={section.alt}
-                        cta={section.cta}
-                      />
+            <SectionFlowerBackground>
+              <section className="pt-12 pb-20">
+                <Container layout="sm">
+                  <div className="">
+                    <div>
+                      <div className="flex justify-center">
+                        <Heading element="h2" size="h2">
+                          {section.title}
+                        </Heading>
+                      </div>
+                      <div className="mt-8">
+                        <ContentImageMarkdownCta
+                          html={section.markdown.html}
+                          image={section.image}
+                          alt={section.alt}
+                          cta={section.cta}
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Container>
-            </section>
+                </Container>
+              </section>
+            </SectionFlowerBackground>
           )}
         </React.Fragment>
       ))}

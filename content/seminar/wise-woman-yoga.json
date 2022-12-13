@@ -56,26 +56,6 @@
       "alt": "yoga matte"
     },
     {
-      "type": "yogadate",
-      "title": "Kurse",
-      "cta": {
-        "text": "Zum Yogakurs Anmelden",
-        "href": "/kontakt"
-      },
-      "yogadata": [
-        {
-          "key": "YOGAKURSE ONLINE MIT VIDEO",
-          "value": "12x Dienstag 18.45-19.45"
-        },
-        {
-          "key": "YOGAKURSE PRÄSENZ IN NEUFAHRN",
-          "value": "12x Montag 19.30-21.00 Uhr\n12x Dienstag 10.00-11.30 Uhr und 20.00-21.30 Uhr"
-        }
-      ],
-      "pretitle": "Kurse",
-      "text": "Die Kurse finden in kleinen Gruppen statt. In einer Atmosphäre der gegenseitigen Akzeptanz kann jede:r Teilnehmer:in ihr eigenes Potential entdecken und entfalten."
-    },
-    {
       "type": "yogadateoverview",
       "title": "Online-Termine 2022/23",
       "markdown": "6 Monate Wise Women Yoga Retreat 1x monatlich Dienstag von 19:00-21:30\n\nTermine: 20.09.2022 | 18.10.2022 | 22.11.2022 | 13.12.2022 | 17.01.2023 | 21.02.2023\n\nSupervision 2x je 60 min.\n\nTermine: 25.10.2022 | 20.12.2022\n\nOptional: Wise Women Yoga Tag in Präsenz\n\nTermin: 28.02.2023",
