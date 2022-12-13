@@ -259,7 +259,43 @@ function Page({ seminarData }) {
             </section>
           )}
 
-          {section.type === "titleimagetextcta" && (
+          {section.type === "banner" && (
+            <section className="pt-12 pb-20">
+              <Container layout="sm">
+                <div className="">
+                  <div>
+                    <div className="flex justify-center">
+                      <Heading element="h2" size="h2">
+                        {section.title}
+                      </Heading>
+                    </div>
+                    <div className="mt-8">
+                      <ContentMarkdown html={section.markdown.html} />
+                    </div>
+                  </div>
+                </div>
+              </Container>
+            </section>
+          )}
+          {section.type === "prebanner" && (
+            <section className="pt-12 pb-20">
+              <Container layout="sm">
+                <div className="">
+                  <div>
+                    <div className="flex justify-center">
+                      <Heading element="h2" size="h2">
+                        {section.title}
+                      </Heading>
+                    </div>
+                    <div className="mt-8">
+                      <ContentMarkdown html={section.markdown.html} />
+                    </div>
+                  </div>
+                </div>
+              </Container>
+            </section>
+          )}
+          {section.type === "yogadateoverview" && (
             <section className="pt-12 pb-20">
               <Container layout="sm">
                 <div className="">
