@@ -31,7 +31,63 @@
     "titleTableOfContents": "Inhaltsverzeichnis",
     "image": "/media/katharina_ueber_mich.jpeg",
     "titlePrinciples": "Meine Arbeitsprinzipien",
-    "textPrinciples": "Meine Heilarbeit steht auf einem breiten und soliden Fundament. Meine Ausbildung und Erfahrung als Psychologin verbinde ich mit naturheilkundlichem und spirituellem Wissen.  Als Heilpraktikerin und als Yogalehrerin bin ich tief in die ursprüngliche Weisheit des Körpers und der Seele eingetaucht.\nJedem, der zu mir kommt, begegne ich mit einem offenen unvoreingenommenen Blick. Deshalb finden wir Lösungen, frische Ressourcen und neue Wege, die zuvor noch niemand gefunden hat.  \nMir ist kein Thema fremd. Alles darf gesagt werden. Wenn ich sehe, dass ich Dir nicht helfen kann, bin ich ehrlich und teile es Dir mit.\nIch nehme Deine Symptome, Deine Leiden ernst, denn ich glaube an Dich. \nHinter der Krise oder der Krankheit, in der Du Dich befindest, vernehme ich Deinen Ruf nach Selbstverwirklichung und Entwicklung. \nDie Symptome, an denen Du leidest, verstehe ich als einen Wegweiser. Manchmal ist es wichtig, zuerst Deine Symptome zu behandeln, gerade, wenn sie sehr belastend sind. Nie jedoch dürfen wir dabei die Richtung verlieren, in die sie uns gewiesen haben. Erst wenn Du diesen Weg zu deinem Selbst beschreitest, löst sich die Ursache für Deine Symptome auf und sie können von den Wurzeln aus heilen.\nIch gehe für Dich auf Reisen in die geistige Welt. Wenn Du möchtest, führe ich Dich ebenfalls dorthin. Die geistigen Wesen, die uns dort begegnen, wissen Antworten, die wir nicht kennen und besitzen Heilkräfte, die uns nicht zur Verfügung stehen. Wenn wir respektvoll Kontakt zu ihnen aufnehmen, geben sie uns gerne ihre unschätzbare Hilfe."
+    "textPrinciples": "Meine Heilarbeit steht auf einem breiten und soliden Fundament. Meine Ausbildung und Erfahrung als Psychologin verbinde ich mit naturheilkundlichem und spirituellem Wissen.  Als Heilpraktikerin und als Yogalehrerin bin ich tief in die ursprüngliche Weisheit des Körpers und der Seele eingetaucht.\nJedem, der zu mir kommt, begegne ich mit einem offenen unvoreingenommenen Blick. Deshalb finden wir Lösungen, frische Ressourcen und neue Wege, die zuvor noch niemand gefunden hat.  \nMir ist kein Thema fremd. Alles darf gesagt werden. Wenn ich sehe, dass ich Dir nicht helfen kann, bin ich ehrlich und teile es Dir mit.\nIch nehme Deine Symptome, Deine Leiden ernst, denn ich glaube an Dich. \nHinter der Krise oder der Krankheit, in der Du Dich befindest, vernehme ich Deinen Ruf nach Selbstverwirklichung und Entwicklung. \nDie Symptome, an denen Du leidest, verstehe ich als einen Wegweiser. Manchmal ist es wichtig, zuerst Deine Symptome zu behandeln, gerade, wenn sie sehr belastend sind. Nie jedoch dürfen wir dabei die Richtung verlieren, in die sie uns gewiesen haben. Erst wenn Du diesen Weg zu deinem Selbst beschreitest, löst sich die Ursache für Deine Symptome auf und sie können von den Wurzeln aus heilen.\nIch gehe für Dich auf Reisen in die geistige Welt. Wenn Du möchtest, führe ich Dich ebenfalls dorthin. Die geistigen Wesen, die uns dort begegnen, wissen Antworten, die wir nicht kennen und besitzen Heilkräfte, die uns nicht zur Verfügung stehen. Wenn wir respektvoll Kontakt zu ihnen aufnehmen, geben sie uns gerne ihre unschätzbare Hilfe.",
+    "tableOfContents": [
+      {
+        "link": {
+          "text": "Meine Arbeitsprinzipien",
+          "href": "/ueber-mich#meine-arbeitsprinzipien"
+        }
+      },
+      {
+        "link": {
+          "text": "In Stichworten",
+          "href": "/ueber-mich#in-stichworten"
+        }
+      },
+      {
+        "link": {
+          "text": "Mein persönlicher Berufsweg",
+          "href": "/ueber-mich#mein-persönlicher-berufsweg"
+        }
+      },
+      {
+        "link": {
+          "text": "reisen",
+          "href": "/ueber-mich#reisen"
+        }
+      },
+      {
+        "link": {
+          "text": "Soziales Engagement",
+          "href": "/ueber-mich#soziales-engagement"
+        }
+      },
+      {
+        "link": {
+          "text": "Privates",
+          "href": "/ueber-mich#privates"
+        }
+      },
+      {
+        "link": {
+          "text": "Ausbildungen & Fortbildungen",
+          "href": "/ueber-mich#ausbildungen-und-fortbildungen"
+        }
+      },
+      {
+        "link": {
+          "text": "Praxisschwerpunkte",
+          "href": "/ueber-mich#praxisschwerpunkte"
+        }
+      },
+      {
+        "link": {
+          "text": "Ausblick",
+          "href": "/ueber-mich#ausblick"
+        }
+      }
+    ]
   },
   "keywords": {
     "title": "In Stichworten",
@@ -79,6 +135,111 @@
           {
             "year": "1990-1993",
             "text": "Psychologische Körpertherapie (Pfadzentrum Berlin)"
+          },
+          {
+            "year": "1995",
+            "text": "Entspannungstrainerin - Autogenes Training, Progressive Muskelrelaxation (IfG/VHS Neumarkt)"
+          },
+          {
+            "year": "1996",
+            "text": "Fußreflexzonentherapie"
+          },
+          {
+            "text": "Dorntherapie",
+            "year": "1997"
+          },
+          {
+            "year": "1997",
+            "text": "Anwendung und Herstellung von Blütenessenzen und energetischen Essenzen"
+          },
+          {
+            "year": "1998-2009 & ab 2018",
+            "text": "Einzelunterricht Yoga, Meditation, Atemtherapie und Supervision bei Helga Pfretzschner"
+          },
+          {
+            "year": "2003-2006 ",
+            "text": " Iyengar-Yoga bei Luise Wörle"
+          },
+          {
+            "year": "2001-2005",
+            "text": "Psychokinesiologie und Neuralkinesiologie, Seminarassistenz Dr.Schwanner"
+          },
+          {
+            "year": "2004-2005",
+            "text": "Yoga der Energie Boris Tatzky und Agathe Bretschneider"
+          },
+          {
+            "text": "Craniosakraltherapie und Bindegewebeintegration (ZfN München, Dr. O.Korpiun)",
+            "year": "2006-2007"
+          },
+          {
+            "year": "2009-2010",
+            "text": "Microkinesie (ZfN München)"
+          },
+          {
+            "text": "Shiatsu (ZfN München, Dr.Stolle)",
+            "year": "2010"
+          },
+          {
+            "year": "2010-2012",
+            "text": "Shiatsu Einzelunterricht, Akupressur und TCM sowie Supervision bei Dr. Stolle"
+          },
+          {
+            "text": "Spiraldynamik bei H.Rogall, Fußschule München",
+            "year": "2011-2012"
+          },
+          {
+            "text": "Einzel-Ausbildung und Supervision Chi Gong bei N. Herwegh",
+            "year": "2013-2015"
+          },
+          {
+            "year": "2012-2015",
+            "text": "Stilles Chi Gong bei Zhi Chang Li"
+          },
+          {
+            "text": "Visionäre Craniosacralabeit bei Hugh Milne",
+            "year": "2018"
+          },
+          {
+            "year": "Ab 2011",
+            "text": "ausgedehnte Reisen nach Asien (Japan, Nepal, China, Indien, Ladakh) zum Studium der Wurzeln von Yoga, Qi Gong, Meditation und schamanischer Heilweisen."
+          }
+        ]
+      },
+      {
+        "name": "Beruflicher Werdegang",
+        "entries": [
+          {
+            "year": "1985-1986",
+            "text": "Stadtbezirksstelle für Geriatrie Berlin Mitte"
+          },
+          {
+            "year": "1986-1989",
+            "text": "Fachkrankenhaus für Neurologie und Psychiatrie Berlin Herzberge. Stationsleitung und therapeutische Tätigkeit und Begutachtung."
+          },
+          {
+            "text": "Freiberufliche Tätigkeit, Aufbau des Vereins , Integrative Kinderbetreuung als Freier Träger einer Kindertagesstätte und pädagogischen Beratungsstelle für Erzieherinnen, Leitung der Beratungsstelle.",
+            "year": "1990-1993"
+          },
+          {
+            "text": "Freiberufliche Therapeutin beim „Arbeitskreis Legasthenie\" in München",
+            "year": "1995-1998"
+          },
+          {
+            "year": "1994-2006",
+            "text": "Dozentin für Erwachsenenbildung VHS München Nord"
+          },
+          {
+            "year": "1998-1999",
+            "text": "Dozentin bei „Body und Mind Akademie* zur Ausbildung von Entspannungstrainern."
+          },
+          {
+            "year": "seit 1994",
+            "text": "in eigener Praxis tätig."
+          },
+          {
+            "year": "seit 1998",
+            "text": "fortlaufende Kurse und Seminare für Yoga und Meditation, Qi Gong und Selbsterfahrung"
           }
         ]
       }
