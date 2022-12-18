@@ -1,0 +1,20 @@
+{
+    "meta": {
+      "title": "Blog",
+      "description": "todo"
+    },
+    "header": {
+      "title": "test",
+      "color": "text-white",
+      "position": "top-[20%] sm:top-[35%] md:top-[40%] left-[60%] md:left-[62%]"
+    },
+    "content": {
+      "markdown": "test",
+      "cta": {
+        "text": "So erreichst du mich",
+        "href": "/kontakt"
+      },
+      "alt": "Katharina vor einem Baum",
+      "title": "Heilsame Seminare"
+    }
+  }
