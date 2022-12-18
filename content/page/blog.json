@@ -4,17 +4,17 @@
       "description": "todo"
     },
     "header": {
-      "title": "test",
+      "title": "test2",
       "color": "text-white",
       "position": "top-[20%] sm:top-[35%] md:top-[40%] left-[60%] md:left-[62%]"
     },
     "content": {
-      "markdown": "test",
+      "markdown": "hier ist der content",
       "cta": {
         "text": "So erreichst du mich",
         "href": "/kontakt"
       },
-      "alt": "Katharina vor einem Baum",
-      "title": "Heilsame Seminare"
+      "alt": "test",
+      "title": "Blog"
     }
   }
