@@ -16,6 +16,8 @@ import Image from "next/image";
 import { formatDate } from "../../lib/date";
 import ContentText from "components/ContentText";
 import ContentImageMarkdownCta from "components/ContentImageMarkdownCta";
+import Section from "components/Section";
+import ContentMarkdownTextCta from "components/ContentMarkdownTextCta";
 
 function Page({ seminarData }) {
   const seminar = seminarData;
@@ -45,7 +47,7 @@ function Page({ seminarData }) {
       {seminar.sections.map((section, index) => (
         <React.Fragment key={index}>
           {section.type === "imagetext" && (
-            <div className="pt-12 pb-20">
+            <div className="p-10">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -59,9 +61,8 @@ function Page({ seminarData }) {
               </Container>
             </div>
           )}
-
           {section.type === "text" && (
-            <div className="pt-12 pb-20">
+            <div className="p-10">
               <Container layout="sm">
                 <div className="">
                   <div className="">
@@ -71,9 +72,8 @@ function Page({ seminarData }) {
               </Container>
             </div>
           )}
-
           {section.type === "textimage" && (
-            <div className="pt-12 pb-20">
+            <div className="p-10">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -87,7 +87,6 @@ function Page({ seminarData }) {
               </Container>
             </div>
           )}
-
           {section.type === "events" && (
             <SectionFlowerBackground>
               <div className="grid justify-center my-10 ">
@@ -130,7 +129,6 @@ function Page({ seminarData }) {
               </div>
             </SectionFlowerBackground>
           )}
-
           {section.type === "flowertitle" && (
             <SectionFlowerBackground>
               <div className="flex flex-col py-10 gap-y-1 ">
@@ -145,7 +143,6 @@ function Page({ seminarData }) {
               </div>
             </SectionFlowerBackground>
           )}
-
           {section.type === "date" && (
             <SectionFlowerBackground>
               <div className="py-20">
@@ -172,7 +169,6 @@ function Page({ seminarData }) {
               </div>
             </SectionFlowerBackground>
           )}
-
           {section.type === "yogadate" && (
             <SectionFlowerBackground>
               <div className="py-20">
@@ -204,9 +200,8 @@ function Page({ seminarData }) {
               </div>
             </SectionFlowerBackground>
           )}
-
           {section.type === "titletextimagetextbutton" && (
-            <section className="pt-12 pb-20">
+            <section className="p-12 ">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -235,9 +230,8 @@ function Page({ seminarData }) {
               </Container>
             </section>
           )}
-
           {section.type === "titletextimage" && (
-            <section className="pt-12 pb-20">
+            <section className="p-12 ">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -258,19 +252,18 @@ function Page({ seminarData }) {
               </Container>
             </section>
           )}
-
           {section.type === "banner" && (
             <SectionFlowerBackground>
-              <section className="pt-12 pb-20">
+              <section className="p-12">
                 <Container layout="sm">
                   <div className="">
-                    <div>
-                      <div className="flex justify-center">
+                    <div className="item-center">
+                      <div className="flex ">
                         <Heading element="h2" size="h2">
                           {section.title}
                         </Heading>
                       </div>
-                      <div className="mt-8">
+                      <div className="mt-8 text-center ">
                         <ContentMarkdown html={section.markdown.html} />
                       </div>
                     </div>
@@ -279,44 +272,76 @@ function Page({ seminarData }) {
               </section>
             </SectionFlowerBackground>
           )}
-
           {section.type === "prebanner" && (
-            <SectionFlowerBackground>
-              <section className="pt-12 pb-20">
+            <Section>
+              <section className="p-8 bg-kg-green/20">
                 <Container layout="sm">
                   <div className="">
                     <div>
-                      <div className="flex justify-center">
+                      <div className="flex justify-center pb-4">
                         <Heading element="h2" size="h2">
                           {section.title}
                         </Heading>
                       </div>
-                      <div className="mt-8">
-                        <ContentMarkdown html={section.markdown.html} />
+
+                      <div className="flex flex-col justify-center ">
+                        <div className="flex justify-center text-xl">
+                          {section.pretitle}
+                        </div>
+                        <div className="flex justify-center mt-2 text-center">
+                          <ContentMarkdown html={section.markdown.html} />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </Container>
               </section>
-            </SectionFlowerBackground>
+            </Section>
+          )}{" "}
+          {section.type === "prebanner2" && (
+            <Section>
+              <section className="p-8 bg-kg-green/20">
+                <Container layout="sm">
+                  <div className="">
+                    <div>
+                      <div className="flex justify-center pb-4">
+                        <Heading element="h2" size="h2">
+                          {section.title}
+                        </Heading>
+                      </div>
+
+                      <div className="flex flex-col justify-center ">
+                        <div className="flex justify-center font-bold">
+                          <Heading element="h3" size="h3">
+                            {section.pretitle2}
+                          </Heading>
+                        </div>
+                        <div className="flex justify-center mt-2">
+                          <ContentMarkdown html={section.markdown.html} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Container>
+              </section>
+            </Section>
           )}
           {section.type === "yogadateoverview" && (
             <SectionFlowerBackground>
               <section className="pt-12 pb-20">
                 <Container layout="sm">
-                  <div className="">
+                  <div className="flex justify-center">
                     <div>
                       <div className="flex justify-center">
                         <Heading element="h2" size="h2">
                           {section.title}
                         </Heading>
                       </div>
-                      <div className="mt-8">
-                        <ContentImageMarkdownCta
+                      <div className="mt-8 text-2xl text-center">
+                        <ContentMarkdownTextCta
                           html={section.markdown.html}
-                          image={section.image}
-                          alt={section.alt}
                           cta={section.cta}
+                          text={section.text}
                         />
                       </div>
                     </div>

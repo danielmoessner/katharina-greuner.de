@@ -1071,6 +1071,16 @@ var seminar = {
           ]
         },
         {
+          label: "Banner Pretitle 2",
+          name: "prebanner2",
+          widget: "object",
+          fields: [
+            title_default,
+            { label: "Vortitel 2", name: "pretitle2", widget: "string" },
+            markdown_default
+          ]
+        },
+        {
           label: "Yoga Termine \xDCbersicht ",
           name: "yogadateoverview",
           widget: "object",

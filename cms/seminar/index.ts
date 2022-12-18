@@ -195,6 +195,16 @@ const seminar: CmsCollection = {
           ],
         },
         {
+          label: "Banner Pretitle 2",
+          name: "prebanner2",
+          widget: "object",
+          fields: [
+            title,
+            { label: "Vortitel 2", name: "pretitle2", widget: "string" },
+            markdown,
+          ],
+        },
+        {
           label: "Yoga Termine Übersicht ",
           name: "yogadateoverview",
           widget: "object",
