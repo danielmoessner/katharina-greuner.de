@@ -1,6 +1,5 @@
 import Prose from "./Prose";
 import Button from "./Button";
-import text from "cms/symbols/text";
 import Multiline from "./Multiline";
 
 function ContentMarkdownTextCta({ html, text, cta }) {

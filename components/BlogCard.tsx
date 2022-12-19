@@ -1,22 +1,22 @@
-import Image from "next/image";
-import { ImageRendered } from "types/shared";
-import Link from "next/link";
+// import Image from "next/image";
+// import { ImageRendered } from "types/shared";
+// import Link from "next/link";
 
-interface Blog {
-  title: string;
-  image: ImageRendered;
-  newImage: ImageRendered;
-  description: string;
-  date: string;
-  slug: string;
-}
+// interface Blog {
+//   title: string;
+//   image: ImageRendered;
+//   newImage: ImageRendered;
+//   description: string;
+//   date: string;
+//   slug: string;
+// }
 
-interface Props {
-  blog: Blog;
-  button: string;
-}
+// interface Props {
+//   blog: Blog;
+//   button: string;
+// }
 
-function BlogCard({ blog, button }: Props) {
+function BlogCard(/*{ blog, button }: Props*/) {
   return (
     <div className="flex flex-col justify-between h-full p-4 border-b-2 bg-kg-green/20">
       <div>

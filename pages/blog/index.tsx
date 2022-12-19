@@ -1,16 +1,16 @@
-import Layout from "../components/Layout";
-import Seo from "../components/Seo";
-import blog from "../content/page/blog.json";
+import Layout from "../../components/Layout";
+import Seo from "../../components/Seo";
+import blog from "../../content/page/blog.json";
 import React from "react";
 import pageSource from "content/page/blog.json";
 import Header from "components/Header";
 import Container from "components/Container";
 import { renderContent } from "lib/renderContent";
 import Heading from "components/Heading";
-import ContentMarkdownCtaImage from "components/ContentMarkdownCtaImage";
+// import ContentMarkdownCtaImage from "components/ContentMarkdownCtaImage";
 import BlogCard from "components/BlogCard";
-import { getAllJson } from "lib/getContent";
-import sortBy from "lodash/sortBy";
+// import { getAllJson } from "lib/getContent";
+// import sortBy from "lodash/sortBy";
 import AboutCard from "components/AboutMeCard";
 
 function Page({ pageData }) {
@@ -31,10 +31,10 @@ function Page({ pageData }) {
         <section className="pt-6 pb-20 divide-y-2">
           <Container layout="sm">
             <div className="p-4 border-b-2 ">
-              <BlogCard blog={undefined} button={"test"}></BlogCard>
+              <BlogCard></BlogCard>
             </div>{" "}
             <div className="p-4 border-b-2">
-              <BlogCard blog={undefined} button={"test"}></BlogCard>
+              <BlogCard></BlogCard>
             </div>
           </Container>
         </section>
@@ -42,12 +42,12 @@ function Page({ pageData }) {
         <section className="pt-6 pb-20">
           <Container layout="sm">
             <div>
-              <AboutCard about={undefined} button={"test"}></AboutCard>
+              <AboutCard></AboutCard>
             </div>
 
             <div className="mt-4">
               <h1>Schlagwörter</h1>
-              <ui>
+              <ul>
                 <li>text</li>
                 <li>text</li>
                 <li>text</li>
@@ -55,7 +55,7 @@ function Page({ pageData }) {
                 <li>text</li>
                 <li>text</li>
                 <li>text</li>
-              </ui>
+              </ul>
             </div>
 
             {/* Newsletter Card über CMS */}

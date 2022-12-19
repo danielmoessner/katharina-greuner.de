@@ -15,7 +15,7 @@ import ImageRounded from "components/ImageRounded";
 import Image from "next/image";
 import { formatDate } from "../../lib/date";
 import ContentText from "components/ContentText";
-import ContentImageMarkdownCta from "components/ContentImageMarkdownCta";
+// import ContentImageMarkdownCta from "components/ContentImageMarkdownCta";
 import Section from "components/Section";
 import ContentMarkdownTextCta from "components/ContentMarkdownTextCta";
 

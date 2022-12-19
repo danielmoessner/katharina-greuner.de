@@ -4,7 +4,7 @@ import { ImageRendered } from "types/shared";
 interface Props {
   header: {
     title?: string;
-    image: ImageRendered;
+    image?: ImageRendered;
     position?: string;
     color?: string;
   };
