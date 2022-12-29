@@ -1,19 +1,16 @@
 import Layout from "../../components/Layout";
 import Seo from "../../components/Seo";
-import blog from "../../content/page/blog.json";
 import React from "react";
 import pageSource from "content/page/blog.json";
 import Header from "components/Header";
 import Container from "components/Container";
 import { renderContent } from "lib/renderContent";
 import Heading from "components/Heading";
-// import ContentMarkdownCtaImage from "components/ContentMarkdownCtaImage";
 import BlogCard from "components/BlogCard";
-// import { getAllJson } from "lib/getContent";
-// import sortBy from "lodash/sortBy";
 import AboutCard from "components/AboutMeCard";
+import { getAllJson } from "lib/getContent";
 
-function Page({ pageData }) {
+function Page({ pageData, articles }) {
   const page = pageData;
 
   return (
@@ -30,11 +27,14 @@ function Page({ pageData }) {
       <section className="grid grid-cols-2 divide-x-2">
         <section className="pt-6 pb-20 divide-y-2">
           <Container layout="sm">
-            <div className="p-4 border-b-2 ">
-              <BlogCard></BlogCard>
-            </div>{" "}
-            <div className="p-4 border-b-2">
-              <BlogCard></BlogCard>
+            <div className="space-y-10 divide-y-2 divide-y-gray-400">
+              {articles.map((article) => (
+                <BlogCard
+                  article={article}
+                  button="Weiterlesen (todo)"
+                  key={article.title}
+                />
+              ))}
             </div>
           </Container>
         </section>
@@ -95,12 +95,12 @@ export async function getStaticProps() {
   // const footerData = await renderContent(footerSource[locale]);
   // const pageData = await renderContent(blog);
   const pageData = await renderContent(pageSource);
-  // const blog = await renderContent(getAllJson("blog"));
+  const articles = await renderContent(getAllJson("article"));
 
   return {
     props: {
       pageData,
-      blog,
+      articles,
       // footerData,
     }, // will be passed to the blog component as props
   };
