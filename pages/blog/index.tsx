@@ -2,7 +2,6 @@ import Layout from "../../components/Layout";
 import Seo from "../../components/Seo";
 import React from "react";
 import pageSource from "content/page/blog.json";
-import Header from "components/Header";
 import Container from "components/Container";
 import { renderContent } from "lib/renderContent";
 import Heading from "components/Heading";
