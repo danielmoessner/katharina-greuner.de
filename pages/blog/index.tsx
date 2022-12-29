@@ -18,28 +18,26 @@ function Page({ pageData, articles }) {
       <Seo meta={page.meta} />
       <Header header={page.header} />
       <section>
-        <div className="flex justify-center">
+        <div className="flex justify-center pt-10">
           <Heading element="h1" size="h1">
             {page.content.title}
           </Heading>
         </div>
       </section>
-      <section className="grid grid-cols-2 divide-x-2">
-        <section className="pt-6 pb-20 divide-y-2">
+      <section className="grid grid-cols-12 pb-20 divide-x-2">
+        <div className="col-span-8">
           <Container layout="sm">
-            <div className="space-y-10 divide-y-2 divide-y-gray-400">
+            <div className="divide-y-2 divide-gray-200">
               {articles.map((article) => (
-                <BlogCard
-                  article={article}
-                  button="Weiterlesen (todo)"
-                  key={article.title}
-                />
+                <div key={article.title} className="py-8 first:pt-0 last:pb-0">
+                  <BlogCard article={article} button="Weiterlesen (todo)" />
+                </div>
               ))}
             </div>
           </Container>
-        </section>
+        </div>
 
-        <section className="pt-6 pb-20">
+        <aside className="col-span-4">
           <Container layout="sm">
             <div>
               <AboutCard></AboutCard>
@@ -83,7 +81,7 @@ function Page({ pageData, articles }) {
                 }
               })} */}
           </Container>
-        </section>
+        </aside>
       </section>
     </Layout>
   );
