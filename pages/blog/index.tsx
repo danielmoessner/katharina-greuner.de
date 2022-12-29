@@ -16,7 +16,6 @@ function Page({ pageData, articles }) {
   return (
     <Layout>
       <Seo meta={page.meta} />
-      <Header header={page.header} />
       <section>
         <div className="flex justify-center pt-10">
           <Heading element="h1" size="h1">
