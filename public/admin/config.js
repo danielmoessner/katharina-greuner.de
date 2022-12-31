@@ -707,6 +707,12 @@ var article = {
         },
         { label: "Text", name: "text", widget: "text" }
       ]
+    },
+    {
+      label: "Beschreibung",
+      name: "description",
+      widget: "list",
+      fields: [{ label: "Text", name: "text", widget: "text" }]
     }
   ]
 };
