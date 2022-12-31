@@ -43,10 +43,7 @@ function BlogCard({ article, button }: Props) {
           </a>
         </Link>
         <p className="">{formatDate(article.date)}</p>
-        <p className="mt-3">
-          article.description bitte noch im cms eine kurzbeschreibung adden wenn
-          nicht vorhanden
-        </p>
+        <p className="mt-3">{article.description}</p>
       </div>
       <div className="mt-2">
         todo: button bitte über die blog seite im cms einstellen also den text

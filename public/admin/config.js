@@ -711,8 +711,7 @@ var article = {
     {
       label: "Beschreibung",
       name: "description",
-      widget: "list",
-      fields: [{ label: "Text", name: "text", widget: "text" }]
+      widget: "text"
     }
   ]
 };
