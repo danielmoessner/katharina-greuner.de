@@ -20,6 +20,7 @@ const blog: CmsCollectionFile = {
       widget: "object",
       fields: [title, markdown, cta, image, alt],
     },
+    // { label: "Button", name: "button", widget: "string" },
   ],
 };
 

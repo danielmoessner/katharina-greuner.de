@@ -23,19 +23,19 @@ function Page({ pageData, articles }) {
         </div>
       </section>
       <section className="grid grid-cols-12 pb-20 divide-x-2">
-        <div className="col-span-8">
+        <div className="col-span-6">
           <Container layout="sm">
             <div className="divide-y-2 divide-gray-200">
               {articles.map((article) => (
                 <div key={article.title} className="py-8 first:pt-0 last:pb-0">
-                  <BlogCard article={article} button="Weiterlesen (todo)" />
+                  <BlogCard article={article} button=" > Weiterlesen" />
                 </div>
               ))}
             </div>
           </Container>
         </div>
 
-        <aside className="col-span-4">
+        <aside className="col-span-6">
           <Container layout="sm">
             <div>
               <AboutCard></AboutCard>

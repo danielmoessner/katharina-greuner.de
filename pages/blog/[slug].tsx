@@ -6,6 +6,8 @@ import { renderContent } from "lib/renderContent";
 import { getAllJson } from "lib/getContent";
 import ImageBorder from "components/ImageBorder";
 import Image from "next/image";
+import Heading from "components/Heading";
+import { format } from "path";
 
 function Page({ article }) {
   const meta = {
@@ -17,19 +19,23 @@ function Page({ article }) {
     <Layout>
       <Seo meta={meta} />
       <Container layout="sm">
-        <div className="grid grid-cols-12 gap-6">
-          <section className="col-span-8">
+        <div className="grid grid-cols-12 gap-6 py-8 divide-x-2">
+          <section className="col-span-6">
             <ImageBorder>
               <Image {...article.image} alt={article.title} />
             </ImageBorder>
-            <h1>{article.title}</h1>
+
+            <Heading element="h3" size="h2">
+              {article.title}
+            </Heading>
+            <div className="">{article.date}</div>
             <div
-              className="prose max-w-none"
+              className="mt-3 prose max-w-none"
               // eslint-disable-next-line
               dangerouslySetInnerHTML={{ __html: article.markdown.html }}
             ></div>
           </section>
-          <aside className="col-span-4"></aside>
+          <aside className="col-span-6"></aside>
         </div>
       </Container>
     </Layout>

@@ -22,7 +22,7 @@ function BlogCard({ article, button }: Props) {
   return (
     <div className="">
       <div>
-        <div className="border-b-kg-yellow">
+        <div className="">
           {article.image && (
             <Link href={`blog/${article.slug}`}>
               <a href="">
@@ -42,11 +42,12 @@ function BlogCard({ article, button }: Props) {
             <h2 className="mt-2 text-3xl">{article.title}</h2>
           </a>
         </Link>
-        <p className="">{formatDate(article.date)}</p>
+        <p className="mt-3">{formatDate(article.date)}</p>
         <p className="mt-3">{article.description}</p>
       </div>
+
       <div className="mt-2">
-        todo: button bitte über die blog seite im cms einstellen also den text
+        {/* todo: button bitte über die blog seite im cms einstellen also den text */}
         <Link href={`blog/${article.slug}`}>{button}</Link>
       </div>
     </div>
