@@ -8,6 +8,7 @@ import contact from "./contact";
 import nepal from "./nepal";
 import seminars from "./seminars";
 import therapie from "./psychotherapie";
+import blog from "./blog";
 
 const config: CmsCollection = {
   name: "pages",
@@ -27,6 +28,7 @@ const config: CmsCollection = {
     contact,
     nepal,
     therapie,
+    blog,
   ],
 };
 
