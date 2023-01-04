@@ -64,20 +64,6 @@ function Page({ pageData, articles }) {
                 <p>text</p>
               </div>
             </div>
-            {/* {sortBy(blog, "order").map((blog) => {
-              if (blog === true) {
-                return (
-                  <>
-                  <React.Fragment key={blog.title}>
-                  <BlogCard blog={undefined} button={""} />
-                  </React.Fragment>
-                  <React.Fragment key={blog.title}>
-                  <BlogCard blog={blog} button={page.content.BlogButton} />
-                  </React.Fragment>
-                  </>
-                  );
-                }
-              })} */}
           </Container>
         </aside>
       </section>
