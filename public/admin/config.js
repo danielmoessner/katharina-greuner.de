@@ -7234,6 +7234,11 @@ var blog = {
     meta_default,
     header_default,
     {
+      label: "Header",
+      name: "header",
+      widget: "text"
+    },
+    {
       label: "Inhalt",
       name: "content",
       widget: "object",

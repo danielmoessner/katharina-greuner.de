@@ -17,6 +17,11 @@ const blog: CmsCollectionFile = {
     meta,
     header,
     {
+      label: "Header",
+      name: "header",
+      widget: "text",
+    },
+    {
       label: "Inhalt",
       name: "content",
       widget: "object",
