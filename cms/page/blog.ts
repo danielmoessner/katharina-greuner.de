@@ -1,13 +1,9 @@
-import alt from "cms/symbols/alt";
 import cta from "cms/symbols/cta";
-import header from "cms/symbols/header";
 import image from "cms/symbols/image";
-import markdown from "cms/symbols/markdown";
 import meta from "cms/symbols/meta";
 import text from "cms/symbols/text";
 import title from "cms/symbols/title";
 import { CmsCollectionFile } from "netlify-cms-core";
-import link from "next/link";
 
 const blog: CmsCollectionFile = {
   file: "content/page/blog.json",
@@ -15,29 +11,28 @@ const blog: CmsCollectionFile = {
   name: "blog",
   fields: [
     meta,
-    header,
     {
       label: "Header",
       name: "header",
-      widget: "text",
+      widget: "object",
+      fields: [title],
     },
     {
       label: "Inhalt",
       name: "content",
       widget: "object",
-      fields: [title, markdown, cta, image, alt],
+      fields: [{ label: "Button", name: "button", widget: "string" }],
     },
-    { label: "Button", name: "button", widget: "string" },
     {
-      label: "nebeninhalt",
+      label: "Spalte Rechts",
       name: "asidecontent",
       widget: "object",
       fields: [
-        title,
         image,
+        title,
         text,
-        link,
-        { label: "Schlagworttitel", name: "markdowntitle", widget: "string" },
+        cta,
+        { label: "Titel", name: "markdowntitle", widget: "string" },
       ],
     },
   ],
