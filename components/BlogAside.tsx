@@ -52,6 +52,7 @@ function BlogAside({ aside, categories, selectedCategory }: Props) {
         </h2>
         <div className="mt-4">
           <DynamicForm
+            name="newsletterformular"
             gapY="gap-y-2"
             buttonDivClass="mt-4 [&>div>button]:w-full"
             fields={aside.newsletter.fields}

@@ -77,6 +77,7 @@ function Page({ pageData, article, categories }) {
                           <p className="mt-1 text-sm">{page.comments.text}</p>
                           <div className="mt-4">
                             <DynamicForm
+                              name="kommentarformular"
                               gapY="gap-y-2"
                               buttonDivClass="mt-4"
                               fields={page.comments.fields}
