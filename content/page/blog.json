@@ -18,14 +18,32 @@
     "title": "Blog",
     "button": "Weiterlesen"
   },
-  "asidecontent": {
+  "aside": {
     "image": "/media/katharina.jpg",
     "title": "Herzlich Willkommen auf meinem Blog",
     "text": "In meinem Blog teile ich mit Dir Gedanken und Erfahrungen aus vielen Jahren Heilarbeit. Ich berichte über inspirierende Seminare, spirituelle Reisen und die tiefe Weisheit, der wir manchmal direkt vor unserer Haustür begegnen...\nIch freue mich, wenn meine Reflexionen für Dich zu heilsamen Impulse für Deinen Alltag werden!",
     "cta": {
-      "text": "Mehr über mich",
+      "text": "> Mehr über mich",
       "href": "/ueber-mich/"
     },
-    "markdowntitle": "Schlagwörter"
+    "categoriesTitle": "Schlagwörter",
+    "newsletter": {
+      "title": "Melde Dich hier zum  Newsletter an",
+      "button": "Jetzt anmelden",
+      "privacy": "Abmeldung vom Newsletter jederzeit mit nur einem  Klick möglich. Infos zum Versand des Newsletters findest du in der Datenschutzerklärung.",
+      "fields": [
+        {
+          "label": "Vorname",
+          "name": "vorname",
+          "className": "col-span-2"
+        },
+        {
+          "label": "E-Mail",
+          "name": "email",
+          "className": "col-span-2"
+        }
+      ],
+      "success": "Vielen dank für deine Eintragung!"
+    }
   }
 }

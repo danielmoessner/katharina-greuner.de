@@ -49,12 +49,12 @@ function Button({
   } else {
     bColor =
       color ||
-      "text-kg-brown bg-transparent uppercase tracking-wide box-border hover:bg-kg-yellow/10 hover:ring-1 hover:ring-kg-yellow focus:ring-offset-1";
+      "text-kg-brown bg-transparent uppercase tracking-wide box-border hover:bg-[rgb(255,249,232)] hover:ring-1 hover:ring-kg-yellow focus:ring-offset-1";
   }
 
   const bClassName =
     className ||
-    `transition inline-flex items-center border-3 border-kg-yellow font-medium shadow-sm ${ring} ${ringOffset} ${size} ${bColor}`;
+    `transition inline-flex items-center border-3 bg-white border-kg-yellow font-medium shadow-sm ${ring} ${ringOffset} ${size} ${bColor}`;
 
   return (
     <div>
@@ -64,7 +64,7 @@ function Button({
         </Link>
       ) : (
         <Tag className={bClassName} {...attrs}>
-          <span>{children}</span>
+          <span className="w-full">{children}</span>
         </Tag>
       )}
     </div>

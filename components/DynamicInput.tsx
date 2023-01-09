@@ -1,22 +1,39 @@
 import React from "react";
-import PropTypes from "prop-types";
-import ChildrenData from "../types/ChildrenData";
+import { UseFormRegister } from "react-hook-form";
 
-function Component({
+export interface DynamicInputProps {
+  name: string;
+  autoComplete?: string;
+  type?: string;
+  element?: "input" | "textarea";
+  label: string;
+  children?: React.ReactNode;
+  className?: string;
+  required?: boolean;
+  value?: string | number;
+  placeholder?: string;
+  error: boolean;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  register: UseFormRegister<any>;
+  // eslint-disable-next-line react/forbid-prop-types
+  attrs?: object;
+}
+
+function DynamicInput({
   name,
-  autoComplete,
-  type,
-  element,
+  autoComplete = "",
+  type = "text",
+  element = "input",
   label,
-  attrs,
-  className,
-  required,
-  placeholder,
-  children,
-  value,
+  attrs = {},
+  className = "",
+  required = true,
+  placeholder = "",
+  children = null,
+  value = "",
   register,
   error,
-}) {
+}: DynamicInputProps) {
   const Tag = element;
 
   return (
@@ -32,7 +49,7 @@ function Component({
             id={name}
             defaultValue={value}
             required={required}
-            rows="4"
+            rows={4}
             autoComplete={autoComplete}
             placeholder={placeholder}
             className="block w-full px-4 py-1.5 text-base border-2 border-kg-brown/40 appearance-none focus:outline-none focus:border-kg-yellow"
@@ -52,33 +69,4 @@ function Component({
   );
 }
 
-Component.defaultProps = {
-  autoComplete: "",
-  type: "text",
-  element: "input",
-  attrs: {},
-  className: "",
-  required: true,
-  value: "",
-  children: null,
-  placeholder: "",
-};
-
-export const InputProps = {
-  name: PropTypes.string.isRequired,
-  autoComplete: PropTypes.string,
-  type: PropTypes.string,
-  element: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  children: ChildrenData,
-  className: PropTypes.string,
-  required: PropTypes.bool,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  placeholder: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  // eslint-disable-next-line react/forbid-prop-types
-  attrs: PropTypes.object,
-};
-
-Component.propTypes = InputProps;
-
-export default Component;
+export default DynamicInput;

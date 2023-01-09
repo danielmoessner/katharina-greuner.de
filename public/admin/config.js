@@ -661,14 +661,35 @@ var blog = {
     },
     {
       label: "Spalte Rechts",
-      name: "asidecontent",
+      name: "aside",
       widget: "object",
       fields: [
         image_default,
         title_default,
         text_default,
         cta_default,
-        { label: "Titel", name: "markdowntitle", widget: "string" }
+        { label: "Titel", name: "categoriesTitle", widget: "string" },
+        {
+          label: "Newsletter",
+          name: "newsletter",
+          widget: "object",
+          fields: [
+            title_default,
+            {
+              label: "Felder",
+              name: "fields",
+              widget: "list",
+              fields: [
+                { label: "label", name: "label", widget: "string" },
+                { label: "Name", name: "name", widget: "string" },
+                { label: "Class", name: "className", widget: "string" }
+              ]
+            },
+            { label: "Erfolg", name: "success", widget: "text" },
+            { label: "Button", name: "button", widget: "string" },
+            { label: "Privacy", name: "privacy", widget: "text" }
+          ]
+        }
       ]
     }
   ]
