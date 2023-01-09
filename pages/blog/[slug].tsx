@@ -28,9 +28,9 @@ function Page({ pageData, article, categories }) {
       <Seo meta={meta} />
       <section>
         <Container layout="sm">
-          <div className="grid grid-cols-12 py-8 divide-x-2">
-            <div className="col-span-8">
-              <div className="pr-8">
+          <div className="grid grid-cols-12 py-8 md:divide-x-2">
+            <div className="col-span-12 md:col-span-8">
+              <div className="md:pr-8">
                 <ImageBorder>
                   <Image {...article.image} alt={article.title} />
                 </ImageBorder>
@@ -94,7 +94,7 @@ function Page({ pageData, article, categories }) {
                 </div>
               )}
             </div>
-            <aside className="col-span-4 pl-8">
+            <aside className="col-span-12 pt-20 md:col-span-4 md:pl-8 md:pt-0">
               <BlogAside
                 aside={page.aside}
                 categories={categories}

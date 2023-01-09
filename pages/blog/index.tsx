@@ -23,7 +23,7 @@ function Page({ pageData, allArticles, categories }) {
   return (
     <Layout>
       <Seo meta={page.meta} />
-      <section>
+      <section className="pb-10 lg:pb-0">
         <div className="flex justify-center pt-10">
           <Heading element="h1" size="h1">
             {page.content.title}
@@ -32,8 +32,8 @@ function Page({ pageData, allArticles, categories }) {
       </section>
       <section>
         <Container layout="sm">
-          <div className="grid grid-cols-12 pb-20 divide-x-2">
-            <div className="col-span-8 pr-8">
+          <div className="grid grid-cols-12 pb-20 md:divide-x-2">
+            <div className="col-span-12 md:col-span-8 md:pr-8">
               <div className="divide-y-2 divide-gray-200">
                 {articles.map((article) => (
                   <div
@@ -45,7 +45,7 @@ function Page({ pageData, allArticles, categories }) {
                 ))}
               </div>
             </div>
-            <aside className="col-span-4 pl-8">
+            <aside className="col-span-12 pt-20 md:col-span-4 md:pl-8 md:pt-0">
               <BlogAside
                 aside={page.aside}
                 categories={categories}
