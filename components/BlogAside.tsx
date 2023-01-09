@@ -40,7 +40,7 @@ function BlogAside({ aside, categories, selectedCategory }: Props) {
             key={category.title}
             className={selectedCategory === category.slug ? "underline" : ""}
           >
-            <Link href={`?kategorie=${category.slug}`}>
+            <Link href={`/blog?kategorie=${category.slug}`}>
               <a href="">{category.title}</a>
             </Link>
           </li>
