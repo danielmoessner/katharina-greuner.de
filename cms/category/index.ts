@@ -11,7 +11,14 @@ const category: CmsCollection = {
   folder: "content/category",
   slug: "{{slug}}",
   create: true,
-  fields: [{ label: "Titel", name: "title", widget: "string" }],
+  fields: [
+    { label: "Titel", name: "title", widget: "string" },
+    {
+      label: "Slug (Bitte nach Verwendung nicht mehr verändern)",
+      name: "slug",
+      widget: "string",
+    },
+  ],
 };
 
 export default category;

@@ -8,9 +8,17 @@ import Heading from "components/Heading";
 import BlogCard from "components/BlogCard";
 import { getAllJson } from "lib/getContent";
 import BlogAside from "components/BlogAside";
+import { useRouter } from "next/router";
 
-function Page({ pageData, articles }) {
+function Page({ pageData, allArticles, categories }) {
   const page = pageData;
+  const router = useRouter();
+  const selectedCategory = router.query.kategorie as string;
+  let articles = allArticles;
+  if (selectedCategory)
+    articles = allArticles.filter((article) =>
+      article.categories.includes(selectedCategory)
+    );
 
   return (
     <Layout>
@@ -38,7 +46,11 @@ function Page({ pageData, articles }) {
               </div>
             </div>
             <aside className="col-span-4 pl-8">
-              <BlogAside aside={page.aside} />
+              <BlogAside
+                aside={page.aside}
+                categories={categories}
+                selectedCategory={selectedCategory}
+              />
             </aside>
           </div>
         </Container>
@@ -51,12 +63,14 @@ export default Page;
 
 export async function getStaticProps() {
   const pageData = await renderContent(pageSource);
-  const articles = await renderContent(getAllJson("article"));
+  const allArticles = await renderContent(getAllJson("article"));
+  const categories = await getAllJson("category");
 
   return {
     props: {
       pageData,
-      articles,
+      allArticles,
+      categories,
     },
   };
 }

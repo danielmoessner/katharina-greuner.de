@@ -18,9 +18,11 @@ interface Props {
       success: string;
     };
   };
+  selectedCategory?: string;
+  categories: { title: string; slug: string }[];
 }
 
-function BlogAside({ aside }: Props) {
+function BlogAside({ aside, categories, selectedCategory }: Props) {
   return (
     <div>
       <ImageRounded image={aside.image} alt={aside.title} />
@@ -32,7 +34,18 @@ function BlogAside({ aside }: Props) {
         </a>
       </Link>
       <h2 className="mt-10 text-xl font-medium">{aside.categoriesTitle}</h2>
-      {/* todo: cateogories */}
+      <ul className="mt-3 space-y-1">
+        {categories.map((category) => (
+          <li
+            key={category.title}
+            className={selectedCategory === category.slug ? "underline" : ""}
+          >
+            <Link href={`?kategorie=${category.slug}`}>
+              <a href="">{category.title}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
       <div className="px-4 pt-5 pb-5 mt-14 bg-kg-green/20">
         <h2 className="text-2xl font-medium text-center">
           {aside.newsletter.title}

@@ -18,6 +18,16 @@ const article: CmsCollection = {
     title,
     slug,
     {
+      label: "Kategorien",
+      name: "categories",
+      widget: "relation",
+      multiple: true,
+      collection: "category",
+      search_fields: ["title"],
+      value_field: "slug",
+      display_fields: ["title"],
+    },
+    {
       label: "Datum",
       name: "date",
       widget: "datetime",

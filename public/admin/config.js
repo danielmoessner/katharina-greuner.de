@@ -736,6 +736,16 @@ var article = {
     title_default,
     slug_default,
     {
+      label: "Kategorien",
+      name: "categories",
+      widget: "relation",
+      multiple: true,
+      collection: "category",
+      search_fields: ["title"],
+      value_field: "slug",
+      display_fields: ["title"]
+    },
+    {
       label: "Datum",
       name: "date",
       widget: "datetime",
@@ -786,7 +796,14 @@ var category = {
   folder: "content/category",
   slug: "{{slug}}",
   create: true,
-  fields: [{ label: "Titel", name: "title", widget: "string" }]
+  fields: [
+    { label: "Titel", name: "title", widget: "string" },
+    {
+      label: "Slug (Bitte nach Verwendung nicht mehr ver\xE4ndern)",
+      name: "slug",
+      widget: "string"
+    }
+  ]
 };
 var category_default = category;
 
