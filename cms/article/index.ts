@@ -46,7 +46,7 @@ const article: CmsCollection = {
       name: "comments",
       widget: "list",
       fields: [
-        { label: "Autor", name: "autor", widget: "string" },
+        { label: "Autor", name: "author", widget: "string" },
         {
           label: "Datum",
           name: "date",

@@ -56,6 +56,33 @@ const blog: CmsCollectionFile = {
         },
       ],
     },
+    {
+      label: "Kommentarsektion",
+      name: "comments",
+      widget: "object",
+      fields: [
+        title,
+        text,
+        {
+          label: "Felder",
+          name: "fields",
+          widget: "list",
+          fields: [
+            { label: "Label", name: "label", widget: "string" },
+            { label: "Element", name: "element", widget: "string" },
+            { label: "Name", name: "name", widget: "string" },
+            {
+              label: "Class",
+              name: "className",
+              widget: "string",
+              required: false,
+            },
+          ],
+        },
+        { label: "Erfolg", name: "success", widget: "text" },
+        { label: "Button", name: "button", widget: "string" },
+      ],
+    },
   ],
 };
 

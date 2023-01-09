@@ -45,5 +45,30 @@
       ],
       "success": "Vielen dank für deine Eintragung!"
     }
+  },
+  "comments": {
+    "success": "Vielen Dank für deinen Kommentar. Nach Überprüfung wird er veröffentlicht.",
+    "button": "Kommentar absenden",
+    "fields": [
+      {
+        "label": "Kommentar",
+        "name": "comment",
+        "className": "col-span-2",
+        "element": "textarea"
+      },
+      {
+        "label": "Name",
+        "name": "name",
+        "className": "",
+        "element": "input"
+      },
+      {
+        "label": "E-Mail",
+        "name": "email",
+        "element": "input"
+      }
+    ],
+    "title": "Kommentar verfassen",
+    "text": "Deine E-Mail-Adresse wird nicht veröffentlicht."
   }
 }
