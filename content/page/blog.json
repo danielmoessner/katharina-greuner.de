@@ -30,7 +30,7 @@
     "newsletter": {
       "title": "Melde Dich hier zum  Newsletter an",
       "button": "Jetzt anmelden",
-      "privacy": "Abmeldung vom Newsletter jederzeit mit nur einem  Klick möglich. Infos zum Versand des Newsletters findest du in der Datenschutzerklärung.",
+      "privacy": "Abmeldung vom Newsletter jederzeit mit nur einem Klick möglich. Infos zum Versand des Newsletters findest du in der <a href=\"/rechtliches/datenschutz\">Datenschutzerklärung</a>.",
       "fields": [
         {
           "label": "Vorname",

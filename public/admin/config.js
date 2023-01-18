@@ -687,7 +687,7 @@ var blog = {
             },
             { label: "Erfolg", name: "success", widget: "text" },
             { label: "Button", name: "button", widget: "string" },
-            { label: "Privacy", name: "privacy", widget: "text" }
+            { label: "Datenschutz", name: "privacy", widget: "text" }
           ]
         }
       ]

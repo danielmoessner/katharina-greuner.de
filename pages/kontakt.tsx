@@ -3,7 +3,6 @@ import Seo from "../components/Seo";
 import contact from "../content/page/contact.json";
 import { renderContent } from "lib/renderContent";
 import SectionStart from "../components/SectionStart";
-import SectionFlowerBackground from "components/SectionFlowerBackground";
 import Heading from "components/Heading";
 import SectionContent from "components/SectionContent";
 import Prose from "components/Prose";
@@ -32,19 +31,19 @@ function Page({ pageData }) {
           />
         </div>
       </SectionStart>
-      <SectionFlowerBackground>
+      {/* <SectionFlowerBackground>
         <div className="py-8">
           <div className="flex justify-center text-center">
             <Heading element="h2" size="h2">
               {page.directions.title}
             </Heading>
           </div>
-          <div className="mt-10">{/* map */}</div>
+          <div className="mt-10">map</div>
           <div className="mt-10">
             <p className="block mx-auto text-center">{page.directions.maps}</p>
           </div>
         </div>
-      </SectionFlowerBackground>
+      </SectionFlowerBackground> */}
       <SectionContent>
         <div className="space-y-20">
           {page.information.map((item, index) => (

@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import Seo from "../../components/Seo";
-import Header from "../../components/Header";
 import Container from "../../components/Container";
 import { renderContent } from "lib/renderContent";
 import { getAllMarkdown } from "lib/getContent";
@@ -14,22 +13,17 @@ function Page({ legalData }) {
     description: "",
   };
 
-  const header = {
-    title: page.title,
-    text: "",
-  };
-
   return (
     <Layout>
       <Seo meta={meta} />
-      <Header header={header} />
-      <section className="pt-5 pb-20">
+      <section className="pt-10 pb-20">
         <Container layout="sm">
-          <article
-            className="prose"
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: page.markdown.html }}
-          />
+          <article className="mx-auto prose">
+            <h1>{page.title}</h1>
+            <div // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{ __html: page.markdown.html }}
+            ></div>
+          </article>
         </Container>
       </section>
     </Layout>

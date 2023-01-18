@@ -50,10 +50,11 @@
       }
     }
   ],
-  "order": 5,
+  "order": -1,
   "date": "07.07.-25.07.2023",
   "boldtext": "Wo die Seele wohnt: Spirituelle Reise in den Himalaya",
   "title": "Spirituelle Reise in den Himalaya",
+  "showOnHome": true,
   "image": "/media/himalaya_banner_ausschnitt.jpg",
   "newImage": "/media/nepal_800x547.jpg",
   "description": "Atemberaubende Landschaften und die tiefe Spiritualität tibetischer Kultur machen diese Reise unvergesslich.",

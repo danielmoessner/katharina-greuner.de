@@ -48,9 +48,11 @@ function Page({ pageData, seminars }) {
 
 export async function getStaticProps() {
   const pageData = await renderContent(home);
-  const seminars = await renderContent(getAllJson("seminar"));
+  const seminars1 = await renderContent(getAllJson("seminar"));
+  const seminars2 = seminars1.sort((a, b) => a.order - b.order);
+
   return {
-    props: { pageData, seminars },
+    props: { pageData, seminars: seminars2 },
   };
 }
 

@@ -15,7 +15,11 @@ function Component() {
     <nav>
       <Container layout="sm">
         <div className="max-w-lg py-5 mx-auto">
-          <Logo />
+          <Link href="/">
+            <a href="">
+              <Logo />
+            </a>
+          </Link>
         </div>
       </Container>
       <div className="border-y">

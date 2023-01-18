@@ -1,4 +1,4 @@
-# katharina-greunder.de
+# katharina-greuner.de
 
 ## Setup
 

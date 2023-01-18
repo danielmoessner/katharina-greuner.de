@@ -62,7 +62,10 @@ function BlogAside({ aside, categories, selectedCategory }: Props) {
             successText={aside.newsletter.success}
           />
         </div>
-        <p className="mt-5 text-xs text-center">{aside.newsletter.privacy}</p>
+        <p
+          className="mt-5 text-xs text-center"
+          dangerouslySetInnerHTML={{ __html: aside.newsletter.privacy }}
+        ></p>
       </div>
     </div>
   );

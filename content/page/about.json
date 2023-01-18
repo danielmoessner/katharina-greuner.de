@@ -3,7 +3,11 @@
     {
       "title": "Reisen",
       "text": "Eines meiner Lebenselixiere ist das Reisen.\n\nSeit ich denken kann, bin ich auf die eine oder andere Weise gereist. Reisen bedeutet für mich, meinen Alltag und meine gewohnten Strukturen zu verlassen und mich auf Entdeckungsreise in neue Erfahrungsräume zu begeben. Deshalb spreche ich hier nicht allein von konkreten Reisen in ferne Länder, sondern ebenso von den Reisen in mein eigenes Inneres und in spirituelle Welten.\n\nMit diesen geistigen Reisen habe ich schon früh in meinem Leben begonnen und inzwischen ist es mir sehr vertraut geworden, den Boden der sichtbaren materiellen Realität zu verlassen und in Kontakt zu geistigen Kräften zu treten. Dabei bin ich sehr bodenständig und ganz gewiss keine abgehobene Esoterik-Träumerin. Ich kehre immer wieder gerne in unsere greifbare \nall-tägliche Welt zurück, denn nur hier kann ich wirken, mich entfalten und glücklich sein.\n\nDoch ich bin auch fasziniert von fremden Kulturen und will verstehen, wie die Menschen leben, was sie glücklich macht, welche Heilweisen sie anwenden und wie sie ihre spirituellen Traditionen im Alltag leben. Es zieht mich deshalb nicht in die großen Hotels oder Wellness-Tempel, die ja überall auf der Welt gleich sind, sondern dorthin, wo ich den Menschen hautnah begegne. Immer wieder bin ich berührt, wenn sie mir offenherzig ihre Lebensgeschichten erzählen und mich an ihren Traditionen teilhaben ließen. Das hilft mir, auch mein Leben besser zu verstehen und all die Chancen und Wohltaten des Lebens mit Dankbarkeit anzunehmen. Jede Begegnung bedeutet für mich Inspiration für meinen eigenen Weg und meine Heilarbeit.",
-      "image": "/media/ueber_mich_reisen.jpeg"
+      "image": "/media/ueber_mich_reisen.jpeg",
+      "link": {
+        "text": "Mehr dazu auf meinem Blog",
+        "href": "/blog?kategorie=spirituelle-reise"
+      }
     },
     {
       "title": "Soziales Engagement",
