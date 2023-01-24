@@ -200,6 +200,23 @@ function Page({ seminarData }) {
               </div>
             </SectionFlowerBackground>
           )}
+          {section.type === "review" && (
+            <section className="py-8">
+              <Container layout="sm">
+                <div className="flex flex-col items-center justify-center px-8 md:flex-row bg-kg-green/20">
+                  <div className="py-7">
+                    <ImageRounded image={section.image} alt={section.string} />
+                  </div>
+                  <div className="md:max-w-[50%] md:pl-8 whitespace-pre-line pb-8 md:py-8">
+                    <p>
+                      <i>„{section.text}“</i> <br />
+                      <b className="block pt-3">{section.string}</b>
+                    </p>
+                  </div>
+                </div>
+              </Container>
+            </section>
+          )}
           {section.type === "titletextimagetextbutton" && (
             <section className="p-12 ">
               <Container layout="sm">
