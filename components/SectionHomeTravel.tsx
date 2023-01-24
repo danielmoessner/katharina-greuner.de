@@ -9,7 +9,11 @@ interface Props {
     title: string;
     text: string;
     button: string;
-    cta: {
+    cta1: {
+      text: string;
+      href: string;
+    };
+    cta2: {
       text: string;
       href: string;
     };
@@ -26,8 +30,9 @@ function Component({ travel }: Props) {
               <Heading>{travel.title}</Heading>
               <p className="mt-3 text-kg-brown">{travel.text}</p>
             </div>
-            <div>
-              <Button href={travel.cta.href}>{travel.cta.text}</Button>
+            <div className="flex flex-col space-y-4">
+              <Button href={travel.cta1.href}>{travel.cta1.text}</Button>
+              <Button href={travel.cta2.href}>{travel.cta2.text}</Button>
             </div>
           </div>
           <div className="col-span-12 md:col-span-6 ">

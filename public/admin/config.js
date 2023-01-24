@@ -98,7 +98,7 @@ var home = {
       label: "Events",
       name: "events",
       widget: "object",
-      fields: [{ label: "Button", name: "button", widget: "string" }]
+      fields: [title_default, { label: "Button", name: "button", widget: "string" }]
     },
     {
       label: "Angebots\xFCbersicht",
@@ -123,7 +123,18 @@ var home = {
       name: "travel",
       widget: "object",
       fields: [
-        cta_default,
+        {
+          label: "Button 1",
+          name: "cta1",
+          widget: "object",
+          fields: internalLinkFields
+        },
+        {
+          label: "Button 2",
+          name: "cta2",
+          widget: "object",
+          fields: internalLinkFields
+        },
         { label: "Titel", name: "title", widget: "string" },
         { label: "Text", name: "text", widget: "text" },
         { label: "Button", name: "button", widget: "string" }

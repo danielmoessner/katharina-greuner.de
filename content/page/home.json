@@ -18,8 +18,12 @@
     "title": "Spirituelle Reisen",
     "text": "Spirituelle Reisen führen Dich an besondere Orte der Kraft und Transformation. Sie berühren die Seele und Du erlebst einzigartige Momente der Inspiration und der Lebensfreude.",
     "button": "Zu den Spirituellen Reisen",
-    "cta": {
-      "text": "Zu den Spirituellen Reisen",
+    "cta1": {
+      "text": "Teneriffa: Das Glück liegt in Dir",
+      "href": "/seminar/das-glueck-liegt-in-dir"
+    },
+    "cta2": {
+      "text": "Himalaya: Wo die Seele wohnt",
       "href": "/seminar/wo-die-seele-wohnt"
     }
   },
@@ -86,6 +90,7 @@
     }
   ],
   "events": {
-    "button": "> Erfahre mehr"
+    "button": "> Erfahre mehr",
+    "title": "Aktuelles"
   }
 }

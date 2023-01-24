@@ -23,7 +23,7 @@ function Page({ pageData, seminars }) {
       <SectionFlowerBackground>
         <div className="py-1">
           <h2 className="mx-auto text-lg tracking-wide text-center uppercase">
-            Aktuelle Reisen
+            {page.events.title}
           </h2>
           <div className="grid gap-5 mt-2 sm:grid-cols-2 sm:gap-2 lg:grid-cols-4">
             {seminars
