@@ -54,7 +54,7 @@ function Button({
 
   const bClassName =
     className ||
-    `transition inline-flex items-center border-3 bg-white border-kg-yellow font-medium shadow-sm ${ring} ${ringOffset} ${size} ${bColor}`;
+    `transition whitespace-pre inline-flex items-center border-3 bg-white border-kg-yellow font-medium shadow-sm ${ring} ${ringOffset} ${size} ${bColor}`;
 
   return (
     <div>
