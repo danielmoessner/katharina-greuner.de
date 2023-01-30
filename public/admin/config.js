@@ -788,7 +788,8 @@ var article = {
       name: "date",
       widget: "datetime",
       date_format: "DD.MM.YYYY",
-      time_format: false
+      time_format: false,
+      format: "YYYY-MM-DD"
     },
     {
       label: "Bild",

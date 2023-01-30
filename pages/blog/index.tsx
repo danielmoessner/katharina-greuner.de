@@ -47,6 +47,7 @@ function Page({ pageData, allArticles, categories }) {
             </div>
             <aside className="col-span-12 pt-20 md:col-span-4 md:pl-8 md:pt-0">
               <BlogAside
+                articles={articles}
                 aside={page.aside}
                 categories={categories}
                 selectedCategory={selectedCategory}
@@ -63,13 +64,16 @@ export default Page;
 
 export async function getStaticProps() {
   const pageData = await renderContent(pageSource);
-  const allArticles = await renderContent(getAllJson("article"));
+  const allArticles1 = await renderContent(getAllJson("article"));
+  const allArticles2 = allArticles1.sort(
+    (a1, a2) => new Date(a2.date).getTime() - new Date(a1.date).getTime()
+  );
   const categories = await getAllJson("category");
 
   return {
     props: {
       pageData,
-      allArticles,
+      allArticles: allArticles2,
       categories,
     },
   };

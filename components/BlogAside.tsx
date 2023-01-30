@@ -20,9 +20,19 @@ interface Props {
   };
   selectedCategory?: string;
   categories: { title: string; slug: string }[];
+  articles?: { categories: string[] }[];
 }
 
-function BlogAside({ aside, categories, selectedCategory }: Props) {
+function BlogAside({
+  aside,
+  categories,
+  selectedCategory,
+  articles = [],
+}: Props) {
+  const count = (category: string) => {
+    return articles.filter((a) => a.categories.includes(category)).length;
+  };
+
   return (
     <div>
       <ImageRounded image={aside.image} alt={aside.title} />
@@ -41,7 +51,10 @@ function BlogAside({ aside, categories, selectedCategory }: Props) {
             className={selectedCategory === category.slug ? "underline" : ""}
           >
             <Link href={`/blog?kategorie=${category.slug}`}>
-              <a href="">{category.title}</a>
+              <a href="">
+                {category.title}{" "}
+                {articles.length ? <span>({count(category.slug)})</span> : null}
+              </a>
             </Link>
           </li>
         ))}

@@ -31,9 +31,11 @@ function Page({ pageData, article, categories }) {
           <div className="grid grid-cols-12 py-8 md:divide-x-2">
             <div className="col-span-12 md:col-span-8">
               <div className="md:pr-8">
-                <ImageBorder>
-                  <Image {...article.image} alt={article.title} />
-                </ImageBorder>
+                {article.image && (
+                  <ImageBorder>
+                    <Image {...article.image} alt={article.title} />
+                  </ImageBorder>
+                )}
 
                 <div className="mt-3">
                   <Heading element="h1" size="h2">
