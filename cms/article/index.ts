@@ -33,6 +33,7 @@ const article: CmsCollection = {
       widget: "datetime",
       date_format: "DD.MM.YYYY",
       time_format: false,
+      format: "YYYY-MM-DD",
     },
     {
       label: "Bild",
