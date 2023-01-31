@@ -1225,7 +1225,7 @@ var config2 = {
   media_folder: "/public/media",
   public_folder: "/media",
   load_config_file: false,
-  collections: [page_default, seminar_default, category_default, setting_default, legal_default, article_default]
+  collections: [page_default, seminar_default, category_default, article_default, setting_default, legal_default]
 };
 var config_default = config2;
 export {

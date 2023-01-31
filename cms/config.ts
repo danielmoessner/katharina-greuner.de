@@ -29,7 +29,7 @@ const config: CmsConfig = {
   // See https://www.netlifycms.org/docs/beta-features/#manual-initialization
   load_config_file: false,
   // See https://www.netlifycms.org/docs/collection-types/
-  collections: [page, seminar, category, setting, legal, article],
+  collections: [page, seminar, category, article, setting, legal],
 };
 
 export default config;
