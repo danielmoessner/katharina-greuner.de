@@ -797,6 +797,11 @@ var article = {
       widget: "image",
       required: false
     },
+    {
+      label: "Beschreibung",
+      name: "description",
+      widget: "text"
+    },
     markdown_default,
     {
       label: "comments",
@@ -813,11 +818,6 @@ var article = {
         },
         { label: "Text", name: "text", widget: "text" }
       ]
-    },
-    {
-      label: "Beschreibung",
-      name: "description",
-      widget: "text"
     }
   ]
 };

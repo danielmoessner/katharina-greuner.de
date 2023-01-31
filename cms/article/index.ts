@@ -41,6 +41,11 @@ const article: CmsCollection = {
       widget: "image",
       required: false,
     },
+    {
+      label: "Beschreibung",
+      name: "description",
+      widget: "text",
+    },
     markdown,
     {
       label: "comments",
@@ -57,11 +62,6 @@ const article: CmsCollection = {
         },
         { label: "Text", name: "text", widget: "text" },
       ],
-    },
-    {
-      label: "Beschreibung",
-      name: "description",
-      widget: "text",
     },
   ],
 };
