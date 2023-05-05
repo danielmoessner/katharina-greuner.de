@@ -1,5 +1,5 @@
 {
-  "shortDescription": "Meditativer Seelentanz\n02.07.2022",
+  "shortDescription": "Meditativer Seelentanz\n24.06.2023",
   "slug": "tanzendes-herz",
   "sections": [
     {
@@ -43,12 +43,12 @@
     }
   ],
   "order": 4,
-  "date": "Samstag, 02.07.2022, 9.00-18.30 Uhr",
+  "date": "Samstag, 24.06.2023 09.30-17:00 Uhr",
   "boldtext": "Tanzendes Herz",
   "title": "Tanzendes Herz",
   "showOnHome": true,
   "image": "/media/tanzendes_herz_banner_ausschnitt.jpg",
+  "newImage": "/media/tanzendes_herz.jpg",
   "description": "Meditativer schamanischer Seelentanz um inneres Wachstum, Freude und Herzenswünsche zu verwirklichen.",
-  "showOnSeminars": true,
-  "newImage": "/media/tanzendes_herz.jpg"
+  "showOnSeminars": true
 }
