@@ -33,6 +33,26 @@
           "date": "2023-11-23T13:00:57.331Z",
           "month": "November:",
           "time": "19.00-21.30 Uhr"
+        },
+        {
+          "date": "2023-12-14T14:16:30.766Z",
+          "month": "Dezember",
+          "time": "19.00-21.30 Uhr"
+        },
+        {
+          "date": "2024-01-18T14:17:58.016Z",
+          "month": "Januar 2024",
+          "time": "19.00-21.30 Uhr"
+        },
+        {
+          "date": "2024-02-15T14:17:58.804Z",
+          "month": "Februar 2024",
+          "time": "19.00-21.30 Uhr"
+        },
+        {
+          "date": "2024-03-14T14:17:59.753Z",
+          "month": "März 2024",
+          "time": "19.00-21.30 Uhr"
         }
       ],
       "image": "/media/kirschen_herz.jpeg"
