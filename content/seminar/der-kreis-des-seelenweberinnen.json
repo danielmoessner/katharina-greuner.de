@@ -1,5 +1,5 @@
 {
-  "shortDescription": "Sei die Hüterin Deiner Kraft Nächstes Treffen: 23.11.2023",
+  "shortDescription": "Sei die Hüterin Deiner Kraft Nächstes Treffen: 15.02.2024",
   "start": "October 12, 2022 7:06 PM",
   "slug": "seelenweberinnen",
   "sections": [
@@ -10,8 +10,8 @@
     {
       "type": "flowertitle",
       "image": "/media/hueterin_deiner_kraft.png",
-      "title": "Jahreskreis der Seelenweberinnen 2023",
-      "markdown": "### Jahreskreis der Seelenweberinnen 2023"
+      "title": "Jahreskreis der Seelenweberinnen 2024",
+      "markdown": "### Jahreskreis der Seelenweberinnen 2024"
     },
     {
       "type": "imagetext",
@@ -22,23 +22,8 @@
     {
       "type": "events",
       "markdown": "A﻿usgleich, wenn du Alle 6 Termine buchst: **195,00€**\n\nA﻿usgleich, wenn du jeden Termin einzeln buchst: **jeweils 40,00€**",
-      "title": "T﻿ermine online 2023 | 2.Halbjahr",
+      "title": "T﻿ermine online 2024 | 1.Halbjahr",
       "events": [
-        {
-          "date": "2023-10-26T12:00:44.888Z",
-          "month": "Oktober:",
-          "time": "19:00 - 21:30"
-        },
-        {
-          "date": "2023-11-16T13:00:57.331Z",
-          "month": "November:",
-          "time": "19.00-21.30 Uhr"
-        },
-        {
-          "date": "2023-12-14T14:16:30.766Z",
-          "month": "Dezember",
-          "time": "19.00-21.30 Uhr"
-        },
         {
           "date": "2024-01-18T14:17:58.016Z",
           "month": "Januar 2024",
@@ -52,6 +37,21 @@
         {
           "date": "2024-03-14T14:17:59.753Z",
           "month": "März 2024",
+          "time": "19.00-21.30 Uhr"
+        },
+        {
+          "date": "2024-04-25T13:16:30.766Z",
+          "month": "April 2024",
+          "time": "19.00-21.30 Uhr"
+        },
+        {
+          "date": "2024-05-29T12:00:44.888Z",
+          "month": "Mai 2024",
+          "time": "19:00 - 21:30"
+        },
+        {
+          "date": "2024-06-27T12:00:57.331Z",
+          "month": "Juni 2024",
           "time": "19.00-21.30 Uhr"
         }
       ],
