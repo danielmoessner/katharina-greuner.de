@@ -3,11 +3,6 @@
   "slug": "yoga",
   "sections": [
     {
-      "type": "banner",
-      "markdown": "#### Nächster Kurs: 05.02.-27.05.2024",
-      "title": "Präsenz Yoga am Montag 05.02.-27.05.2024 im Stadl in Neufahrn"
-    },
-    {
       "type": "imagetext",
       "image": "/media/kala_yoga_1.jpg",
       "alt": "betende hand",
