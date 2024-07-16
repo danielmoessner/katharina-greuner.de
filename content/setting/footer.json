@@ -28,11 +28,6 @@
           "type": "externalLink",
           "text": "Mobil: 0176 - 82 63 71 09",
           "href": "tel:017682637109"
-        },
-        {
-          "type": "externalLink",
-          "text": "Festnetz: 08165 - 93 44 841",
-          "href": "tel:081659344841"
         }
       ],
       "class": "col-span-6 md:col-span-3"
