@@ -1,5 +1,5 @@
 {
-  "shortDescription": "Transformation durch Bewegung\nBeginn: 5.02.-27.05.2024\n",
+  "shortDescription": "Transformation durch Bewegung\nBeginn: 23.09.-16.12.2024\n",
   "slug": "yoga",
   "sections": [
     {
@@ -53,7 +53,7 @@
     {
       "type": "yogadateoverview",
       "title": "Termine 2024",
-      "markdown": "12x Wise Women Yoga  Montag von 19:30-21:00\n\nTermine: 05.02. - 27.05.2024\n\nkein Yoga am 12.02./25.03./13.05./21.05.",
+      "markdown": "12x Wise Women Yoga  Montag von 19:30-21:00\n\nTermine: 23.09.-16.12.2024\n\nkein Yoga am 02.122024",
       "text": "Kosten für den Kurs: insgesamt 240 €\n",
       "cta": {
         "text": "ZU WISE WOMAN YOGA ANMELDEN",
@@ -62,7 +62,7 @@
     }
   ],
   "order": 1,
-  "date": "05.02.-27.05.2024",
+  "date": "2024",
   "boldtext": "Wise Woman Yoga Samstagsseminar",
   "title": "Wise Woman Yoga - Sei ganz Du selbst",
   "showOnHome": true,
