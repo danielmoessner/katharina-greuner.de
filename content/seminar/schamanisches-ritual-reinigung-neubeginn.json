@@ -1,10 +1,10 @@
 {
-  "shortDescription": "Ein Tag, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung.",
+  "shortDescription": "Ein Abend, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung.",
   "slug": "schamanisches-ritual-reinigung-und-neubeginn",
   "sections": [
     {
       "type": "textimage",
-      "markdown": "Ein Tag, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung\n\nDer Weg zu Deinem innersten Selbst und zur Verwirklichung Deiner Lebensziele ist oft durch alte einschränkende Glaubensmuster versperrt. Du lernst in diesem Seminar, wie Du Dich von diesen Blockaden lösen und frei werden kannst für neue, kreative und heilsame Lösungen. Dafür begibst Du Dich auf eine andere Bewusstseinsebene und erkundest auf dem einzigartigen und wertvollen Weg der Schamanischen Reise Deine innere Welt.",
+      "markdown": "An diesem Abend erschaffen wir gemeinsam einen heilsamen Raum für Wandel und Stärkung. \\\nDas, was uns ausmacht, Zartheit, Verletzlichkeit, Wildheit, Neugier, Freude, Kreativität darf sich zeigen - ungeschminkt und frei!\n\nWir verabschieden Altes, Belastendes, Einschränkendes  und machen den Weg frei für die Kraft der Heldin in uns. \n\nZum Klang der Trommel reisen wir in das Land unserer Seele. Herz und Seele übernehmen die Führung - und unser wertender Verstand ruht sich für eine Weile aus.",
       "image": "/media/schmetterling.jpg",
       "alt": "Schmetterling sitzt auf Katharinas Hand"
     },
@@ -39,11 +39,11 @@
     }
   ],
   "order": 2,
-  "date": "Herbst 2022",
+  "date": "27.11.2024",
   "boldtext": "Schamanisches Ritual Reinigung & Neubeginn",
   "title": "Schamanisches Ritual Reinigung & Neubeginn",
   "image": "/media/kala_schamanisches_ritual_banner_ausschnitt.jpg",
-  "description": "Ein Tag, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung.",
-  "showOnSeminars": true,
-  "newImage": "/media/schamanisches_ritual.jpg"
+  "newImage": "/media/schamanisches_ritual.jpg",
+  "description": "Ein Abend, um Dich von alten Belastungen zu lösen und frei zu werden für Deine Selbstverwirklichung.",
+  "showOnSeminars": true
 }
