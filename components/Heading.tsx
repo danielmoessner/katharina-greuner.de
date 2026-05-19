@@ -2,9 +2,21 @@ import React from "react";
 import PropTypes from "prop-types";
 import ChildrenData from "../types/ChildrenData";
 
-function Heading({ element, size, color, children, classes }) {
-  const Tag = element;
+interface HeadingProps {
+  element?: any;
+  size?: "h1" | "h2" | "h3";
+  color?: string;
+  children: React.ReactNode;
+  classes?: string;
+}
 
+function Heading({
+  element: Tag = "h2",
+  size = "h2",
+  color = "text-kg-brown",
+  children,
+  classes = "",
+}: HeadingProps) {
   let allClasses = classes;
   if (size === "h1") {
     allClasses = `inline-block text-center text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl lg:pb-8 lg:px-8 ${classes} ${color}`;
@@ -23,13 +35,6 @@ function Heading({ element, size, color, children, classes }) {
     </Tag>
   );
 }
-
-Heading.defaultProps = {
-  element: "h2",
-  size: "h2",
-  color: "text-kg-brown",
-  classes: "",
-};
 
 Heading.propTypes = {
   element: PropTypes.string,

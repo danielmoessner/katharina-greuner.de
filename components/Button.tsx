@@ -4,43 +4,25 @@ import ChildrenData from "../types/ChildrenData";
 
 function Button({
   // element
-  element,
+  element = "Link",
   // attrs
-  href,
-  target,
-  type,
+  href = "#",
+  target = "_self",
+  type = "submit",
   // style
-  secondary,
+  secondary = false,
   // size
-  size,
+  size = "px-8 py-2 text-sm",
   // color
-  color,
+  color = null,
   // ring
-  ring,
-  ringOffset,
+  ring = "focus:outline-none",
+  ringOffset = "",
   // className
-  className,
+  className = null,
   // other
   children,
 }) {
-  const Tag = element === "Link" ? Link : element;
-
-  let attrs = {};
-  if (element === "Link") {
-    attrs = {
-      href,
-    };
-  } else if (element === "button") {
-    attrs = {
-      type,
-    };
-  } else if (element === "a") {
-    attrs = {
-      href,
-      target,
-    };
-  }
-
   let bColor = "";
   if (secondary) {
     bColor =
@@ -59,37 +41,28 @@ function Button({
   return (
     <div>
       {element === "Link" ? (
-        <Link href={href}>
+        <Link href={href} legacyBehavior>
           <a className={bClassName}>{children}</a>
         </Link>
-      ) : (
-        <Tag className={bClassName} {...attrs}>
+      ) : element === "button" ? (
+        <button
+          className={bClassName}
+          type={type as "button" | "reset" | "submit"}
+        >
           <span className="w-full">{children}</span>
-        </Tag>
+        </button>
+      ) : element === "a" ? (
+        <a className={bClassName} href={href} target={target}>
+          <span className="w-full">{children}</span>
+        </a>
+      ) : (
+        <span className={bClassName}>
+          <span className="w-full">{children}</span>
+        </span>
       )}
     </div>
   );
 }
-
-Button.defaultProps = {
-  // element
-  element: "Link",
-  // attrs
-  href: "#",
-  type: "submit",
-  target: "_self",
-  // style
-  secondary: false,
-  // size
-  size: "px-8 py-2 text-sm",
-  // color
-  color: null,
-  // ring
-  ring: "focus:outline-none",
-  ringOffset: "",
-  // className
-  className: null,
-};
 
 Button.propTypes = {
   // element

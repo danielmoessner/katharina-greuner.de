@@ -1,4 +1,4 @@
-import { CmsCollection } from "netlify-cms-core";
+import { CmsCollection } from "decap-cms-core";
 import home from "./home";
 import about from "./about";
 import kala from "./kala";

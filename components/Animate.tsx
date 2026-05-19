@@ -2,7 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import ChildrenData from "../types/ChildrenData";
 
-function Animate({ children, className, delay, duration, from, to }) {
+function Animate({
+  children,
+  className = "",
+  delay = 0,
+  duration = "duration-500",
+  from = "opacity-0 translate-y-10",
+  to = "opacity-100 translate-y-0",
+}) {
   const [show, setShow] = useState(false);
   const ref = useRef(null);
 
@@ -48,14 +55,6 @@ function Animate({ children, className, delay, duration, from, to }) {
     </div>
   );
 }
-
-Animate.defaultProps = {
-  className: "",
-  delay: 0,
-  duration: "duration-500",
-  from: "opacity-0 translate-y-10",
-  to: "opacity-100 translate-y-0",
-};
 
 Animate.propTypes = {
   children: ChildrenData.isRequired,

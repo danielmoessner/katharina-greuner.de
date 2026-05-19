@@ -1,4 +1,4 @@
-import { CmsCollection } from "netlify-cms-core";
+import { CmsCollection } from "decap-cms-core";
 
 const category: CmsCollection = {
   name: "category",

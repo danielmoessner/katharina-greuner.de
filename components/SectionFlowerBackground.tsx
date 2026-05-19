@@ -6,10 +6,10 @@ function SectionFlowerBackground({ children }) {
   return (
     <Section className="relative py-2 ">
       <Image
-        layout="fill"
-        objectFit="cover"
         src="/img/blumen_hintergrund_soft_tuerkis.jpeg"
         alt="Hintergrundbild"
+        fill
+        style={{ objectFit: "cover" }}
       />
       <div className="relative">
         <Container layout="sm">{children}</Container>

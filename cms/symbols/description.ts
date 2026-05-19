@@ -1,4 +1,4 @@
-import { CmsField } from "netlify-cms-core";
+import { CmsField } from "decap-cms-core";
 
 const description: CmsField = {
   label: "Beschreibung",

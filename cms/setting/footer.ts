@@ -4,7 +4,7 @@ import {
   CmsCollectionFile,
   CmsFieldBase,
   CmsFieldObject,
-} from "netlify-cms-core";
+} from "decap-cms-core";
 
 const link: CmsFieldBase & CmsFieldObject = {
   label: "Interner Link",

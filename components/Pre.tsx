@@ -2,9 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import ChildrenData from "../types/ChildrenData";
 
-function Component({ element, children, color }) {
-  const Tag = element;
+interface ComponentProps {
+  element?: any;
+  children: React.ReactNode;
+  color?: string;
+}
 
+function Component({ element: Tag = "div", children, color = "text-gray-700" }: ComponentProps) {
   return (
     <Tag
       className={`text-base font-semibold tracking-wider uppercase ${color}`}
@@ -13,11 +17,6 @@ function Component({ element, children, color }) {
     </Tag>
   );
 }
-
-Component.defaultProps = {
-  element: "div",
-  color: "text-gray-700",
-};
 
 Component.propTypes = {
   element: PropTypes.string,

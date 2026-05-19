@@ -12,10 +12,10 @@ function Component({ children, image }: Props) {
     <Section className="relative py-2">
       <div className="z-0 leading-[0]">
         <Image
-          layout="fill"
-          objectFit="cover"
           src="/img/blumen_hintergrund_soft_tuerkis.jpeg"
           alt="Hintergrundbild"
+          fill
+          style={{ objectFit: "cover" }}
         />
       </div>
       <Container layout="sm">

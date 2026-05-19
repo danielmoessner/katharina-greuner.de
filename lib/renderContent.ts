@@ -19,7 +19,7 @@ async function renderImages1(data: string): Promise<ImageRendered> {
 }
 
 async function renderImages<T extends object | Array<object>>(
-  data: T
+  data: T,
 ): Promise<RenderedImage<T>> {
   let result;
 
@@ -33,7 +33,7 @@ async function renderImages<T extends object | Array<object>>(
         if (typeof value === "string") result[key] = await renderImages1(value);
         else if (Array.isArray(value))
           result[key] = await Promise.all(
-            value.map((i) => (typeof i === "string" ? renderImages1(i) : i))
+            value.map((i) => (typeof i === "string" ? renderImages1(i) : i)),
           );
       } else if (typeof value === "object") {
         result[key] = await renderImages(value);
@@ -51,7 +51,7 @@ function renderMarkdown1(data: string): MarkdownRendered {
 }
 
 function renderMarkdown<T extends object | Array<object>>(
-  data: T
+  data: T,
 ): RenderedMarkdown<T> {
   let result;
 
@@ -74,7 +74,7 @@ function renderMarkdown<T extends object | Array<object>>(
 
 // render everything
 export async function renderContent<T extends Array<object> | object>(
-  data: T
+  data: T,
 ): Promise<Rendered<T>> {
   const imageResult = await renderImages<T>(data);
   const markdownResult = renderMarkdown<RenderedImage<T>>(imageResult);

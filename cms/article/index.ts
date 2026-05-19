@@ -1,6 +1,6 @@
 import slug from "../symbols/slug";
 import title from "../symbols/title";
-import { CmsCollection } from "netlify-cms-core";
+import { CmsCollection } from "decap-cms-core";
 import markdown from "../symbols/markdown";
 
 const article: CmsCollection = {

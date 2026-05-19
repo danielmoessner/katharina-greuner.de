@@ -12,10 +12,10 @@ function Component({ about }: Props) {
   return (
     <Section className="relative py-2">
       <Image
-        layout="fill"
-        objectFit="cover"
         src="/img/blumen_hintergrund_soft_tuerkis.jpeg"
         alt="Hintergrundbild"
+        fill
+        style={{ objectFit: "cover" }}
       />
       <Container layout="sm">
         <div className="relative grid grid-cols-12 gap-6">

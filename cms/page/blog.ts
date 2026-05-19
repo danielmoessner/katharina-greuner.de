@@ -3,7 +3,7 @@ import image from "../symbols/image";
 import meta from "../symbols/meta";
 import text from "../symbols/text";
 import title from "../symbols/title";
-import { CmsCollectionFile } from "netlify-cms-core";
+import { CmsCollectionFile } from "decap-cms-core";
 
 const blog: CmsCollectionFile = {
   file: "content/page/blog.json",

@@ -15,8 +15,8 @@ function Component() {
     <nav>
       <Container layout="sm">
         <div className="max-w-lg py-5 mx-auto">
-          <Link href="/">
-            <a href="">
+          <Link href="/" legacyBehavior>
+            <a>
               <Logo />
             </a>
           </Link>
@@ -66,8 +66,8 @@ function Component() {
                     <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
                       <div className="px-5 pt-4 pb-6">
                         <div className="flex items-center justify-between pb-2 border-b">
-                          <Link href="/">
-                            <a href="" className="block w-48">
+                          <Link href="/" legacyBehavior>
+                            <a className="block w-48">
                               <Logo />
                             </a>
                           </Link>

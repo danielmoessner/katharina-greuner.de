@@ -50,10 +50,10 @@ function Page({ pageData, article, categories }) {
               {article.comments && (
                 <div className="relative mt-8">
                   <Image
-                    layout="fill"
-                    objectFit="cover"
                     src="/img/blumen_hintergrund_soft_tuerkis.jpeg"
                     alt="Hintergrundbild"
+                    fill
+                    style={{ objectFit: "cover" }}
                   />
                   <div className="relative px-8 py-5">
                     <ul className="divide-y-2 divide-kg-brown/40">

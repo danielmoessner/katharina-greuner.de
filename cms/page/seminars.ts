@@ -5,7 +5,7 @@ import image from "../symbols/image";
 import markdown from "../symbols/markdown";
 import meta from "../symbols/meta";
 import title from "../symbols/title";
-import { CmsCollectionFile } from "netlify-cms-core";
+import { CmsCollectionFile } from "decap-cms-core";
 
 const seminars: CmsCollectionFile = {
   file: "content/page/seminars.json",

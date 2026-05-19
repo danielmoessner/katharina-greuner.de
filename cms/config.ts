@@ -3,7 +3,7 @@ import article from "./article/index";
 import category from "./category/index";
 import setting from "./setting/index";
 import legal from "./legal/index";
-import { CmsConfig } from "netlify-cms-core";
+import { CmsConfig } from "decap-cms-core";
 import seminar from "./seminar";
 
 const config: CmsConfig = {

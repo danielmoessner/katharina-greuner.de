@@ -1,5 +1,5 @@
 import meta from "../symbols/meta";
-import { CmsCollectionFile } from "netlify-cms-core";
+import { CmsCollectionFile } from "decap-cms-core";
 import internalLink from "../symbols/internalLink";
 import header from "../symbols/header";
 

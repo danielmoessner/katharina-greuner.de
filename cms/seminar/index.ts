@@ -6,7 +6,7 @@ import slug from "../symbols/slug";
 import string from "../symbols/string";
 import text from "../symbols/text";
 import title from "../symbols/title";
-import { CmsCollection } from "netlify-cms-core";
+import { CmsCollection } from "decap-cms-core";
 
 const seminar: CmsCollection = {
   name: "seminar",

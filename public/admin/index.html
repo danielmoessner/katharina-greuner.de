@@ -10,17 +10,17 @@
   <script>
     window.CMS_MANUAL_INIT = true
   </script>
+  <script src="/admin/decap-cms.js" defer></script>
   <script type="module">
     import config from '/admin/config.js';
-    const { CMS, initCMS: init } = window
-    init({
-      config: config,
+    window.addEventListener('DOMContentLoaded', () => {
+      if (!window.CMS) throw new Error('Decap CMS failed to load')
+      window.CMS.init({ config })
     })
   </script>
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/netlify-cms@2.10.192/dist/netlify-cms.min.js"></script>
 </body>
 
 </html>

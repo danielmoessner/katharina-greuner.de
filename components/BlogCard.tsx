@@ -24,8 +24,8 @@ function BlogCard({ article, button }: Props) {
       <div>
         <div className="">
           {article.image && (
-            <Link href={`blog/${article.slug}`}>
-              <a href="">
+            <Link href={`blog/${article.slug}`} legacyBehavior>
+              <a>
                 <ImageBorder>
                   <Image
                     className="w-full"
@@ -37,8 +37,8 @@ function BlogCard({ article, button }: Props) {
             </Link>
           )}
         </div>
-        <Link href={`blog/${article.slug}`}>
-          <a href="" className="text-kg-brown">
+        <Link href={`blog/${article.slug}`} legacyBehavior>
+          <a className="text-kg-brown">
             <h2 className="mt-2 text-3xl">{article.title}</h2>
           </a>
         </Link>

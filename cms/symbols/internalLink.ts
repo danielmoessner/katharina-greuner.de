@@ -1,4 +1,4 @@
-import { CmsFieldBase, CmsFieldObject } from "netlify-cms-core";
+import { CmsFieldBase, CmsFieldObject } from "decap-cms-core";
 
 export const linkFields = (required) => [
   {
@@ -27,7 +27,7 @@ const internalLink = (required = false): CmsFieldBase & CmsFieldObject => ({
 
 export default internalLink;
 
-// import { CmsField } from "netlify-cms-core";
+// import { CmsField } from "decap-cms-core";
 
 // const slug = (slug): CmsField => ({
 //   label: "Slug",
