@@ -1,4 +1,6 @@
-import { getPlaiceholder } from "plaiceholder";
+import fs from "fs";
+import path from "path";
+import { imageSize } from "image-size";
 import {
   ImageRendered,
   Rendered,
@@ -10,12 +12,18 @@ import md from "markdown-it";
 
 // render images
 async function renderImages1(data: string): Promise<ImageRendered> {
-  const { base64, img } = await getPlaiceholder(data);
-  return {
-    ...img,
-    blurDataURL: base64,
-    placeholder: "blur",
-  };
+  const filePath = data.startsWith("/")
+    ? path.join(process.cwd(), "public", data)
+    : path.join(process.cwd(), data);
+
+  const buffer = fs.readFileSync(filePath);
+  const { width, height } = imageSize(Uint8Array.from(buffer));
+
+  if (!width || !height) {
+    throw new Error(`Could not determine image size for: ${data}`);
+  }
+
+  return { src: data, width, height };
 }
 
 async function renderImages<T extends object | Array<object>>(

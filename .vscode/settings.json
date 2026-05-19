@@ -1,13 +1,14 @@
 {
-  "eslint.validate": ["next", "javascript", "typescript", "jsx", "tsx"],
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
-  },
+  "editor.codeActionsOnSave": {},
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
     "strings": true
   },
   "tailwindCSS.emmetCompletions": true,
-  "cSpell.language": "en,de"
+  "cSpell.language": "en,de",
+  "chat.tools.terminal.autoApprove": {
+    "npm install": true,
+    "npm uninstall": true
+  }
 }
