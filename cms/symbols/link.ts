@@ -1,6 +1,4 @@
-import { CmsField, CmsFieldBase, CmsFieldObject } from "decap-cms-core";
-
-export const externalLinkFields: CmsField[] = [
+export const externalLinkFields = [
   {
     label: "Text",
     
@@ -16,7 +14,7 @@ export const externalLinkFields: CmsField[] = [
   },
 ];
 
-export const externalLink: CmsFieldBase & CmsFieldObject = {
+export const externalLink = {
   label: "Externer Link",
   name: "externalLink",
   widget: "object",
@@ -25,7 +23,7 @@ export const externalLink: CmsFieldBase & CmsFieldObject = {
   collapsed: false,
 };
 
-export const internalLinkFields: CmsField[] = [
+export const internalLinkFields = [
   {
     label: "Text",
     name: "text",
@@ -39,7 +37,7 @@ export const internalLinkFields: CmsField[] = [
   },
 ];
 
-export const internalLink: CmsFieldBase & CmsFieldObject = {
+export const internalLink = {
   label: "Interner Link",
   name: "link",
   

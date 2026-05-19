@@ -1,9 +1,8 @@
 import slug from "../symbols/slug";
 import title from "../symbols/title";
-import { CmsCollection } from "decap-cms-core";
 import markdown from "../symbols/markdown";
 
-const article: CmsCollection = {
+const article = {
   name: "article",
   label: "Artikel",
   label_singular: "Artikel",

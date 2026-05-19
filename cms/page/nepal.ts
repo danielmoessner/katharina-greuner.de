@@ -1,5 +1,4 @@
 import meta from "../symbols/meta";
-import { CmsCollectionFile } from "decap-cms-core";
 import internalLink, { linkFields } from "../symbols/internalLink";
 import header from "../symbols/header";
 import title from "../symbols/title";
@@ -8,7 +7,7 @@ import image from "../symbols/image";
 import cta from "../symbols/cta";
 import markdown from "../symbols/markdown";
 
-const nepal: CmsCollectionFile = {
+const nepal = {
   file: "content/page/nepal.json",
   label: "Nepal Projekt",
   name: "nepal",

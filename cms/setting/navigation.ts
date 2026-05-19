@@ -1,9 +1,3 @@
-import {
-  CmsCollectionFile,
-  CmsFieldBase,
-  CmsFieldObject,
-} from "decap-cms-core";
-
 const linkFields = [
   {
     label: "Text",
@@ -18,7 +12,7 @@ const linkFields = [
   },
 ];
 
-const link: CmsFieldBase & CmsFieldObject = {
+const link = {
   label: "Normales Item",
   name: "link",
   widget: "object",
@@ -26,7 +20,7 @@ const link: CmsFieldBase & CmsFieldObject = {
   collapsed: false,
 };
 
-const links: CmsFieldBase & CmsFieldObject = {
+const links = {
   label: "Dropdown Item",
   name: "links",
   widget: "object",
@@ -46,7 +40,7 @@ const links: CmsFieldBase & CmsFieldObject = {
   ],
 };
 
-const navigation: CmsCollectionFile = {
+const navigation = {
   file: "content/setting/navigation.json",
   label: "Navigation",
   name: "navigation",

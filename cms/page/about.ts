@@ -1,9 +1,8 @@
 import meta from "../symbols/meta";
-import { CmsCollectionFile } from "decap-cms-core";
 import internalLink from "../symbols/internalLink";
 import header from "../symbols/header";
 
-const about: CmsCollectionFile = {
+const about = {
   file: "content/page/about.json",
   label: "Über mich",
   name: "about",

@@ -1,4 +1,3 @@
-import { CmsCollection } from "decap-cms-core";
 import home from "./home";
 import about from "./about";
 import kala from "./kala";
@@ -10,7 +9,7 @@ import seminars from "./seminars";
 import therapie from "./psychotherapie";
 import blog from "./blog";
 
-const config: CmsCollection = {
+const config = {
   name: "pages",
   label: "Seiten",
   label_singular: "Seite",

@@ -1,5 +1,4 @@
 import meta from "../symbols/meta";
-import { CmsCollectionFile } from "decap-cms-core";
 import header from "../symbols/header";
 import text from "../symbols/text";
 import title from "../symbols/title";
@@ -7,7 +6,7 @@ import image from "../symbols/image";
 import cta from "../symbols/cta";
 import { internalLinkFields } from "../symbols/link";
 
-const home: CmsCollectionFile = {
+const home = {
   file: "content/page/home.json",
   label: "Startseite",
   name: "home",

@@ -1,6 +1,4 @@
-import { CmsField } from "decap-cms-core";
-
-const string: CmsField = {
+const string = {
   label: "Text",
   name: "string",
   widget: "string",

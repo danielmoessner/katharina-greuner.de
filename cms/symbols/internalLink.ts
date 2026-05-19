@@ -1,5 +1,3 @@
-import { CmsFieldBase, CmsFieldObject } from "decap-cms-core";
-
 export const linkFields = (required) => [
   {
     label: "Text",
@@ -16,7 +14,7 @@ export const linkFields = (required) => [
   },
 ];
 
-const internalLink = (required = false): CmsFieldBase & CmsFieldObject => ({
+const internalLink = (required = false) => ({
   label: "Interner Link",
   name: "link",
   widget: "object",
@@ -26,14 +24,3 @@ const internalLink = (required = false): CmsFieldBase & CmsFieldObject => ({
 });
 
 export default internalLink;
-
-// import { CmsField } from "decap-cms-core";
-
-// const slug = (slug): CmsField => ({
-//   label: "Slug",
-//   name: "slug",
-//   widget: "hidden",
-//   default: slug,
-// });
-
-// export default slug;

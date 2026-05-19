@@ -1,9 +1,8 @@
-import { CmsField } from "decap-cms-core";
 import cta from "./cta";
 import image from "./image";
 import text from "./text";
 
-const questionsSection: CmsField = {
+const questionsSection = {
   label: "Fragen",
   name: "questions",
   widget: "object",

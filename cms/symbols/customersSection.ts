@@ -1,9 +1,8 @@
-import { CmsField } from "decap-cms-core";
 import cta from "./cta";
 import text from "./text";
 import title from "./title";
 
-const customersSection: CmsField = {
+const customersSection = {
   label: "Kunden",
   name: "customers",
   

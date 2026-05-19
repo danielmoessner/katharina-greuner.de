@@ -6,9 +6,8 @@ import slug from "../symbols/slug";
 import string from "../symbols/string";
 import text from "../symbols/text";
 import title from "../symbols/title";
-import { CmsCollection } from "decap-cms-core";
 
-const seminar: CmsCollection = {
+const seminar = {
   name: "seminar",
   label: "Seminare",
   label_singular: "Seminar",

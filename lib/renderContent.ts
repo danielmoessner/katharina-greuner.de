@@ -13,8 +13,8 @@ import md from "markdown-it";
 // render images
 async function renderImages1(data: string): Promise<ImageRendered> {
   const filePath = data.startsWith("/")
-    ? path.join(process.cwd(), "public", data)
-    : path.join(process.cwd(), data);
+    ? path.join(process.cwd(), "public" /*turbopackIgnore: true*/, data)
+    : path.join(process.cwd() /*turbopackIgnore: true*/, data);
 
   const buffer = fs.readFileSync(filePath);
   const { width, height } = imageSize(Uint8Array.from(buffer));

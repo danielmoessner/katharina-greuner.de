@@ -1,6 +1,5 @@
-import { CmsCollection } from "decap-cms-core";
 
-const category: CmsCollection = {
+const category = {
   name: "category",
   label: "Kategorien",
   label_singular: "Kategorie",

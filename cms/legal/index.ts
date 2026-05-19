@@ -1,6 +1,5 @@
-import { CmsCollection } from "decap-cms-core";
 
-const legal: CmsCollection = {
+const legal = {
   name: "legal",
   label: "Rechtliches",
   label_singular: "Rechtliches",

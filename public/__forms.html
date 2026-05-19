@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netlify Forms</title>
+  </head>
+  <body>
+    <!--
+      This file exists for Netlify Forms detection during deploy.
+      Next.js pages are not emitted as fully-static HTML in the modern Netlify runtime.
+    -->
+
+    <form name="standardformular" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="standardformular" />
+      <input name="name" type="text" />
+      <input name="email" type="email" />
+      <input name="betreff" type="text" />
+      <textarea name="nachricht"></textarea>
+    </form>
+
+    <form name="newsletterformular" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="newsletterformular" />
+      <input name="vorname" type="text" />
+      <input name="email" type="email" />
+    </form>
+
+    <form name="kommentarformular" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="kommentarformular" />
+      <textarea name="comment"></textarea>
+      <input name="name" type="text" />
+      <input name="email" type="email" />
+    </form>
+  </body>
+</html>

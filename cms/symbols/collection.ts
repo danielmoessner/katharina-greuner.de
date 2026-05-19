@@ -1,6 +1,4 @@
-import { CmsField } from "decap-cms-core";
-
-const collection = (collection): CmsField => ({
+const collection = (collection) => ({
   label: "Sammlung",
   name: "collection",
   widget: "hidden",

@@ -1,6 +1,5 @@
-import { CmsCollectionFile } from "decap-cms-core";
 
-const global: CmsCollectionFile = {
+const global = {
   file: "content/setting/global.json",
   label: "Global",
   name: "global",

@@ -1,12 +1,11 @@
 import title from "../symbols/title";
-import { CmsCollectionFile } from "decap-cms-core";
 import image from "../symbols/image";
 import markdown from "../symbols/markdown";
 import meta from "../symbols/meta";
 import header from "../symbols/header";
 import cta from "../symbols/cta";
 
-const therapie: CmsCollectionFile = {
+const therapie = {
   file: "content/page/psychotherapie.json",
   label: "Psychotherapie",
   name: "therapie",

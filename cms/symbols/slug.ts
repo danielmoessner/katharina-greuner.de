@@ -1,6 +1,4 @@
-import { CmsField } from "decap-cms-core";
-
-const slug: CmsField = {
+const slug = {
   label: "Slug",
   name: "slug",
   widget: "string",

@@ -3,9 +3,8 @@ import image from "../symbols/image";
 import meta from "../symbols/meta";
 import text from "../symbols/text";
 import title from "../symbols/title";
-import { CmsCollectionFile } from "decap-cms-core";
 
-const blog: CmsCollectionFile = {
+const blog = {
   file: "content/page/blog.json",
   label: "Blog",
   name: "blog",

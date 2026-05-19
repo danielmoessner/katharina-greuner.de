@@ -1,11 +1,10 @@
 import meta from "../symbols/meta";
-import { CmsCollectionFile } from "decap-cms-core";
 import title from "../symbols/title";
 import image from "../symbols/image";
 import markdown from "../symbols/markdown";
 import text from "../symbols/text";
 
-const contact: CmsCollectionFile = {
+const contact = {
   file: "content/page/contact.json",
   label: "Kontakt",
   name: "contact",

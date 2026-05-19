@@ -1,5 +1,4 @@
 import meta from "../symbols/meta";
-import { CmsCollectionFile } from "decap-cms-core";
 import header from "../symbols/header";
 import title from "../symbols/title";
 import image from "../symbols/image";
@@ -8,7 +7,7 @@ import markdown from "../symbols/markdown";
 import string from "../symbols/string";
 import questionsSection from "../symbols/questionsSection";
 
-const schooling: CmsCollectionFile = {
+const schooling = {
   file: "content/page/schooling.json",
   label: "Ausbildung",
   name: "schooling",

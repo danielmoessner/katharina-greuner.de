@@ -5,9 +5,8 @@ import image from "../symbols/image";
 import markdown from "../symbols/markdown";
 import meta from "../symbols/meta";
 import title from "../symbols/title";
-import { CmsCollectionFile } from "decap-cms-core";
 
-const seminars: CmsCollectionFile = {
+const seminars = {
   file: "content/page/seminars.json",
   label: "Heilsame Seminare",
   name: "seminars",

@@ -1,12 +1,7 @@
 import { linkFields } from "../symbols/internalLink";
 import { externalLinkFields } from "../symbols/link";
-import {
-  CmsCollectionFile,
-  CmsFieldBase,
-  CmsFieldObject,
-} from "decap-cms-core";
 
-const link: CmsFieldBase & CmsFieldObject = {
+const link = {
   label: "Interner Link",
   name: "link",
   widget: "object",
@@ -14,14 +9,14 @@ const link: CmsFieldBase & CmsFieldObject = {
   collapsed: false,
 };
 
-const text: CmsFieldBase & CmsFieldObject = {
+const text = {
   label: "Text",
   name: "text",
   widget: "object",
   fields: [{ label: "Text", name: "text", widget: "text" }],
 };
 
-const externalLink: CmsFieldBase & CmsFieldObject = {
+const externalLink = {
   label: "Externer Link",
   name: "externalLink",
   widget: "object",
@@ -29,7 +24,7 @@ const externalLink: CmsFieldBase & CmsFieldObject = {
   collapsed: false,
 };
 
-const footer: CmsCollectionFile = {
+const footer = {
   file: "content/setting/footer.json",
   label: "Footer",
   name: "footer",

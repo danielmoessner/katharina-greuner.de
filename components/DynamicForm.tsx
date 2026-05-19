@@ -49,7 +49,7 @@ function DynamicForm({
     // eslint-disable-next-line no-undef
     const formData = new FormData(form.current);
     // eslint-disable-next-line no-undef
-    fetch("/", {
+    fetch("/__forms.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(convertedFormEntries(formData)).toString(),

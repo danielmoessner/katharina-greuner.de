@@ -1,6 +1,4 @@
-import { CmsField } from "decap-cms-core";
-
-const image: CmsField = {
+const image = {
   label: "Bild",
   name: "image",
   widget: "image",

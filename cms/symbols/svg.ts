@@ -1,6 +1,4 @@
-import { CmsField } from "decap-cms-core";
-
-const svg: CmsField = {
+const svg = {
   label: "SVG",
   name: "svg",
   widget: "string",

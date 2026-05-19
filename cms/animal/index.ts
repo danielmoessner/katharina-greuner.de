@@ -1,6 +1,4 @@
-import { CmsCollection } from "decap-cms-core";
-
-const animal: CmsCollection = {
+const animal = {
   name: "animal",
   label: "Wildtiere",
   label_singular: "Wildtier",

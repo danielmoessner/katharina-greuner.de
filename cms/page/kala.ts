@@ -1,5 +1,4 @@
 import meta from "../symbols/meta";
-import { CmsCollectionFile } from "decap-cms-core";
 import header from "../symbols/header";
 import title from "../symbols/title";
 import text from "../symbols/text";
@@ -7,7 +6,7 @@ import image from "../symbols/image";
 import cta from "../symbols/cta";
 import markdown from "../symbols/markdown";
 
-const kala: CmsCollectionFile = {
+const kala = {
   file: "content/page/kala.json",
   label: "Kala Heilarbeit",
   name: "kala",
