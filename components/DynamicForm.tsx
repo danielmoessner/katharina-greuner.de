@@ -131,7 +131,9 @@ function DynamicForm({
               </Switch.Group>
               {errors.dataProtection && (
                 <span className="block mt-1 text-sm font-bold text-red-600">
-                  {errors.dataProtection.message}
+                  {typeof errors.dataProtection.message === "string"
+                    ? errors.dataProtection.message
+                    : null}
                 </span>
               )}
             </div>

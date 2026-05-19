@@ -1,12 +1,12 @@
 import meta from "../symbols/meta";
 import { CmsCollectionFile } from "netlify-cms-core";
-import header from "cms/symbols/header";
-import title from "cms/symbols/title";
-import image from "cms/symbols/image";
-import cta from "cms/symbols/cta";
-import markdown from "cms/symbols/markdown";
-import string from "cms/symbols/string";
-import questionsSection from "cms/symbols/questionsSection";
+import header from "../symbols/header";
+import title from "../symbols/title";
+import image from "../symbols/image";
+import cta from "../symbols/cta";
+import markdown from "../symbols/markdown";
+import string from "../symbols/string";
+import questionsSection from "../symbols/questionsSection";
 
 const schooling: CmsCollectionFile = {
   file: "content/page/schooling.json",

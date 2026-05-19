@@ -1,4 +1,4 @@
-import { ImageRendered } from "types/shared";
+import { ImageRendered } from "../types/shared";
 import Button from "./Button";
 import Container from "./Container";
 import Section from "./Section";

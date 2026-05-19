@@ -1,7 +1,7 @@
-import slug from "cms/symbols/slug";
-import title from "cms/symbols/title";
+import slug from "../symbols/slug";
+import title from "../symbols/title";
 import { CmsCollection } from "netlify-cms-core";
-import markdown from "cms/symbols/markdown";
+import markdown from "../symbols/markdown";
 
 const article: CmsCollection = {
   name: "article",

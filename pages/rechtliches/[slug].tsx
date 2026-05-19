@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Seo from "../../components/Seo";
 import Container from "../../components/Container";
-import { renderContent } from "lib/renderContent";
-import { getAllMarkdown } from "lib/getContent";
+import { renderContent } from "../../lib/renderContent";
+import { getAllMarkdown } from "../../lib/getContent";
 
 function Page({ legalData }) {
   const page = legalData;

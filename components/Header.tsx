@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ImageRendered } from "types/shared";
+import { ImageRendered } from "../types/shared";
 
 interface Props {
   header: {

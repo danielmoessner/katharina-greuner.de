@@ -1,11 +1,11 @@
 import meta from "../symbols/meta";
 import { CmsCollectionFile } from "netlify-cms-core";
-import header from "cms/symbols/header";
-import title from "cms/symbols/title";
-import text from "cms/symbols/text";
-import image from "cms/symbols/image";
-import cta from "cms/symbols/cta";
-import markdown from "cms/symbols/markdown";
+import header from "../symbols/header";
+import title from "../symbols/title";
+import text from "../symbols/text";
+import image from "../symbols/image";
+import cta from "../symbols/cta";
+import markdown from "../symbols/markdown";
 
 const kala: CmsCollectionFile = {
   file: "content/page/kala.json",

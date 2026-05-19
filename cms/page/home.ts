@@ -1,11 +1,11 @@
 import meta from "../symbols/meta";
 import { CmsCollectionFile } from "netlify-cms-core";
-import header from "cms/symbols/header";
-import text from "cms/symbols/text";
-import title from "cms/symbols/title";
-import image from "cms/symbols/image";
-import cta from "cms/symbols/cta";
-import { internalLinkFields } from "cms/symbols/link";
+import header from "../symbols/header";
+import text from "../symbols/text";
+import title from "../symbols/title";
+import image from "../symbols/image";
+import cta from "../symbols/cta";
+import { internalLinkFields } from "../symbols/link";
 
 const home: CmsCollectionFile = {
   file: "content/page/home.json",

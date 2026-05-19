@@ -1,8 +1,8 @@
-import cta from "cms/symbols/cta";
-import image from "cms/symbols/image";
-import meta from "cms/symbols/meta";
-import text from "cms/symbols/text";
-import title from "cms/symbols/title";
+import cta from "../symbols/cta";
+import image from "../symbols/image";
+import meta from "../symbols/meta";
+import text from "../symbols/text";
+import title from "../symbols/title";
 import { CmsCollectionFile } from "netlify-cms-core";
 
 const blog: CmsCollectionFile = {

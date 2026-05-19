@@ -1,13 +1,13 @@
 import Layout from "../../components/Layout";
 import Seo from "../../components/Seo";
 import React from "react";
-import pageSource from "content/page/blog.json";
-import Container from "components/Container";
-import { renderContent } from "lib/renderContent";
-import Heading from "components/Heading";
-import BlogCard from "components/BlogCard";
-import { getAllJson } from "lib/getContent";
-import BlogAside from "components/BlogAside";
+import pageSource from "../../content/page/blog.json";
+import Container from "../../components/Container";
+import { renderContent } from "../../lib/renderContent";
+import Heading from "../../components/Heading";
+import BlogCard from "../../components/BlogCard";
+import { getAllJson } from "../../lib/getContent";
+import BlogAside from "../../components/BlogAside";
 import { useRouter } from "next/router";
 
 function Page({ pageData, allArticles, categories }) {

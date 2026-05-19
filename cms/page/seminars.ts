@@ -1,10 +1,10 @@
-import alt from "cms/symbols/alt";
-import cta from "cms/symbols/cta";
-import header from "cms/symbols/header";
-import image from "cms/symbols/image";
-import markdown from "cms/symbols/markdown";
-import meta from "cms/symbols/meta";
-import title from "cms/symbols/title";
+import alt from "../symbols/alt";
+import cta from "../symbols/cta";
+import header from "../symbols/header";
+import image from "../symbols/image";
+import markdown from "../symbols/markdown";
+import meta from "../symbols/meta";
+import title from "../symbols/title";
 import { CmsCollectionFile } from "netlify-cms-core";
 
 const seminars: CmsCollectionFile = {

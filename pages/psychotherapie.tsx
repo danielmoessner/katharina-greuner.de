@@ -1,13 +1,13 @@
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import Header from "../components/Header";
-import { renderContent } from "lib/renderContent";
-import SectionStart from "components/SectionStart";
-import ContentMarkdownImage from "components/ContentMarkdownImage";
-import psychotherapie from "content/page/psychotherapie.json";
-import ContentMarkdown from "components/ContentMarkdown";
-import Button from "components/Button";
-import ContentImageMarkdown from "components/ContentImageMarkdown";
+import { renderContent } from "../lib/renderContent";
+import SectionStart from "../components/SectionStart";
+import ContentMarkdownImage from "../components/ContentMarkdownImage";
+import psychotherapie from "../content/page/psychotherapie.json";
+import ContentMarkdown from "../components/ContentMarkdown";
+import Button from "../components/Button";
+import ContentImageMarkdown from "../components/ContentImageMarkdown";
 
 function Page({ pageData }) {
   const page = pageData;

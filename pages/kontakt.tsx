@@ -1,14 +1,14 @@
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import contact from "../content/page/contact.json";
-import { renderContent } from "lib/renderContent";
+import { renderContent } from "../lib/renderContent";
 import SectionStart from "../components/SectionStart";
-import Heading from "components/Heading";
-import SectionContent from "components/SectionContent";
-import Prose from "components/Prose";
-import NewsletterWide from "components/NewsletterWide";
-import DynamicForm from "components/DynamicForm";
-import ContentImageMarkdown from "components/ContentImageMarkdown";
+import Heading from "../components/Heading";
+import SectionContent from "../components/SectionContent";
+import Prose from "../components/Prose";
+import NewsletterWide from "../components/NewsletterWide";
+import DynamicForm from "../components/DynamicForm";
+import ContentImageMarkdown from "../components/ContentImageMarkdown";
 
 function Page({ pageData }) {
   const page = pageData;

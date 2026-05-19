@@ -5,7 +5,7 @@ import {
   MarkdownRendered,
   RenderedMarkdown,
   RenderedImage,
-} from "types/shared";
+} from "../types/shared";
 import md from "markdown-it";
 
 // render images

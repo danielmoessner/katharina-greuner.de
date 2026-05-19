@@ -5,12 +5,12 @@ import Script from "next/script";
 import home from "../content/page/home.json";
 import SectionHomeAbout from "../components/SectionHomeAbout";
 import SectionHomeTravel from "../components/SectionHomeTravel";
-import { renderContent } from "lib/renderContent";
-import { getAllJson } from "lib/getContent";
+import { renderContent } from "../lib/renderContent";
+import { getAllJson } from "../lib/getContent";
 import React from "react";
-import CurrentEvents from "components/CurrentEvents";
-import SectionFlowerBackground from "components/SectionFlowerBackground";
-import SectionHomeContent from "components/SectionHomeContent";
+import CurrentEvents from "../components/CurrentEvents";
+import SectionFlowerBackground from "../components/SectionFlowerBackground";
+import SectionHomeContent from "../components/SectionHomeContent";
 
 function Page({ pageData, seminars }) {
   const page = pageData;

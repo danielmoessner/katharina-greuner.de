@@ -5,12 +5,12 @@ import kala from "../content/page/kala.json";
 import SectionStart from "../components/SectionStart";
 import ContentImageText from "../components/ContentImageText";
 import ContentTextCtaImage from "../components/ContentTextCtaImage";
-import { renderContent } from "lib/renderContent";
+import { renderContent } from "../lib/renderContent";
 import SectionContent from "../components/SectionContent";
 import ContentTitleCtaImage from "../components/ContentTitleCtaImage";
 import SectionFlowerBackground from "../components/SectionFlowerBackground";
 import Prose from "../components/Prose";
-import KalaFlower from "components/KalaFlower";
+import KalaFlower from "../components/KalaFlower";
 import Link from "next/link";
 
 function Page({ pageData }) {

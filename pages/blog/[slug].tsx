@@ -2,17 +2,17 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Seo from "../../components/Seo";
 import Container from "../../components/Container";
-import { renderContent } from "lib/renderContent";
-import { getAllJson } from "lib/getContent";
-import ImageBorder from "components/ImageBorder";
+import { renderContent } from "../../lib/renderContent";
+import { getAllJson } from "../../lib/getContent";
+import ImageBorder from "../../components/ImageBorder";
 import Image from "next/image";
-import Heading from "components/Heading";
-import { formatDate, formatDateTime } from "lib/date";
-import BlogAside from "components/BlogAside";
-import pageSource from "content/page/blog.json";
+import Heading from "../../components/Heading";
+import { formatDate, formatDateTime } from "../../lib/date";
+import BlogAside from "../../components/BlogAside";
+import pageSource from "../../content/page/blog.json";
 import { useRouter } from "next/router";
-import Prose from "components/Prose";
-import DynamicForm from "components/DynamicForm";
+import Prose from "../../components/Prose";
+import DynamicForm from "../../components/DynamicForm";
 
 function Page({ pageData, article, categories }) {
   const page = pageData;

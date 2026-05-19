@@ -2,10 +2,10 @@ import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import heal from "../content/page/heal.json";
 import SectionStart from "../components/SectionStart";
-import { renderContent } from "lib/renderContent";
-import ImageRounded from "components/ImageRounded";
-import Heading from "components/Heading";
-import Prose from "components/Prose";
+import { renderContent } from "../lib/renderContent";
+import ImageRounded from "../components/ImageRounded";
+import Heading from "../components/Heading";
+import Prose from "../components/Prose";
 import Link from "next/link";
 
 function Page({ pageData }) {

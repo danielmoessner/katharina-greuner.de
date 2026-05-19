@@ -1,7 +1,7 @@
 import meta from "../symbols/meta";
 import { CmsCollectionFile } from "netlify-cms-core";
-import internalLink from "cms/symbols/internalLink";
-import header from "cms/symbols/header";
+import internalLink from "../symbols/internalLink";
+import header from "../symbols/header";
 
 const about: CmsCollectionFile = {
   file: "content/page/about.json",

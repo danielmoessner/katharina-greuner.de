@@ -6,7 +6,7 @@ import SectionAboutStart from "../components/SectionAboutStart";
 import SectionAboutKeywords from "../components/SectionAboutKeywords";
 import SectionAboutCareer from "../components/SectionAboutCareer";
 import SectionAboutBlocks from "../components/SectionAboutBlocks";
-import { renderContent } from "lib/renderContent";
+import { renderContent } from "../lib/renderContent";
 
 function Page({ pageData }) {
   const page = pageData;

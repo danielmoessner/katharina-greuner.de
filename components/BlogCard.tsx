@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { ImageRendered } from "types/shared";
+import { ImageRendered } from "../types/shared";
 import Link from "next/link";
-import { formatDate } from "lib/date";
+import { formatDate } from "../lib/date";
 import ImageBorder from "./ImageBorder";
 
 interface Article {

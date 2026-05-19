@@ -1,4 +1,4 @@
-import { ImageRendered } from "types/shared";
+import { ImageRendered } from "../types/shared";
 import Button from "./Button";
 
 interface Seminar {

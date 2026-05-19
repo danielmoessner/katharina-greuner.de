@@ -1,5 +1,5 @@
-import { linkFields } from "cms/symbols/internalLink";
-import { externalLinkFields } from "cms/symbols/link";
+import { linkFields } from "../symbols/internalLink";
+import { externalLinkFields } from "../symbols/link";
 import {
   CmsCollectionFile,
   CmsFieldBase,

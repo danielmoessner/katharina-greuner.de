@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ImageRendered } from "types/shared";
+import { ImageRendered } from "../types/shared";
 import DynamicForm from "./DynamicForm";
 import ImageRounded from "./ImageRounded";
 

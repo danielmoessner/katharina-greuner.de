@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import kala from "../content/page/kala.json";
-import { renderContent } from "lib/renderContent";
+import { renderContent } from "../lib/renderContent";
 
 function Page({ pageData }) {
   const page = pageData;

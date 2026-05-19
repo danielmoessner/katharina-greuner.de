@@ -1,14 +1,14 @@
 import React from "react";
-import Layout from "components/Layout";
-import Seo from "components/Seo";
-import Header from "components/Header";
-import Container from "components/Container";
-import { renderContent } from "lib/renderContent";
-import pageSource from "content/page/seminars.json";
-import Heading from "components/Heading";
-import ContentMarkdownCtaImage from "components/ContentMarkdownCtaImage";
-import SeminarCard from "components/SeminarCard";
-import { getAllJson } from "lib/getContent";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import Header from "../components/Header";
+import Container from "../components/Container";
+import { renderContent } from "../lib/renderContent";
+import pageSource from "../content/page/seminars.json";
+import Heading from "../components/Heading";
+import ContentMarkdownCtaImage from "../components/ContentMarkdownCtaImage";
+import SeminarCard from "../components/SeminarCard";
+import { getAllJson } from "../lib/getContent";
 import sortBy from "lodash/sortBy";
 
 function Page({ pageData, seminars }) {

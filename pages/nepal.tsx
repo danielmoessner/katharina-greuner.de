@@ -2,18 +2,18 @@ import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import Header from "../components/Header";
 import nepal from "../content/page/nepal.json";
-import { renderContent } from "lib/renderContent";
-import SectionFlowerBackground from "components/SectionFlowerBackground";
-import SectionStart from "components/SectionStart";
-import SectionContent from "components/SectionContent";
-import ContentMarkdownImage from "components/ContentMarkdownImage";
-import ContentMarkdown from "components/ContentMarkdown";
+import { renderContent } from "../lib/renderContent";
+import SectionFlowerBackground from "../components/SectionFlowerBackground";
+import SectionStart from "../components/SectionStart";
+import SectionContent from "../components/SectionContent";
+import ContentMarkdownImage from "../components/ContentMarkdownImage";
+import ContentMarkdown from "../components/ContentMarkdown";
 import Link from "next/link";
-import Heading from "components/Heading";
-import Button from "components/Button";
-import ImageBorder from "components/ImageBorder";
+import Heading from "../components/Heading";
+import Button from "../components/Button";
+import ImageBorder from "../components/ImageBorder";
 import Image from "next/image";
-import ContentImageMarkdown from "components/ContentImageMarkdown";
+import ContentImageMarkdown from "../components/ContentImageMarkdown";
 
 function Page({ pageData }) {
   const page = pageData;

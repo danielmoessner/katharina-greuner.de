@@ -1,9 +1,9 @@
 import meta from "../symbols/meta";
 import { CmsCollectionFile } from "netlify-cms-core";
-import title from "cms/symbols/title";
-import image from "cms/symbols/image";
-import markdown from "cms/symbols/markdown";
-import text from "cms/symbols/text";
+import title from "../symbols/title";
+import image from "../symbols/image";
+import markdown from "../symbols/markdown";
+import text from "../symbols/text";
 
 const contact: CmsCollectionFile = {
   file: "content/page/contact.json",
