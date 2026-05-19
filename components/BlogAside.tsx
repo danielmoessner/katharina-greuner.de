@@ -38,8 +38,8 @@ function BlogAside({
       <ImageRounded image={aside.image} alt={aside.title} />
       <h1 className="mt-5 text-2xl font-medium">{aside.title}</h1>
       <p className="mt-3 text-sm whitespace-pre-line">{aside.text}</p>
-      <Link href={aside.cta.href} legacyBehavior>
-        <a className="block mt-1 text-sm">{aside.cta.text}</a>
+      <Link href={aside.cta.href} className="block mt-1 text-sm">
+        {aside.cta.text}
       </Link>
       <h2 className="mt-10 text-xl font-medium">{aside.categoriesTitle}</h2>
       <ul className="mt-3 space-y-1">
@@ -48,11 +48,9 @@ function BlogAside({
             key={category.title}
             className={selectedCategory === category.slug ? "underline" : ""}
           >
-            <Link href={`/blog?kategorie=${category.slug}`} legacyBehavior>
-              <a>
-                {category.title}{" "}
-                {articles.length ? <span>({count(category.slug)})</span> : null}
-              </a>
+            <Link href={`/blog?kategorie=${category.slug}`}>
+              {category.title}{" "}
+              {articles.length ? <span>({count(category.slug)})</span> : null}
             </Link>
           </li>
         ))}

@@ -33,9 +33,7 @@ function Page({ pageData }) {
                   <Prose html={i.markdown.html} />
                 </div>
                 <div className="mt-4">
-                  <Link href={i.cta.href} legacyBehavior>
-                    <a>{i.cta.text}</a>
-                  </Link>
+                  <Link href={i.cta.href}>{i.cta.text}</Link>
                 </div>
               </div>
             </div>

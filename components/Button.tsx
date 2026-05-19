@@ -41,8 +41,8 @@ function Button({
   return (
     <div>
       {element === "Link" ? (
-        <Link href={href} legacyBehavior>
-          <a className={bClassName}>{children}</a>
+        <Link href={href} className={bClassName}>
+          {children}
         </Link>
       ) : element === "button" ? (
         <button

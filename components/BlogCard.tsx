@@ -25,24 +25,20 @@ function BlogCard({ article, button, imagePriority }: Props) {
       <div>
         <div className="">
           {article.image && (
-            <Link href={`/blog/${article.slug}`} legacyBehavior>
-              <a>
-                <ImageBorder>
-                  <Image
-                    className="w-full"
-                    {...article.image}
-                    alt={article.title}
-                    priority={imagePriority}
-                  />
-                </ImageBorder>
-              </a>
+            <Link href={`/blog/${article.slug}`}>
+              <ImageBorder>
+                <Image
+                  className="w-full"
+                  {...article.image}
+                  alt={article.title}
+                  priority={imagePriority}
+                />
+              </ImageBorder>
             </Link>
           )}
         </div>
-        <Link href={`/blog/${article.slug}`} legacyBehavior>
-          <a className="text-kg-brown">
-            <h2 className="mt-2 text-3xl">{article.title}</h2>
-          </a>
+        <Link href={`/blog/${article.slug}`} className="text-kg-brown">
+          <h2 className="mt-2 text-3xl">{article.title}</h2>
         </Link>
         <p className="mt-3">{formatDate(article.date)}</p>
         <p className="mt-3">{article.description}</p>

@@ -28,8 +28,8 @@ function Component({ blocks }) {
                 </Heading>
                 <p className="mt-6 whitespace-pre-line">{block.text}</p>
                 {block.link && block.link.href && block.link.text && (
-                  <Link href={block.link.href} legacyBehavior>
-                    <a className="block mt-4">&gt; {block.link.text}</a>
+                  <Link href={block.link.href} className="block mt-4">
+                    &gt; {block.link.text}
                   </Link>
                 )}
               </div>

@@ -15,10 +15,8 @@ function Component() {
     <nav>
       <Container layout="sm">
         <div className="max-w-lg py-5 mx-auto">
-          <Link href="/" legacyBehavior>
-            <a>
-              <Logo />
-            </a>
+          <Link href="/">
+            <Logo />
           </Link>
         </div>
       </Container>
@@ -66,10 +64,8 @@ function Component() {
                     <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
                       <div className="px-5 pt-4 pb-6">
                         <div className="flex items-center justify-between pb-2 border-b">
-                          <Link href="/" legacyBehavior>
-                            <a className="block w-48">
-                              <Logo />
-                            </a>
+                          <Link href="/" className="block w-48">
+                            <Logo />
                           </Link>
                           <div className="">
                             <Popover.Button className="bg-white rounded-md border-2 border-gray-100 px-2 py-1.5 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">

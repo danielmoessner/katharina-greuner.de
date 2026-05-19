@@ -77,12 +77,10 @@ function Component({ link }: Props) {
                         <Link
                           key={item.href}
                           href={item.href}
-                          legacyBehavior
                           // activeClassName="bg-gray-50"
+                          className="block p-3 -m-3 text-base font-medium text-gray-600 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 hover:text-gray-900"
                         >
-                          <a className="block p-3 -m-3 text-base font-medium text-gray-600 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 hover:text-gray-900">
-                            {item.text}
-                          </a>
+                          {item.text}
                         </Link>
                       ))}
                   </div>

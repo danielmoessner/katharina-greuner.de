@@ -17,16 +17,16 @@ export type RenderedMarkdown<T> = T extends object
         : RenderedMarkdown<T[K]>;
     }
   : T extends Array<infer U>
-    ? RenderedMarkdown<U>[]
-    : T;
+  ? RenderedMarkdown<U>[]
+  : T;
 
 export type RenderedImage<T> = T extends object
   ? {
       [K in keyof T]: K extends "image" ? ImageRendered : RenderedImage<T[K]>;
     }
   : T extends Array<infer U>
-    ? RenderedImage<U>[]
-    : T;
+  ? RenderedImage<U>[]
+  : T;
 
 export type Rendered<T> = RenderedMarkdown<RenderedImage<T>>;
 

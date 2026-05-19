@@ -31,10 +31,11 @@ function Component() {
                             );
                           if (item.type === "link")
                             element = (
-                              <Link href={item.href} legacyBehavior>
-                                <a className="text-base text-teal-50 hover:text-white">
-                                  {item.text}
-                                </a>
+                              <Link
+                                href={item.href}
+                                className="text-base text-teal-50 hover:text-white"
+                              >
+                                {item.text}
                               </Link>
                             );
                           if (item.type === "externalLink")

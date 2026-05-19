@@ -17,7 +17,7 @@ function Page({ pageData, allArticles, categories }) {
   let articles = allArticles;
   if (selectedCategory)
     articles = allArticles.filter((article) =>
-      article.categories.includes(selectedCategory)
+      article.categories.includes(selectedCategory),
     );
 
   return (
@@ -70,7 +70,7 @@ export async function getStaticProps() {
   const pageData = await renderContent(pageSource);
   const allArticles1 = await renderContent(getAllJson("article"));
   const allArticles2 = allArticles1.sort(
-    (a1, a2) => new Date(a2.date).getTime() - new Date(a1.date).getTime()
+    (a1, a2) => new Date(a2.date).getTime() - new Date(a1.date).getTime(),
   );
   const allArticles = allArticles2.map((article) => {
     const image = article.image
