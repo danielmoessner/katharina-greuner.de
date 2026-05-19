@@ -30,7 +30,7 @@ function Animate({
       {
         threshold: 0.01,
         rootMargin: "0px 0px -10% 0px",
-      }
+      },
     );
     if (ref.current) observer.observe(ref.current);
 

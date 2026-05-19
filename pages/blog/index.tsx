@@ -35,12 +35,16 @@ function Page({ pageData, allArticles, categories }) {
           <div className="grid grid-cols-12 pb-20 md:divide-x-2">
             <div className="col-span-12 md:col-span-8 md:pr-8">
               <div className="divide-y-2 divide-gray-200">
-                {articles.map((article) => (
+                {articles.map((article, index) => (
                   <div
                     key={article.title}
                     className="py-8 first:pt-0 last:pb-0"
                   >
-                    <BlogCard article={article} button=" > Weiterlesen" />
+                    <BlogCard
+                      article={article}
+                      button=" > Weiterlesen"
+                      imagePriority={index === 0}
+                    />
                   </div>
                 ))}
               </div>
@@ -68,12 +72,30 @@ export async function getStaticProps() {
   const allArticles2 = allArticles1.sort(
     (a1, a2) => new Date(a2.date).getTime() - new Date(a1.date).getTime()
   );
+  const allArticles = allArticles2.map((article) => {
+    const image = article.image
+      ? {
+          src: article.image.src,
+          width: article.image.width,
+          height: article.image.height,
+        }
+      : null;
+
+    return {
+      title: article.title,
+      description: article.description,
+      date: article.date,
+      slug: article.slug,
+      categories: article.categories,
+      image,
+    };
+  });
   const categories = await getAllJson("category");
 
   return {
     props: {
       pageData,
-      allArticles: allArticles2,
+      allArticles,
       categories,
     },
   };

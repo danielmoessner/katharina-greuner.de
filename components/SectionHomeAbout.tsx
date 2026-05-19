@@ -16,6 +16,7 @@ function Component({ about }: Props) {
         alt="Hintergrundbild"
         fill
         style={{ objectFit: "cover" }}
+        priority
       />
       <Container layout="sm">
         <div className="relative grid grid-cols-12 gap-6">

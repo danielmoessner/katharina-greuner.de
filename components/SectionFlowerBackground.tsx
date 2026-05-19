@@ -2,7 +2,7 @@ import Image from "next/image";
 import Container from "./Container";
 import Section from "./Section";
 
-function SectionFlowerBackground({ children }) {
+function SectionFlowerBackground({ children, priority = false }) {
   return (
     <Section className="relative py-2 ">
       <Image
@@ -10,6 +10,7 @@ function SectionFlowerBackground({ children }) {
         alt="Hintergrundbild"
         fill
         style={{ objectFit: "cover" }}
+        priority={priority}
       />
       <div className="relative">
         <Container layout="sm">{children}</Container>

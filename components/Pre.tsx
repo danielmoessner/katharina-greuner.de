@@ -8,7 +8,11 @@ interface ComponentProps {
   color?: string;
 }
 
-function Component({ element: Tag = "div", children, color = "text-gray-700" }: ComponentProps) {
+function Component({
+  element: Tag = "div",
+  children,
+  color = "text-gray-700",
+}: ComponentProps) {
   return (
     <Tag
       className={`text-base font-semibold tracking-wider uppercase ${color}`}

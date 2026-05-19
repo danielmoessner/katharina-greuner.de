@@ -20,7 +20,7 @@ function Page({ pageData, seminars }) {
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <Seo meta={page.meta} />
       <Header header={page.header} />
-      <SectionFlowerBackground>
+      <SectionFlowerBackground priority>
         <div className="py-1">
           <h2 className="mx-auto text-lg tracking-wide text-center uppercase">
             {page.events.title}

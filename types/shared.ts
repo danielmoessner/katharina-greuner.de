@@ -1,9 +1,9 @@
 export type ImageRendered = {
-  placeholder: "blur";
   src: string;
   width: number;
   height: number;
-  blurDataURL: string;
+  placeholder?: "blur" | "empty";
+  blurDataURL?: string;
 };
 
 export type MarkdownRendered = {
