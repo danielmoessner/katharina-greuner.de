@@ -1215,9 +1215,15 @@ var config2 = {
   publish_mode: "simple",
   // See https://www.netlifycms.org/docs/configuration-options/#backend
   backend: {
-    name: "git-gateway",
+    name: "github",
+    repo: "danielmoessner/katharina-greuner.de",
     branch: "main",
-    repo: "danielmoessner/katharina-greuner.de"
+    // GitHub auth requires an OAuth proxy/service (because this site is static on Strato).
+    // Deploy https://github.com/decaporg/decap-cms-oauth-provider and set these values.
+    base_url: "https://YOUR-OAUTH-PROVIDER.example.com",
+    auth_endpoint: "auth",
+    // Public GitHub OAuth client id (safe to commit). Secret stays in the OAuth provider.
+    app_id: "YOUR_GITHUB_OAUTH_CLIENT_ID"
   },
   // See https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
   local_backend: true,

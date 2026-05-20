@@ -12,6 +12,29 @@
 &
 `npm run cms`
 
+### CMS login (no Netlify)
+
+This site is hosted as a static export on Strato, so **Netlify Identity / git-gateway will not work**.
+
+Decap CMS uses **GitHub OAuth** instead:
+
+- CMS UI: `http://localhost:3001/admin/index.html`
+- Config: `public/admin/config.js` (built/checked in from `cms/config.ts`)
+
+You must provide a small OAuth proxy/service (server) for Decap CMS.
+
+1) Create a GitHub OAuth App
+- GitHub → Settings → Developer settings → OAuth Apps → New OAuth App
+- Homepage URL: `https://katharina-greuner.de`
+- Authorization callback URL: `https://YOUR-OAUTH-PROVIDER.example.com/callback`
+
+2) Deploy the OAuth provider
+- Deploy `decaporg/decap-cms-oauth-provider` somewhere that can run a small Node server (Render/Fly/Railway/etc.)
+- Configure it with your GitHub OAuth app credentials (client id + client secret)
+
+3) Wire it into Decap config
+- Set `backend.base_url` + `backend.app_id` in `cms/config.ts` (and keep `public/admin/config.js` in sync)
+
 ## Deploy (Strato via SFTP)
 
 This repo is configured for a static Next.js export. `npm run build:static` produces an `out/` folder which can be uploaded to Strato via SFTP.

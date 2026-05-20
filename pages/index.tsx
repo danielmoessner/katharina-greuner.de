@@ -1,7 +1,6 @@
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import Header from "../components/Header";
-import Script from "next/script";
 import home from "../content/page/home.json";
 import SectionHomeAbout from "../components/SectionHomeAbout";
 import SectionHomeTravel from "../components/SectionHomeTravel";
@@ -17,7 +16,6 @@ function Page({ pageData, seminars }) {
 
   return (
     <Layout>
-      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <Seo meta={page.meta} />
       <Header header={page.header} />
       <SectionFlowerBackground priority>

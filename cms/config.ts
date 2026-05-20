@@ -9,9 +9,9 @@ const config = {
   publish_mode: "simple",
   // See https://www.netlifycms.org/docs/configuration-options/#backend
   backend: {
-    name: "git-gateway",
-    branch: "main",
+    name: "github",
     repo: "danielmoessner/katharina-greuner.de",
+    branch: "main",
   },
   // See https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
   local_backend: true,
