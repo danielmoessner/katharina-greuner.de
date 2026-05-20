@@ -1,0 +1,70 @@
+name: Deploy to Strato (SFTP)
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-strato-sftp
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build static site
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+        run: npm run build:static
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp openssh-client
+
+      - name: Add SFTP host to known_hosts
+        env:
+          STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
+          STRATO_SFTP_PORT: ${{ secrets.STRATO_SFTP_PORT }}
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "${STRATO_SFTP_PORT:-22}" "${STRATO_SFTP_HOST}" >> ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Upload via SFTP (mirror out/)
+        env:
+          STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
+          STRATO_SFTP_PORT: ${{ secrets.STRATO_SFTP_PORT }}
+          STRATO_SFTP_USER: ${{ secrets.STRATO_SFTP_USER }}
+          STRATO_SFTP_PASSWORD: ${{ secrets.STRATO_SFTP_PASSWORD }}
+          STRATO_SFTP_REMOTE_PATH: ${{ secrets.STRATO_SFTP_REMOTE_PATH }}
+        run: |
+          test -d out
+
+          lftp -c "
+            set net:timeout 20;
+            set net:max-retries 2;
+            set net:reconnect-interval-base 5;
+            set net:reconnect-interval-max 15;
+            set xfer:clobber on;
+            open -u \"$STRATO_SFTP_USER\",\"$STRATO_SFTP_PASSWORD\" sftp://$STRATO_SFTP_HOST:${STRATO_SFTP_PORT:-22};
+            mkdir -p \"$STRATO_SFTP_REMOTE_PATH\";
+            mirror -R --delete --verbose --parallel=2 \
+              --exclude-glob .git* \
+              --exclude-glob .DS_Store \
+              --exclude-glob node_modules \
+              --exclude-glob .next \
+              out/ \"$STRATO_SFTP_REMOTE_PATH/\";
+          "

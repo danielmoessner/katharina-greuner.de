@@ -1,0 +1,10 @@
+# Strato (Apache) rewrites for static Next.js export
+# - /admin should open the Decap CMS admin UI
+# - trailingSlash: true creates folders with index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # /admin -> /admin/index.html
+  RewriteRule ^admin/?$ /admin/index.html [L]
+</IfModule>
