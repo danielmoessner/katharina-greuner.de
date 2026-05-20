@@ -21,6 +21,10 @@ Decap CMS uses **GitHub OAuth** instead:
 - CMS UI: `http://localhost:3001/admin/index.html`
 - Config: `public/admin/config.js` (built/checked in from `cms/config.ts`)
 
+To rebuild the checked-in admin config:
+
+- `npm run build:cms-config`
+
 You must provide a small OAuth proxy/service (server) for Decap CMS.
 
 1) Create a GitHub OAuth App
