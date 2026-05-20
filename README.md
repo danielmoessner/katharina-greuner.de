@@ -29,8 +29,18 @@ You must provide a small OAuth proxy/service (server) for Decap CMS.
 - Authorization callback URL: `https://YOUR-OAUTH-PROVIDER.example.com/callback`
 
 2) Deploy the OAuth provider
-- Deploy `decaporg/decap-cms-oauth-provider` somewhere that can run a small Node server (Render/Fly/Railway/etc.)
-- Configure it with your GitHub OAuth app credentials (client id + client secret)
+- Recommended (free + fast): **Cloudflare Workers** using the `sterlingwes/decap-proxy` template
+	- Repo/docs: https://github.com/sterlingwes/decap-proxy
+	- Create a Cloudflare account (free tier)
+	- Deploy the worker (either via `npx wrangler deploy` or Git integration in the Cloudflare dashboard)
+	- In the Worker settings, add secrets:
+		- `GITHUB_OAUTH_ID` (your GitHub OAuth Client ID)
+		- `GITHUB_OAUTH_SECRET` (your GitHub OAuth Client Secret)
+		- Set `GITHUB_REPO_PRIVATE=1` if the repo is private
+
+	Note: for the `decap-proxy` worker, GitHub OAuth App URLs are typically:
+	- Homepage URL: your **proxy** URL (e.g. `https://your-worker.yourname.workers.dev`)
+	- Callback URL: your proxy URL + `/callback`
 
 3) Wire it into Decap config
 - Set `backend.base_url` + `backend.app_id` in `cms/config.ts` (and keep `public/admin/config.js` in sync)

@@ -12,6 +12,12 @@ const config = {
     name: "github",
     repo: "danielmoessner/katharina-greuner.de",
     branch: "main",
+    // GitHub auth requires an OAuth proxy/service (because this site is static on Strato).
+    // Deploy an OAuth proxy and set these values (see README).
+    base_url: "https://katharina-greuner-decap-proxy.katharina-greuner-decap-proxy.workers.dev",
+    auth_endpoint: "auth",
+    // Public GitHub OAuth client id (safe to commit). Secret stays in the OAuth provider.
+    app_id: "Ov23liHUSdKZi36Ddn9D",
   },
   // See https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
   local_backend: true,
