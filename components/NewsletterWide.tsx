@@ -12,7 +12,7 @@ function Component({ title, form, button, text }) {
       <div className="max-w-3xl mx-auto mt-6">
         {/* eslint-disable-next-line */}
         {/* @ts-ignore */}
-        <DynamicForm fields={form} submitText={button} />
+        <DynamicForm name="newsletterformular" fields={form} submitText={button} />
       </div>
       <div className="mt-5">
         <p className="mx-auto text-xs text-center">{text}</p>

@@ -63,7 +63,8 @@ function BlogAside({
           <DynamicForm
             name="newsletterformular"
             gapY="gap-y-2"
-            buttonDivClass="mt-4 [&>div>button]:w-full"
+            buttonDivClass="mt-4"
+            buttonSize="w-full justify-center px-8 py-2 text-sm"
             fields={aside.newsletter.fields}
             showPrivacy={false}
             submitText={aside.newsletter.button}
