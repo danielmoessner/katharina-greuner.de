@@ -8,7 +8,7 @@ Katharina Greuner \
 An der Lohe 32 \
 85375 Neufahrn
 
-Telefon: 08165 93 44 841 und 0176 82 63 71 09
+Telefon: 0176 82 63 71 09
 
 Mail: kala@katharina-greuner.de
 
