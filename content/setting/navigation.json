@@ -30,6 +30,11 @@
     },
     {
       "type": "link",
+      "text": "Qi Gong",
+      "href": "/"
+    },
+    {
+      "type": "link",
       "text": "Seminare",
       "href": "/heilsame-seminare"
     },
