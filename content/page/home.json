@@ -29,14 +29,14 @@
   },
   "offeroverview": [
     {
-      "image": "/media/supervision.jpg",
-      "title": "Supervision",
-      "text": "Supervision mit Herz und Augenmaß, um neue Perspektiven zu gestalten. Für Therapeut:innen, Yoga-Lehrer:innen und alle Interessierten.",
+      "image": "/media/wise_woman_yoga.jpg",
+      "title": "Wise Woman Yoga",
+      "text": "Weibliche Weisheit verbindet sich mit der Tradition des Yoga und bringt Dich wieder in\nDeine ureigene Kraft.",
       "cta": {
-        "text": "> Erstgespräch vereinbaren",
-        "href": "/kontakt"
+        "text": "> Finde Dein Yoga-Angebot",
+        "href": "/seminar/yoga"
       },
-      "button": "Erstgespräch vereinbaren"
+      "button": "Finde Dein Yoga-Angebot"
     },
     {
       "image": "/media/kala_heilarbeit.jpg",
@@ -59,14 +59,14 @@
       "button": "> Mehr Informationen"
     },
     {
-      "image": "/media/wise_woman_yoga.jpg",
-      "title": "Wise Woman Yoga",
-      "text": "Weibliche Weisheit verbindet sich mit der Tradition des Yoga und bringt Dich wieder in\nDeine ureigene Kraft.",
+      "image": "/media/qi-gong-kachel.jpg",
+      "title": "Qi Gong",
+      "text": "Mit sanften Bewegungen, Achtsamkeit und Atemübungen unterstützt Qi Gong dabei, zur Ruhe zu kommen, neue Energie zu schöpfen und bei sich selbst anzukommen.",
       "cta": {
-        "text": "> Finde Dein Yoga-Angebot",
-        "href": "/seminar/yoga"
+        "text": "> zur Qi Gong-Seite",
+        "href": "/kontakt"
       },
-      "button": "Finde Dein Yoga-Angebot"
+      "button": "zur Qi Gong-Seite"
     },
     {
       "image": "/media/seelenweberinnen_home.jpg",
