@@ -1203,6 +1203,23 @@ var seminar = {
           name: "yogadateoverview",
           widget: "object",
           fields: [title_default, markdown_default, text_default, cta_default]
+        },
+        {
+          label: "FAQ",
+          name: "faq",
+          widget: "object",
+          fields: [
+            title_default,
+            {
+              label: "Fragen",
+              name: "items",
+              widget: "list",
+              fields: [
+                { label: "Frage", name: "question", widget: "string" },
+                { label: "Antwort", name: "answer", widget: "text" }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -1219,11 +1236,11 @@ var config2 = {
     repo: "danielmoessner/katharina-greuner.de",
     branch: "main",
     // GitHub auth requires an OAuth proxy/service (because this site is static on Strato).
-    // Deploy https://github.com/decaporg/decap-cms-oauth-provider and set these values.
-    base_url: "https://YOUR-OAUTH-PROVIDER.example.com",
+    // Deploy an OAuth proxy and set these values (see README).
+    base_url: "https://katharina-greuner-decap-proxy.katharina-greuner-decap-proxy.workers.dev",
     auth_endpoint: "auth",
     // Public GitHub OAuth client id (safe to commit). Secret stays in the OAuth provider.
-    app_id: "YOUR_GITHUB_OAUTH_CLIENT_ID"
+    app_id: "Ov23liHUSdKZi36Ddn9D"
   },
   // See https://www.netlifycms.org/docs/beta-features/#working-with-a-local-git-repository
   local_backend: true,
