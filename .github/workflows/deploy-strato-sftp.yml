@@ -43,7 +43,7 @@ jobs:
           ssh-keyscan -p "${STRATO_SFTP_PORT:-22}" "${STRATO_SFTP_HOST}" >> ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
 
-      - name: Upload via SFTP (mirror out/ with checksum comparison)
+      - name: Upload via SFTP (mirror out/)
         env:
           STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
           STRATO_SFTP_PORT: ${{ secrets.STRATO_SFTP_PORT }}
@@ -60,8 +60,7 @@ jobs:
             set net:reconnect-interval-max 15;
             set xfer:clobber on;
             open -u \"$STRATO_SFTP_USER\",\"$STRATO_SFTP_PASSWORD\" sftp://$STRATO_SFTP_HOST:${STRATO_SFTP_PORT:-22};
-            mkdir -p \"$STRATO_SFTP_REMOTE_PATH\";
-            mirror -R --delete --verbose --parallel=2 --checksum \
+            mirror -R --delete --verbose --parallel=2 \
               --exclude-glob .git* \
               --exclude-glob .DS_Store \
               --exclude-glob node_modules \
