@@ -209,6 +209,23 @@ const seminar = {
           widget: "object",
           fields: [title, markdown, text, cta],
         },
+        {
+          label: "FAQ",
+          name: "faq",
+          widget: "object",
+          fields: [
+            title,
+            {
+              label: "Fragen",
+              name: "items",
+              widget: "list",
+              fields: [
+                { label: "Frage", name: "question", widget: "string" },
+                { label: "Antwort", name: "answer", widget: "text" },
+              ],
+            },
+          ],
+        },
       ],
     },
   ],

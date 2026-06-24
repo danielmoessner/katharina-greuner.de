@@ -15,9 +15,9 @@ import ImageRounded from "../../components/ImageRounded";
 import Image from "next/image";
 import { formatDate } from "../../lib/date";
 import ContentText from "../../components/ContentText";
-// import ContentImageMarkdownCta from "components/ContentImageMarkdownCta";
 import Section from "../../components/Section";
 import ContentMarkdownTextCta from "../../components/ContentMarkdownTextCta";
+import SectionFaq from "../../components/SectionFaq";
 
 function Page({ seminarData }) {
   const seminar = seminarData;
@@ -44,7 +44,7 @@ function Page({ seminarData }) {
           </div>
         </Container>
       </section>
-      {seminar.sections.map((section, index) => (
+      {seminar.sections?.map((section, index) => (
         <React.Fragment key={index}>
           {section.type === "imagetext" && (
             <div className="p-10">
@@ -367,6 +367,9 @@ function Page({ seminarData }) {
               </section>
             </SectionFlowerBackground>
           )}
+          {section.type === "faq" && (
+            <SectionFaq title={section.title} items={section.items} />
+          )}
         </React.Fragment>
       ))}
     </Layout>
@@ -379,14 +382,10 @@ export async function getStaticProps({ params }) {
   const seminarData1 = getAllJson("seminar");
   const seminarData2 = seminarData1.find((i) => i.slug === params.slug);
   const seminarData = await renderContent(seminarData2);
-  // const footerData = await renderContent(footerSource[locale]);
-  // const pageData = await renderContent(pageSource);
 
   return {
     props: {
       seminarData,
-      // pageData,
-      // footerData,
     },
   };
 }
