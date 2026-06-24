@@ -5,10 +5,17 @@ import { useRouter } from "next/router";
 function Component({ link }) {
   const router = useRouter();
 
+  const normalizePath = (path: string) => {
+    const cleanPath = path.split("?")[0].split("#")[0] || "/";
+    if (cleanPath === "/") return "/";
+
+    return cleanPath.endsWith("/") ? cleanPath.slice(0, -1) : cleanPath;
+  };
+
+  const isActive = normalizePath(router.asPath) === normalizePath(link.href);
+
   const activeClass =
-    router.asPath == link.href || router.asPath + "/" == link.href
-      ? "border-kg-yellow"
-      : "border-transparent";
+    isActive ? "border-kg-yellow bg-kg-yellow/5" : "border-transparent";
 
   return (
     <>
