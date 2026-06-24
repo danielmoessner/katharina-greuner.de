@@ -1001,6 +1001,16 @@ var legal = {
 };
 var legal_default = legal;
 
+// cms/symbols/id.ts
+var id = {
+  label: "ID",
+  name: "id",
+  widget: "string",
+  required: false,
+  hint: "Optionaler Anker fur Direktlinks, z.B. meditation oder termine."
+};
+var id_default = id;
+
 // cms/seminar/index.ts
 var seminar = {
   name: "seminar",
@@ -1064,31 +1074,38 @@ var seminar = {
           label: "Text Bild",
           name: "textimage",
           widget: "object",
-          fields: [markdown_default, image_default, alt_default]
+          fields: [id_default, markdown_default, image_default, alt_default]
         },
         {
           label: "Text",
           name: "text",
           widget: "object",
-          fields: [markdown_default]
+          fields: [id_default, markdown_default]
+        },
+        {
+          label: "Heading",
+          name: "heading",
+          widget: "object",
+          fields: [id_default, title_default]
         },
         {
           label: "Bild Text",
           name: "imagetext",
           widget: "object",
-          fields: [image_default, alt_default, markdown_default]
+          fields: [id_default, image_default, alt_default, markdown_default]
         },
         {
           label: "Kundenstimme",
           name: "review",
           widget: "object",
-          fields: [image_default, text_default, string_default]
+          fields: [id_default, image_default, text_default, string_default]
         },
         {
           label: "Events",
           name: "events",
           widget: "object",
           fields: [
+            id_default,
             title_default,
             {
               label: "Events",
@@ -1114,13 +1131,14 @@ var seminar = {
           label: "Titel Text Bild Blume",
           name: "flowertitle",
           widget: "object",
-          fields: [title_default, markdown_default, image_default]
+          fields: [id_default, title_default, markdown_default, image_default]
         },
         {
           label: "Termin",
           name: "date",
           widget: "object",
           fields: [
+            id_default,
             { label: "Vortitel", name: "pretitle", widget: "string" },
             title_default,
             {
@@ -1140,6 +1158,7 @@ var seminar = {
           name: "yogadate",
           widget: "object",
           fields: [
+            id_default,
             title_default,
             text_default,
             {
@@ -1158,31 +1177,32 @@ var seminar = {
           label: "Titel Text Bild Text Button",
           name: "titletextimagetextbutton",
           widget: "object",
-          fields: [title_default, text_default, image_default, alt_default, markdown_default, cta_default]
+          fields: [id_default, title_default, text_default, image_default, alt_default, markdown_default, cta_default]
         },
         {
           label: "Titel Text Bild",
           name: "titletextimage",
           widget: "object",
-          fields: [title_default, markdown_default, image_default, alt_default]
+          fields: [id_default, title_default, markdown_default, image_default, alt_default]
         },
         {
           label: "Titel Bild Text Button",
           name: "titleimagetextcta",
           widget: "object",
-          fields: [title_default, image_default, alt_default, markdown_default, cta_default]
+          fields: [id_default, title_default, image_default, alt_default, markdown_default, cta_default]
         },
         {
           label: "Banner",
           name: "banner",
           widget: "object",
-          fields: [title_default, markdown_default]
+          fields: [id_default, title_default, markdown_default]
         },
         {
           label: "Banner Pretitle",
           name: "prebanner",
           widget: "object",
           fields: [
+            id_default,
             title_default,
             { label: "Vortitel", name: "pretitle", widget: "string" },
             markdown_default
@@ -1193,6 +1213,7 @@ var seminar = {
           name: "prebanner2",
           widget: "object",
           fields: [
+            id_default,
             title_default,
             { label: "Vortitel 2", name: "pretitle2", widget: "string" },
             markdown_default
@@ -1202,13 +1223,33 @@ var seminar = {
           label: "Yoga Termine \xDCbersicht ",
           name: "yogadateoverview",
           widget: "object",
-          fields: [title_default, markdown_default, text_default, cta_default]
+          fields: [id_default, title_default, markdown_default, text_default, cta_default]
+        },
+        {
+          label: "Seminar Fokus Links",
+          name: "seminarfocuslinks",
+          widget: "object",
+          fields: [
+            id_default,
+            title_default,
+            text_default,
+            {
+              label: "Buttons",
+              name: "ctas",
+              widget: "list",
+              fields: [
+                { label: "Text", name: "text", widget: "string" },
+                { label: "Link", name: "href", widget: "string" }
+              ]
+            }
+          ]
         },
         {
           label: "FAQ",
           name: "faq",
           widget: "object",
           fields: [
+            id_default,
             title_default,
             {
               label: "Fragen",

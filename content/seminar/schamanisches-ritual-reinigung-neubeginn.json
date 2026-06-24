@@ -3,16 +3,23 @@
   "slug": "schamanisches-ritual-reinigung-und-neubeginn",
   "sections": [
     {
+      "type": "heading",
+      "title": "Schamanisches Ritual Reinigung & Neubeginn",
+      "id": "schamanisches-ritual-reinigung-neubeginn"
+    },
+    {
       "type": "textimage",
       "markdown": "An diesem Abend erschaffen wir gemeinsam einen heilsamen Raum für Wandel und Stärkung. \\\nDas, was uns ausmacht, Zartheit, Verletzlichkeit, Wildheit, Neugier, Freude, Kreativität darf sich zeigen - ungeschminkt und frei!\n\nWir verabschieden Altes, Belastendes, Einschränkendes  und machen den Weg frei für die Kraft der Heldin in uns. \n\nZum Klang der Trommel reisen wir in das Land unserer Seele. Herz und Seele übernehmen die Führung - und unser wertender Verstand ruht sich für eine Weile aus.",
       "image": "/media/schmetterling.jpg",
-      "alt": "Schmetterling sitzt auf Katharinas Hand"
+      "alt": "Schmetterling sitzt auf Katharinas Hand",
+      "id": "an-diesem-abend-erschaffen-wir"
     },
     {
       "type": "imagetext",
       "image": "/media/schamanisches_ritual.jpg",
       "alt": "Katharina spielt Flöte",
-      "markdown": "Du benötigst keinerlei Vorkenntnisse, nur die Bereitschaft, Dich auf neue Sichtweisen und ein neues Verständnis für Deine Themen und ihre Ursachen einzulassen. Auf bodenständige Weise lernst Du, die Botschaften aus der geistigen Welt zu verstehen und auf die wichtige Themen Deines persönlichen Lebens zu übertragen."
+      "markdown": "Du benötigst keinerlei Vorkenntnisse, nur die Bereitschaft, Dich auf neue Sichtweisen und ein neues Verständnis für Deine Themen und ihre Ursachen einzulassen. Auf bodenständige Weise lernst Du, die Botschaften aus der geistigen Welt zu verstehen und auf die wichtige Themen Deines persönlichen Lebens zu übertragen.",
+      "id": "du-benotigst-keinerlei-vorkenn"
     },
     {
       "type": "date",
@@ -35,7 +42,8 @@
           "key": "Seminarort",
           "value": "Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn"
         }
-      ]
+      ],
+      "id": "schamanischesritual"
     }
   ],
   "order": 2,

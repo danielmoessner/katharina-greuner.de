@@ -2,9 +2,19 @@ import Image from "next/image";
 import Container from "./Container";
 import Section from "./Section";
 
-function SectionFlowerBackground({ children, priority = false }) {
+interface SectionFlowerBackgroundProps {
+  children: React.ReactNode;
+  priority?: boolean;
+  id?: string;
+}
+
+function SectionFlowerBackground({
+  children,
+  priority = false,
+  id,
+}: SectionFlowerBackgroundProps) {
   return (
-    <Section className="relative py-2 ">
+    <Section id={id} className="relative py-2 ">
       <Image
         src="/img/blumen_hintergrund_soft_tuerkis.jpeg"
         alt="Hintergrundbild"

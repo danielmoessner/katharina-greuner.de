@@ -3,16 +3,39 @@
   "slug": "yoga",
   "sections": [
     {
+      "type": "seminarfocuslinks",
+      "title": "Zeit für Dich. Zeit für Bewegung und Stille.",
+      "text": "Ob in achtsamer Bewegung oder in der Stille der Meditation - hier findest Du Raum, um Kraft zu schöpfen, Dich selbst bewusster wahrzunehmen und neue Energie zu sammeln.",
+      "ctas": [
+        {
+          "text": "ZU WISE WOMAN YOGA",
+          "href": "/seminar/yoga#wise-woman-yoga-sei-ganz-du-selbst"
+        },
+        {
+          "text": "ZUR MEDITATION",
+          "href": "/seminar/yoga#meditation"
+        }
+      ],
+      "id": "zeit-fur-dich-zeit-fur-bewegung-und-stille"
+    },
+    {
+      "type": "heading",
+      "title": "Wise Woman Yoga – Sei ganz Du selbst",
+      "id": "wise-woman-yoga-sei-ganz-du-selbst"
+    },
+    {
       "type": "imagetext",
       "image": "/media/kala_yoga_1.jpg",
       "alt": "betende hand",
-      "markdown": "### Die weise Frau in Dir\n\nIn jeder von uns wohnt eine weise Frau. Frauenweisheit bedeutet, sich selbst zu erkennen und die eigenen Stärken wertzuschätzen. Im Wise Woman Yoga findest du einen Raum, in dem Du durchatmen und Dich mit heilsamer Bewegung ganz auf Dich selbst konzentrieren kannst.\n\nDie Haltungen und Atemübungen helfen Dir, die Signale Deines Körpers besser zu verstehen und tiefsitzende Verspannungen aufzulösen. Du lernst, und aus Deiner inneren Mitte zu schöpfen und Deine Grenzen zu erweitern."
+      "markdown": "### Die weise Frau in Dir\n\nIn jeder von uns wohnt eine weise Frau. Frauenweisheit bedeutet, sich selbst zu erkennen und die eigenen Stärken wertzuschätzen. Im Wise Woman Yoga findest du einen Raum, in dem Du durchatmen und Dich mit heilsamer Bewegung ganz auf Dich selbst konzentrieren kannst.\n\nDie Haltungen und Atemübungen helfen Dir, die Signale Deines Körpers besser zu verstehen und tiefsitzende Verspannungen aufzulösen. Du lernst, und aus Deiner inneren Mitte zu schöpfen und Deine Grenzen zu erweitern.",
+      "id": "die-weise-frau-in-dir"
     },
     {
       "type": "textimage",
       "markdown": "### Yoga mit Achtsamkeit und Tiefe\n\nSanfte und kraftvolle Übungen ergänzen sich. Im Mittelpunkt stehen der ­respektvolle Umgang mit dem eigenen Körper und die Freude am Üben.\n\nAchtsam und liebevoll mit Dir selbst baust Du neue Kraft auf – körperlich, mental und energetisch.",
       "image": "/media/kala_yoga_2.jpg",
-      "alt": "Anleitung bei Yogaübung"
+      "alt": "Anleitung bei Yogaübung",
+      "id": "yoga-mit-achtsamkeit-und-tiefe"
     },
     {
       "type": "yogadateoverview",
@@ -22,19 +45,27 @@
       "cta": {
         "text": "ZU WISE WOMAN YOGA ANMELDEN",
         "href": "/kontakt"
-      }
+      },
+      "id": "termine-2026"
+    },
+    {
+      "type": "heading",
+      "title": "Meditation",
+      "id": "meditation"
     },
     {
       "type": "imagetext",
       "image": "/media/meditation-am-baum.jpg",
       "alt": "Meditation am Baum",
+      "id": "meditation-text",
       "markdown": "### Warum Meditation?\n\nEin alter Mönch in seiner typischen orangefarbenen Robe sagte im ­Himalaya einmal zu mir: „Meditation ist wie Zähneputzen. Wenn man es nicht regelmäßig tut, bekommt man Löcher“. Dann lachte er über seine Worte und mein verblüfftes Gesicht.\n\nDas habe ich bis heute nicht vergessen. Wir alle wissen um die positiven Wirkungen von Meditation auf den Geist, den Körper, die Gesundheit. Aber mit der Regelmäßigkeit ist das manchmal nicht so einfach…"
     },
     {
       "type": "textimage",
       "image": "/media/zur-ruhe-kommen.jpg",
       "alt": "Mit Yoga zur Ruhe kommen",
-      "markdown": "### Gemeinsam zur Ruhe kommen\n\nDeshalb lade ich Dich ein, gemeinsam mit mir am Mittwochmorgen zu ­meditieren. Wir beginnen mit einer einfachen Bewegung und aktivieren ­dadurch die Meridiane. Anschließend führe ich Dich durch eine Meditation, die Du in den folgenden Tagen fortsetzen kannst.  \n\nNoch etwas vornweg: Es ist normal, dass Deine Gedanken abschweifen. Meditation bedeutet nicht, dass der Geist von Beginn an still in sich ruht. Freundlich und ohne Bewertung führen wir die zappelnden Gedanken ­wieder zurück in die Ruhe. Noch einmal und noch einmal…"
+      "markdown": "### Gemeinsam zur Ruhe kommen\n\nDeshalb lade ich Dich ein, gemeinsam mit mir am Mittwochmorgen zu ­meditieren. Wir beginnen mit einer einfachen Bewegung und aktivieren ­dadurch die Meridiane. Anschließend führe ich Dich durch eine Meditation, die Du in den folgenden Tagen fortsetzen kannst.  \n\nNoch etwas vornweg: Es ist normal, dass Deine Gedanken abschweifen. Meditation bedeutet nicht, dass der Geist von Beginn an still in sich ruht. Freundlich und ohne Bewertung führen wir die zappelnden Gedanken ­wieder zurück in die Ruhe. Noch einmal und noch einmal…",
+      "id": "gemeinsam-zur-ruhe-kommen"
     },
     {
       "type": "yogadateoverview",
@@ -44,7 +75,8 @@
       },
       "title": "Termine 2026",
       "markdown": "12x Mittwoch, 08:00-08:30 Uhr \n\nTermine: 23.09.- 16.12.2026\n\nOrt: online",
-      "text": "Kosten für den Kurs: insgesamt 132 €"
+      "text": "Kosten für den Kurs: insgesamt 132 €",
+      "id": "termine-2026-2"
     }
   ],
   "order": 1,

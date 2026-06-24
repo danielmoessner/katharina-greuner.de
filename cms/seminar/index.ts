@@ -1,6 +1,7 @@
 import alt from "../symbols/alt";
 import cta from "../symbols/cta";
 import image from "../symbols/image";
+import id from "../symbols/id";
 import markdown from "../symbols/markdown";
 import slug from "../symbols/slug";
 import string from "../symbols/string";
@@ -69,31 +70,38 @@ const seminar = {
           label: "Text Bild",
           name: "textimage",
           widget: "object",
-          fields: [markdown, image, alt],
+          fields: [id, markdown, image, alt],
         },
         {
           label: "Text",
           name: "text",
           widget: "object",
-          fields: [markdown],
+          fields: [id, markdown],
+        },
+        {
+          label: "Heading",
+          name: "heading",
+          widget: "object",
+          fields: [id, title],
         },
         {
           label: "Bild Text",
           name: "imagetext",
           widget: "object",
-          fields: [image, alt, markdown],
+          fields: [id, image, alt, markdown],
         },
         {
           label: "Kundenstimme",
           name: "review",
           widget: "object",
-          fields: [image, text, string],
+          fields: [id, image, text, string],
         },
         {
           label: "Events",
           name: "events",
           widget: "object",
           fields: [
+            id,
             title,
             {
               label: "Events",
@@ -119,13 +127,14 @@ const seminar = {
           label: "Titel Text Bild Blume",
           name: "flowertitle",
           widget: "object",
-          fields: [title, markdown, image],
+          fields: [id, title, markdown, image],
         },
         {
           label: "Termin",
           name: "date",
           widget: "object",
           fields: [
+            id,
             { label: "Vortitel", name: "pretitle", widget: "string" },
             title,
             {
@@ -145,6 +154,7 @@ const seminar = {
           name: "yogadate",
           widget: "object",
           fields: [
+            id,
             title,
             text,
             {
@@ -163,31 +173,32 @@ const seminar = {
           label: "Titel Text Bild Text Button",
           name: "titletextimagetextbutton",
           widget: "object",
-          fields: [title, text, image, alt, markdown, cta],
+          fields: [id, title, text, image, alt, markdown, cta],
         },
         {
           label: "Titel Text Bild",
           name: "titletextimage",
           widget: "object",
-          fields: [title, markdown, image, alt],
+          fields: [id, title, markdown, image, alt],
         },
         {
           label: "Titel Bild Text Button",
           name: "titleimagetextcta",
           widget: "object",
-          fields: [title, image, alt, markdown, cta],
+          fields: [id, title, image, alt, markdown, cta],
         },
         {
           label: "Banner",
           name: "banner",
           widget: "object",
-          fields: [title, markdown],
+          fields: [id, title, markdown],
         },
         {
           label: "Banner Pretitle",
           name: "prebanner",
           widget: "object",
           fields: [
+            id,
             title,
             { label: "Vortitel", name: "pretitle", widget: "string" },
             markdown,
@@ -198,6 +209,7 @@ const seminar = {
           name: "prebanner2",
           widget: "object",
           fields: [
+            id,
             title,
             { label: "Vortitel 2", name: "pretitle2", widget: "string" },
             markdown,
@@ -207,13 +219,33 @@ const seminar = {
           label: "Yoga Termine Übersicht ",
           name: "yogadateoverview",
           widget: "object",
-          fields: [title, markdown, text, cta],
+          fields: [id, title, markdown, text, cta],
+        },
+        {
+          label: "Seminar Fokus Links",
+          name: "seminarfocuslinks",
+          widget: "object",
+          fields: [
+            id,
+            title,
+            text,
+            {
+              label: "Buttons",
+              name: "ctas",
+              widget: "list",
+              fields: [
+                { label: "Text", name: "text", widget: "string" },
+                { label: "Link", name: "href", widget: "string" },
+              ],
+            },
+          ],
         },
         {
           label: "FAQ",
           name: "faq",
           widget: "object",
           fields: [
+            id,
             title,
             {
               label: "Fragen",

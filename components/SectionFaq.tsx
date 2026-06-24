@@ -7,11 +7,12 @@ interface FAQItem {
 }
 
 interface SectionFaqProps {
+  id?: string;
   title?: string;
   items?: FAQItem[];
 }
 
-function SectionFaq({ title = "FAQ", items = [] }: SectionFaqProps) {
+function SectionFaq({ id, title = "FAQ", items = [] }: SectionFaqProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   if (!items.length) {
@@ -19,7 +20,7 @@ function SectionFaq({ title = "FAQ", items = [] }: SectionFaqProps) {
   }
 
   return (
-    <section className="py-16 lg:py-24 bg-neutral-50">
+    <section id={id} className="py-16 lg:py-24 bg-neutral-50">
       <Container layout="sm">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-3">

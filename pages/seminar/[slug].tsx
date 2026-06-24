@@ -21,6 +21,7 @@ import SectionFaq from "../../components/SectionFaq";
 
 function Page({ seminarData }) {
   const seminar = seminarData;
+  const sections = seminar.sections || [];
 
   const meta = {
     title: seminar.title,
@@ -35,19 +36,49 @@ function Page({ seminarData }) {
     <Layout>
       <Seo meta={meta} />
       <Header header={header} />
-      <section className="pt-16">
-        <Container layout="sm">
-          <div className="flex justify-center">
-            <Heading element="h1" size="h1">
-              {seminar.title}
-            </Heading>
-          </div>
-        </Container>
-      </section>
-      {seminar.sections?.map((section, index) => (
+      {sections.map((section, index) => (
         <React.Fragment key={index}>
+          {section.type === "seminarfocuslinks" && (
+            <SectionFlowerBackground id={section.id}>
+              <section className="py-10 sm:py-14">
+                <div className="px-6 py-10 mx-auto text-center sm:px-10 sm:py-12">
+                  <h2 className="text-4xl font-light leading-tight tracking-tight text-kg-brown sm:text-5xl">
+                    {section.title}
+                  </h2>
+                  <div className="w-56 h-1 mx-auto mt-6 bg-kg-yellow"></div>
+                  <p className="max-w-2xl mx-auto mt-8 text-lg leading-relaxed whitespace-pre-line text-kg-brown">
+                    {section.text}
+                  </p>
+                  {section.ctas?.length > 0 && (
+                    <div className="grid max-w-2xl grid-cols-1 gap-4 mx-auto mt-10 sm:grid-cols-2">
+                      {section.ctas.map((cta, ctaIndex) => (
+                        <Button
+                          key={`${cta.href}-${ctaIndex}`}
+                          href={cta.href}
+                          className="inline-flex w-full justify-center border-3 border-kg-yellow bg-white px-5 py-3 text-center text-sm font-medium uppercase tracking-wide text-kg-brown transition hover:bg-[rgb(255,249,232)]"
+                        >
+                          {cta.text}
+                        </Button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </section>
+            </SectionFlowerBackground>
+          )}
+          {section.type === "heading" && (
+            <section id={section.id} className="pt-16">
+              <Container layout="sm">
+                <div className="flex justify-center">
+                  <Heading element="h1" size="h1">
+                    {section.title}
+                  </Heading>
+                </div>
+              </Container>
+            </section>
+          )}
           {section.type === "imagetext" && (
-            <div className="p-10">
+            <div id={section.id} className="p-10">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -62,7 +93,7 @@ function Page({ seminarData }) {
             </div>
           )}
           {section.type === "text" && (
-            <div className="p-10">
+            <div id={section.id} className="p-10">
               <Container layout="sm">
                 <div className="">
                   <div className="">
@@ -73,7 +104,7 @@ function Page({ seminarData }) {
             </div>
           )}
           {section.type === "textimage" && (
-            <div className="p-10">
+            <div id={section.id} className="p-10">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -88,7 +119,7 @@ function Page({ seminarData }) {
             </div>
           )}
           {section.type === "events" && (
-            <SectionFlowerBackground>
+            <SectionFlowerBackground id={section.id}>
               <div className="grid justify-center my-10 ">
                 <div className="flex flex-col gap-y-4">
                   <Heading element="h2" size="h2">
@@ -119,10 +150,7 @@ function Page({ seminarData }) {
                     </div>
 
                     <div className="w-1/2">
-                      <ImageRounded
-                        image={section.image}
-                        alt={section.alt}
-                      ></ImageRounded>
+                      <ImageRounded image={section.image} alt={section.alt}></ImageRounded>
                     </div>
                   </div>
                 </div>
@@ -130,12 +158,10 @@ function Page({ seminarData }) {
             </SectionFlowerBackground>
           )}
           {section.type === "flowertitle" && (
-            <SectionFlowerBackground>
+            <SectionFlowerBackground id={section.id}>
               <div className="flex flex-col py-10 gap-y-1 ">
                 <div className="">
-                  <h2 className="text-4xl font-thin text-center">
-                    {section.title}
-                  </h2>
+                  <h2 className="text-4xl font-thin text-center">{section.title}</h2>
                 </div>
                 <div className="max-w-xs mx-auto mt-2">
                   <Image {...section.image} alt={section.title} />
@@ -144,7 +170,7 @@ function Page({ seminarData }) {
             </SectionFlowerBackground>
           )}
           {section.type === "date" && (
-            <SectionFlowerBackground>
+            <SectionFlowerBackground id={section.id}>
               <div className="py-20">
                 <div className="flex justify-center">
                   <Heading element="h2" size="h2">
@@ -170,7 +196,7 @@ function Page({ seminarData }) {
             </SectionFlowerBackground>
           )}
           {section.type === "yogadate" && (
-            <SectionFlowerBackground>
+            <SectionFlowerBackground id={section.id}>
               <div className="py-20">
                 <div className="flex justify-center">
                   <Heading element="h2" size="h2">
@@ -183,12 +209,8 @@ function Page({ seminarData }) {
                     <tbody>
                       {section.yogadata.map((item) => (
                         <tr key={item.key}>
-                          <td className="px-2 font-bold tracking-wide align-top">
-                            {item.key}:
-                          </td>
-                          <td className="px-2 whitespace-pre-line">
-                            {item.value}
-                          </td>
+                          <td className="px-2 font-bold tracking-wide align-top">{item.key}:</td>
+                          <td className="px-2 whitespace-pre-line">{item.value}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -201,7 +223,7 @@ function Page({ seminarData }) {
             </SectionFlowerBackground>
           )}
           {section.type === "review" && (
-            <section className="py-8">
+            <section id={section.id} className="py-8">
               <Container layout="sm">
                 <div className="flex flex-col items-center justify-center px-8 md:flex-row bg-kg-green/20">
                   <div className="py-7">
@@ -218,7 +240,7 @@ function Page({ seminarData }) {
             </section>
           )}
           {section.type === "titletextimagetextbutton" && (
-            <section className="p-12 ">
+            <section id={section.id} className="p-12 ">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -238,9 +260,7 @@ function Page({ seminarData }) {
                       />
                     </div>
                     <div className="flex justify-center mt-10">
-                      <Button href={section.cta.href}>
-                        {section.cta.text}
-                      </Button>
+                      <Button href={section.cta.href}>{section.cta.text}</Button>
                     </div>
                   </div>
                 </div>
@@ -248,7 +268,7 @@ function Page({ seminarData }) {
             </section>
           )}
           {section.type === "titletextimage" && (
-            <section className="p-12 ">
+            <section id={section.id} className="p-12 ">
               <Container layout="sm">
                 <div className="">
                   <div>
@@ -270,7 +290,7 @@ function Page({ seminarData }) {
             </section>
           )}
           {section.type === "banner" && (
-            <SectionFlowerBackground>
+            <SectionFlowerBackground id={section.id}>
               <section className="p-12">
                 <Container layout="sm">
                   <div className="">
@@ -291,7 +311,7 @@ function Page({ seminarData }) {
           )}
           {section.type === "prebanner" && (
             <Section>
-              <section className="p-8 bg-kg-green/20">
+              <section id={section.id} className="p-8 bg-kg-green/20">
                 <Container layout="sm">
                   <div className="">
                     <div>
@@ -302,9 +322,7 @@ function Page({ seminarData }) {
                       </div>
 
                       <div className="flex flex-col justify-center ">
-                        <div className="flex justify-center text-xl">
-                          {section.pretitle}
-                        </div>
+                        <div className="flex justify-center text-xl">{section.pretitle}</div>
                         <div className="flex justify-center mt-2 text-center">
                           <ContentMarkdown html={section.markdown.html} />
                         </div>
@@ -317,7 +335,7 @@ function Page({ seminarData }) {
           )}{" "}
           {section.type === "prebanner2" && (
             <Section>
-              <section className="p-8 bg-kg-green/20">
+              <section id={section.id} className="p-8 bg-kg-green/20">
                 <Container layout="sm">
                   <div className="">
                     <div>
@@ -344,7 +362,7 @@ function Page({ seminarData }) {
             </Section>
           )}
           {section.type === "yogadateoverview" && (
-            <SectionFlowerBackground>
+            <SectionFlowerBackground id={section.id}>
               <section className="pt-12 pb-20">
                 <Container layout="sm">
                   <div className="flex justify-center">
@@ -368,7 +386,11 @@ function Page({ seminarData }) {
             </SectionFlowerBackground>
           )}
           {section.type === "faq" && (
-            <SectionFaq title={section.title} items={section.items} />
+            <SectionFaq
+              id={section.id}
+              title={section.title}
+              items={section.items}
+            />
           )}
         </React.Fragment>
       ))}

@@ -4,20 +4,28 @@
   "slug": "seelenweberinnen",
   "sections": [
     {
+      "type": "heading",
+      "title": "Kreis der Seelenweberinnen",
+      "id": "kreis-der-seelenweberinnen"
+    },
+    {
       "type": "text",
-      "markdown": "Wir sind ein Kreis von Frauen, welche die uralte Weisheit ihrer Seelen wieder zum Leben erwecken. Gemeinsam erschaffen wir ein heilsames Gewebe voll Kraft und Schönheit. Darin finden wir Halt, auch wenn die Zeiten einmal schwierig werden."
+      "markdown": "Wir sind ein Kreis von Frauen, welche die uralte Weisheit ihrer Seelen wieder zum Leben erwecken. Gemeinsam erschaffen wir ein heilsames Gewebe voll Kraft und Schönheit. Darin finden wir Halt, auch wenn die Zeiten einmal schwierig werden.",
+      "id": "wir-sind-ein-kreis-von-frauen"
     },
     {
       "type": "flowertitle",
       "image": "/media/hueterin_deiner_kraft.png",
       "title": "Jahreskreis der Seelenweberinnen 2024",
-      "markdown": "### Jahreskreis der Seelenweberinnen 2024"
+      "markdown": "### Jahreskreis der Seelenweberinnen 2024",
+      "id": "jahreskreis-der-seelenweberinnen-2024"
     },
     {
       "type": "imagetext",
       "markdown": "Unsere Kraft ist kostbar. Im Kreis der Seelenweberinnen besinnen wir uns darauf, wer wir wirklich sind - und wie wir unsere ureigene weibliche Spiritualität im Alltag praktisch leben können. Wie unzählige Frauen vor uns gemeinsam um das Feuer saßen, bilden auch wir einen Kreis der urweiblichen Stärke und Spiritualität.\n\nJede von uns Seelenweberinnen darf sein, wie sie ist: unperfekt, kreativ, verwundbar, weise und einmalig. Wir lassen zu, was da ist, ohne Wertung und Besserwissen. Mit offenem Herzen, Freude und Mitgefühl schöpfen wir aus der Weisheit der alten Göttinnen und Heilerinnen. Das macht uns gemeinsam stark und verbindet uns wieder mit unseren Wurzeln.\n\nÜber die Themen vorangegangener Treffen der Seelenweberinnen findest du Beiträge in meinem Blog.",
       "image": "/media/seelenweberinnen_1.jpeg",
-      "alt": "Steinstatue mit Natur im Hintergrund"
+      "alt": "Steinstatue mit Natur im Hintergrund",
+      "id": "unsere-kraft-ist-kostbar-im-k"
     },
     {
       "type": "events",
@@ -55,7 +63,8 @@
           "time": "19.00-21.30 Uhr"
         }
       ],
-      "image": "/media/kirschen_herz.jpeg"
+      "image": "/media/kirschen_herz.jpeg",
+      "id": "termine-online-202425"
     },
     {
       "type": "titletextimagetextbutton",
@@ -67,7 +76,8 @@
       "cta": {
         "text": "Jetzt Teilnahme anfragen",
         "href": "/kontakt"
-      }
+      },
+      "id": "woraus-besteht-unser-gewebe-"
     }
   ],
   "order": 100,
