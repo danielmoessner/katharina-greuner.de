@@ -77,6 +77,33 @@
       "markdown": "12x Mittwoch, 08:00-08:30 Uhr \n\nTermine: 23.09.- 16.12.2026\n\nOrt: online",
       "text": "Kosten für den Kurs: insgesamt 132 €",
       "id": "termine-2026-2"
+    },
+    {
+      "type": "faq",
+      "title": "FAQ",
+      "items": [
+        {
+          "question": "Was ist das Besondere an deinem Yogastil?",
+          "answer": "In den 40 Jahren meiner Yogapraxis habe ich Erfahrungen in vielen Hatha-Yoga Stilen gesammelt. Dazu zählen Iyengar-Yoga, Vini-Yoga, Yoga der Energie, Ashtangha-Yoga, Yin-Yoga und andere. Bei meinem eigenen Yogastil steht immer das Verbindende im Mittelpunkt.\n\nDas Wichtigste für mich ist, die Teilnehmerinnen unvoreingenommen und liebevoll wahrzunehmen. Dann finden wir gemeinsam die richtigen Übungen für sie, ganz egal aus welchem Yogastil sie stammen."
+        },
+        {
+          "question": "Wie sieht eine typische Stunde bei dir aus?",
+          "answer": "Wir beginnen mit einer Einstimmung, sammeln uns und lassen die Alltagsgedanken zur Ruhe kommen. Die folgenden Übungen bauen aufeinander auf. Ich unterstütze euch dabei, die individuell beste Haltung zu finden.\n\nWir beenden die Stunde mit einem kurzen Sitzen in der Stille."
+        },
+        {
+          "question": "Brauche ich Vorkenntnisse oder muss ich besonders gelenkig sein?",
+          "answer": "Nein. Komm einfach so, wie du bist.\n\nSolltest du gesundheitliche Einschränkungen haben, gib mir bitte Bescheid, damit ich die Übungen für dich entsprechend anpassen kann."
+        },
+        {
+          "question": "Benötige ich Vorerfahrungen für die Meditation?",
+          "answer": "Nein. Du beginnst genau an dem Punkt, an dem du stehst. Meditation ist ein lebendiger Prozess und für jede erlernbar."
+        },
+        {
+          "question": "Ich kann nicht im Schneidersitz sitzen. Kann ich trotzdem meditieren?",
+          "answer": "Natürlich. Wichtig ist, dass du angenehm sitzt und einen freien Raum für den Atemfluss schaffst. Du darfst deinen Sitz während der Meditation jederzeit ändern."
+        }
+      ],
+      "id": "faq"
     }
   ],
   "order": 1,
