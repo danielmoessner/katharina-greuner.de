@@ -31,19 +31,10 @@ jobs:
           NEXT_TELEMETRY_DISABLED: "1"
         run: npm run build:static
 
-      - name: Install lftp
-        run: sudo apt-get update && sudo apt-get install -y lftp openssh-client
+      - name: Install rsync and sshpass
+        run: sudo apt-get update && sudo apt-get install -y rsync sshpass openssh-client
 
-      - name: Add SFTP host to known_hosts
-        env:
-          STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
-          STRATO_SFTP_PORT: ${{ secrets.STRATO_SFTP_PORT }}
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan -p "${STRATO_SFTP_PORT:-22}" "${STRATO_SFTP_HOST}" >> ~/.ssh/known_hosts
-          chmod 600 ~/.ssh/known_hosts
-
-      - name: Upload via SFTP (mirror out/)
+      - name: Deploy via rsync with checksum comparison
         env:
           STRATO_SFTP_HOST: ${{ secrets.STRATO_SFTP_HOST }}
           STRATO_SFTP_PORT: ${{ secrets.STRATO_SFTP_PORT }}
@@ -52,18 +43,11 @@ jobs:
           STRATO_SFTP_REMOTE_PATH: ${{ secrets.STRATO_SFTP_REMOTE_PATH }}
         run: |
           test -d out
-
-          lftp -c "
-            set net:timeout 20;
-            set net:max-retries 2;
-            set net:reconnect-interval-base 5;
-            set net:reconnect-interval-max 15;
-            set xfer:clobber on;
-            open -u \"$STRATO_SFTP_USER\",\"$STRATO_SFTP_PASSWORD\" sftp://$STRATO_SFTP_HOST:${STRATO_SFTP_PORT:-22};
-            mirror -R --delete --verbose --parallel=2 \
-              --exclude-glob .git* \
-              --exclude-glob .DS_Store \
-              --exclude-glob node_modules \
-              --exclude-glob .next \
-              out/ \"$STRATO_SFTP_REMOTE_PATH/\";
-          "
+          
+          sshpass -p "$STRATO_SFTP_PASSWORD" rsync -avz --checksum --delete \
+            -e "ssh -o StrictHostKeyChecking=accept-new -p ${STRATO_SFTP_PORT:-22}" \
+            --exclude='.git*' \
+            --exclude='.DS_Store' \
+            --exclude='node_modules' \
+            --exclude='.next' \
+            out/ "$STRATO_SFTP_USER@$STRATO_SFTP_HOST:$STRATO_SFTP_REMOTE_PATH/"
