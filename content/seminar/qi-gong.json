@@ -1,0 +1,52 @@
+{
+  "shortDescription": "Verwurzelung, Lebenskraft und ein inneres Lächeln.",
+  "slug": "qi-gong",
+  "sections": [
+    {
+      "type": "heading",
+      "title": "Qi Gong",
+      "id": "qi-gong"
+    },
+    {
+      "type": "textimage",
+      "markdown": "**Verwurzelung, Lebenskraft und ein inneres Lächeln**\n\nDie harmonischen Bewegungen des Qi Gong wirken stärkend und erfrischend. Seit Jahrhunderten wird Qi Gong deshalb von Frauen und Männern geübt, um einen heilsamen Fluss der Lebensenergie zu fördern.\n\nBeim Praktizieren von Qi Gong verbindest Du Dich mit der Kraft Deiner Mitte. Von dort aus öffnest Du sanft die innere Energiezone und kannst körperliche, energetische und psychische Blockaden auflösen.\n\nIch unterstütze Dich dabei, einen gleichmäßigen Energiefluss aufzubauen. Wir bringen Yin und Yang, Stille und Bewegung, miteinander in Einklang. Liebevolle Achtsamkeit mit Dir selbst und den anderen ist die Grundlage unseres Übens.\n\nUnd bald wird sich auch das innere Lächeln einstellen und Du kommst ganz bei Dir an.",
+      "image": "/media/tanzendes_herz_klangschale.jpg",
+      "alt": "Qi Gong mit Klangschale",
+      "id": "verwurzelung-lebenskraft-un"
+    },
+    {
+      "type": "yogadateoverview",
+      "title": "Termine 2026",
+      "markdown": "12x Dienstag, 19:00-20:30 Uhr\n\nTermine: 22.09.-15.12.2026\n\nOrt: Kala Heilarbeit, An der Lohe 32, 85375 Neufahrn",
+      "text": "Kosten fur den Kurs insgesamt 132 EUR",
+      "cta": {
+        "text": "ZU QI GONG ANMELDEN",
+        "href": "/kontakt"
+      },
+      "id": "termine-2026"
+    },
+    {
+      "type": "faq",
+      "title": "FAQ",
+      "items": [
+        {
+          "question": "Ist Qi Gong fur jeden geeignet?",
+          "answer": "Ja, denn Qi Gong wird langsam und achtsam ausgefuhrt. Du kannst in Deinem eigenen Tempo uben und die Intensitat selbst bestimmen. Durch die fließende Bewegung und die ruhige Atmung bringst Du Korper und Geist aus der Anspannung in die Ruhe."
+        },
+        {
+          "question": "Brauche ich Vorerfahrungen im Qi Gong?",
+          "answer": "Nein. Die Erfahrungen aller Teilnehmerinnen erganzen sich und jede lernt von der anderen - egal ob sie schon langer ubt oder gerade erst beginnt."
+        }
+      ],
+      "id": "faq"
+    }
+  ],
+  "order": 5,
+  "date": "12x Dienstag, 22.09.-15.12.2026, 19:00-20:30 Uhr",
+  "title": "Qi Gong",
+  "showOnHome": false,
+  "image": "/media/qi-gong-titelbild.jpg",
+  "newImage": "/media/qi-gong-kachel.jpg",
+  "description": "Sanfte, heilsame Bewegungen fur mehr Erdung, Lebenskraft und innere Balance.",
+  "showOnSeminars": false
+}
