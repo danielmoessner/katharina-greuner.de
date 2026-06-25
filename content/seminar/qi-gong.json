@@ -1,5 +1,5 @@
 {
-  "shortDescription": "Verwurzelung, Lebenskraft und ein inneres Lächeln.",
+  "shortDescription": "Frische Lebenskraft und ein inneres Lächeln.",
   "slug": "qi-gong",
   "sections": [
     {
@@ -44,9 +44,9 @@
   "order": 5,
   "date": "12x Dienstag, 22.09.-15.12.2026, 19:00-20:30 Uhr",
   "title": "Qi Gong",
-  "showOnHome": false,
+  "showOnHome": true,
   "image": "/media/qi-gong-titelbild.jpg",
   "newImage": "/media/qi-gong-kachel.jpg",
-  "description": "Sanfte, heilsame Bewegungen fur mehr Erdung, Lebenskraft und innere Balance.",
+  "description": "Sanfte, heilsame Bewegungen für mehr Erdung, Lebenskraft und innere Balance.",
   "showOnSeminars": false
 }
