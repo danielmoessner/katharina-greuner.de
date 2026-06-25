@@ -1,9 +1,13 @@
 interface Props {
-  text: string;
+  text?: string;
   className?: string;
 }
 
 function Component({ text, className }: Props) {
+  if (!text) {
+    return null;
+  }
+
   return (
     <div className={className}>
       <div className="space-y-2">
