@@ -1,11 +1,28 @@
 {
   "shortDescription": "Ein Samstag, um ganz zu Dir zu kommen, Dein Herz zu öffnen und Deine Wurzeln zu stärken.",
-  "slug": "yoga-seminar",
+  "slug": "wise-woman-yoga-seminar",
   "sections": [
     {
       "type": "heading",
       "id": "yoga-seminar",
       "title": "Wise Woman Yoga – Seminar"
+    },
+    {
+      "type": "textimage",
+      "id": "Über Wise Woman Yoga",
+      "markdown": "### Ein Samstag nur für Dich\n\nManchmal braucht es nur einen Tag, um wieder bei sich selbst anzukommen.\n\nIn diesem Wise Woman Yoga Seminar nehmen wir uns bewusst Zeit zum Ankommen, Durchatmen und Auftanken. Sanfte Yogaübungen, Meditation und achtsame Impulse unterstützen Dich dabei, Körper, Geist und Herz wieder miteinander zu verbinden.\n\nEs geht nicht um Leistung oder Perfektion. Es geht darum, Dir selbst mit Ruhe, Freundlichkeit und Neugier zu begegnen – und gestärkt, geerdet und mit neuer Kraft in Deinen Alltag zurückzukehren.",
+      "image": "/media/wise-woman-yoga-seminar-samstag.jpg",
+      "alt": "Katharina in Yoga-Pose auf einer sommerlichen Wiese"
+    },
+    {
+      "type": "yogadateoverview",
+      "id": "termine-2026",
+      "title": "Termine 2026",
+      "markdown": "2026",
+      "cta": {
+        "text": "ZUM WISE WOMAN YOGA SEMINAR ANMELDEN",
+        "href": "/kontakt"
+      }
     }
   ],
   "order": 2,
