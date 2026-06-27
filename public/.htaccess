@@ -10,6 +10,10 @@ ErrorDocument 404 /404.html
   # /admin -> /admin/index.html
   RewriteRule ^admin/?$ /admin/index.html [L]
 
+  # Legacy seminar URLs -> new top-level pages
+  RewriteRule ^seminar/yoga/?$ /yoga/ [R=301,L]
+  RewriteRule ^seminar/qi-gong/?$ /qi-gong/ [R=301,L]
+
   # Redirect extensionless URLs to trailing-slash URL if static folder exists.
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
