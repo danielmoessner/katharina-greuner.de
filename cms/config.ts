@@ -4,6 +4,7 @@ import category from "./category/index";
 import setting from "./setting/index";
 import legal from "./legal/index";
 import seminar from "./seminar";
+import dynamic from "./dynamic";
 
 const config = {
   publish_mode: "simple",
@@ -34,7 +35,7 @@ const config = {
   // See https://www.netlifycms.org/docs/beta-features/#manual-initialization
   load_config_file: false,
   // See https://www.netlifycms.org/docs/collection-types/
-  collections: [page, seminar, category, article, setting, legal],
+  collections: [page, dynamic, seminar, category, article, setting, legal],
 };
 
 export default config;

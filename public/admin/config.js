@@ -1268,6 +1268,16 @@ var seminar = {
 };
 var seminar_default = seminar;
 
+// cms/dynamic/index.ts
+var dynamic = {
+  ...seminar_default,
+  name: "dynamic",
+  label: "Dynamische Seiten",
+  label_singular: "Dynamische Seite",
+  folder: "content/dynamic"
+};
+var dynamic_default = dynamic;
+
 // cms/config.ts
 var config2 = {
   publish_mode: "simple",
@@ -1298,7 +1308,7 @@ var config2 = {
   // See https://www.netlifycms.org/docs/beta-features/#manual-initialization
   load_config_file: false,
   // See https://www.netlifycms.org/docs/collection-types/
-  collections: [page_default, seminar_default, category_default, article_default, setting_default, legal_default]
+  collections: [page_default, dynamic_default, seminar_default, category_default, article_default, setting_default, legal_default]
 };
 var config_default = config2;
 export {
