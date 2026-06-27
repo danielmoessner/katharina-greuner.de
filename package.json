@@ -7,7 +7,7 @@
     "build": "next build",
     "build:cms": "node scripts/build-cms-config.mjs",
     "optimize:out": "node scripts/optimize-out-images.cjs",
-    "build:static": "npm run build:cms-config && next build && npm run optimize:out",
+    "build:static": "npm run build:cms && next build && npm run optimize:out",
     "start": "npx serve out -l 3001",
     "cms": "npx netlify-cms-proxy-server"
   },

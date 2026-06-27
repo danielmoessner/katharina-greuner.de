@@ -23,7 +23,7 @@ Decap CMS uses **GitHub OAuth** instead:
 
 To rebuild the checked-in admin config:
 
-- `npm run build:cms-config`
+- `npm run build:cms`
 
 You must provide a small OAuth proxy/service (server) for Decap CMS.
 
