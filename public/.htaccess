@@ -2,9 +2,22 @@
 # - /admin should open the Decap CMS admin UI
 # - trailingSlash: true creates folders with index.html
 
+ErrorDocument 404 /404.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
   # /admin -> /admin/index.html
   RewriteRule ^admin/?$ /admin/index.html [L]
+
+  # Redirect extensionless URLs to trailing-slash URL if static folder exists.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+  RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
+
+  # Return a real 404 for unknown routes so ErrorDocument 404 is shown.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ - [R=404,L]
 </IfModule>
