@@ -16,9 +16,9 @@
     {
       "type": "flowertitle",
       "image": "/media/hueterin_deiner_kraft.png",
-      "title": "Jahreskreis der Seelenweberinnen 2024",
-      "markdown": "### Jahreskreis der Seelenweberinnen 2024",
-      "id": "jahreskreis-der-seelenweberinnen-2024"
+      "title": "Jahreskreis der Seelenweberinnen 2026",
+      "markdown": "### Jahreskreis der Seelenweberinnen 2026",
+      "id": "jahreskreis-der-seelenweberinnen-2026"
     },
     {
       "type": "imagetext",
@@ -29,37 +29,47 @@
     },
     {
       "type": "events",
-      "markdown": "A﻿usgleich, wenn du Alle 7 Termine buchst: **245,00€**\n\nA﻿usgleich, wenn du jeden Termin einzeln buchst: **jeweils 40,00€**",
-      "title": "T﻿ermine online 2024/25 ",
+      "markdown": "A﻿usgleich, wenn du alle 9 Termine buchst: **315,00€**\n\nA﻿usgleich, wenn du jeden Termin einzeln buchst: **jeweils 45,00€**",
+      "title": "T﻿ermine online 2026/27 ",
       "events": [
         {
-          "date": "2024-10-10T13:17:58.016Z",
-          "month": "Oktober 2024",
+          "date": "14.10.2026",
+          "month": "Oktober 2026",
           "time": "19.00-21.30 Uhr"
         },
         {
-          "date": "2024-11-07T14:17:58.804Z",
-          "month": "November 2024",
+          "date": "11.11.2026",
+          "month": "November 2026",
           "time": "19.00-21.30 Uhr"
         },
         {
-          "date": "2024-12-12T14:17:59.753Z",
-          "month": "Dezember 2024",
+          "date": "09.12.2026",
+          "month": "Dezember 2026",
           "time": "19.00-21.30 Uhr"
         },
         {
-          "date": "2025-01-16T14:16:30.766Z",
-          "month": "Januar 2025",
+          "date": "13.01.2027",
+          "month": "Januar 2027",
           "time": "19.00-21.30 Uhr"
         },
         {
-          "date": "2025-02-13T13:00:44.888Z",
-          "month": "Februar 2025",
+          "date": "10.02.2027",
+          "month": "Februar 2027",
           "time": "19:00 - 21:30"
         },
         {
-          "date": "2025-03-13T13:00:57.331Z",
-          "month": "März 2025",
+          "date": "10.03.2027",
+          "month": "März 2027",
+          "time": "19.00-21.30 Uhr"
+        },
+        {
+          "month": "April 2027",
+          "date": "07.04.2027",
+          "time": "19.00-21.30 Uhr"
+        },
+        {
+          "month": "Mai 2027",
+          "date": "05.05.2027",
           "time": "19.00-21.30 Uhr"
         }
       ],
