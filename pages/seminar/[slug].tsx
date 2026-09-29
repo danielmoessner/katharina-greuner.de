@@ -126,7 +126,7 @@ function Page({ seminarData }) {
                     <div className="grid justify-center ">{section.title}</div>
                   </Heading>
 
-                  <div className="grid grid-cols-2 place-items-center gap-x-4">
+                  <div className="grid md:grid-cols-2 place-items-center gap-x-4">
                     <div className="">
                       <div className="flex flex-col gap-y-4 ">
                         <table>
@@ -149,7 +149,7 @@ function Page({ seminarData }) {
                       ></div>
                     </div>
 
-                    <div className="w-1/2">
+                    <div className="w-1/2 mt-5 md:mt-0">
                       <ImageRounded image={section.image} alt={section.alt}></ImageRounded>
                     </div>
                   </div>
